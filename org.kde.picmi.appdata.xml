@@ -28,6 +28,7 @@ SentUpstream: 2014-09-25
   <summary xml:lang="sv">Pusselspel baserat på sifferlogik</summary>
   <summary xml:lang="uk">Гра-головоломка, заснована на інтерпретації чисел</summary>
   <summary xml:lang="x-test">xxPuzzle game based on number logicxx</summary>
+  <summary xml:lang="zh-TW">數字邏輯的解謎遊戲</summary>
   <description>
     <p>
       The goal is to reveal the hidden pattern in the board by coloring or
@@ -53,6 +54,7 @@ SentUpstream: 2014-09-25
     <p xml:lang="sv">Målet är att avslöja det dolda mönstret på spelbrädet genom att färglägga eller lämna rutorna tomma i ett rutmönster enligt de tal som anges vid sidan om rutmönstret. Detta är ett spel för en ensam spelare.</p>
     <p xml:lang="uk">Метою гри є визначення прихованого візерунка у полі для гри зафарбовуванням комірок поля відповідно до чисел, які наведено за бічною рискою поля. Грати у гру одночасно можна лише один гравець.</p>
     <p xml:lang="x-test">xxThe goal is to reveal the hidden pattern in the board by coloring or leaving blank the cells in a grid according to numbers given at the side of the grid. This is a single player game.xx</p>
+    <p xml:lang="zh-TW">單人遊戲，依據棋盤側邊的數字來標記或留白棋盤上的每一格。</p>
   </description>
   <url type="homepage">https://projects.kde.org/projects/kde/kdegames/picmi</url>
   <screenshots>
