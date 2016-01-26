@@ -277,9 +277,9 @@ QSharedPointer<KScoreDialog> MainWindow::createScoreDialog() {
 
 void MainWindow::gameWon() {
     KScoreDialog::FieldInfo score = m_game->endGame();
-    bool notified = false;
     m_status_position->setVisible(false);
     if (m_mode == Random) {
+        bool notified = false;
         m_new_game->setVisible(true);
         if (Kg::difficultyLevel() != KgDifficultyLevel::Custom) {
             QSharedPointer<KScoreDialog> scoreDialog = createScoreDialog();
@@ -288,15 +288,18 @@ void MainWindow::gameWon() {
                 notified = true;
             }
         }
+
+        /* Ensure that the user gets some kind of feedback about solving the board. */
+        if (!notified) {
+            KMessageBox::information(this, i18n("Congratulations, you've solved this board!"),
+                                     i18n("Board Solved!"));
+        }
     } else if (m_mode == Preset) {
         m_load_game->setVisible(true);
         m_current_level->setSolved(m_game->elapsedSecs());
-    }
-
-    /* Ensure that the user gets some kind of feedback about solving the board. */
-    if (!notified) {
-        KMessageBox::information(this, i18n("Board Solved!"),
-                                 i18n("Congratulations, you've solved this board!"));
+        KMessageBox::information(this, i18n("Congratulations, you've solved board '%1'!",
+                                            m_current_level->name()),
+                                 i18n("Board Solved!"));
     }
 
     m_view.setFocus();
