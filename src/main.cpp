@@ -19,6 +19,7 @@
 #include "config.h"
 
 #include <KAboutData>
+#include <KCrash>
 #include <KDBusService>
 #include <KLocalizedString>
 #include <QApplication>
@@ -52,6 +53,7 @@ int main(int argc, char *argv[])
 
     QCommandLineParser parser;
     KAboutData::setApplicationData(about);
+    KCrash::initialize();
     parser.addVersionOption();
     parser.addHelpOption();
     about.setupCommandLine(&parser);

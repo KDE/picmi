@@ -11,7 +11,7 @@ remove_definitions(-DQT_NO_STL)
 kde_enable_exceptions()
 
 if (CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
-    add_definitions("-Wextra -pedantic")
+    add_compile_options(-Wextra -pedantic)
 endif ()
 
 include(CheckIncludeFileCXX)
@@ -42,15 +42,16 @@ ecm_add_app_icon(picmi_SRCS ICONS ${ICONS_SRCS})
 
 add_executable(picmi ${picmi_SRCS})
 target_link_libraries(picmi
-    picmi_gui
-    picmi_logic
+    Qt5::Svg
     KF5::CoreAddons
-    KF5::XmlGui
+    KF5::Crash
+    KF5::DBusAddons
     KF5::I18n
     KF5::KIOWidgets
-    Qt5::Svg
+    KF5::XmlGui
     KF5KDEGames
-    KF5::DBusAddons
+    picmi_gui
+    picmi_logic
 )
 
 install(TARGETS picmi DESTINATION ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
