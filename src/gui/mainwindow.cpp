@@ -291,13 +291,13 @@ void MainWindow::gameWon() {
 
         /* Ensure that the user gets some kind of feedback about solving the board. */
         if (!notified) {
-            KMessageBox::information(this, i18n("Congratulations, you've solved this board!"),
+            KMessageBox::information(this, i18n("Congratulations, you have solved this board!"),
                                      i18n("Board Solved!"));
         }
     } else if (m_mode == Preset) {
         m_load_game->setVisible(true);
         m_current_level->setSolved(m_game->elapsedSecs());
-        KMessageBox::information(this, i18n("Congratulations, you've solved board '%1'!",
+        KMessageBox::information(this, i18n("Congratulations, you have solved board '%1'!",
                                             m_current_level->name()),
                                  i18n("Board Solved!"));
     }
