@@ -47,7 +47,7 @@ public:
     /* adds penalty time and increases the next penalty amount */
     void addPenaltyTime();
 
-    /* return elapsed seconds the the datetime when start() was called */
+    /* return elapsed seconds since the datetime when start() was called */
     int elapsedSecs() const;
     QDateTime startDate() const;
 
