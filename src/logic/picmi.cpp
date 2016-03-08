@@ -186,7 +186,7 @@ QPoint Picmi::hint()
         return QPoint(0, 0);
     }
 
-    const int idx = rand() % incorrect_cells.size();
+    const int idx = qrand() % incorrect_cells.size();
     const QPoint cell(incorrect_cells.at(idx));
     Board::State state = m_map->get(cell.x(), cell.y());
     if (state == Board::Nothing) {
