@@ -1,8 +1,5 @@
 <?xml version="1.0" ?>
 <!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
-<!ENTITY picmi "<application>Picmi</application>">
-<!ENTITY kappname "&picmi;">
-<!ENTITY package "kdegames">
 <!ENTITY % English "INCLUDE">
 <!ENTITY % addindex "IGNORE">
 ]>
@@ -27,8 +24,8 @@
 
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2012-02-24</date>
-<releaseinfo>2.0.0</releaseinfo>
+<date>2016-05-13</date>
+<releaseinfo>2.0.0 (Applications 16.04)</releaseinfo>
 
 <abstract>
 <para>
@@ -50,6 +47,17 @@
 <para>
 &picmi; is a single player puzzle game.
 </para>
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="gameboard.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase>&kdiamond; gameboard</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
 
 <para>
 The object of the game is to color cells according to numbers given at the side of the board.
@@ -135,6 +143,21 @@ Loads a preset puzzle. The names of puzzles are hidden until they are solved. Hi
 
 <varlistentry>
 <term><menuchoice>
+<shortcut>
+<keycap>F5</keycap>
+</shortcut>
+<guimenu>Game</guimenu>
+<guimenuitem>Restart</guimenuitem>
+</menuchoice></term>
+<listitem>
+<para>
+    <!--FIXME -->
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
 <shortcut><keycap>P</keycap></shortcut>
 <guimenu>Game</guimenu>
 <guimenuitem>Pause</guimenuitem></menuchoice></term>
@@ -192,6 +215,33 @@ Undo the previous move if one exists.
 <varlistentry>
 <term><menuchoice>
 <shortcut>
+<keycombo action="simul">&Ctrl;<keycap>I</keycap></keycombo>
+</shortcut>
+<guimenu>Move</guimenu>
+<guimenuitem>Hint</guimenuitem>
+</menuchoice></term>
+<listitem>
+<para>
+Marks a cell as occupied or empty.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Move</guimenu>
+<guimenuitem>Solve</guimenuitem>
+</menuchoice></term>
+<listitem>
+<para>
+Play a demo game.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
 <keycombo action="simul">&Ctrl;<keycap>L</keycap></keycombo>
 </shortcut>
 <guimenu>Move</guimenu>
@@ -215,21 +265,6 @@ Loads the most recently saved position.
 <listitem>
 <para>
 Saves the current board position.
-</para>
-</listitem>
-</varlistentry>
-
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo action="simul">&Ctrl;&Shift;<keycap>F</keycap></keycombo>
-</shortcut>
-<guimenu>Settings</guimenu>
-<guimenuitem>Full Screen Mode</guimenuitem>
-</menuchoice></term>
-<listitem>
-<para>
-Switches into full screen mode.
 </para>
 </listitem>
 </varlistentry>
