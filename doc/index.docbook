@@ -54,7 +54,7 @@
 <imagedata fileref="gameboard.png" format="PNG"/>
 </imageobject>
 <textobject>
-<phrase>&kdiamond; gameboard</phrase>
+<phrase>&picmi; gameboard</phrase>
 </textobject>
 </mediaobject>
 </screenshot>
