@@ -13,6 +13,7 @@ SentUpstream: 2014-09-25
   <summary xml:lang="ca-valencia">Joc de puzle basat en lògica de nombres</summary>
   <summary xml:lang="cs">Hra puzzle založená na číselné logice</summary>
   <summary xml:lang="de">Rätselspiel auf der Grundlage von Zahlenlogik</summary>
+  <summary xml:lang="el">Παιχνίδι γρίφος με βάση τη λογική των αριθμών</summary>
   <summary xml:lang="en-GB">Puzzle game based on number logic</summary>
   <summary xml:lang="es">Juego de rompecabezas basado en lógica numérica</summary>
   <summary xml:lang="fi">Lukulogiikkaan perustuva arvoituspeli</summary>
@@ -42,6 +43,7 @@ SentUpstream: 2014-09-25
     <p xml:lang="ca">L'objectiu és descobrir el patró ocult en el taulell acolorint o deixant en blanc les cel·les en una quadrícula d'acord amb els nombres indicats en el lateral de la quadrícula. És un joc d'un jugador.</p>
     <p xml:lang="ca-valencia">L'objectiu és descobrir el patró ocult en el taulell acolorint o deixant en blanc les cel·les en una quadrícula d'acord amb els nombres indicats en el lateral de la quadrícula. És un joc d'un jugador.</p>
     <p xml:lang="de">Das Ziel ist, das verborgene Muster zu enthüllen, indem Sie Zellen einfärben oder leer lassen. Hinweise geben die Zahlen am Rand des Rasters. Dieses Spiel ist für einen Spieler.</p>
+    <p xml:lang="el">Ο στόχος είναι να αποκαλυφθεί το κρυμμένο μοτίβο στον πίνακα χρωματίζοντας ή αφήνοντας κενά τα κελιά ενός καννάβου σύμφωνα με αριθμούς που δίνονται στο περιθώριο του καννάβου. Είναι παιχνίδι για έναν παίκτη.</p>
     <p xml:lang="en-GB">The goal is to reveal the hidden pattern in the board by coloring or leaving blank the cells in a grid according to numbers given at the side of the grid. This is a single player game.</p>
     <p xml:lang="es">El objetivo consiste en revelar el patrón oculto en el tablero coloreando o dejando en blanco las casillas de una rejilla según los números que se muestran al lado de la rejilla. Este juego es para un único jugador.</p>
     <p xml:lang="fi">Tavoitteena on paljastaa laudan salainen hahmo värittämällä tai jättämällä tyhjiksi ruudukon soluja sen sivulla annettujen lukujen mukaan. Tämä on yksinpeli.</p>
