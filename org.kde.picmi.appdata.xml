@@ -16,6 +16,7 @@ SentUpstream: 2014-09-25
   <summary xml:lang="el">Παιχνίδι γρίφος με βάση τη λογική των αριθμών</summary>
   <summary xml:lang="en-GB">Puzzle game based on number logic</summary>
   <summary xml:lang="es">Juego de rompecabezas basado en lógica numérica</summary>
+  <summary xml:lang="et">Arvuloogikal põhinev mõistatusmäng</summary>
   <summary xml:lang="fi">Lukulogiikkaan perustuva arvoituspeli</summary>
   <summary xml:lang="gl">Quebracabezas baseado en lóxica numérica</summary>
   <summary xml:lang="nl">Een logisch spel met nummers</summary>
@@ -46,6 +47,7 @@ SentUpstream: 2014-09-25
     <p xml:lang="el">Ο στόχος είναι να αποκαλυφθεί το κρυμμένο μοτίβο στον πίνακα χρωματίζοντας ή αφήνοντας κενά τα κελιά ενός καννάβου σύμφωνα με αριθμούς που δίνονται στο περιθώριο του καννάβου. Είναι παιχνίδι για έναν παίκτη.</p>
     <p xml:lang="en-GB">The goal is to reveal the hidden pattern in the board by coloring or leaving blank the cells in a grid according to numbers given at the side of the grid. This is a single player game.</p>
     <p xml:lang="es">El objetivo consiste en revelar el patrón oculto en el tablero coloreando o dejando en blanco las casillas de una rejilla según los números que se muestran al lado de la rejilla. Este juego es para un único jugador.</p>
+    <p xml:lang="et">Mängu eesmärk on paljastada mängulauale peidetud muster, andes ruudustiku lahtritele värvi või jättes nad tühjaks vastavalt ruudustiku serval näidatavatele arvudele. See on ühele mängijale mõeldud mäng.</p>
     <p xml:lang="fi">Tavoitteena on paljastaa laudan salainen hahmo värittämällä tai jättämällä tyhjiksi ruudukon soluja sen sivulla annettujen lukujen mukaan. Tämä on yksinpeli.</p>
     <p xml:lang="gl">O obxectivo consiste en descubrir o padrón oculto no taboleiro. Para facelo, ten que colorar ou deixar en branco celas nunha grade segundo os números que aparecen nas celas contiguas. Trátase dun xogo para un único xogador.</p>
     <p xml:lang="nl">Het doel is het onthullen van het verborgen patroon in het bord door kleuren of leeg laten van de cellen in een raster volgens cijfers gegeven aan de rand van het raster. Dit is een spel voor een enkele speler.</p>
