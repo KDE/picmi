@@ -1,6 +1,5 @@
 [Desktop Entry]
 Name=picmi
-Name[ast]=picmi
 Name[bs]=picmi
 Name[ca]=picmi
 Name[ca@valencia]=picmi
@@ -44,7 +43,6 @@ Name[x-test]=xxpicmixx
 Name[zh_CN]=picmi
 Name[zh_TW]=picmi
 GenericName=Logic Game
-GenericName[ast]=Xuegu de llóxica
 GenericName[bs]=Logička igra
 GenericName[ca]=Joc de lògica
 GenericName[ca@valencia]=Joc de lògica
@@ -89,7 +87,6 @@ GenericName[x-test]=xxLogic Gamexx
 GenericName[zh_CN]=逻辑游戏
 GenericName[zh_TW]=智力遊戲
 Comment=A number logic game
-Comment[ast]=Un xuegu de llóxica numbérica
 Comment[bs]=Logička igra s brojevima
 Comment[ca]=Un joc de lògica de nombres
 Comment[ca@valencia]=Un joc de lògica de nombres
