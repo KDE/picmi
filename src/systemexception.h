@@ -30,7 +30,7 @@ public:
 
     ~SystemException() throw() { }
 
-    virtual const char *what() const throw() {
+    const char *what() const throw() Q_DECL_OVERRIDE {
         return m_msg.toLatin1();
     }
 

@@ -36,7 +36,7 @@ public:
     /* updates displayed pixmap according to current cell state */
     virtual void refresh();
 
-    virtual void reload(const QSize &size);
+    void reload(const QSize &size) Q_DECL_OVERRIDE;
 
 protected:
     virtual int getTilesize() const = 0;
@@ -53,8 +53,8 @@ public:
     OverviewCellItem(int x, int y, QSharedPointer<Picmi> game, QGraphicsItem *parent = 0);
 
 protected:
-    virtual int getTilesize() const;
-    virtual QPixmap getPixmap() const;
+    int getTilesize() const Q_DECL_OVERRIDE;
+    QPixmap getPixmap() const Q_DECL_OVERRIDE;
 };
 
 class GameCellItem : public QObject, public CellItem
@@ -67,19 +67,19 @@ public:
       game and scene */
     GameCellItem(int x, int y, QSharedPointer<Picmi> game, Scene *scene, QGraphicsItem *parent = 0);
 
-    void keyPressEvent(QKeyEvent *event);
+    void keyPressEvent(QKeyEvent *event) Q_DECL_OVERRIDE;
 
-    void refresh();
-    void reload(const QSize &size);
+    void refresh() Q_DECL_OVERRIDE;
+    void reload(const QSize &size) Q_DECL_OVERRIDE;
 
 protected:
-    void mousePressEvent(QGraphicsSceneMouseEvent *event);
-    void mouseMoveEvent(QGraphicsSceneMouseEvent *event);
-    void hoverEnterEvent(QGraphicsSceneHoverEvent *event);
-    void mouseReleaseEvent(QGraphicsSceneMouseEvent *event);
+    void mousePressEvent(QGraphicsSceneMouseEvent *event) Q_DECL_OVERRIDE;
+    void mouseMoveEvent(QGraphicsSceneMouseEvent *event) Q_DECL_OVERRIDE;
+    void hoverEnterEvent(QGraphicsSceneHoverEvent *event) Q_DECL_OVERRIDE;
+    void mouseReleaseEvent(QGraphicsSceneMouseEvent *event) Q_DECL_OVERRIDE;
 
-    virtual int getTilesize() const;
-    virtual QPixmap getPixmap() const;
+    int getTilesize() const Q_DECL_OVERRIDE;
+    QPixmap getPixmap() const Q_DECL_OVERRIDE;
 
 private:
     /** Converts scene- to game coordinates. */

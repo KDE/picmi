@@ -37,8 +37,8 @@ public:
     QSharedPointer<Level> selectedBoard() const;
 
 protected:
-    void resizeEvent(QResizeEvent *event);
-    void showEvent(QShowEvent *event);
+    void resizeEvent(QResizeEvent *event) Q_DECL_OVERRIDE;
+    void showEvent(QShowEvent *event) Q_DECL_OVERRIDE;
 
 private slots:
     void selectedLevelChanged(const QModelIndex &current, const QModelIndex &previous);

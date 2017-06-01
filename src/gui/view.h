@@ -35,8 +35,8 @@ public:
     void setPaused(bool paused);
 
 protected:
-    void resizeEvent(QResizeEvent *event);
-    void keyPressEvent(QKeyEvent *event);
+    void resizeEvent(QResizeEvent *event) Q_DECL_OVERRIDE;
+    void keyPressEvent(QKeyEvent *event) Q_DECL_OVERRIDE;
 
 private:
     QSharedPointer<Scene> m_scene;

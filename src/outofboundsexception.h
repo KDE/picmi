@@ -24,7 +24,7 @@
 class OutOfBoundsException : public std::exception
 {
 public:
-    virtual const char *what() const throw() {
+    const char *what() const throw() {
         return "index out of bounds";
     }
 };

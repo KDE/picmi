@@ -34,7 +34,7 @@ public:
     /* update displayed streak */
     virtual void refresh() = 0;
 
-    virtual void reload(const QSize &size) = 0;
+    void reload(const QSize &size) Q_DECL_OVERRIDE = 0;
 
 private slots:
     void settingChanged(Settings::SettingsType type);
@@ -51,16 +51,16 @@ class RowStreakItem : public StreakItem {
 public:
     RowStreakItem(QSharedPointer<Picmi> game, int y, QGraphicsItem *parent = 0);
 
-    void refresh();
-    void reload(const QSize &size);
+    void refresh() Q_DECL_OVERRIDE;
+    void reload(const QSize &size) Q_DECL_OVERRIDE;
 };
 
 class ColStreakItem : public StreakItem {
 public:
     ColStreakItem(QSharedPointer<Picmi> game, int x, QGraphicsItem *parent = 0);
 
-    void refresh();
-    void reload(const QSize &size);
+    void refresh() Q_DECL_OVERRIDE;
+    void reload(const QSize &size) Q_DECL_OVERRIDE;
 };
 
 #endif // STREAKITEM_H

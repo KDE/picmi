@@ -28,7 +28,7 @@ class TextBannerItem : public QGraphicsTextItem, public ReloadableItem
 public:
     TextBannerItem(QGraphicsItem *parent = 0);
 
-    void reload(const QSize &size);
+    void reload(const QSize &size) Q_DECL_OVERRIDE;
 };
 
 class PauseBannerItem : public TextBannerItem
@@ -36,7 +36,7 @@ class PauseBannerItem : public TextBannerItem
 public:
     PauseBannerItem(QGraphicsItem *parent = 0);
 
-    void reload(const QSize &size);
+    void reload(const QSize &size) Q_DECL_OVERRIDE;
 };
 
 #endif // TEXTBANNERITEM_H
