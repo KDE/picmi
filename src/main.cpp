@@ -36,6 +36,7 @@ int main(int argc, char *argv[])
     migrate.migrate();
 
     QApplication app(argc, argv);
+    KLocalizedString::setApplicationDomain("picmi");
 
 
     KAboutData about("picmi",
@@ -59,7 +60,6 @@ int main(int argc, char *argv[])
     about.setupCommandLine(&parser);
     parser.process(app);
     about.processCommandLine(&parser);
-    KLocalizedString::setApplicationDomain("picmi");
 
     KDBusService service;
 
