@@ -65,6 +65,7 @@ SentUpstream: 2014-09-25
   <summary xml:lang="tr">Sayısal mantığa dayalı bir bulmaca oyunu</summary>
   <summary xml:lang="uk">Гра-головоломка, заснована на інтерпретації чисел</summary>
   <summary xml:lang="x-test">xxPuzzle game based on number logicxx</summary>
+  <summary xml:lang="zh-CN">基于数字逻辑的益智游戏</summary>
   <summary xml:lang="zh-TW">數字邏輯的解謎遊戲</summary>
   <description>
     <p>
@@ -99,6 +100,7 @@ SentUpstream: 2014-09-25
     <p xml:lang="tr">Amaç, tahtadaki gizli desenleri renklendirerek veya hücrelerin ızgaranın kenarında verilen sayılara göre, bir ızgarada boş bırakarak ortaya çıkarmaktır. Bu tek kişilik bir oyundur.</p>
     <p xml:lang="uk">Метою гри є визначення прихованого візерунка у полі для гри зафарбовуванням комірок поля відповідно до чисел, які наведено за бічною рискою поля. Грати у гру одночасно можна лише один гравець.</p>
     <p xml:lang="x-test">xxThe goal is to reveal the hidden pattern in the board by coloring or leaving blank the cells in a grid according to numbers given at the side of the grid. This is a single player game.xx</p>
+    <p xml:lang="zh-CN">游戏目标为根据网格周边给定的数字，将网格中的单元着色或留白，从而揭示其中隐藏的图案。这是个单人游戏。</p>
     <p xml:lang="zh-TW">單人遊戲，依據棋盤側邊的數字來標記或留白棋盤上的每一格。</p>
   </description>
   <url type="homepage">https://projects.kde.org/projects/kde/kdegames/picmi</url>
