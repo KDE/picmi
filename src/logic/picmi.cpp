@@ -16,7 +16,7 @@
  ************************************************************************* */
 
 
-#include "config.h"
+#include <config.h>
 #include "picmi.h"
 
 #include <assert.h>

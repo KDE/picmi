@@ -19,7 +19,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include "config.h"
+#include <config.h>
 
 #include <QTimer>
 #include <highscore/kscoredialog.h>

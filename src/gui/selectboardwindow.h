@@ -30,7 +30,7 @@ class SelectBoardWindow : public QDialog
 {
     Q_OBJECT
 public:
-    SelectBoardWindow(QWidget *parent);
+    explicit SelectBoardWindow(QWidget *parent);
 
     virtual ~SelectBoardWindow();
 

@@ -72,7 +72,7 @@ private:
 class LevelLoader
 {
 public:
-    LevelLoader(const QString &filename);
+    explicit LevelLoader(const QString &filename);
 
     QList<QSharedPointer<Level> > loadLevels();
     static QList<QSharedPointer<Level> > load();

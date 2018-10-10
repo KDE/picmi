@@ -19,7 +19,7 @@
 #ifndef SETTINGS_H
 #define SETTINGS_H
 
-#include "config.h"
+#include <config.h>
 #include <QSettings>
 #include <QVector>
 #include <QSharedPointer>

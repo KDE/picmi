@@ -52,7 +52,7 @@ class Picmi : public QObject
 public:
 
     Picmi();
-    Picmi(QSharedPointer<BoardMap> board);
+    explicit Picmi(QSharedPointer<BoardMap> board);
 
     int width() const;
     int height() const;

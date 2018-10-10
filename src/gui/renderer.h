@@ -23,7 +23,7 @@
 #include <QPixmap>
 #include <QString>
 #include <QVector>
-#include <QtSvg/QSvgRenderer>
+#include <QSvgRenderer>
 #include <QSharedPointer>
 
 class Renderer

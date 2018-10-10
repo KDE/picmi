@@ -16,7 +16,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "config.h"
+#include <config.h>
 #include "levelloader.h"
 
 #include <KLocalizedString>
@@ -275,7 +275,7 @@ QImage LevelLoader::openXPM(const QDomElement &node) const {
     }
 
     QFileInfo file(m_filename);
-    QString filepath = file.absolutePath() + "/" + node.text();
+    QString filepath = file.absolutePath() + '/' + node.text();
 
     QImage xpm(filepath);
 
