@@ -104,6 +104,7 @@ SentUpstream: 2014-09-25
     <p xml:lang="zh-TW">單人遊戲，依據棋盤側邊的數字來標記或留白棋盤上的每一格。</p>
   </description>
   <url type="homepage">https://projects.kde.org/projects/kde/kdegames/picmi</url>
+  <url type="donation">https://www.kde.org/community/donations/?app=picmi&amp;source=appdata</url>
   <screenshots>
     <screenshot type="default">
       <image>http://games.kde.org/games/picmi/screenshots/originals/picmi01.png</image>
