@@ -1,7 +1,4 @@
-*.o
-moc_*
-*.user
-build/
-picmi
-ui_*.h
-*.swp
+.kdev4/
+/build*/
+*.kdev4
+CMakeLists.txt.user*
