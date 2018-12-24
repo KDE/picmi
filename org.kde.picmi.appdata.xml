@@ -18,6 +18,7 @@ SentUpstream: 2014-09-25
   <name xml:lang="fi">Picmi</name>
   <name xml:lang="fr">Picmi</name>
   <name xml:lang="gl">Picmi</name>
+  <name xml:lang="id">Picmi</name>
   <name xml:lang="it">Picmi</name>
   <name xml:lang="nl">Picmi</name>
   <name xml:lang="nn">Picmi</name>
@@ -49,6 +50,7 @@ SentUpstream: 2014-09-25
   <summary xml:lang="fi">Lukulogiikkaan perustuva arvoituspeli</summary>
   <summary xml:lang="fr">Un jeu de puzzle avec des chiffres</summary>
   <summary xml:lang="gl">Quebracabezas baseado en lóxica numérica</summary>
+  <summary xml:lang="id">Permainan teka-teki berdasarkan pada logika angka</summary>
   <summary xml:lang="it">Gioco ad incastro basato sulla logica dei numeri</summary>
   <summary xml:lang="nl">Een logisch spel met nummers</summary>
   <summary xml:lang="nn">Tenkjespel basert på tallogikk</summary>
@@ -85,6 +87,7 @@ SentUpstream: 2014-09-25
     <p xml:lang="fi">Tavoitteena on paljastaa laudan salainen hahmo värittämällä tai jättämällä tyhjiksi ruudukon soluja sen sivulla annettujen lukujen mukaan. Tämä on yksinpeli.</p>
     <p xml:lang="fr">L'objectif est de révéler le motif caché du plateau en colorant ou en laissant les cellules d'une grille blanches selon les nombres affichés sur les côtés de la grille. Ce jeu se joue à un joueur.</p>
     <p xml:lang="gl">O obxectivo consiste en descubrir o padrón agochado no taboleiro. Para facelo, ten que colorar ou deixar en branco celas nunha grade segundo os números que aparecen nas celas contiguas. Trátase dun xogo para un único xogador.</p>
+    <p xml:lang="id">Tujuannya adalah untuk mengungkap pola yang tersembunyi di dalam papan dengan mewarnai atau membiarkan sel-sel blank dalam sebuah kisi menurut angka yang diberikan di sebelah kisi. Ini adalah permainan pemain tunggal.</p>
     <p xml:lang="it">L'obbiettivo è rivelare il motivo nascosto nel tavoliere colorando o lasciando vuote le celle contenute in una griglia in base ai numeri forniti sul lato della griglia. È un gioco per giocatore singolo.</p>
     <p xml:lang="nl">Het doel is het onthullen van het verborgen patroon in het bord door kleuren of leeg laten van de cellen in een raster volgens cijfers gegeven aan de rand van het raster. Dit is een spel voor een enkele speler.</p>
     <p xml:lang="nn">Målet med spelet er å avdekkja eit mønster på eit spelebrett ved å fargeleggja eit rutenettet basert på tal skrivne i margen på rutenettet. Dette er eit spel for éin spelar.</p>
