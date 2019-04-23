@@ -78,7 +78,7 @@ QString Level::author() const {
 }
 
 QString Level::key() const {
-    return QString("preset_scores/%1_%2").arg(m_levelset, m_name);
+    return QStringLiteral("preset_scores/%1_%2").arg(m_levelset, m_name);
 }
 
 void Level::writeSettings(int seconds) {
@@ -133,7 +133,7 @@ bool Level::operator==(const Level &that) const {
 }
 
 QList<QSharedPointer<Level> > LevelLoader::load() {
-    const QString prefix = "levels/";
+    const QString prefix = QStringLiteral("levels/");
     QList<QString> paths;
     paths << QString(prefix)
           << QString(FILEPATH "/" + prefix)
@@ -149,7 +149,7 @@ QList<QSharedPointer<Level> > LevelLoader::load() {
             continue;
         }
 
-        QStringList files = dir.entryList(QStringList("*.xml"));
+        QStringList files = dir.entryList(QStringList(QStringLiteral("*.xml")));
 
         for (int j = 0; j < files.size(); j++) {
             LevelLoader loader(dir.absoluteFilePath(files[j]));
@@ -172,7 +172,7 @@ void LevelLoader::setLevelset(const QString& filename)
 
     QFile file(filename);
     if (!file.open( QIODevice::ReadOnly)) {
-        throw SystemException(QString("Can't open file %1").arg(filename));
+        throw SystemException(QStringLiteral("Can't open file %1").arg(filename));
     }
 
     QString errorString;
@@ -182,7 +182,7 @@ void LevelLoader::setLevelset(const QString& filename)
 
     file.close();
     if (!success) {
-        qDebug() << QString("Can't read levelset from %1 \nError: %2 in Line %3, Column %4")
+        qDebug() << QStringLiteral("Can't read levelset from %1 \nError: %2 in Line %3, Column %4")
                               .arg(filename, errorString).arg(errorLine).arg(errorColumn);
         m_valid = false;
     }
@@ -196,11 +196,11 @@ QList<QSharedPointer<Level> > LevelLoader::loadLevels() {
     }
 
     QDomElement levels = m_levelset->documentElement();
-    if (!levels.hasAttribute("name")) {
+    if (!levels.hasAttribute(QStringLiteral("name"))) {
         qDebug() << "Loading level failed: no levelset name specified";
         return l;
     }
-    m_levelsetname = levels.attribute("name");
+    m_levelsetname = levels.attribute(QStringLiteral("name"));
 
     QDomNodeList childNodes = levels.childNodes();
     for (int i = 0; i < childNodes.size(); i++) {
@@ -214,29 +214,29 @@ QList<QSharedPointer<Level> > LevelLoader::loadLevels() {
 }
 
 QSharedPointer<Level> LevelLoader::loadLevel(const QDomElement &node) const {
-    if (node.isNull() || node.tagName() != "board") {
-        throw SystemException("Unexpected level node");
+    if (node.isNull() || node.tagName() != QLatin1String("board")) {
+        throw SystemException(QStringLiteral("Unexpected level node"));
     }
 
-    if (!node.hasAttribute("name") || !node.hasAttribute("author")
-            || !node.hasAttribute("difficulty")) {
-        throw SystemException("Level node missing attribute.");
+    if (!node.hasAttribute(QStringLiteral("name")) || !node.hasAttribute(QStringLiteral("author"))
+            || !node.hasAttribute(QStringLiteral("difficulty"))) {
+        throw SystemException(QStringLiteral("Level node missing attribute."));
     }
 
     QSharedPointer<Level> p(new Level);
-    p->m_name = node.attribute("name");
-    p->m_author = node.attribute("author");
+    p->m_name = node.attribute(QStringLiteral("name"));
+    p->m_author = node.attribute(QStringLiteral("author"));
     p->m_levelset = m_levelsetname;
-    p->m_difficulty = node.attribute("difficulty").toInt();
+    p->m_difficulty = node.attribute(QStringLiteral("difficulty")).toInt();
 
     QDomNodeList childNodes = node.childNodes();
 
     if (childNodes.isEmpty()) {
-        throw SystemException("Empty level definition.");
+        throw SystemException(QStringLiteral("Empty level definition."));
     }
 
     const QString tag_name = childNodes.at(0).toElement().tagName();
-    if (tag_name == "row") {
+    if (tag_name == QLatin1String("row")) {
         int i;
         QList<Board::State> l;
         for (i = 0; i < childNodes.size(); i++) {
@@ -245,7 +245,7 @@ QSharedPointer<Level> LevelLoader::loadLevel(const QDomElement &node) const {
         }
         p->m_width = l.size();
         p->m_height = i;
-    } else if (tag_name == "xpm") {
+    } else if (tag_name == QLatin1String("xpm")) {
         QImage xpm = openXPM(childNodes.at(0).toElement());
         p->m_map = loadXPM(xpm);
         p->m_width = xpm.width();
@@ -253,7 +253,7 @@ QSharedPointer<Level> LevelLoader::loadLevel(const QDomElement &node) const {
     }
 
     if (p->m_map.size() != p->height() * p->width()) {
-        throw SystemException("Invalid board size");
+        throw SystemException(QStringLiteral("Invalid board size"));
     }
 
     p->finalize();
@@ -265,13 +265,13 @@ static Board::State charToState(const QChar &c) {
     switch (c.toLatin1()) {
     case '-': return Board::Nothing;
     case '1': return Board::Box;
-    default: throw SystemException("Invalid char in level definition");
+    default: throw SystemException(QStringLiteral("Invalid char in level definition"));
     }
 }
 
 QImage LevelLoader::openXPM(const QDomElement &node) const {
-    if (node.isNull() || node.tagName() != "xpm") {
-        throw SystemException("Unexpected row node");
+    if (node.isNull() || node.tagName() != QLatin1String("xpm")) {
+        throw SystemException(QStringLiteral("Unexpected row node"));
     }
 
     QFileInfo file(m_filename);
@@ -280,7 +280,7 @@ QImage LevelLoader::openXPM(const QDomElement &node) const {
     QImage xpm(filepath);
 
     if (xpm.isNull()) {
-        throw SystemException(QString("Could not load %1").arg(filepath));
+        throw SystemException(QStringLiteral("Could not load %1").arg(filepath));
     }
 
     return xpm;
@@ -299,8 +299,8 @@ QList<Board::State> LevelLoader::loadXPM(const QImage &xpm) const {
 }
 
 QList<Board::State> LevelLoader::loadRow(const QDomElement &node) const {
-    if (node.isNull() || node.tagName() != "row") {
-        throw SystemException("Unexpected row node");
+    if (node.isNull() || node.tagName() != QLatin1String("row")) {
+        throw SystemException(QStringLiteral("Unexpected row node"));
     }
 
     QString text = node.text();

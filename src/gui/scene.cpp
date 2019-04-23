@@ -150,7 +150,7 @@ void Scene::init() {
     m_cells[0]->setFocus();
     updateHighlights();
 
-    connect(m_game.data(), SIGNAL(gameCompleted()), this, SLOT(onGameCompleted()));
+    connect(m_game.data(), &Picmi::gameCompleted, this, &Scene::onGameCompleted);
 }
 
 void Scene::refresh() {

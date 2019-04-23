@@ -26,7 +26,7 @@
 
 static inline QString toStylesheet(const QString &color)
 {
-    return QString("QLabel { color : %1 }").arg(color);
+    return QStringLiteral("QLabel { color : %1 }").arg(color);
 }
 
 SettingsWindow::SettingsWindow(QWidget *parent) :

@@ -39,10 +39,10 @@ Renderer::Renderer() : m_tilesize(47), m_overview_tilesize(12),
 {
     loadResources();
 
-    m_names << "transparent" << "background" << "cellframe"
-            << "box" << "cross" << "highlight" << "streak1"
-            << "streak2" << "divider" << "overview_box"
-            << "overview_cross";
+    m_names << QStringLiteral("transparent") << QStringLiteral("background") << QStringLiteral("cellframe")
+            << QStringLiteral("box") << QStringLiteral("cross") << QStringLiteral("highlight") << QStringLiteral("streak1")
+            << QStringLiteral("streak2") << QStringLiteral("divider") << QStringLiteral("overview_box")
+            << QStringLiteral("overview_cross");
 }
 
 void Renderer::loadResources() {
@@ -55,7 +55,7 @@ void Renderer::loadResources() {
 
     /* Tiles. */
 
-    const QString prefix = "themes/";
+    const QString prefix = QStringLiteral("themes/");
     QList<QString> paths;
     paths << QString(prefix)
           << QString(FILEPATH "/" + prefix)
@@ -74,7 +74,7 @@ void Renderer::loadResources() {
         return;
     }
 
-    throw SystemException("Resources not found");
+    throw SystemException(QStringLiteral("Resources not found"));
 }
 
 int Renderer::gridSize(const QSize &size, int board_width, int board_height) const {
@@ -182,7 +182,7 @@ QPixmap Renderer::getCachedPixmap(Renderer::Resource resource, int h, int w) con
         }
     }
 
-    QString key = QString("%1:%2x%3").arg(m_names[resource]).arg(w).arg(h);
+    QString key = QStringLiteral("%1:%2x%3").arg(m_names[resource]).arg(w).arg(h);
 
     QPixmap pixmap;
     if (!QPixmapCache::find(key, pixmap)) {

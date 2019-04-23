@@ -28,8 +28,8 @@ StreakItem::StreakItem(int x, int y, QSharedPointer<Picmi> game, QGraphicsItem *
     setZValue(ZVALUE_STREAKTEXT);
     setFont(Renderer::instance()->getFont(Renderer::Regular));
 
-    connect(Settings::instance(), SIGNAL(settingChanged(Settings::SettingsType)),
-            this, SLOT(settingChanged(Settings::SettingsType)));
+    connect(Settings::instance(), &Settings::settingChanged,
+            this, &StreakItem::settingChanged);
 }
 
 void StreakItem::settingChanged(Settings::SettingsType type)

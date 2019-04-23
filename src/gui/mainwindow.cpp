@@ -82,7 +82,7 @@ void MainWindow::setupActions() {
     m_action_load_state->setText(i18n("Load Position"));
     m_action_load_state->setIcon(QIcon::fromTheme("view-refresh"));
     actionCollection()->setDefaultShortcut(m_action_load_state, QKeySequence(Qt::CTRL + Qt::Key_L));
-    connect(m_action_load_state, SIGNAL(triggered()), this, SLOT(loadState()));
+    connect(m_action_load_state, &QAction::triggered, this, &MainWindow::loadState);
 
     m_status_time = new QLabel;
     m_status_time->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
@@ -92,12 +92,12 @@ void MainWindow::setupActions() {
     m_new_game = new QPushButton;
     m_new_game->setText(i18n("New Game"));
     m_new_game->setVisible(false);
-    connect(m_new_game, SIGNAL(clicked(bool)), this, SLOT(startRandomGame()));
+    connect(m_new_game, &QAbstractButton::clicked, this, &MainWindow::startRandomGame);
 
     m_load_game = new QPushButton;
     m_load_game->setText(i18n("Load New Game"));
     m_load_game->setVisible(false);
-    connect(m_load_game, SIGNAL(clicked(bool)), this, SLOT(loadBoard()));
+    connect(m_load_game, &QAbstractButton::clicked, this, &MainWindow::loadBoard);
 
     this->statusBar()->addWidget(m_new_game, 0);
     this->statusBar()->addWidget(m_load_game, 0);
@@ -112,8 +112,8 @@ void MainWindow::setupActions() {
     Kg::difficulty()->addLevel(configurable);
 
     KgDifficultyGUI::init(this);
-    connect(Kg::difficulty(), SIGNAL(currentLevelChanged(const KgDifficultyLevel*)), this,
-            SLOT(levelChanged(const KgDifficultyLevel*)));
+    connect(Kg::difficulty(), &KgDifficulty::currentLevelChanged, this,
+            &MainWindow::levelChanged);
 
     /* Disable the toolbar configuration menu entry.
      * The default size is used at first start up. */
@@ -247,11 +247,11 @@ void MainWindow::startGame() {
     m_view.setPaused(false);
 
     connect(&m_timer, &QTimer::timeout, this, &MainWindow::updatePlayedTime);
-    connect(m_game.data(), SIGNAL(stateChanged()), this, SLOT(updatePositions()));
-    connect(m_game.data(), SIGNAL(gameCompleted()), this, SLOT(gameCompleted()));
-    connect(m_game.data(), SIGNAL(gameWon()), this, SLOT(gameWon()));
-    connect(m_game.data(), SIGNAL(undoStackSizeChanged(int)), this, SLOT(undoStackSizeChanged(int)));
-    connect(m_game.data(), SIGNAL(saveStackSizeChanged(int)), this, SLOT(saveStackSizeChanged(int)));
+    connect(m_game.data(), &Picmi::stateChanged, this, &MainWindow::updatePositions);
+    connect(m_game.data(), &Picmi::gameCompleted, this, &MainWindow::gameCompleted);
+    connect(m_game.data(), &Picmi::gameWon, this, &MainWindow::gameWon);
+    connect(m_game.data(), &Picmi::undoStackSizeChanged, this, &MainWindow::undoStackSizeChanged);
+    connect(m_game.data(), &Picmi::saveStackSizeChanged, this, &MainWindow::saveStackSizeChanged);
 
     m_in_progress = true;
 }

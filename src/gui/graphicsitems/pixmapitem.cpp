@@ -37,8 +37,8 @@ void PixmapItem::reload(const QSize &size) {
 BackgroundItem::BackgroundItem(Renderer::Resource resource, int x, int y, QGraphicsItem *parent) :
     PixmapItem(resource, x, y, parent)
 {
-    connect(Settings::instance(), SIGNAL(settingChanged(Settings::SettingsType)),
-                     this, SLOT(settingChanged(Settings::SettingsType)));
+    connect(Settings::instance(), &Settings::settingChanged,
+                     this, &BackgroundItem::settingChanged);
 }
 
 void BackgroundItem::settingChanged(Settings::SettingsType type) {

@@ -25,7 +25,7 @@
 class SystemException : public std::exception
 {
 public:
-    SystemException() { m_msg = "system error"; }
+    SystemException() { m_msg = QStringLiteral("system error"); }
     SystemException(const QString &msg) { m_msg = msg; }
 
     ~SystemException() throw() { }

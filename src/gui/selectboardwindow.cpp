@@ -206,10 +206,10 @@ SelectBoardWindow::SelectBoardWindow(QWidget *parent)
         okButton->setEnabled(false);
     } else {
         resetSelection();
-        connect(ui->tableView->selectionModel(), SIGNAL(currentRowChanged(QModelIndex,QModelIndex)),
-                this, SLOT(selectedLevelChanged(QModelIndex,QModelIndex)));
-        connect(m_model.data(), SIGNAL(dataChanged(QModelIndex,QModelIndex)),
-                this, SLOT(levelDataChanged(QModelIndex,QModelIndex)));
+        connect(ui->tableView->selectionModel(), &QItemSelectionModel::currentRowChanged,
+                this, &SelectBoardWindow::selectedLevelChanged);
+        connect(m_model.data(), &QAbstractItemModel::dataChanged,
+                this, &SelectBoardWindow::levelDataChanged);
         updateDetails(m_levels[0]);
     }
 

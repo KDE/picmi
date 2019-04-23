@@ -129,8 +129,8 @@ Picmi::Picmi(QSharedPointer<BoardMap> board) {
 
 void Picmi::setupSlots()
 {
-    connect(m_state.data(), SIGNAL(undoStackSizeChanged(int)), this, SIGNAL(undoStackSizeChanged(int)));
-    connect(m_state.data(), SIGNAL(saveStackSizeChanged(int)), this, SIGNAL(saveStackSizeChanged(int)));
+    connect(m_state.data(), &BoardState::undoStackSizeChanged, this, &Picmi::undoStackSizeChanged);
+    connect(m_state.data(), &BoardState::saveStackSizeChanged, this, &Picmi::saveStackSizeChanged);
 }
 
 bool Picmi::won() const {

@@ -25,7 +25,7 @@ class Time
 {
 public:
     Time(int seconds) : m_seconds(seconds) { }
-    QString toString(QString format = "%1:%2:%3") const;
+    QString toString(QString format = QStringLiteral("%1:%2:%3")) const;
 
 private:
     const int m_seconds;
