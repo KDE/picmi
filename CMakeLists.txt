@@ -31,6 +31,7 @@ include(ECMAddAppIcon)
 include(ECMInstallIcons)
 include(ECMAddTests)
 
+add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x060000)
 
 add_subdirectory(themes)
 add_subdirectory(icons)

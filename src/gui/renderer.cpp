@@ -185,7 +185,7 @@ QPixmap Renderer::getCachedPixmap(Renderer::Resource resource, int h, int w) con
     QString key = QStringLiteral("%1:%2x%3").arg(m_names[resource]).arg(w).arg(h);
 
     QPixmap pixmap;
-    if (!QPixmapCache::find(key, pixmap)) {
+    if (!QPixmapCache::find(key, &pixmap)) {
         pixmap = QPixmap(w, h);
         pixmap.fill(Qt::transparent);
         QPainter painter(&pixmap);

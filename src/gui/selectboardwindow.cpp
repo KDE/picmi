@@ -155,7 +155,7 @@ void LevelTableModel::sort(int column, Qt::SortOrder order) {
     default: assert(0);
     }
 
-    qStableSort(m_levels.begin(), m_levels.end(), cmp);
+    std::stable_sort(m_levels.begin(), m_levels.end(), cmp);
     emit dataChanged(index(0, 0), index(rowCount() - 1, columnCount() -1));
 }
 
