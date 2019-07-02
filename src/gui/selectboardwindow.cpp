@@ -17,7 +17,6 @@
 
 #include "selectboardwindow.h"
 
-#include <KConfigGroup>
 #include <KLocalizedString>
 #include <QAbstractTableModel>
 #include <QDialogButtonBox>

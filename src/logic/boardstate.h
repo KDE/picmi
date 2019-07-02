@@ -21,7 +21,6 @@
 
 #include <QPoint>
 #include <QStack>
-#include <QVector>
 #include <QSharedPointer>
 
 #include "board.h"

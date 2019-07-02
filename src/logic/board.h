@@ -19,7 +19,6 @@
 #ifndef BOARD_H
 #define BOARD_H
 
-#include <QString>
 #include <QVector>
 
 #include "src/outofboundsexception.h"

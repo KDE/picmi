@@ -25,8 +25,6 @@
 #include <KToggleFullScreenAction>
 #include <QCoreApplication>
 #include <QGraphicsSimpleTextItem>
-#include <QHBoxLayout>
-#include <QMenuBar>
 #include <QPointer>
 #include <QPushButton>
 #include <QStatusBar>
