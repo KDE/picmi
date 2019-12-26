@@ -15,7 +15,7 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.  *
  ************************************************************************* */
 
-
+#include <QRandomGenerator>
 #include <config.h>
 #include "picmi.h"
 
@@ -186,7 +186,7 @@ QPoint Picmi::hint()
         return QPoint(0, 0);
     }
 
-    const int idx = qrand() % incorrect_cells.size();
+    const int idx = QRandomGenerator::global()->bounded(incorrect_cells.size());
     const QPoint cell(incorrect_cells.at(idx));
     Board::State state = m_map->get(cell.x(), cell.y());
     if (state == Board::Nothing) {
