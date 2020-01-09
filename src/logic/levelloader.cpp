@@ -20,7 +20,7 @@
 #include "levelloader.h"
 
 #include <KLocalizedString>
-#include <QDebug>
+#include "picmi_debug.h"
 #include <QDir>
 #include <QDomDocument>
 #include <QFile>
@@ -182,7 +182,7 @@ void LevelLoader::setLevelset(const QString& filename)
 
     file.close();
     if (!success) {
-        qDebug() << QStringLiteral("Can't read levelset from %1 \nError: %2 in Line %3, Column %4")
+        qCDebug(PICMIC_LOG) << QStringLiteral("Can't read levelset from %1 \nError: %2 in Line %3, Column %4")
                               .arg(filename, errorString).arg(errorLine).arg(errorColumn);
         m_valid = false;
     }
@@ -197,7 +197,7 @@ QList<QSharedPointer<Level> > LevelLoader::loadLevels() {
 
     QDomElement levels = m_levelset->documentElement();
     if (!levels.hasAttribute(QStringLiteral("name"))) {
-        qDebug() << "Loading level failed: no levelset name specified";
+        qCDebug(PICMIC_LOG) << "Loading level failed: no levelset name specified";
         return l;
     }
     m_levelsetname = levels.attribute(QStringLiteral("name"));
@@ -207,7 +207,7 @@ QList<QSharedPointer<Level> > LevelLoader::loadLevels() {
         try {
             l.append(loadLevel(childNodes.at(i).toElement()));
         } catch (const SystemException &e) {
-            qDebug() << "Loading level failed: " << e.what();
+            qCDebug(PICMIC_LOG) << "Loading level failed: " << e.what();
         }
     }
     return l;

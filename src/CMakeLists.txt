@@ -36,7 +36,7 @@ set(picmi_SRCS
     settings.cpp
     systemexception.cpp
 )
-
+ecm_qt_declare_logging_category(picmi_SRCS HEADER picmi_debug.h IDENTIFIER PICMIC_LOG CATEGORY_NAME org.kde.kdegames.picmi)
 file(GLOB ICONS_SRCS "${CMAKE_SOURCE_DIR}/icons/*-apps-picmi.png")
 ecm_add_app_icon(picmi_SRCS ICONS ${ICONS_SRCS})
 
