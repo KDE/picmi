@@ -68,6 +68,10 @@
         <xpm>default/clown.xpm</xpm>
     </board>
 
+    <board name="Pirate Ship" author="Frank Uebbing" difficulty="5">
+        <xpm>default/old_ship.xpm</xpm>
+    </board>
+
     <board name="Panda" author="Jakob Gruber, Moni Linke" difficulty="4">
         <xpm>default/panda.xpm</xpm>
     </board>
@@ -151,6 +155,10 @@
 
     <board name="Baby Panda" author="Moni Linke" difficulty="3">
         <xpm>default/baby_panda.xpm</xpm>
+    </board>
+
+    <board name="House" author="Frank Uebbing" difficulty="3">
+        <xpm>default/house.xpm</xpm>
     </board>
 
     <board name="Soccer" author="Frank Uebbing" difficulty="3">
