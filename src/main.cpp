@@ -35,6 +35,8 @@ int main(int argc, char *argv[])
     migrate.setUiFiles(QStringList() << QStringLiteral("picmiui.rc"));
     migrate.migrate();
 
+    // Fixes blurry icons with fractional scaling
+    QGuiApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
     QApplication app(argc, argv);
     KLocalizedString::setApplicationDomain("picmi");
 
