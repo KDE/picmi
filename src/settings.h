@@ -23,7 +23,7 @@
 #include <QSettings>
 #include <QVector>
 #include <QSharedPointer>
-#include <kgdifficulty.h>
+#include <KgDifficulty>
 
 class Settings : public QObject
 {

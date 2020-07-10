@@ -23,10 +23,10 @@
 
 #include <QTimer>
 #include <highscore/kscoredialog.h>
-#include <qaction.h>
-#include <ktoggleaction.h>
-#include <kxmlguiwindow.h>
-#include <kgdifficulty.h>
+#include <QAction>
+#include <KToggleAction>
+#include <KXmlGuiWindow>
+#include <KgDifficulty>
 
 #include "view.h"
 

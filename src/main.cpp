@@ -24,7 +24,7 @@
 #include <KLocalizedString>
 #include <QApplication>
 #include <QCommandLineParser>
-#include <kdelibs4configmigrator.h>
+#include <Kdelibs4ConfigMigrator>
 
 #include "gui/mainwindow.h"
 
