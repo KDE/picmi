@@ -69,7 +69,7 @@
     </board>
 
     <board name="Pirate Ship" author="Frank Uebbing" difficulty="5">
-        <xpm>default/old_ship.xpm</xpm>
+        <xpm>default/pirate_ship.xpm</xpm>
     </board>
 
     <board name="Panda" author="Jakob Gruber, Moni Linke" difficulty="4">
