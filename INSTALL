@@ -29,11 +29,12 @@ $prefix can be configured by setting the CMAKE_INSTALL_PREFIX variable when runn
 Manual Installation
 -------------------
 
-In the picmi directory containing CMakeLists.txt, execute:
+Assuming no defaults are changed,
+in the picmi directory containing CMakeLists.txt, execute:
 
 cmake -DCMAKE_INSTALL_PREFIX="/usr" .
-make
-make install
+make -f Makefile
+sudo make install
 
 CMAKE_INSTALL_PREFIX can be set as required.
 This will install to the default directories as specified above. For packaging,
