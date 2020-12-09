@@ -68,18 +68,18 @@ void MainWindow::setupActions() {
     m_action_solve = KStandardGameAction::solve(this, SLOT(solve()), actionCollection());
 
     /* Prevent the default hint shortcut from overwriting our HJKL vim-like control mapping. */
-    actionCollection()->setDefaultShortcut(m_action_hint, QKeySequence(Qt::CTRL + Qt::Key_I));
+    actionCollection()->setDefaultShortcut(m_action_hint, QKeySequence(Qt::CTRL | Qt::Key_I));
 
     m_action_save_state = actionCollection()->addAction("save-position");
     m_action_save_state->setText(i18n("Save Position"));
     m_action_save_state->setIcon(QIcon::fromTheme("list-add"));
-    actionCollection()->setDefaultShortcut(m_action_save_state, QKeySequence(Qt::CTRL + Qt::Key_S));
+    actionCollection()->setDefaultShortcut(m_action_save_state, QKeySequence(Qt::CTRL | Qt::Key_S));
     connect(m_action_save_state, SIGNAL(triggered()), this, SLOT(saveState()));
 
     m_action_load_state = actionCollection()->addAction("load-position");
     m_action_load_state->setText(i18n("Load Position"));
     m_action_load_state->setIcon(QIcon::fromTheme("view-refresh"));
-    actionCollection()->setDefaultShortcut(m_action_load_state, QKeySequence(Qt::CTRL + Qt::Key_L));
+    actionCollection()->setDefaultShortcut(m_action_load_state, QKeySequence(Qt::CTRL | Qt::Key_L));
     connect(m_action_load_state, &QAction::triggered, this, &MainWindow::loadState);
 
     m_status_time = new QLabel;
