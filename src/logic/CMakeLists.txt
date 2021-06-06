@@ -16,8 +16,8 @@ target_link_libraries(picmi_logic
     KF5KDEGames
     KF5::CoreAddons
     KF5::I18n
-    Qt5::Core
-    Qt5::Xml
+    Qt::Core
+    Qt::Xml
 )
 
 # vim:set ts=4 sw=4 et:

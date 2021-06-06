@@ -43,7 +43,7 @@ ecm_add_app_icon(picmi_SRCS ICONS ${ICONS_SRCS})
 
 add_executable(picmi ${picmi_SRCS})
 target_link_libraries(picmi
-    Qt5::Svg
+    Qt::Svg
     KF5::CoreAddons
     KF5::Crash
     KF5::DBusAddons

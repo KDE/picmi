@@ -37,8 +37,8 @@ target_link_libraries(picmi_gui
     KF5::CoreAddons
     KF5::I18n
     KF5::XmlGui
-    Qt5::Core
-    Qt5::Svg
+    Qt::Core
+    Qt::Svg
 )
 
 # vim:set ts=4 sw=4 et:
