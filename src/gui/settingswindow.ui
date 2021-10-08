@@ -91,7 +91,7 @@
              </font>
             </property>
             <property name="text">
-             <string>Solved Streaks</string>
+             <string>Solved streaks:</string>
             </property>
             <property name="textFormat">
              <enum>Qt::AutoText</enum>
@@ -107,7 +107,7 @@
              </font>
             </property>
             <property name="text">
-             <string>Unsolved Streaks</string>
+             <string>Unsolved streaks:</string>
             </property>
             <property name="textFormat">
              <enum>Qt::AutoText</enum>
@@ -238,7 +238,7 @@
           <item row="3" column="0">
            <widget class="QLabel" name="label_5">
             <property name="text">
-             <string>Prevent Mistakes:</string>
+             <string>Prevent mistakes:</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>

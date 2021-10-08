@@ -162,7 +162,7 @@ SelectBoardWindow::SelectBoardWindow(QWidget *parent)
     : QDialog(parent)
 {
     setModal(true);
-    setWindowTitle(i18n("Level Selection"));
+    setWindowTitle(i18nc("@title:window", "Level Selection"));
     QVBoxLayout *mainLayout = new QVBoxLayout;
     setLayout(mainLayout);
     QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok|QDialogButtonBox::Cancel);
