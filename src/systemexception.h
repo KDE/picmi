@@ -28,7 +28,7 @@ public:
     SystemException() { m_msg = QStringLiteral("system error"); }
     SystemException(const QString &msg) { m_msg = msg; }
 
-    ~SystemException() throw() { }
+    ~SystemException() throw() override { }
 
     const char *what() const throw() Q_DECL_OVERRIDE {
         return m_msg.toLatin1();

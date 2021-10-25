@@ -32,7 +32,7 @@ class SelectBoardWindow : public QDialog
 public:
     explicit SelectBoardWindow(QWidget *parent);
 
-    virtual ~SelectBoardWindow();
+    ~SelectBoardWindow() override;
 
     QSharedPointer<Level> selectedBoard() const;
 

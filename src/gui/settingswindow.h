@@ -33,7 +33,7 @@ class SettingsWindow : public QDialog
 
 public:
     explicit SettingsWindow(QWidget *parent = 0);
-    ~SettingsWindow();
+    ~SettingsWindow() override;
 
 private slots:
     void accept() Q_DECL_OVERRIDE;
