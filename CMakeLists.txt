@@ -2,7 +2,7 @@ project (picmi)
 
 cmake_minimum_required (VERSION 3.16 FATAL_ERROR)
 set (QT_MIN_VERSION "5.15.0")
-set (KF5_MIN_VERSION "5.85.0")
+set (KF5_MIN_VERSION "5.89.0")
 
 
 find_package(ECM ${KF5_MIN_VERSION} REQUIRED CONFIG)
@@ -32,7 +32,7 @@ include(ECMInstallIcons)
 include(ECMAddTests)
 include(ECMQtDeclareLoggingCategory)
 add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x050f02)
-add_definitions(-DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x055600)
+add_definitions(-DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x055900)
 
 
 add_subdirectory(themes)
