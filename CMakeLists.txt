@@ -7,8 +7,9 @@ set (KF5_MIN_VERSION "5.89.0")
 
 find_package(ECM ${KF5_MIN_VERSION} REQUIRED CONFIG)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${ECM_MODULE_PATH} )
+include(KDEInstallDirs)
 
-find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED Core Widgets Svg Quick QuickWidgets Test)
+find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} CONFIG REQUIRED Core Widgets Svg Quick QuickWidgets Test)
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     CoreAddons
     Crash
@@ -17,13 +18,11 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     DocTools
     I18n
     KIO
-    NewStuff
     XmlGui
 )
 
 find_package(KF5KDEGames 5.2.0 REQUIRED)
 
-include(KDEInstallDirs)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(KDECMakeSettings)
 include(FeatureSummary)
