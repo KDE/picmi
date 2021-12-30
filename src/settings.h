@@ -70,7 +70,7 @@ public:
 
     static Settings *instance();
 
-signals:
+Q_SIGNALS:
     void settingChanged(Settings::SettingsType type);
 
 private:

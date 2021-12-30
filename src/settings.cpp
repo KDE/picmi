@@ -145,7 +145,7 @@ void Settings::restore() {
 void Settings::setValue(SettingsType type, const QVariant &value)
 {
     m_qsettings->setValue(m_keys[type], value);
-    emit settingChanged(type);
+    Q_EMIT settingChanged(type);
 }
 
 void Settings::sync()

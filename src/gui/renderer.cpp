@@ -58,14 +58,14 @@ void Renderer::loadResources() {
     const QString prefix = QStringLiteral("themes/");
     QList<QString> paths;
     paths << QString(prefix)
-          << QString(FILEPATH "/" + prefix)
+          << QStringLiteral(FILEPATH) + QStringLiteral("/") + prefix
           << QStandardPaths::locate(QStandardPaths::AppDataLocation,
                                     prefix,
                                     QStandardPaths::LocateOption::LocateDirectory);
 
     /* try loading first from working directory, then the system directories */
     for (int i = 0; i < paths.size(); i++) {
-        const QString filenameSvg = QDir::toNativeSeparators(paths[i] + "picmi.svg");
+        const QString filenameSvg = QDir::toNativeSeparators(paths[i] + QStringLiteral("picmi.svg"));
 
         if (!QFile::exists(filenameSvg)) {
             continue;
@@ -95,7 +95,7 @@ bool Renderer::streaksFit(const QStringList &streaks) const {
     const int limit = 8 * m_tilesize;
     const QRect limrect(0, 0, limit, limit);
 
-    foreach (const QString &str, streaks) {
+    for (const QString &str : streaks) {
         /* QFontMetrics.boundingRect defaults to Qt::SingleLine, which handles \n
            as a normal character instead of a line break. Manually specify flags. */
         QRect rect = fm.boundingRect(limrect, Qt::AlignLeft | Qt::AlignTop, str);

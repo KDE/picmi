@@ -84,8 +84,8 @@ QVariant LevelTableModel::data(const QModelIndex &index, int role) const {
     case Name: return level->visibleName();
     case LevelSet: return level->levelset();
     case Difficulty: return diffString(level->difficulty());
-    case Size: return QString("%1x%2").arg(level->width()).arg(level->height());
-    case Solved: return (level->solved()) ? Time(level->solvedTime()).toString() : "-";
+    case Size: return QStringLiteral("%1x%2").arg(level->width()).arg(level->height());
+    case Solved: return (level->solved()) ? Time(level->solvedTime()).toString() : QStringLiteral("-");
     default: assert(0);
     }
 
@@ -155,7 +155,7 @@ void LevelTableModel::sort(int column, Qt::SortOrder order) {
     }
 
     std::stable_sort(m_levels.begin(), m_levels.end(), cmp);
-    emit dataChanged(index(0, 0), index(rowCount() - 1, columnCount() -1));
+    Q_EMIT dataChanged(index(0, 0), index(rowCount() - 1, columnCount() -1));
 }
 
 SelectBoardWindow::SelectBoardWindow(QWidget *parent)
@@ -276,7 +276,7 @@ void SelectBoardWindow::updateDetails(QSharedPointer<Level> level) {
         ui->labelImage->setPixmap(scaled);
     } else {
         ui->labelSolved->setText(i18nc("board not solved yet", "Solved: -"));
-        ui->labelImage->setText("?");
+        ui->labelImage->setText(QStringLiteral("?"));
     }
 }
 

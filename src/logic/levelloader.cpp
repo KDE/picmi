@@ -136,7 +136,7 @@ QList<QSharedPointer<Level> > LevelLoader::load() {
     const QString prefix = QStringLiteral("levels/");
     QList<QString> paths;
     paths << QString(prefix)
-          << QString(FILEPATH "/" + prefix)
+          << QStringLiteral(FILEPATH) + QStringLiteral("/") + prefix
           << QStandardPaths::locate(QStandardPaths::AppDataLocation,
                                     prefix,
                                     QStandardPaths::LocateOption::LocateDirectory);
@@ -275,7 +275,7 @@ QImage LevelLoader::openXPM(const QDomElement &node) const {
     }
 
     QFileInfo file(m_filename);
-    QString filepath = file.absolutePath() + '/' + node.text();
+    QString filepath = file.absolutePath() + QLatin1Char('/') + node.text();
 
     QImage xpm(filepath);
 
@@ -303,9 +303,9 @@ QList<Board::State> LevelLoader::loadRow(const QDomElement &node) const {
         throw SystemException(QStringLiteral("Unexpected row node"));
     }
 
-    QString text = node.text();
+    const QString text = node.text();
     QList<Board::State> list;
-    foreach (const QChar &c, text) {
+    for (const QChar &c : text) {
         Board::State s = charToState(c);
         list.append(s);
     }

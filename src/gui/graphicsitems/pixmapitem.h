@@ -40,7 +40,7 @@ class BackgroundItem : public QObject, public PixmapItem
 public:
     BackgroundItem(Renderer::Resource resource, int x, int y, QGraphicsItem *parent = 0);
 
-private slots:
+private Q_SLOTS:
     void settingChanged(Settings::SettingsType type);
 };
 

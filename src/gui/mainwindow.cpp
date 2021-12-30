@@ -39,10 +39,10 @@
 
 MainWindow::MainWindow(QWidget *parent) :
     KXmlGuiWindow(parent),
-    m_key_pos("window/position"), m_in_progress(false), m_mode(Random)
+    m_key_pos(QStringLiteral("window/position")), m_in_progress(false), m_mode(Random)
 {
-    QCoreApplication::setApplicationName("picmi");
-    QCoreApplication::setOrganizationDomain("kde.org");
+    QCoreApplication::setApplicationName(QStringLiteral("picmi"));
+    QCoreApplication::setOrganizationDomain(QStringLiteral("kde.org"));
 
     m_timer.setInterval(500);
 
@@ -70,15 +70,15 @@ void MainWindow::setupActions() {
     /* Prevent the default hint shortcut from overwriting our HJKL vim-like control mapping. */
     actionCollection()->setDefaultShortcut(m_action_hint, QKeySequence(Qt::CTRL | Qt::Key_I));
 
-    m_action_save_state = actionCollection()->addAction("save-position");
+    m_action_save_state = actionCollection()->addAction(QStringLiteral("save-position"));
     m_action_save_state->setText(i18n("Save Position"));
-    m_action_save_state->setIcon(QIcon::fromTheme("list-add"));
+    m_action_save_state->setIcon(QIcon::fromTheme(QStringLiteral("list-add")));
     actionCollection()->setDefaultShortcut(m_action_save_state, QKeySequence(Qt::CTRL | Qt::Key_S));
     connect(m_action_save_state, SIGNAL(triggered()), this, SLOT(saveState()));
 
-    m_action_load_state = actionCollection()->addAction("load-position");
+    m_action_load_state = actionCollection()->addAction(QStringLiteral("load-position"));
     m_action_load_state->setText(i18n("Load Position"));
-    m_action_load_state->setIcon(QIcon::fromTheme("view-refresh"));
+    m_action_load_state->setIcon(QIcon::fromTheme(QStringLiteral("view-refresh")));
     actionCollection()->setDefaultShortcut(m_action_load_state, QKeySequence(Qt::CTRL | Qt::Key_L));
     connect(m_action_load_state, &QAction::triggered, this, &MainWindow::loadState);
 

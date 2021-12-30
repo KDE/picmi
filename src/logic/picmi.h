@@ -80,7 +80,7 @@ public:
     void solve();
 
     /* if a saved state exists, load it. otherwise, do nothing */
-    void loadState() { m_state->loadState(); m_streaks->update(); emit stateChanged(); }
+    void loadState() { m_state->loadState(); m_streaks->update(); Q_EMIT stateChanged(); }
     void saveState() { m_state->saveState(); }
     int currentStateAge() const { return m_state->currentStateAge(); }
 
@@ -90,7 +90,7 @@ public:
     QVector<Streaks::Streak> getRowStreak(int y) const;
     QVector<Streaks::Streak> getColStreak(int x) const;
 
-signals:
+Q_SIGNALS:
     /** Emitted when the game has been completed in any way. Also triggered if "Solve" was used. */
     void gameCompleted();
 

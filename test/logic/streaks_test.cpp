@@ -97,7 +97,7 @@ streakEquals(const QVector<Streaks::Streak> &actual,
         return true;
     }
 
-    QString msg = "Result mismatch. Actual: " + actualString + ", Expected: " + expected;
+    QString msg = QStringLiteral("Result mismatch. Actual: ") + actualString + QStringLiteral(", Expected: ") + expected;
     QWARN(msg.toLatin1());
 
     return false;
@@ -105,7 +105,7 @@ streakEquals(const QVector<Streaks::Streak> &actual,
 
 void StreaksTest::testSanity()
 {
-    QSharedPointer<Streaks> s = generateStreaks("....b", "xxxxb");
+    QSharedPointer<Streaks> s = generateStreaks(QStringLiteral("....b"), QStringLiteral("xxxxb"));
 
     QCOMPARE(1, 1);
 }
@@ -213,8 +213,8 @@ void StreaksTest::test13()
 
 void StreaksTest::bench00()
 {
-    QSharedPointer<Streaks> s = generateStreaks("b.b.b.b.bbb.b.b.b.bb",
-                                                "bbbxbxb...bbbxbxb...");
+    QSharedPointer<Streaks> s = generateStreaks(QStringLiteral("b.b.b.b.bbb.b.b.b.bb"),
+                                                QStringLiteral("bbbxbxb...bbbxbxb..."));
     if (!s) {
         QFAIL("Streak generation failed.");
     }

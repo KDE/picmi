@@ -30,8 +30,8 @@ public:
 
     ~SystemException() throw() override { }
 
-    const char *what() const throw() Q_DECL_OVERRIDE {
-        return m_msg.toLatin1();
+    const char *what() const throw() override {
+        return m_msg.toLatin1().constData();
     }
 
 private:

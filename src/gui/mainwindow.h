@@ -44,7 +44,7 @@ public:
 protected:
     void closeEvent(QCloseEvent *event) Q_DECL_OVERRIDE;
 
-private slots:
+private Q_SLOTS:
     void startRandomGame();
     void restartGame();
     void togglePaused(bool paused);

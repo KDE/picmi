@@ -35,7 +35,7 @@ public:
     explicit SettingsWindow(QWidget *parent = 0);
     ~SettingsWindow() override;
 
-private slots:
+private Q_SLOTS:
     void accept() Q_DECL_OVERRIDE;
     void bgToolButtonClicked();
     void selectSolvedColor();

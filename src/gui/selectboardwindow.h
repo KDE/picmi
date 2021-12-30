@@ -40,7 +40,7 @@ protected:
     void resizeEvent(QResizeEvent *event) Q_DECL_OVERRIDE;
     void showEvent(QShowEvent *event) Q_DECL_OVERRIDE;
 
-private slots:
+private Q_SLOTS:
     void selectedLevelChanged(const QModelIndex &current, const QModelIndex &previous);
     void levelDataChanged(const QModelIndex &topLeft, const QModelIndex &bottomRight);
 

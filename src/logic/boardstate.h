@@ -66,7 +66,7 @@ public:
        information is not updated since this is the final action in a game. */
     void solve(const Board *board);
 
-signals:
+Q_SIGNALS:
     void undoStackSizeChanged(int size);
     void saveStackSizeChanged(int size);
 

@@ -59,7 +59,7 @@ public:
 
     void forwardKeyPressEvent(QKeyEvent *event);
 
-private slots:
+private Q_SLOTS:
     void onGameCompleted();
 
 private:

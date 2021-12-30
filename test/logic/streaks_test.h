@@ -7,7 +7,7 @@ class StreaksTest : public QObject
 {
     Q_OBJECT
 
-private slots:
+private Q_SLOTS:
     void testSanity();
     void test00();
     void test01();

@@ -163,7 +163,7 @@ bool Picmi::won() const {
 QPoint Picmi::undo() {
     QPoint coord = m_state->undo();
     m_streaks->update();
-    emit stateChanged();
+    Q_EMIT stateChanged();
     return coord;
 }
 
@@ -204,7 +204,7 @@ void Picmi::solve() {
     m_state->solve(m_map.data());
     m_streaks->update();
     endGame();
-    emit gameCompleted();
+    Q_EMIT gameCompleted();
 }
 
 KScoreDialog::FieldInfo Picmi::endGame() {
@@ -213,7 +213,7 @@ KScoreDialog::FieldInfo Picmi::endGame() {
     KScoreDialog::FieldInfo score;
     score[KScoreDialog::Score].setNum(m_timer.elapsedSecs());
     score[KScoreDialog::Time] = Time(m_timer.elapsedSecs()).toString();
-    score[KScoreDialog::Date] = m_timer.startDate().toString("dd MMM yyyy hh:mm");
+    score[KScoreDialog::Date] = m_timer.startDate().toString(QStringLiteral("dd MMM yyyy hh:mm"));
 
     return score;
 }
@@ -241,11 +241,11 @@ int Picmi::elapsedSecs() const {
 void Picmi::setState(int x, int y, Board::State state) {
     m_io_handler->set(x, y, state);
     m_streaks->update(x, y);
-    emit stateChanged();
+    Q_EMIT stateChanged();
     if (m_state->boxCount() == m_map->boxCount() && won()) {
         m_state->replace(Board::Nothing, Board::Cross);
-        emit gameCompleted();
-        emit gameWon();
+        Q_EMIT gameCompleted();
+        Q_EMIT gameWon();
     }
 }
 

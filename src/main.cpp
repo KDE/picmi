@@ -43,17 +43,17 @@ int main(int argc, char *argv[])
     KLocalizedString::setApplicationDomain("picmi");
 
 
-    KAboutData about("picmi",
+    KAboutData about(QStringLiteral("picmi"),
                       i18n("Picmi"),
-                      QString::fromLatin1("%1.%2.%3").arg(VERSION_MAJOR)
+                      QStringLiteral("%1.%2.%3").arg(VERSION_MAJOR)
                                          .arg(VERSION_MINOR)
                                          .arg(VERSION_PATCH)
                                          .toLatin1(),
                       i18n("Picmi - a nonogram puzzle game"),
                       KAboutLicense::GPL_V2,
                       i18n("(c) 2012 - 2015 The Picmi Authors"));
-    about.setHomepage("https://games.kde.org/picmi");
-    about.addAuthor(i18n("Jakob Gruber"), i18n("Picmi Author"), "jakob.gruber@gmail.com");
+    about.setHomepage(QStringLiteral("https://games.kde.org/picmi"));
+    about.addAuthor(i18n("Jakob Gruber"), i18n("Picmi Author"), QStringLiteral("jakob.gruber@gmail.com"));
 
 
     QCommandLineParser parser;

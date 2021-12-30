@@ -36,7 +36,7 @@ public:
 
     void reload(const QSize &size) Q_DECL_OVERRIDE = 0;
 
-private slots:
+private Q_SLOTS:
     void settingChanged(Settings::SettingsType type);
 
 protected:

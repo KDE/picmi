@@ -18,14 +18,14 @@
 
 #include "elapsedtime.h"
 
-QString Time::toString(QString format) const {
+QString Time::toString(const QString &format) const {
     const int hours = m_seconds / m_secs_per_hour;
     int i = m_seconds % m_secs_per_hour;
     const int minutes = i / m_secs_per_minute;
     const int seconds = i % m_secs_per_minute;
 
-    return format.arg(hours).arg(QString::number(minutes), 2, QChar('0'))
-            .arg(QString::number(seconds), 2, QChar('0'));
+    return format.arg(hours).arg(QString::number(minutes), 2, QLatin1Char('0'))
+            .arg(QString::number(seconds), 2, QLatin1Char('0'));
 }
 
 ElapsedTime::ElapsedTime() : m_elapsed(0), m_start(0),

@@ -39,7 +39,7 @@ void BoardState::set(int x, int y, State state) {
     undo.y = y;
     undo.state = m_state[i];
     m_undo_queue.push(undo);
-    emit undoStackSizeChanged(m_undo_queue.size());
+    Q_EMIT undoStackSizeChanged(m_undo_queue.size());
 
     updateBoxCount(m_state[i], state);
     m_state[i] = state;
@@ -59,7 +59,7 @@ QPoint BoardState::undo() {
     }
 
     UndoAction undo = m_undo_queue.pop();
-    emit undoStackSizeChanged(m_undo_queue.size());
+    Q_EMIT undoStackSizeChanged(m_undo_queue.size());
 
     const int i = xy_to_i(undo.x, undo.y);
 
@@ -71,7 +71,7 @@ QPoint BoardState::undo() {
     if (!m_saved_states.isEmpty()
             && m_undo_queue.size() < m_saved_states.top()) {
         (void)m_saved_states.pop();
-        emit saveStackSizeChanged(m_saved_states.size());
+        Q_EMIT saveStackSizeChanged(m_saved_states.size());
     }
 
     return QPoint(undo.x, undo.y);
@@ -87,7 +87,7 @@ void BoardState::saveState() {
         return;
     }
     m_saved_states.push(size);
-    emit saveStackSizeChanged(m_saved_states.size());
+    Q_EMIT saveStackSizeChanged(m_saved_states.size());
 }
 
 void BoardState::loadState() {
@@ -101,7 +101,7 @@ void BoardState::loadState() {
 
     int size = m_saved_states.pop();
     assert(size <= m_undo_queue.size());
-    emit saveStackSizeChanged(m_saved_states.size());
+    Q_EMIT saveStackSizeChanged(m_saved_states.size());
 
     while (size < m_undo_queue.size()) {
         (void)undo();
