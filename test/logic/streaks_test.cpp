@@ -87,9 +87,9 @@ streakEquals(const QVector<Streaks::Streak> &actual,
 
     for (int i = 0; i < expected.size(); i++) {
         if (actual[i].solved) {
-            actualString.append('x');
+            actualString.append(QLatin1Char('x'));
         } else {
-            actualString.append('.');
+            actualString.append(QLatin1Char('.'));
         }
     }
 
@@ -98,7 +98,7 @@ streakEquals(const QVector<Streaks::Streak> &actual,
     }
 
     QString msg = QStringLiteral("Result mismatch. Actual: ") + actualString + QStringLiteral(", Expected: ") + expected;
-    QWARN(msg.toLatin1());
+    QWARN(msg.toLatin1().constData());
 
     return false;
 }
@@ -113,102 +113,102 @@ void StreaksTest::testSanity()
 void StreaksTest::test00()
 {
     /* Lifted from https://bugs.kde.org/show_bug.cgi?id=321842 */
-    STREAK_TEST("bb.b.bbbb.bbb.b",
-                "bbxbxbb.bxbbbxb",
-                "xx.xx");
+    STREAK_TEST(QStringLiteral("bb.b.bbbb.bbb.b"),
+                QStringLiteral("bbxbxbb.bxbbbxb"),
+                QStringLiteral("xx.xx"));
 }
 
 void StreaksTest::test01()
 {
     /* Lifted from https://bugs.kde.org/show_bug.cgi?id=321842 */
-    STREAK_TEST("bb.b.bbbb.bbb.b",
-                "bbxbxbb.bxb.bxb",
-                "xx..x");
+    STREAK_TEST(QStringLiteral("bb.b.bbbb.bbb.b"),
+                QStringLiteral("bbxbxbb.bxb.bxb"),
+                QStringLiteral("xx..x"));
 }
 
 void StreaksTest::test02()
 {
     /* Lifted from https://bugs.kde.org/show_bug.cgi?id=321842 */
-    STREAK_TEST("bb.b.bbbb.bbb.b",
-                "bbxbxbbbbxbbbxb",
-                "xxxxx");
+    STREAK_TEST(QStringLiteral("bb.b.bbbb.bbb.b"),
+                QStringLiteral("bbxbxbbbbxbbbxb"),
+                QStringLiteral("xxxxx"));
 }
 
 void StreaksTest::test03()
 {
-    STREAK_TEST("bb.b.bbbb.bbb.b",
-                "bbxbxbbbbxbb...",
-                "xxx..");
+    STREAK_TEST(QStringLiteral("bb.b.bbbb.bbb.b"),
+                QStringLiteral("bbxbxbbbbxbb..."),
+                QStringLiteral("xxx.."));
 }
 
 void StreaksTest::test04()
 {
-    STREAK_TEST("bb.b.bbbb.bbb.b",
-                "bbxbxbbbbxbbb..",
-                "xxxx.");
+    STREAK_TEST(QStringLiteral("bb.b.bbbb.bbb.b"),
+                QStringLiteral("bbxbxbbbbxbbb.."),
+                QStringLiteral("xxxx."));
 }
 
 void StreaksTest::test05()
 {
-    STREAK_TEST("b.b.......",
-                "bxb....bxb",
-                "..");
+    STREAK_TEST(QStringLiteral("b.b......."),
+                QStringLiteral("bxb....bxb"),
+                QStringLiteral(".."));
 }
 
 void StreaksTest::test06()
 {
-    STREAK_TEST("b.b.......",
-                "b........b",
-                "xx");
+    STREAK_TEST(QStringLiteral("b.b......."),
+                QStringLiteral("b........b"),
+                QStringLiteral("xx"));
 }
 
 void StreaksTest::test07()
 {
-    STREAK_TEST("b.b.......",
-                "bxb....bxb",
-                "..");
+    STREAK_TEST(QStringLiteral("b.b......."),
+                QStringLiteral("bxb....bxb"),
+                QStringLiteral(".."));
 }
 
 void StreaksTest::test08()
 {
-    STREAK_TEST("b.b.......",
-                "bxb.......",
-                "xx");
+    STREAK_TEST(QStringLiteral("b.b......."),
+                QStringLiteral("bxb......."),
+                QStringLiteral("xx"));
 }
 
 void StreaksTest::test09()
 {
-    STREAK_TEST("b.bb.bbb.",
-                "bxbb..bbb",
-                "xxx");
+    STREAK_TEST(QStringLiteral("b.bb.bbb."),
+                QStringLiteral("bxbb..bbb"),
+                QStringLiteral("xxx"));
 }
 
 void StreaksTest::test10()
 {
-    STREAK_TEST("b.bb.bbb.",
-                "bxb...bbb",
-                "x.x");
+    STREAK_TEST(QStringLiteral("b.bb.bbb."),
+                QStringLiteral("bxb...bbb"),
+                QStringLiteral("x.x"));
 }
 
 void StreaksTest::test11()
 {
-    STREAK_TEST("b.bb.bbb.",
-                "bxbbxxbbb",
-                "xxx");
+    STREAK_TEST(QStringLiteral("b.bb.bbb."),
+                QStringLiteral("bxbbxxbbb"),
+                QStringLiteral("xxx"));
 }
 
 void StreaksTest::test12()
 {
-    STREAK_TEST("bb.b.....",
-                "bb...xbxb",
-                ".x");
+    STREAK_TEST(QStringLiteral("bb.b....."),
+                QStringLiteral("bb...xbxb"),
+                QStringLiteral(".x"));
 }
 
 void StreaksTest::test13()
 {
-    STREAK_TEST("b.b.b.b.bb",
-                "bbbxbxb...",
-                ".xx..");
+    STREAK_TEST(QStringLiteral("b.b.b.b.bb"),
+                QStringLiteral("bbbxbxb..."),
+                QStringLiteral(".xx.."));
 }
 
 void StreaksTest::bench00()

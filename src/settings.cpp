@@ -20,15 +20,15 @@
 
 Settings::Settings() {
 
-    m_keys << "game/width"
-           << "game/height"
-           << "game/box_ratio"
-           << "game/prevent_mistakes"
-           << "game/level"
-           << "game/custom_bg_enabled"
-           << "game/custom_bg_path"
-           << "game/font_color_solved"
-           << "game/font_color_unsolved";
+    m_keys << QStringLiteral("game/width")
+           << QStringLiteral("game/height")
+           << QStringLiteral("game/box_ratio")
+           << QStringLiteral("game/prevent_mistakes")
+           << QStringLiteral("game/level")
+           << QStringLiteral("game/custom_bg_enabled")
+           << QStringLiteral("game/custom_bg_path")
+           << QStringLiteral("game/font_color_solved")
+           << QStringLiteral("game/font_color_unsolved");
 
     /* We explicitly pass "picmi" as the organization name in order to
      * access the correct settings.
@@ -36,7 +36,7 @@ Settings::Settings() {
      * name globally, which however caused problems in
      * QStandardPaths::locate().
      */
-    m_qsettings = QSharedPointer<QSettings>(new QSettings("picmi", "picmi"));
+    m_qsettings = QSharedPointer<QSettings>(new QSettings(QStringLiteral("picmi"), QStringLiteral("picmi")));
     restore();
 }
 
@@ -137,9 +137,9 @@ void Settings::restore() {
     m_level = (KgDifficultyLevel::StandardLevel)m_qsettings->value(m_keys[Level],
         KgDifficultyLevel::Medium).toInt();
     m_custom_bg_enabled = m_qsettings->value(m_keys[CustomBgEnabled], false).toBool();
-    m_custom_bg_path = m_qsettings->value(m_keys[CustomBgPath], "").toString();
-    m_font_color_solved = m_qsettings->value(m_keys[FontColorSolved], "#555555").toString();
-    m_font_color_unsolved = m_qsettings->value(m_keys[FontColorUnsolved], "#000000").toString();
+    m_custom_bg_path = m_qsettings->value(m_keys[CustomBgPath], QString()).toString();
+    m_font_color_solved = m_qsettings->value(m_keys[FontColorSolved], QStringLiteral("#555555")).toString();
+    m_font_color_unsolved = m_qsettings->value(m_keys[FontColorUnsolved], QStringLiteral("#000000")).toString();
 }
 
 void Settings::setValue(SettingsType type, const QVariant &value)
