@@ -24,16 +24,20 @@
 #include <KLocalizedString>
 #include <QApplication>
 #include <QCommandLineParser>
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 #include <Kdelibs4ConfigMigrator>
+#endif
 
 #include "gui/mainwindow.h"
 
 int main(int argc, char *argv[])
 {
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     Kdelibs4ConfigMigrator migrate(QStringLiteral("picmi"));
     migrate.setConfigFiles(QStringList() << QStringLiteral("picmirc"));
     migrate.setUiFiles(QStringList() << QStringLiteral("picmiui.rc"));
     migrate.migrate();
+#endif
 
     // Fixes blurry icons with fractional scaling
 #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
