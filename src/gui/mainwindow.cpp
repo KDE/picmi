@@ -313,6 +313,7 @@ void MainWindow::gameCompleted() {
     m_action_load_state->setEnabled(false);
     Kg::difficulty()->setGameRunning(false);
     m_timer.stop();
+    updatePlayedTime();
     m_in_progress = false;
 }
 
