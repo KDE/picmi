@@ -28,7 +28,7 @@
 class View : public QGraphicsView
 {
 public:
-    explicit View(QWidget *parent = 0);
+    explicit View(QWidget *parent = nullptr);
 
     /* sets up the scene and returns a pointer to it */
     QSharedPointer<Scene> createScene(QSharedPointer<Picmi> game);

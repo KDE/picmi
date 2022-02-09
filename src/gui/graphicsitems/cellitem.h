@@ -31,7 +31,7 @@ class QAbstractAnimation;
 class CellItem : public QGraphicsPixmapItem, public ReloadableItem
 {
 public:
-    CellItem(int x, int y, QSharedPointer<Picmi> game, QGraphicsItem *parent = 0);
+    CellItem(int x, int y, QSharedPointer<Picmi> game, QGraphicsItem *parent = nullptr);
 
     /* updates displayed pixmap according to current cell state */
     virtual void refresh();
@@ -50,7 +50,7 @@ class OverviewCellItem : public CellItem
 public:
     /* creates the item with field coordinates (x,y) and the specified
       game and scene */
-    OverviewCellItem(int x, int y, QSharedPointer<Picmi> game, QGraphicsItem *parent = 0);
+    OverviewCellItem(int x, int y, QSharedPointer<Picmi> game, QGraphicsItem *parent = nullptr);
 
 protected:
     int getTilesize() const Q_DECL_OVERRIDE;
@@ -65,7 +65,7 @@ class GameCellItem : public QObject, public CellItem
 public:
     /* creates the item with field coordinates (x,y) and the specified
       game and scene */
-    GameCellItem(int x, int y, QSharedPointer<Picmi> game, Scene *scene, QGraphicsItem *parent = 0);
+    GameCellItem(int x, int y, QSharedPointer<Picmi> game, Scene *scene, QGraphicsItem *parent = nullptr);
 
     void keyPressEvent(QKeyEvent *event) Q_DECL_OVERRIDE;
 

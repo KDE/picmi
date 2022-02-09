@@ -35,7 +35,7 @@ class Scene : public QGraphicsScene
 {
     Q_OBJECT
 public:
-    explicit Scene(QSharedPointer<Picmi> game, QObject *parent = 0);
+    explicit Scene(QSharedPointer<Picmi> game, QObject *parent = nullptr);
 
     /* 0 <= x < m_game.width(); 0 <= y < m_game.height()
       handles a request to (un)mark (x,y) as a box or cross */

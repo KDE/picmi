@@ -33,7 +33,7 @@ static QString diffString(const int difficulty);
 class LevelTableModel : public QAbstractTableModel
 {
 public:
-    LevelTableModel(QList<QSharedPointer<Level> > &levels, QObject * parent = 0);
+    LevelTableModel(QList<QSharedPointer<Level> > &levels, QObject * parent = nullptr);
 
     enum Columns {
         Name,

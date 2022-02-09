@@ -27,7 +27,7 @@
 class PixmapItem : public QGraphicsPixmapItem, public ReloadableItem
 {
 public:
-    PixmapItem(Renderer::Resource resource, int x, int y, QGraphicsItem *parent = 0);
+    PixmapItem(Renderer::Resource resource, int x, int y, QGraphicsItem *parent = nullptr);
     void reload(const QSize &size) Q_DECL_OVERRIDE;
 
 protected:
@@ -38,7 +38,7 @@ class BackgroundItem : public QObject, public PixmapItem
 {
     Q_OBJECT
 public:
-    BackgroundItem(Renderer::Resource resource, int x, int y, QGraphicsItem *parent = 0);
+    BackgroundItem(Renderer::Resource resource, int x, int y, QGraphicsItem *parent = nullptr);
 
 private Q_SLOTS:
     void settingChanged(Settings::SettingsType type);
@@ -47,14 +47,14 @@ private Q_SLOTS:
 class StreakHBackgroundItem : public PixmapItem
 {
 public:
-    StreakHBackgroundItem(Renderer::Resource resource,int y, QGraphicsItem *parent = 0);
+    StreakHBackgroundItem(Renderer::Resource resource,int y, QGraphicsItem *parent = nullptr);
     void reload(const QSize &size) Q_DECL_OVERRIDE;
 };
 
 class StreakVBackgroundItem : public PixmapItem
 {
 public:
-    StreakVBackgroundItem(Renderer::Resource resource,int x, QGraphicsItem *parent = 0);
+    StreakVBackgroundItem(Renderer::Resource resource,int x, QGraphicsItem *parent = nullptr);
     void reload(const QSize &size) Q_DECL_OVERRIDE;
 };
 

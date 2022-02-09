@@ -29,7 +29,7 @@ class StreakItem : public QGraphicsTextItem, public ReloadableItem
 {
     Q_OBJECT
 public:
-    StreakItem(int x, int y, QSharedPointer<Picmi> game, QGraphicsItem *parent = 0);
+    StreakItem(int x, int y, QSharedPointer<Picmi> game, QGraphicsItem *parent = nullptr);
 
     /* update displayed streak */
     virtual void refresh() = 0;
@@ -49,7 +49,7 @@ protected:
 
 class RowStreakItem : public StreakItem {
 public:
-    RowStreakItem(QSharedPointer<Picmi> game, int y, QGraphicsItem *parent = 0);
+    RowStreakItem(QSharedPointer<Picmi> game, int y, QGraphicsItem *parent = nullptr);
 
     void refresh() Q_DECL_OVERRIDE;
     void reload(const QSize &size) Q_DECL_OVERRIDE;
@@ -57,7 +57,7 @@ public:
 
 class ColStreakItem : public StreakItem {
 public:
-    ColStreakItem(QSharedPointer<Picmi> game, int x, QGraphicsItem *parent = 0);
+    ColStreakItem(QSharedPointer<Picmi> game, int x, QGraphicsItem *parent = nullptr);
 
     void refresh() Q_DECL_OVERRIDE;
     void reload(const QSize &size) Q_DECL_OVERRIDE;
