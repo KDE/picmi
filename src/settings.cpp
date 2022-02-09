@@ -138,7 +138,7 @@ void Settings::restore() {
         KgDifficultyLevel::Medium).toInt();
     m_custom_bg_enabled = m_qsettings->value(m_keys[CustomBgEnabled], false).toBool();
     m_custom_bg_path = m_qsettings->value(m_keys[CustomBgPath], QString()).toString();
-    m_font_color_solved = m_qsettings->value(m_keys[FontColorSolved], QStringLiteral("#555555")).toString();
+    m_font_color_solved = m_qsettings->value(m_keys[FontColorSolved], QStringLiteral("#5500ff")).toString();
     m_font_color_unsolved = m_qsettings->value(m_keys[FontColorUnsolved], QStringLiteral("#000000")).toString();
 }
 
