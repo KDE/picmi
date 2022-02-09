@@ -21,7 +21,7 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     XmlGui
 )
 
-find_package(KF5KDEGames 5.2.0 REQUIRED)
+find_package(KF5KDEGames 7.3.0 REQUIRED)
 
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(KDECMakeSettings)

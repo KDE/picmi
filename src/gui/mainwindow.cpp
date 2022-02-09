@@ -55,17 +55,17 @@ MainWindow::MainWindow(QWidget *parent) :
 }
 
 void MainWindow::setupActions() {
-    KStandardGameAction::gameNew(this, SLOT(startRandomGame()), actionCollection());
-    KStandardGameAction::load(this, SLOT(loadBoard()), actionCollection());
-    KStandardGameAction::restart(this, SLOT(restartGame()), actionCollection());
-    KStandardGameAction::highscores(this, SLOT(highscores()), actionCollection());
-    KStandardGameAction::quit(this, SLOT(close()), actionCollection());
-    KStandardAction::preferences(this, SLOT(settings()), actionCollection());
-    KStandardAction::fullScreen(this, SLOT(toggleFullscreen(bool)), this, actionCollection());
-    m_action_pause = KStandardGameAction::pause(this, SLOT(togglePaused(bool)), actionCollection());
-    m_action_undo = KStandardGameAction::undo(this, SLOT(undo()), actionCollection());
-    m_action_hint = KStandardGameAction::hint(this, SLOT(hint()), actionCollection());
-    m_action_solve = KStandardGameAction::solve(this, SLOT(solve()), actionCollection());
+    KStandardGameAction::gameNew(this, &MainWindow::startRandomGame, actionCollection());
+    KStandardGameAction::load(this, &MainWindow::loadBoard, actionCollection());
+    KStandardGameAction::restart(this, &MainWindow::restartGame, actionCollection());
+    KStandardGameAction::highscores(this, &MainWindow::highscores, actionCollection());
+    KStandardGameAction::quit(this, &MainWindow::close, actionCollection());
+    KStandardAction::preferences(this, &MainWindow::settings, actionCollection());
+    KStandardAction::fullScreen(this, &MainWindow::toggleFullscreen, this, actionCollection());
+    m_action_pause = KStandardGameAction::pause(this, &MainWindow::togglePaused, actionCollection());
+    m_action_undo = KStandardGameAction::undo(this, &MainWindow::undo, actionCollection());
+    m_action_hint = KStandardGameAction::hint(this, &MainWindow::hint, actionCollection());
+    m_action_solve = KStandardGameAction::solve(this, &MainWindow::solve, actionCollection());
 
     /* Prevent the default hint shortcut from overwriting our HJKL vim-like control mapping. */
     actionCollection()->setDefaultShortcut(m_action_hint, QKeySequence(Qt::CTRL | Qt::Key_I));
@@ -74,7 +74,7 @@ void MainWindow::setupActions() {
     m_action_save_state->setText(i18n("Save Position"));
     m_action_save_state->setIcon(QIcon::fromTheme(QStringLiteral("list-add")));
     actionCollection()->setDefaultShortcut(m_action_save_state, QKeySequence(Qt::CTRL | Qt::Key_S));
-    connect(m_action_save_state, SIGNAL(triggered()), this, SLOT(saveState()));
+    connect(m_action_save_state, &QAction::triggered, this, &MainWindow::saveState);
 
     m_action_load_state = actionCollection()->addAction(QStringLiteral("load-position"));
     m_action_load_state->setText(i18n("Load Position"));
