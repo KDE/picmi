@@ -36,7 +36,7 @@ public:
     ~SettingsWindow() override;
 
 private Q_SLOTS:
-    void accept() Q_DECL_OVERRIDE;
+    void accept() override;
     void bgToolButtonClicked();
     void selectSolvedColor();
     void selectUnsolvedColor();

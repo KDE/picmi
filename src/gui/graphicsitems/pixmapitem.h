@@ -28,7 +28,7 @@ class PixmapItem : public QGraphicsPixmapItem, public ReloadableItem
 {
 public:
     PixmapItem(Renderer::Resource resource, int x, int y, QGraphicsItem *parent = nullptr);
-    void reload(const QSize &size) Q_DECL_OVERRIDE;
+    void reload(const QSize &size) override;
 
 protected:
     const Renderer::Resource m_resource;
@@ -48,14 +48,14 @@ class StreakHBackgroundItem : public PixmapItem
 {
 public:
     StreakHBackgroundItem(Renderer::Resource resource,int y, QGraphicsItem *parent = nullptr);
-    void reload(const QSize &size) Q_DECL_OVERRIDE;
+    void reload(const QSize &size) override;
 };
 
 class StreakVBackgroundItem : public PixmapItem
 {
 public:
     StreakVBackgroundItem(Renderer::Resource resource,int x, QGraphicsItem *parent = nullptr);
-    void reload(const QSize &size) Q_DECL_OVERRIDE;
+    void reload(const QSize &size) override;
 };
 
 #endif // PIXMAPITEM_H

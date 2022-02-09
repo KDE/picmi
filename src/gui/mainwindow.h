@@ -42,7 +42,7 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
 
 protected:
-    void closeEvent(QCloseEvent *event) Q_DECL_OVERRIDE;
+    void closeEvent(QCloseEvent *event) override;
 
 private Q_SLOTS:
     void startRandomGame();

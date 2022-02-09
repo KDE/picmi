@@ -44,7 +44,7 @@ public:
     IOHandlerNoHints(BoardMap *map, BoardState *state, ElapsedTime *timer) : IOHandler(map, state, timer) { }
 
 protected:
-    void setBox(int x, int y) Q_DECL_OVERRIDE;
+    void setBox(int x, int y) override;
 };
 
 
@@ -63,7 +63,7 @@ public:
     IOHandlerHints(BoardMap *map, BoardState *state, ElapsedTime *timer) : IOHandler(map, state, timer) { }
 
 protected:
-    void setBox(int x, int y) Q_DECL_OVERRIDE;
+    void setBox(int x, int y) override;
 };
 
 
