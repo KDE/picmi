@@ -130,9 +130,15 @@ Streaks::processStreak(const QVector<StreakPrivate> &map,
         qSwap(streaks_reversed[i].begin, streaks_reversed[i].end);
     }
 
-    /* Preliminary checks. */
+    /* Preliminary checks
+     * Do not match anything in any of these cases:
+     * 1. The number of streaks in any direction exceeds the solution.
+     * 2. A completely filled line does not match exactly the number of streaks.
+     * The second case fixes https://bugs.kde.org/435211
+     */
 
-    if (streaks_regular.size() > map.size() || streaks_reversed.size() > map.size()) {
+    if (streaks_regular.size() > map.size() || streaks_reversed.size() > map.size()
+            || (!l.contains(Board::Nothing) && (streaks_regular.size() != map.size()))) {
         return streak;
     }
 
