@@ -26,7 +26,7 @@
 #include <QFile>
 #include <QStandardPaths>
 
-#include "src/settings.h"
+#include "settings.h"
 #include "src/systemexception.h"
 
 class LevelList : public QList<QSharedPointer<Level> >

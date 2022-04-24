@@ -22,7 +22,7 @@
 #include <QGraphicsPixmapItem>
 
 #include "reloadableitem.h"
-#include "src/settings.h"
+#include "src/logic/settings.h"
 
 class PixmapItem : public QGraphicsPixmapItem, public ReloadableItem
 {

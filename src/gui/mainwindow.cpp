@@ -32,7 +32,7 @@
 #include "src/constants.h"
 #include "src/logic/levelloader.h"
 #include "src/logic/picmi.h"
-#include "src/settings.h"
+#include "src/logic/settings.h"
 #include "selectboardwindow.h"
 #include "settingswindow.h"
 #include "scene.h"

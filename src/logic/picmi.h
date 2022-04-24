@@ -24,7 +24,7 @@
 #include "boardmap.h"
 #include "boardstate.h"
 #include "elapsedtime.h"
-#include "src/settings.h"
+#include "settings.h"
 #include "streaks.h"
 
 /* Moved from picmi.cpp to work around QSharedPointer issues with forward declarations.

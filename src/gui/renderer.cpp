@@ -29,7 +29,7 @@
 
 #include "src/constants.h"
 #include "src/outofboundsexception.h"
-#include "src/settings.h"
+#include "src/logic/settings.h"
 #include "src/systemexception.h"
 
 #define MIN_STREAK_COUNT (4)

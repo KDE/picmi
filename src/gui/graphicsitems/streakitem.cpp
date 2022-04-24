@@ -19,7 +19,7 @@
 #include "streakitem.h"
 
 #include "src/constants.h"
-#include "src/settings.h"
+#include "src/logic/settings.h"
 
 StreakItem::StreakItem(int x, int y, QSharedPointer<Picmi> game, QGraphicsItem *parent) :
     QGraphicsTextItem(parent), ReloadableItem(x, y), m_game(game)

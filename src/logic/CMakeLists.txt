@@ -6,6 +6,8 @@ set(logic_SRCS
     levelloader.cpp
     picmi.cpp
     streaks.cpp
+    settings.cpp
+
 )
 
 add_library(picmi_logic STATIC

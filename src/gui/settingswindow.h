@@ -21,7 +21,7 @@
 
 #include <QDialog>
 
-#include "src/settings.h"
+#include "src/logic/settings.h"
 
 namespace Ui {
 class SettingsWindow;
