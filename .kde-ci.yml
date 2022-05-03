@@ -15,3 +15,5 @@ Dependencies:
     'frameworks/kio': '@stable'
     'frameworks/knewstuff': '@stable'
     'frameworks/kxmlgui': '@stable'
+Options:
+  require-passing-tests-on: [ 'Linux', 'FreeBSD']
