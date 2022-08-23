@@ -133,7 +133,6 @@ Comment[zh_CN]=数字逻辑游戏
 Comment[zh_TW]=數字邏輯遊戲
 Exec=picmi
 Icon=picmi
-Terminal=false
 Type=Application
 StartupNotify=true
 Categories=Qt;KDE;Game;LogicGame;
