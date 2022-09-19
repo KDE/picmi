@@ -1,6 +1,16 @@
 cmake_minimum_required (VERSION 3.16 FATAL_ERROR)
 
-project (picmi)
+# KDE Gear version, managed by release script
+set (RELEASE_SERVICE_VERSION_MAJOR "22")
+set (RELEASE_SERVICE_VERSION_MINOR "11")
+set (RELEASE_SERVICE_VERSION_MICRO "70")
+set (RELEASE_SERVICE_COMPACT_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}${RELEASE_SERVICE_VERSION_MINOR}${RELEASE_SERVICE_VERSION_MICRO}")
+
+# Bump PICMI_BASE_VERSION once new features are added
+set(PICMI_BASE_VERSION "2.0")
+set(PICMI_VERSION "${PICMI_BASE_VERSION}.${RELEASE_SERVICE_COMPACT_VERSION}")
+
+project(picmi VERSION ${PICMI_VERSION})
 
 set (QT_MIN_VERSION "5.15.2")
 set (KF5_MIN_VERSION "5.91.0")
@@ -18,6 +28,7 @@ include(ECMInstallIcons)
 include(ECMAddTests)
 include(ECMQtDeclareLoggingCategory)
 include(ECMDeprecationSettings)
+include(ECMSetupVersion)
 
 find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} CONFIG REQUIRED Core Widgets Svg Quick QuickWidgets Test)
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
