@@ -5,10 +5,18 @@ project (picmi)
 set (QT_MIN_VERSION "5.15.2")
 set (KF5_MIN_VERSION "5.90.0")
 
-
 find_package(ECM ${KF5_MIN_VERSION} REQUIRED CONFIG)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${ECM_MODULE_PATH} )
+
 include(KDEInstallDirs)
+include(KDECMakeSettings)
+include(KDECompilerSettings NO_POLICY_SCOPE)
+
+include(FeatureSummary)
+include(ECMAddAppIcon)
+include(ECMInstallIcons)
+include(ECMAddTests)
+include(ECMQtDeclareLoggingCategory)
 
 find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} CONFIG REQUIRED Core Widgets Svg Quick QuickWidgets Test)
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
@@ -24,13 +32,6 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
 
 find_package(KF5KDEGames 7.3.0 REQUIRED)
 
-include(KDECompilerSettings NO_POLICY_SCOPE)
-include(KDECMakeSettings)
-include(FeatureSummary)
-include(ECMAddAppIcon)
-include(ECMInstallIcons)
-include(ECMAddTests)
-include(ECMQtDeclareLoggingCategory)
 add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x050f02)
 add_definitions(-DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x055900)
 
