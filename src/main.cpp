@@ -53,8 +53,9 @@ int main(int argc, char *argv[])
                       QStringLiteral(PICMI_VERSION_STRING),
                       i18n("Picmi - a nonogram puzzle game"),
                       KAboutLicense::GPL_V2,
-                      i18n("(c) 2012 - 2015 The Picmi Authors"));
-    about.setHomepage(QStringLiteral("https://games.kde.org/picmi"));
+                      i18n("(c) 2012 - 2015 The Picmi Authors"),
+                      QString(),
+                      QStringLiteral("https://apps.kde.org/picmi"));
     about.addAuthor(i18n("Jakob Gruber"), i18n("Picmi Author"), QStringLiteral("jakob.gruber@gmail.com"));
 
 
