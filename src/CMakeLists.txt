@@ -36,6 +36,8 @@ set(picmi_SRCS
     main.cpp
     outofboundsexception.cpp
     systemexception.cpp
+
+    picmi.qrc
 )
 ecm_qt_declare_logging_category(picmi_SRCS HEADER picmi_debug.h IDENTIFIER PICMIC_LOG CATEGORY_NAME org.kde.kdegames.picmi DESCRIPTION "picmi (kdegames)" EXPORT PICMI)
 
