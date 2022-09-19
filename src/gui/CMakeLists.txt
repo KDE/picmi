@@ -1,4 +1,6 @@
-set(gui_SRCS
+add_library(picmi_gui STATIC)
+
+target_sources(picmi_gui PRIVATE
     mainwindow.cpp
     renderer.cpp
     scene.cpp
@@ -7,7 +9,7 @@ set(gui_SRCS
     view.cpp
 )
 
-set(graphicsitems_SRCS
+target_sources(picmi_gui PRIVATE
     graphicsitems/cellitem.cpp
     graphicsitems/highlightitem.cpp
     graphicsitems/pixmapitem.cpp
@@ -16,20 +18,9 @@ set(graphicsitems_SRCS
     graphicsitems/textbanneritem.cpp
 )
 
-set(picmi_FORMS
+ki18n_wrap_ui(picmi_gui
     ${CMAKE_CURRENT_SOURCE_DIR}/settingswindow.ui
     ${CMAKE_CURRENT_SOURCE_DIR}/selectboardwindow.ui
-)
-ki18n_wrap_ui(picmi_FORMS_HEADERS ${picmi_FORMS})
-
-include_directories(
-    ${CMAKE_CURRENT_BINARY_DIR}
-)
-
-add_library(picmi_gui STATIC
-    ${gui_SRCS}
-    ${graphicsitems_SRCS}
-    ${picmi_FORMS_HEADERS}
 )
 
 target_link_libraries(picmi_gui

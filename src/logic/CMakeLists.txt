@@ -1,4 +1,6 @@
-set(logic_SRCS
+add_library(picmi_logic STATIC)
+
+target_sources(picmi_logic PRIVATE
     board.cpp
     boardmap.cpp
     boardstate.cpp
@@ -7,11 +9,6 @@ set(logic_SRCS
     picmi.cpp
     streaks.cpp
     settings.cpp
-
-)
-
-add_library(picmi_logic STATIC
-    ${logic_SRCS}
 )
 
 target_link_libraries(picmi_logic

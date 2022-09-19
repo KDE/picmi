@@ -32,19 +32,27 @@ ecm_setup_version(${PICMI_VERSION}
 add_subdirectory(gui)
 add_subdirectory(logic)
 
-set(picmi_SRCS
+add_executable(picmi)
+
+target_sources(picmi PRIVATE
     main.cpp
     outofboundsexception.cpp
     systemexception.cpp
 
     picmi.qrc
 )
-ecm_qt_declare_logging_category(picmi_SRCS HEADER picmi_debug.h IDENTIFIER PICMIC_LOG CATEGORY_NAME org.kde.kdegames.picmi DESCRIPTION "picmi (kdegames)" EXPORT PICMI)
+
+ecm_qt_declare_logging_category(picmi
+    HEADER picmi_debug.h
+    IDENTIFIER PICMIC_LOG
+    CATEGORY_NAME org.kde.kdegames.picmi
+    DESCRIPTION "picmi (kdegames)"
+    EXPORT PICMI
+)
 
 file(GLOB ICONS_SRCS "${CMAKE_SOURCE_DIR}/icons/*-apps-picmi.png")
-ecm_add_app_icon(picmi_SRCS ICONS ${ICONS_SRCS})
+ecm_add_app_icon(picmi ICONS ${ICONS_SRCS})
 
-add_executable(picmi ${picmi_SRCS})
 target_link_libraries(picmi
     Qt${QT_MAJOR_VERSION}::Svg
     KF5::CoreAddons
