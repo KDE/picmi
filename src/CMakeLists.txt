@@ -2,9 +2,6 @@ if (NOT PICMI_FILEPATH)
     set(PICMI_FILEPATH ${KDE_INSTALL_DATADIR}/picmi/)
 endif ()
 
-add_definitions(${QT_DEFINITIONS} ${KDE_DEFINITIONS})
-remove_definitions(-DQT_NO_STL)
-
 kde_enable_exceptions()
 
 if (CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
@@ -12,7 +9,6 @@ if (CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
 endif ()
 
 include(CheckIncludeFileCXX)
-add_definitions(${QT_DEFINITIONS})
 
 configure_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/config.h.in"
