@@ -17,6 +17,7 @@
 
 
 #include <config.h>
+#include <picmi_version.h>
 
 #include <KAboutData>
 #include <KCrash>
@@ -49,9 +50,7 @@ int main(int argc, char *argv[])
 
     KAboutData about(QStringLiteral("picmi"),
                       i18n("Picmi"),
-                      QStringLiteral("%1.%2.%3").arg(VERSION_MAJOR)
-                                         .arg(VERSION_MINOR)
-                                         .arg(VERSION_PATCH),
+                      QStringLiteral(PICMI_VERSION_STRING),
                       i18n("Picmi - a nonogram puzzle game"),
                       KAboutLicense::GPL_V2,
                       i18n("(c) 2012 - 2015 The Picmi Authors"));

@@ -1,6 +1,3 @@
-set(PICMI_VERSION_MAJOR 2)
-set(PICMI_VERSION_MINOR 0)
-set(PICMI_VERSION_PATCH 0)
 if (NOT PICMI_FILEPATH)
     set(PICMI_FILEPATH ${KDE_INSTALL_DATADIR}/picmi/)
 endif ()
@@ -25,6 +22,11 @@ configure_file(
 include_directories(
     ${CMAKE_SOURCE_DIR}
     ${CMAKE_CURRENT_BINARY_DIR}
+)
+
+ecm_setup_version(${PICMI_VERSION}
+    VARIABLE_PREFIX PICMI
+    VERSION_HEADER picmi_version.h
 )
 
 add_subdirectory(gui)
