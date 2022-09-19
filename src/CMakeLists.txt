@@ -4,10 +4,6 @@ endif ()
 
 kde_enable_exceptions()
 
-if (CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
-    add_compile_options(-Wextra -pedantic)
-endif ()
-
 include(CheckIncludeFileCXX)
 
 configure_file(
