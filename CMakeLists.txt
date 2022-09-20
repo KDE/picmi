@@ -30,12 +30,16 @@ include(ECMQtDeclareLoggingCategory)
 include(ECMDeprecationSettings)
 include(ECMSetupVersion)
 
-find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} CONFIG REQUIRED Core Widgets Svg Quick QuickWidgets Test)
+find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} CONFIG REQUIRED
+    Core
+    Widgets
+    Svg
+    Test
+)
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     CoreAddons
     Crash
     DBusAddons
-    Declarative
     DocTools
     I18n
     KIO

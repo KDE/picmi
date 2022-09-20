@@ -9,7 +9,6 @@ Dependencies:
     'frameworks/kcoreaddons': '@stable'
     'frameworks/kcrash': '@stable'
     'frameworks/kdbusaddons': '@stable'
-    'frameworks/kdeclarative': '@stable'
     'frameworks/kdoctools': '@stable'
     'frameworks/ki18n': '@stable'
     'frameworks/kio': '@stable'
