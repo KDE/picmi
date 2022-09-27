@@ -7,7 +7,6 @@
 #include "boardmap.h"
 
 #include <qglobal.h>
-#include <QTime>
 #include <QVector>
 #include <QRandomGenerator>
 
