@@ -1,0 +1,714 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Ukrainian "INCLUDE">
+<!ENTITY % addindex "IGNORE">
+]>
+
+<book id="picmi" lang="&language;">
+<bookinfo>
+<title
+>Підручник з &picmi;</title>
+
+<authorgroup>
+<author
+><firstname
+>Jakob</firstname
+> <surname
+>Gruber</surname
+> <affiliation
+><address
+><email
+>jakob.gruber@gmail.com</email
+></address
+></affiliation>
+</author>
+<othercredit role="translator"
+><firstname
+>Юрій</firstname
+><surname
+>Чорноіван</surname
+><affiliation
+><address
+><email
+>yurchor@ukr.net</email
+></address
+></affiliation
+><contrib
+>Переклад українською</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2012</year>
+<holder
+>Jakob Gruber</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>8 жовтня 2021 року</date>
+<releaseinfo
+>2.0.0 (KDE Gear 21.08)</releaseinfo>
+
+<abstract>
+<para
+>&picmi; — гра у японські кросворди.</para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdegames</keyword>
+<keyword
+>гра</keyword>
+<keyword
+>гра-головоломка</keyword>
+<keyword
+>Picmi</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Вступ</title>
+
+<para
+>&picmi; — це гра-головоломка для одного гравця. </para>
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="gameboard.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Ігрова дошка &picmi;</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>Метою гри є позначення кольором клітинок відповідно до чисел, вказаних збоку і над полем для гри. </para>
+</chapter>
+
+<chapter id="how-to-play">
+<title
+>Як грати</title>
+
+<para
+>Гравцеві буде показано порожнє поле зі списком чисел у кожному рядку і стовпчику. Ці числа позначають кількість клітинок у зафарбованих групах відповідного рядка або стовпчика. Наприклад, послідовність чисел «4 8 3» означає, що маємо групи з чотирьох, восьми і трьох зафарбованих клітинок у вказаному порядку. Групи має бути відокремлено одна від одної принаймні однією незафарбованою клітинкою. Метою гри є на основі вказаних чисел встановити справжнє розташування зафарбованих клітинок і зробити це якомога швидше. </para>
+
+<para
+>Клацанням лівою кнопкою миші можна позначити або зняти позначення заповненості клітинки, клацання правою кнопкою миші позначає або знімає позначення незаповненості клітинки. Для одночасного позначення декількох клітинок у одному рядку або стовпчику можна скористатися клацанням з перетягуванням вказівника миші. Дані щодо витраченого часу буде показано на смужці стану. Мініатюру ігрового поля буде показано у верхньому лівому куті ігрового поля. Гра вважається завершеною, якщо було правильно позначено всі зафарбовані клітинки. </para>
+
+<para
+>Ви можете будь-коли зберегти поточні позначення зафарбованих і незафарбованих клітинок (стан розв’язання). Збереження нового стану не призводитиме до перезапису даних щодо попередніх збережених станів. Відновлення стану завжди повертатиме вам до останнього збереженого стану. Команди щодо відновлення можна повторювати, аж доки не буде вичерпано список збережених станів. Кількість ходів з часу останнього збереження стану буде показано на смужці стану. </para>
+
+<para
+>Грати у &picmi; можна у двох режимах. Випадкові кросворди (створені за допомогою пункту меню <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Гра</guimenu
+> <guimenuitem
+>Нова</guimenuitem
+></menuchoice
+>) буде засновано на вибраних вами параметрах складності. Крім них, ви можете розгадувати попередньо визначені кросворди за допомогою пункту меню <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Гра</guimenu
+> <guimenuitem
+>Завантажити...</guimenuitem
+></menuchoice
+>. </para>
+
+</chapter>
+
+<chapter id="rules-strategies-tips">
+<title
+>Правила гри, стратегія та поради</title>
+
+<sect1 id="rules">
+<title
+>Правила</title>
+<para
+>Послідовність чисел у рядку або стовпчику надає певну інформацію щодо кількості зафарбованих клітинок та розташування цих клітинок у рядку чи стовпчику.</para>
+<itemizedlist>
+  <listitem
+><para
+>Кожне число відповідає довжині неперервної послідовності з зафарбованих клітинок на полі. Таку послідовність має бути відокремлено від інших послідовностей принаймні однією порожньою клітинкою. Послідовність може починатися або завершуватися на краю поля.</para
+></listitem>
+  <listitem
+><para
+>Крім того, послідовність чисел відповідає порядку послідовностей клітинок у рядку або стовпчику.</para
+></listitem>
+  <listitem
+><para
+>Якщо у налаштуваннях програми позначено пункт <guilabel
+>Запобігання помилкам</guilabel
+>, ви не зможете помилково позначити клітинку як зафарбовану, — замість цього програма додасть штрафний час до часу розв’язування. Штрафний час збільшуватиметься з кожною наступною помилкою.</para
+></listitem>
+  <listitem
+><para
+>Якщо пункт <guilabel
+>Запобігання помилкам</guilabel
+> не буде позначено, програма не повідомлятиме про те, що клітинку позначено помилково і не каратиме гравця за помилки.</para
+></listitem>
+  <listitem
+><para
+>Гру буде завершено, щойно буде належним чином позначено всі заповнені клітинки.</para
+></listitem>
+</itemizedlist>
+</sect1>
+
+</chapter>
+
+<chapter id="interface-overview">
+<title
+>Огляд інтерфейсу</title>
+
+<sect1 id="menu-items">
+<title
+>Пункти меню</title>
+
+<variablelist>
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Гра</guimenu
+> <guimenuitem
+>Створити</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Почати нову гру.</action
+> Створюється випадкове поле, відповідно до поточного рівня складності.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Гра</guimenu
+> <guimenuitem
+>Завантажити...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Завантажує попередньо налаштований кросворд.</action
+> Назви кросвордів буде приховано до того часу, доки їх не буде розв’язано. Список найкращих результатів та параметри складності для таких кросвордів не діятимуть.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycap
+>F5</keycap
+></shortcut
+> <guimenu
+>Гра</guimenu
+> <guimenuitem
+>Перезапустити гру</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Перезапускає поточну гру.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycap
+>P</keycap
+></shortcut
+> <guimenu
+>Гра</guimenu
+> <guimenuitem
+>Пауза</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Зупинка ігрового часу.</action
+> Натисніть той же пункт меню для продовження гри. Зауважте, що ігрове поле недоступне в режимі паузи, бо це б було не чесно, якщо б Ви могли познаходити гарні ходи не витрачаючи час.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Гра</guimenu
+> <guimenuitem
+>Показати найкращі результати…</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Показується діалогове вікно, що містить рекорди для різних рівнів складності.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Гра</guimenu
+> <guimenuitem
+>Вийти</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Завершує роботу</action
+> &picmi;.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Z</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Хід</guimenu
+> <guimenuitem
+>Вернути</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Скасувати попередній хід,</action
+> якщо такий було зроблено.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>I</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Хід</guimenu
+> <guimenuitem
+>Підказка</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Позначає комірку як заповнену або порожню.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Хід</guimenu
+> <guimenuitem
+>Розв’язати</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Демонструє правильну гру.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>L</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Хід</guimenu
+> <guimenuitem
+>Завантажити позицію</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Завантажити останню збережену позицію.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Хід</guimenu
+> <guimenuitem
+>Зберегти позицію</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Зберегти поточну позицію на полі.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>F</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Параметри</guimenu
+> <guimenuitem
+>Повноекранний режим</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Вмикає або вимикає повноекранний режим у графічному інтерфейсі програми.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Параметри</guimenu
+> <guisubmenu
+>Складність</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Надає вам змогу встановити рівень складності за допомогою підменю.</action
+></para>
+    <para
+>Передбачено чотири рівня складності: <itemizedlist>
+        <listitem
+><para
+><guimenuitem
+>Проста</guimenuitem
+>:  10 рядків, 10 стовпчиків, 55% клітинок заповнено. Запобігання помилкам вимкнено.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>Середня</guimenuitem
+>: 10 рядків, 15 стовпчиків, 55% клітинок заповнено. Запобігання помилкам вимкнено.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>Складна</guimenuitem
+>: 15 рядків, 15 стовпчиків, 55% клітинок заповнено. Запобігання помилкам вимкнено.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>Нетиповий</guimenuitem
+>: нетипові розміри і параметри поля.</para
+></listitem>
+      </itemizedlist>
+    </para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Параметри</guimenu
+> <guimenuitem
+>Налаштувати &picmi;...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Надає змогу вибрати зображення тла, розміри поля для гри та нетипові параметри складності.</action
+></para
+></listitem>
+  </varlistentry>
+</variablelist>
+
+<para
+>Крім того, у &picmi; передбачено типові для &kde; пункти меню <guimenu
+>Параметри</guimenu
+> і <guimenu
+>Довідка</guimenu
+>. Щоб дізнатися більше, ознайомтеся з розділами щодо <ulink url="help:/fundamentals/menus.html#menus-settings"
+>меню «Параметри»</ulink
+> та <ulink url="help:/fundamentals/menus.html#menus-help"
+>меню «Довідка»</ulink
+> підручника з основ роботи у &kde;. </para>
+</sect1>
+
+<sect1 id="keybindings">
+<title id="keybindings-title"
+>Клавіатурні скорочення</title>
+
+<para
+>Типові скорочення:</para>
+
+<table>
+  <title
+>Клавіатурні скорочення</title>
+  <tgroup cols="2">
+    <tbody>
+      <row>
+        <entry
+>Почати нову гру</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Завантажити попередньо налаштований кросворд.</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Пауза</entry>
+        <entry
+><keycap
+>P</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Показати найкращі результати</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Повноекранний режим</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>F</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Вийти</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Довідка</entry>
+        <entry
+><keycap
+>F1</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Довідка «Що це?»</entry>
+        <entry
+><keycombo action="simul"
+>&Shift;<keycap
+>F1</keycap
+></keycombo
+></entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+
+<table>
+  <title
+>Керування за допомогою клавіатури</title>
+  <tgroup cols="2">
+    <tbody>
+      <row>
+        <entry
+>Пересунути ліворуч</entry>
+        <entry
+>&Left; або <keycap
+>H</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Пересунути праворуч</entry>
+        <entry
+>&Right; або <keycap
+>L</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Пересунути вгору</entry>
+        <entry
+>&Up; або <keycap
+>K</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Пересунути вниз</entry>
+        <entry
+>&Down; або <keycap
+>J</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Позначити/Зняти позначення заповненості</entry>
+        <entry
+><keycap
+>X</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Позначити/Зняти позначення незаповненості</entry>
+        <entry
+>Пробіл</entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+
+</sect1>
+</chapter>
+
+
+<chapter id="credits">
+<title
+>Подяки і ліцензія</title>
+
+<para
+>&picmi; </para>
+<para
+>Авторські права на програму належать Jakob Gruber <email
+>jakob.gruber@gmail.com</email
+>, 2012 </para>
+<para
+>Авторські права на документацію до програми належать Jakob Gruber <email
+>jakob.gruber@gmail.com</email
+>, 2012 </para>
+
+<para
+>Переклад українською: Юрій Чорноіван<email
+>yurchor@ukr.net</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+
+&documentation.index;
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-always-quote-attributes:t
+sgml-indent-step:0
+sgml-indent-data:t
+End:
+-->

@@ -1,0 +1,756 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Andrej Mernik <andrejm@ubuntu.si>, 2012, 2013, 2015, 2016.
+# Matjaž Jeran <matjaz.jeran@amis.net>, 2020, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-20 00:43+0000\n"
+"PO-Revision-Date: 2021-10-11 06:04+0200\n"
+"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
+"X-Generator: Lokalize 20.12.2\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Andrej Mernik"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "andrejm@ubuntu.si"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:5
+#, kde-format
+msgid "Basketball"
+msgstr "Košarkarska žoga"
+
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#: levels/default.xml:5 levels/default.xml:75 levels/default.xml:79
+#: levels/default.xml:83 levels/default.xml:87 levels/default.xml:91
+#: levels/default.xml:95 levels/default.xml:99 levels/default.xml:103
+#: levels/default.xml:107 levels/default.xml:111 levels/default.xml:119
+#: levels/default.xml:164 levels/default.xml:244 levels/default.xml:262
+#: levels/default.xml:512 levels/default.xml:516 levels/default.xml:520
+#: levels/default.xml:528 levels/default.xml:532 levels/default.xml:536
+#: levels/default.xml:540 levels/default.xml:551 levels/default.xml:564
+#: levels/default.xml:577 levels/default.xml:590 levels/default.xml:603
+#, kde-format
+msgid "Jakob Gruber, Moni Linke"
+msgstr "Jakob Gruber, Moni Linke"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:9
+#, kde-format
+msgid "Skull"
+msgstr "Lobanja"
+
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#: levels/default.xml:9 levels/default.xml:31 levels/default.xml:195
+#: levels/default.xml:226 levels/default.xml:275 levels/default.xml:295
+#: levels/default.xml:317 levels/default.xml:334 levels/default.xml:360
+#: levels/default.xml:383 src/main.cpp:47
+#, kde-format
+msgid "Jakob Gruber"
+msgstr "Jakob Gruber"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:31
+#, kde-format
+msgid "Wheelchair"
+msgstr "Invalidski voziček"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:59
+#, kde-format
+msgid "Baby Chick"
+msgstr "Piščanček"
+
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#: levels/default.xml:59 levels/default.xml:63 levels/default.xml:67
+#: levels/default.xml:152 levels/default.xml:504 levels/default.xml:508
+#, kde-format
+msgid "Moni Linke"
+msgstr "Moni Linke"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:63
+#, kde-format
+msgid "Pirate Dog"
+msgstr "Piratski pes"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:67
+#, kde-format
+msgid "Clown"
+msgstr "Klovn"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:71
+#, kde-format
+msgid "Pirate Ship"
+msgstr "Piratska ladja"
+
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#: levels/default.xml:71 levels/default.xml:115 levels/default.xml:156
+#: levels/default.xml:160 levels/default.xml:524
+#, kde-format
+msgid "Frank Uebbing"
+msgstr "Frank Uebbing"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:75
+#, kde-format
+msgid "Panda"
+msgstr "Panda"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:79
+#, kde-format
+msgid "Elephant"
+msgstr "Slon"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:83
+#, kde-format
+msgid "Claus the cat"
+msgstr "Maček taček"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:87
+#, kde-format
+msgid "Bird"
+msgstr "Ptica"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:91
+#, kde-format
+msgid "Zebra"
+msgstr "Zebra"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:95
+#, kde-format
+msgid "Antique Phone"
+msgstr "Starodaven telefon"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:99
+#, kde-format
+msgid "Treble Clef"
+msgstr "Violinski ključ"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:103
+#, kde-format
+msgid "Halloween"
+msgstr "Noč čarovnic"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:107
+#, kde-format
+msgid "Hourglass"
+msgstr "Peščena ura"
+
+#. i18n: tag board attribute name
+#. i18n: tag board attribute name
+#: levels/default.xml:111 levels/default.xml:551
+#, kde-format
+msgid "Robot"
+msgstr "Robot"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:115
+#, kde-format
+msgid "Bike"
+msgstr "Kolo"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:119
+#, kde-format
+msgid "Penguin"
+msgstr "Pingvin"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:152
+#, kde-format
+msgid "Baby Panda"
+msgstr "Pandin mladič"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:156
+#, kde-format
+msgid "House"
+msgstr "Hiša"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:160
+#, kde-format
+msgid "Soccer"
+msgstr "Nogomet"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:164
+#, kde-format
+msgid "Alarm Clock"
+msgstr "Budilka"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:195
+#, kde-format
+msgid "Taxi!"
+msgstr "Taksi!"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:226
+#, kde-format
+msgid "Marker"
+msgstr "Označevalnik"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:244
+#, kde-format
+msgid "Thumbs Up"
+msgstr "Palec gor"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:262
+#, kde-format
+msgid "Cup"
+msgstr "Skodelica"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:275
+#, kde-format
+msgid "Dinner Time"
+msgstr "Čas za večerjo"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:295
+#, kde-format
+msgid "Wine Glass"
+msgstr "Vinski kozarec"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:317
+#, kde-format
+msgid "Cocktail Glass"
+msgstr "Kozarec za koktejl"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:334
+#, kde-format
+msgid "Escalator"
+msgstr "Tekoče stopnice"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:360
+#, kde-format
+msgid "Helicopter"
+msgstr "Helikopter"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:383
+#, kde-format
+msgid "Letter A"
+msgstr "Črka A"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:396
+#, kde-format
+msgid "Screw"
+msgstr "Vijak"
+
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#: levels/default.xml:396 levels/default.xml:414 levels/default.xml:432
+#: levels/default.xml:450 levels/default.xml:468 levels/default.xml:486
+#, kde-format
+msgid "Zack Rusin"
+msgstr "Zack Rusin"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:414
+#, kde-format
+msgid "Cup of coffee"
+msgstr "Skodelica kave"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:432
+#, kde-format
+msgid "Lion"
+msgstr "Lev"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:450
+#, kde-format
+msgid "Gas Lamp"
+msgstr "Plinska svetilka"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:468
+#, kde-format
+msgid "Monkey"
+msgstr "Opica"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:486
+#, kde-format
+msgid "Teddy Bear"
+msgstr "Medvedek"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:504
+#, kde-format
+msgid "Policeman"
+msgstr "Policaj"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:508
+#, kde-format
+msgid "Santa Claus"
+msgstr "Božiček"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:512
+#, kde-format
+msgid "Bass Clef"
+msgstr "Basovski ključ"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:516
+#, kde-format
+msgid "Phone"
+msgstr "Telefon"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:520
+#, kde-format
+msgid "Shopping Cart"
+msgstr "Nakupovalna košarica"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:524 src/main.cpp:40
+#, kde-format
+msgid "Picmi"
+msgstr "Picmi"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:528
+#, kde-format
+msgid "Mobile Phone"
+msgstr "Prenosni telefon"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:532
+#, kde-format
+msgid "Calculator"
+msgstr "Računalo"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:536
+#, kde-format
+msgid "Camera"
+msgstr "Fotoaparat"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:540
+#, kde-format
+msgid "Car"
+msgstr "Avto"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:564
+#, kde-format
+msgid "Microphone"
+msgstr "Mikrofon"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:577
+#, kde-format
+msgid "Floppy Disk"
+msgstr "Disketa"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:590
+#, kde-format
+msgid "Printer"
+msgstr "Tiskalnik"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:603
+#, kde-format
+msgid "Smiley"
+msgstr "Smeško"
+
+#: src/gui/graphicsitems/textbanneritem.cpp:28
+#, kde-format
+msgid "PAUSED"
+msgstr "V premoru"
+
+#: src/gui/mainwindow.cpp:62
+#, kde-format
+msgid "Save Position"
+msgstr "Shrani položaj"
+
+#: src/gui/mainwindow.cpp:68
+#, kde-format
+msgid "Load Position"
+msgstr "Naloži položaj"
+
+#: src/gui/mainwindow.cpp:79
+#, kde-format
+msgid "New Game"
+msgstr "Nova igra"
+
+#: src/gui/mainwindow.cpp:84
+#, kde-format
+msgid "Load New Game"
+msgstr "Naloži novo igro"
+
+#: src/gui/mainwindow.cpp:97
+#, kde-format
+msgctxt "custom difficulty"
+msgid "Custom"
+msgstr "Po meri"
+
+#: src/gui/mainwindow.cpp:246
+#, kde-format
+msgid "Elapsed time: %1"
+msgstr "Pretečeni čas: %1"
+
+#: src/gui/mainwindow.cpp:251
+#, kde-format
+msgid "Actions since last saved position: %1"
+msgstr "Dejanj od zadnjega shranjenega položaja: %1"
+
+#: src/gui/mainwindow.cpp:280
+#, kde-format
+msgid "Congratulations, you have solved this board!"
+msgstr "Čestitke, končali ste sestavljanko!"
+
+#: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
+#, kde-format
+msgid "Board Solved!"
+msgstr "Uganka končana!"
+
+#: src/gui/mainwindow.cpp:286
+#, kde-format
+msgid "Congratulations, you have solved board '%1'!"
+msgstr "Čestitke, končali ste sestavljanko »%1«!"
+
+#: src/gui/selectboardwindow.cpp:87
+#, kde-format
+msgid "Level"
+msgstr "Stopnja"
+
+#: src/gui/selectboardwindow.cpp:88
+#, kde-format
+msgid "Level Set"
+msgstr "Nabor stopenj"
+
+#: src/gui/selectboardwindow.cpp:89
+#, kde-format
+msgid "Difficulty"
+msgstr "Težavnost"
+
+#: src/gui/selectboardwindow.cpp:90
+#, kde-format
+msgid "Size"
+msgstr "Velikost"
+
+#: src/gui/selectboardwindow.cpp:91
+#, kde-format
+msgctxt "board solved"
+msgid "Solved"
+msgstr "Rešeno"
+
+#: src/gui/selectboardwindow.cpp:154
+#, kde-format
+msgctxt "@title:window"
+msgid "Level Selection"
+msgstr "Izbor ravni"
+
+#: src/gui/selectboardwindow.cpp:242
+#, kde-format
+msgid "Ridiculously Easy"
+msgstr "Smešno lahka"
+
+#: src/gui/selectboardwindow.cpp:243
+#, kde-format
+msgid "Very Easy"
+msgstr "Zelo lahka"
+
+#: src/gui/selectboardwindow.cpp:244
+#, kde-format
+msgid "Easy"
+msgstr "Lahka"
+
+#: src/gui/selectboardwindow.cpp:245
+#, kde-format
+msgid "Medium"
+msgstr "Srednja"
+
+#: src/gui/selectboardwindow.cpp:246
+#, kde-format
+msgid "Hard"
+msgstr "Težka"
+
+#: src/gui/selectboardwindow.cpp:247
+#, kde-format
+msgid "Very Hard"
+msgstr "Zelo težka"
+
+#: src/gui/selectboardwindow.cpp:248
+#, kde-format
+msgid "Extremely Hard"
+msgstr "Izredno težka"
+
+#: src/gui/selectboardwindow.cpp:249
+#, kde-format
+msgid "Impossible"
+msgstr "Nemogoča"
+
+#: src/gui/selectboardwindow.cpp:255
+#, kde-format
+msgid "Name: %1"
+msgstr "Ime: %1"
+
+#: src/gui/selectboardwindow.cpp:256
+#, kde-format
+msgid "Author: %1"
+msgstr "Avtor: %1"
+
+#: src/gui/selectboardwindow.cpp:257
+#, kde-format
+msgid "Size: %1x%2"
+msgstr "Velikost: %1 × %2"
+
+#: src/gui/selectboardwindow.cpp:258
+#, kde-format
+msgid "Difficulty: %1"
+msgstr "Težavnost: %1"
+
+#: src/gui/selectboardwindow.cpp:260
+#, kde-format
+msgctxt "board solve time"
+msgid "Solved: %1"
+msgstr "Rešeno: %1"
+
+#: src/gui/selectboardwindow.cpp:267
+#, kde-format
+msgctxt "board not solved yet"
+msgid "Solved: -"
+msgstr "Rešeno: -"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, LevelSelectUi)
+#: src/gui/selectboardwindow.ui:23
+#, kde-format
+msgid "Level Selection"
+msgstr "Izbor stopnje"
+
+#. i18n: ectx: property (text), widget (QLabel, labelAuthor)
+#: src/gui/selectboardwindow.ui:79
+#, kde-format
+msgid "Author: -"
+msgstr "Avtor: -"
+
+#. i18n: ectx: property (text), widget (QLabel, labelName)
+#: src/gui/selectboardwindow.ui:86
+#, kde-format
+msgid "Name: -"
+msgstr "Ime: -"
+
+#. i18n: ectx: property (text), widget (QLabel, labelImage)
+#: src/gui/selectboardwindow.ui:110
+#, kde-format
+msgid "?"
+msgstr "?"
+
+#. i18n: ectx: property (text), widget (QLabel, labelSolved)
+#: src/gui/selectboardwindow.ui:120
+#, kde-format
+msgid "Solved: -"
+msgstr "Rešeno: -"
+
+#. i18n: ectx: property (text), widget (QLabel, labelSize)
+#: src/gui/selectboardwindow.ui:127
+#, kde-format
+msgid "Size: -"
+msgstr "Velikost: -"
+
+#. i18n: ectx: property (text), widget (QLabel, labelDifficulty)
+#: src/gui/selectboardwindow.ui:134
+#, kde-format
+msgid "Difficulty: -"
+msgstr "Težavnost: -"
+
+#: src/gui/settingswindow.cpp:63
+#, kde-format
+msgid "Select Background"
+msgstr "Izberite ozadje"
+
+#: src/gui/settingswindow.cpp:64
+#, kde-format
+msgid "Image Files (*.png *.jpg)"
+msgstr "Datoteke s slikami (*.png *.jpg)"
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, SettingsWindow)
+#: src/gui/settingswindow.ui:20
+#, kde-format
+msgid "Settings"
+msgstr "Nastavitve"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: src/gui/settingswindow.ui:28
+#, kde-format
+msgid "Background Image"
+msgstr "Slika ozadja"
+
+#. i18n: ectx: property (text), widget (QRadioButton, bgDefaultRadioButton)
+#: src/gui/settingswindow.ui:38
+#, kde-format
+msgctxt "default background image"
+msgid "Default"
+msgstr "Privzeto"
+
+#. i18n: ectx: property (text), widget (QRadioButton, bgCustomRadioButton)
+#: src/gui/settingswindow.ui:48
+#, kde-format
+msgctxt "custom background image"
+msgid "Custom"
+msgstr "Po meri"
+
+#. i18n: ectx: property (text), widget (QToolButton, bgToolButton)
+#: src/gui/settingswindow.ui:66
+#, kde-format
+msgid "..."
+msgstr "..."
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: src/gui/settingswindow.ui:80
+#, kde-format
+msgid "Font Colors"
+msgstr "Barve pisave"
+
+#. i18n: ectx: property (text), widget (QLabel, fontColorSolvedLabel)
+#: src/gui/settingswindow.ui:94
+#, kde-format
+msgid "Solved streaks:"
+msgstr "Rešene sestavljanke:"
+
+#. i18n: ectx: property (text), widget (QLabel, fontColorUnsolvedLabel)
+#: src/gui/settingswindow.ui:110
+#, kde-format
+msgid "Unsolved streaks:"
+msgstr "Nerešene sestavljanke:"
+
+#. i18n: ectx: property (text), widget (QPushButton, fontColorSolvedPushButton)
+#. i18n: ectx: property (text), widget (QPushButton, fontColorUnsolvedPushButton)
+#: src/gui/settingswindow.ui:120 src/gui/settingswindow.ui:127
+#, kde-format
+msgid "Edit..."
+msgstr "Uredi ..."
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: src/gui/settingswindow.ui:145
+#, kde-format
+msgid "Custom Difficulty"
+msgstr "Težavnost po meri"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: src/gui/settingswindow.ui:153
+#, kde-format
+msgid "Height:"
+msgstr "Višina:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: src/gui/settingswindow.ui:176
+#, kde-format
+msgid "Width:"
+msgstr "Širina:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: src/gui/settingswindow.ui:203
+#, kde-format
+msgid "Density:"
+msgstr "Gostota:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: src/gui/settingswindow.ui:241
+#, kde-format
+msgid "Prevent mistakes:"
+msgstr "Prepreči napake:"
+
+#: src/main.cpp:42
+#, kde-format
+msgid "Picmi - a nonogram puzzle game"
+msgstr "Picmi - igra sestavljank gobelini"
+
+#: src/main.cpp:44
+#, kde-format
+msgid "(c) 2012 - 2015 The Picmi Authors"
+msgstr "(c) 2012 - 2015 Avtorji Picmi"
+
+#: src/main.cpp:47
+#, kde-format
+msgid "Picmi Author"
+msgstr "Avtor Picmi"

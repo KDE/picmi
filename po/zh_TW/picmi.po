@@ -1,0 +1,760 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Franklin Weng <franklin@goodhorse.idv.tw>, 2012, 2013.
+# Jeff Huang <s8321414@gmail.com>, 2016.
+# Yi-Jyun Pan <pan93412@gmail.com>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-20 00:43+0000\n"
+"PO-Revision-Date: 2020-03-29 00:05+0800\n"
+"Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
+"Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 19.12.3\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Frank Weng (a.k.a. Franklin), Jeff Huang"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "franklin@goodhorse.idv.tw, s8321414@gmail.com"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:5
+#, kde-format
+msgid "Basketball"
+msgstr "籃球"
+
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#: levels/default.xml:5 levels/default.xml:75 levels/default.xml:79
+#: levels/default.xml:83 levels/default.xml:87 levels/default.xml:91
+#: levels/default.xml:95 levels/default.xml:99 levels/default.xml:103
+#: levels/default.xml:107 levels/default.xml:111 levels/default.xml:119
+#: levels/default.xml:164 levels/default.xml:244 levels/default.xml:262
+#: levels/default.xml:512 levels/default.xml:516 levels/default.xml:520
+#: levels/default.xml:528 levels/default.xml:532 levels/default.xml:536
+#: levels/default.xml:540 levels/default.xml:551 levels/default.xml:564
+#: levels/default.xml:577 levels/default.xml:590 levels/default.xml:603
+#, kde-format
+msgid "Jakob Gruber, Moni Linke"
+msgstr "Jakob Gruber, Moni Linke"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:9
+#, kde-format
+msgid "Skull"
+msgstr "骷髏"
+
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#: levels/default.xml:9 levels/default.xml:31 levels/default.xml:195
+#: levels/default.xml:226 levels/default.xml:275 levels/default.xml:295
+#: levels/default.xml:317 levels/default.xml:334 levels/default.xml:360
+#: levels/default.xml:383 src/main.cpp:47
+#, kde-format
+msgid "Jakob Gruber"
+msgstr "Jakob Gruber"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:31
+#, kde-format
+msgid "Wheelchair"
+msgstr "輪椅"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:59
+#, kde-format
+msgid "Baby Chick"
+msgstr "小雞"
+
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#: levels/default.xml:59 levels/default.xml:63 levels/default.xml:67
+#: levels/default.xml:152 levels/default.xml:504 levels/default.xml:508
+#, kde-format
+msgid "Moni Linke"
+msgstr "Moni Linke"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:63
+#, kde-format
+msgid "Pirate Dog"
+msgstr "海盜狗"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:67
+#, kde-format
+msgid "Clown"
+msgstr "小丑"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:71
+#, kde-format
+msgid "Pirate Ship"
+msgstr "海盜船"
+
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#: levels/default.xml:71 levels/default.xml:115 levels/default.xml:156
+#: levels/default.xml:160 levels/default.xml:524
+#, kde-format
+msgid "Frank Uebbing"
+msgstr "Frank Uebbing"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:75
+#, kde-format
+msgid "Panda"
+msgstr "熊貓"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:79
+#, kde-format
+msgid "Elephant"
+msgstr "大象"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:83
+#, kde-format
+msgid "Claus the cat"
+msgstr "聖誕貓"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:87
+#, kde-format
+msgid "Bird"
+msgstr "鳥"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:91
+#, kde-format
+msgid "Zebra"
+msgstr "斑馬"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:95
+#, kde-format
+msgid "Antique Phone"
+msgstr "古董電話"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:99
+#, kde-format
+msgid "Treble Clef"
+msgstr "高音譜記號"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:103
+#, kde-format
+msgid "Halloween"
+msgstr "萬聖節"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:107
+#, kde-format
+msgid "Hourglass"
+msgstr "沙漏"
+
+#. i18n: tag board attribute name
+#. i18n: tag board attribute name
+#: levels/default.xml:111 levels/default.xml:551
+#, kde-format
+msgid "Robot"
+msgstr "機器人"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:115
+#, kde-format
+msgid "Bike"
+msgstr "腳踏車"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:119
+#, kde-format
+msgid "Penguin"
+msgstr "企鵝"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:152
+#, kde-format
+msgid "Baby Panda"
+msgstr "小熊貓"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:156
+#, kde-format
+msgid "House"
+msgstr "馬"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:160
+#, kde-format
+msgid "Soccer"
+msgstr "足球"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:164
+#, kde-format
+msgid "Alarm Clock"
+msgstr "鬧鐘"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:195
+#, kde-format
+msgid "Taxi!"
+msgstr "計程車！"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:226
+#, kde-format
+msgid "Marker"
+msgstr "標記"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:244
+#, kde-format
+msgid "Thumbs Up"
+msgstr "豎大姆指"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:262
+#, kde-format
+msgid "Cup"
+msgstr "杯子"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:275
+#, kde-format
+msgid "Dinner Time"
+msgstr "晚餐時間"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:295
+#, kde-format
+msgid "Wine Glass"
+msgstr "酒杯"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:317
+#, kde-format
+msgid "Cocktail Glass"
+msgstr "雞尾酒杯"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:334
+#, kde-format
+msgid "Escalator"
+msgstr "電扶梯"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:360
+#, kde-format
+msgid "Helicopter"
+msgstr "直升機"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:383
+#, kde-format
+msgid "Letter A"
+msgstr "字母 A"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:396
+#, kde-format
+msgid "Screw"
+msgstr "螺絲釘"
+
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#: levels/default.xml:396 levels/default.xml:414 levels/default.xml:432
+#: levels/default.xml:450 levels/default.xml:468 levels/default.xml:486
+#, kde-format
+msgid "Zack Rusin"
+msgstr "Zack Rusin"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:414
+#, kde-format
+msgid "Cup of coffee"
+msgstr "咖啡"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:432
+#, kde-format
+msgid "Lion"
+msgstr "獅子"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:450
+#, kde-format
+msgid "Gas Lamp"
+msgstr "瓦斯燈"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:468
+#, kde-format
+msgid "Monkey"
+msgstr "猴子"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:486
+#, kde-format
+msgid "Teddy Bear"
+msgstr "泰迪熊"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:504
+#, kde-format
+msgid "Policeman"
+msgstr "警察"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:508
+#, kde-format
+msgid "Santa Claus"
+msgstr "聖誕老人"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:512
+#, kde-format
+msgid "Bass Clef"
+msgstr "低音譜記號"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:516
+#, kde-format
+msgid "Phone"
+msgstr "電話"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:520
+#, kde-format
+msgid "Shopping Cart"
+msgstr "購物車"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:524 src/main.cpp:40
+#, kde-format
+msgid "Picmi"
+msgstr "Picmi"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:528
+#, kde-format
+msgid "Mobile Phone"
+msgstr "行動電話"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:532
+#, kde-format
+msgid "Calculator"
+msgstr "計算機"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:536
+#, kde-format
+msgid "Camera"
+msgstr "相機"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:540
+#, kde-format
+msgid "Car"
+msgstr "車"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:564
+#, kde-format
+msgid "Microphone"
+msgstr "麥克風"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:577
+#, kde-format
+msgid "Floppy Disk"
+msgstr "磁碟片"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:590
+#, kde-format
+msgid "Printer"
+msgstr "印表機"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:603
+#, kde-format
+msgid "Smiley"
+msgstr "笑臉"
+
+#: src/gui/graphicsitems/textbanneritem.cpp:28
+#, kde-format
+msgid "PAUSED"
+msgstr "已暫停"
+
+#: src/gui/mainwindow.cpp:62
+#, kde-format
+msgid "Save Position"
+msgstr "儲存位置"
+
+#: src/gui/mainwindow.cpp:68
+#, kde-format
+msgid "Load Position"
+msgstr "載入位置"
+
+#: src/gui/mainwindow.cpp:79
+#, kde-format
+msgid "New Game"
+msgstr "開始新遊戲"
+
+#: src/gui/mainwindow.cpp:84
+#, kde-format
+msgid "Load New Game"
+msgstr "載入新遊戲"
+
+#: src/gui/mainwindow.cpp:97
+#, kde-format
+msgctxt "custom difficulty"
+msgid "Custom"
+msgstr "自訂"
+
+#: src/gui/mainwindow.cpp:246
+#, kde-format
+msgid "Elapsed time: %1"
+msgstr "經過時間：%1"
+
+#: src/gui/mainwindow.cpp:251
+#, kde-format
+msgid "Actions since last saved position: %1"
+msgstr "上次儲存位置後的動作：%1"
+
+#: src/gui/mainwindow.cpp:280
+#, kde-format
+msgid "Congratulations, you have solved this board!"
+msgstr "恭喜，您過關了！"
+
+#: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
+#, kde-format
+msgid "Board Solved!"
+msgstr "過關了！"
+
+#: src/gui/mainwindow.cpp:286
+#, kde-format
+msgid "Congratulations, you have solved board '%1'!"
+msgstr "恭喜，您完成了 '%1' 號遊戲！"
+
+#: src/gui/selectboardwindow.cpp:87
+#, kde-format
+msgid "Level"
+msgstr "關卡"
+
+#: src/gui/selectboardwindow.cpp:88
+#, kde-format
+msgid "Level Set"
+msgstr "關卡集"
+
+#: src/gui/selectboardwindow.cpp:89
+#, kde-format
+msgid "Difficulty"
+msgstr "困難度"
+
+#: src/gui/selectboardwindow.cpp:90
+#, kde-format
+msgid "Size"
+msgstr "大小"
+
+#: src/gui/selectboardwindow.cpp:91
+#, kde-format
+msgctxt "board solved"
+msgid "Solved"
+msgstr "已過關"
+
+#: src/gui/selectboardwindow.cpp:154
+#, fuzzy, kde-format
+#| msgid "Level Selection"
+msgctxt "@title:window"
+msgid "Level Selection"
+msgstr "選擇關卡"
+
+#: src/gui/selectboardwindow.cpp:242
+#, kde-format
+msgid "Ridiculously Easy"
+msgstr "一擊就倒"
+
+#: src/gui/selectboardwindow.cpp:243
+#, kde-format
+msgid "Very Easy"
+msgstr "非常簡單"
+
+#: src/gui/selectboardwindow.cpp:244
+#, kde-format
+msgid "Easy"
+msgstr "容易"
+
+#: src/gui/selectboardwindow.cpp:245
+#, kde-format
+msgid "Medium"
+msgstr "中等"
+
+#: src/gui/selectboardwindow.cpp:246
+#, kde-format
+msgid "Hard"
+msgstr "困難"
+
+#: src/gui/selectboardwindow.cpp:247
+#, kde-format
+msgid "Very Hard"
+msgstr "非常難"
+
+#: src/gui/selectboardwindow.cpp:248
+#, kde-format
+msgid "Extremely Hard"
+msgstr "強到不行"
+
+#: src/gui/selectboardwindow.cpp:249
+#, kde-format
+msgid "Impossible"
+msgstr "超級賽亞人"
+
+#: src/gui/selectboardwindow.cpp:255
+#, kde-format
+msgid "Name: %1"
+msgstr "名稱：%1"
+
+#: src/gui/selectboardwindow.cpp:256
+#, kde-format
+msgid "Author: %1"
+msgstr "作者：%1"
+
+#: src/gui/selectboardwindow.cpp:257
+#, kde-format
+msgid "Size: %1x%2"
+msgstr "大小：%1x%2"
+
+#: src/gui/selectboardwindow.cpp:258
+#, kde-format
+msgid "Difficulty: %1"
+msgstr "困難度：%1"
+
+#: src/gui/selectboardwindow.cpp:260
+#, kde-format
+msgctxt "board solve time"
+msgid "Solved: %1"
+msgstr "已過關：%1"
+
+#: src/gui/selectboardwindow.cpp:267
+#, kde-format
+msgctxt "board not solved yet"
+msgid "Solved: -"
+msgstr "已過關： -"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, LevelSelectUi)
+#: src/gui/selectboardwindow.ui:23
+#, kde-format
+msgid "Level Selection"
+msgstr "選擇關卡"
+
+#. i18n: ectx: property (text), widget (QLabel, labelAuthor)
+#: src/gui/selectboardwindow.ui:79
+#, kde-format
+msgid "Author: -"
+msgstr "作者： -"
+
+#. i18n: ectx: property (text), widget (QLabel, labelName)
+#: src/gui/selectboardwindow.ui:86
+#, kde-format
+msgid "Name: -"
+msgstr "名稱： -"
+
+#. i18n: ectx: property (text), widget (QLabel, labelImage)
+#: src/gui/selectboardwindow.ui:110
+#, kde-format
+msgid "?"
+msgstr "?"
+
+#. i18n: ectx: property (text), widget (QLabel, labelSolved)
+#: src/gui/selectboardwindow.ui:120
+#, kde-format
+msgid "Solved: -"
+msgstr "已過關： -"
+
+#. i18n: ectx: property (text), widget (QLabel, labelSize)
+#: src/gui/selectboardwindow.ui:127
+#, kde-format
+msgid "Size: -"
+msgstr "大小： -"
+
+#. i18n: ectx: property (text), widget (QLabel, labelDifficulty)
+#: src/gui/selectboardwindow.ui:134
+#, kde-format
+msgid "Difficulty: -"
+msgstr "困難度： -"
+
+#: src/gui/settingswindow.cpp:63
+#, kde-format
+msgid "Select Background"
+msgstr "選擇背景"
+
+#: src/gui/settingswindow.cpp:64
+#, kde-format
+msgid "Image Files (*.png *.jpg)"
+msgstr "影像檔 (*.png *.jpg)"
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, SettingsWindow)
+#: src/gui/settingswindow.ui:20
+#, kde-format
+msgid "Settings"
+msgstr "設定"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: src/gui/settingswindow.ui:28
+#, kde-format
+msgid "Background Image"
+msgstr "背景影像"
+
+#. i18n: ectx: property (text), widget (QRadioButton, bgDefaultRadioButton)
+#: src/gui/settingswindow.ui:38
+#, kde-format
+msgctxt "default background image"
+msgid "Default"
+msgstr "預設"
+
+#. i18n: ectx: property (text), widget (QRadioButton, bgCustomRadioButton)
+#: src/gui/settingswindow.ui:48
+#, kde-format
+msgctxt "custom background image"
+msgid "Custom"
+msgstr "自訂"
+
+#. i18n: ectx: property (text), widget (QToolButton, bgToolButton)
+#: src/gui/settingswindow.ui:66
+#, kde-format
+msgid "..."
+msgstr "..."
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: src/gui/settingswindow.ui:80
+#, kde-format
+msgid "Font Colors"
+msgstr "字型顏色"
+
+#. i18n: ectx: property (text), widget (QLabel, fontColorSolvedLabel)
+#: src/gui/settingswindow.ui:94
+#, fuzzy, kde-format
+#| msgid "Solved Streaks"
+msgid "Solved streaks:"
+msgstr "連續過關數"
+
+#. i18n: ectx: property (text), widget (QLabel, fontColorUnsolvedLabel)
+#: src/gui/settingswindow.ui:110
+#, fuzzy, kde-format
+#| msgid "Unsolved Streaks"
+msgid "Unsolved streaks:"
+msgstr "連續失敗數"
+
+#. i18n: ectx: property (text), widget (QPushButton, fontColorSolvedPushButton)
+#. i18n: ectx: property (text), widget (QPushButton, fontColorUnsolvedPushButton)
+#: src/gui/settingswindow.ui:120 src/gui/settingswindow.ui:127
+#, kde-format
+msgid "Edit..."
+msgstr "編輯..."
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: src/gui/settingswindow.ui:145
+#, kde-format
+msgid "Custom Difficulty"
+msgstr "自訂困難度"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: src/gui/settingswindow.ui:153
+#, kde-format
+msgid "Height:"
+msgstr "高度："
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: src/gui/settingswindow.ui:176
+#, kde-format
+msgid "Width:"
+msgstr "寬度："
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: src/gui/settingswindow.ui:203
+#, kde-format
+msgid "Density:"
+msgstr "密度："
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: src/gui/settingswindow.ui:241
+#, fuzzy, kde-format
+#| msgid "Prevent Mistakes:"
+msgid "Prevent mistakes:"
+msgstr "預防錯誤："
+
+#: src/main.cpp:42
+#, kde-format
+msgid "Picmi - a nonogram puzzle game"
+msgstr "Picmi - 一種 nonogram 邏輯遊戲"
+
+#: src/main.cpp:44
+#, kde-format
+msgid "(c) 2012 - 2015 The Picmi Authors"
+msgstr "(c) 2012 - 2015 Picmi 作者群"
+
+#: src/main.cpp:47
+#, kde-format
+msgid "Picmi Author"
+msgstr "Picmi 作者"

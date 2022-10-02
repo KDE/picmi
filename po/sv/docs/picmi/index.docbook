@@ -1,0 +1,732 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Swedish "INCLUDE">
+<!ENTITY % addindex "IGNORE">
+]>
+
+<book id="picmi" lang="&language;">
+<bookinfo>
+<title
+>Handbok &picmi;</title>
+
+<authorgroup>
+<author
+><firstname
+>Jakob</firstname
+> <surname
+>Gruber</surname
+> <affiliation
+><address
+><email
+>jakob.gruber@gmail.com</email
+></address
+></affiliation>
+</author>
+<othercredit role="translator"
+> <firstname
+>Stefan</firstname
+> <surname
+>Asserhäll</surname
+> <affiliation
+><address
+><email
+>stefan.asserhall@bredband.net</email
+></address
+></affiliation
+> <contrib
+>Översättare</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2012</year>
+<holder
+>Jakob Gruber</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2021-10-08</date>
+<releaseinfo
+>2.0.0 (KDE Gear 21.08)</releaseinfo>
+
+<abstract>
+<para
+>&picmi; - Ett nonogrampussel.</para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdegames</keyword>
+<keyword
+>spel</keyword>
+<keyword
+>pusselspel</keyword>
+<keyword
+>Picmi</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Inledning</title>
+
+<para
+>&picmi; är ett pussel för en spelare. </para>
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="gameboard.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Spelbrädet i &picmi;</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>Spelets mål är att färglägga celler enligt tal som anges vid sidan av brädet. </para>
+</chapter>
+
+<chapter id="how-to-play">
+<title
+>Hur man spelar</title>
+
+<para
+>Ett tomt bräde visas för spelaren, och en lista med tal för varje rad och kolumn. Talen representerar hur följder är organiserade inom en viss given rad eller kolumn. Exempelvis skulle talföljden <quote
+>4 8 3</quote
+> betyda att det finns uppsättningar med fyra, åtta, och tre använda celler, i den ordningen, med minst en tom cell mellan successiva grupper. Spelets syfte är att använda tipsen för att avslöja rätt lösning, och göra det så snabbt som möjligt. </para>
+
+<para
+>Ett vänsterklick markerar eller avmarkerar en cell som använd, medan ett högerklick markerar eller avmarkerar en cell som tom. Det går att dra för att markera flera celler i en rad eller kolumn på en gång. Förfluten tid samt återstående använda celler visas i övre vänstra hörnet. Spelet är färdigt när väl alla använda celler har markerats riktigt. </para>
+
+<para
+>Aktuell placering av rutor och kryss (som kallas 'tillstånd' i fortsättningen) kan sparas när som helst. Att spara ett nytt tillstånd skriver inte över tidigare sparade tillstånd. Att återställa ett tillstånd går alltid tillbaka till det senast sparade tillståndet. Det kan upprepas till inga fler sparade tillstånd återstår. Antal drag sedan det senast sparade tillståndet visas i statusraden. </para>
+
+<para
+>&picmi; inkluderar två spelvarianter: Slumpmässiga spel (skapade genom att välja menyalternativet <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Spel</guimenu
+> <guimenuitem
+>Nytt</guimenuitem
+></menuchoice
+>) skapas enligt vald svårighetsinställning. Alternativt kan de inkluderade förinställda spelen användas genom att välja menyalternativet <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Spel</guimenu
+> <guimenuitem
+>Ladda...</guimenuitem
+></menuchoice
+>. </para>
+
+</chapter>
+
+<chapter id="rules-strategies-tips">
+<title
+>Spelets regler, strategi och tips</title>
+
+<sect1 id="rules">
+<title
+>Regler</title>
+<para
+>Talföljden i en rad eller kolumn ger en viss information om antal använda celler och deras arrangemang inom en rad eller kolumn.</para>
+<itemizedlist>
+  <listitem
+><para
+>Ett tal som representerar längden på en sammanbunden följd av använda celler på brädet. Följden har åtminstone en tom cell på varje sida eller är placerad direkt vid brädets kant.</para
+></listitem>
+  <listitem
+><para
+>Dessutom visar en talföljd ordningen hos dessa följder inom en rad eller kolumn.</para
+></listitem>
+  <listitem
+><para
+>När alternativet <guilabel
+>Förhindra misstag</guilabel
+> är aktiverat, är det inte möjligt att felaktigt markera en cell som använd, istället läggs en strafftid till i tidtagningen. Straffet ökar för varje misstag som begås.</para
+></listitem>
+  <listitem
+><para
+>Om alternativet <guilabel
+>Förhindra misstag</guilabel
+> är inaktiverat, finns ingen återmatning  om en cell har markerats riktigt, och inget straff för att begå misstag.</para
+></listitem>
+  <listitem
+><para
+>Spelet slutar när väl alla använda celler har markerats riktigt.</para
+></listitem>
+</itemizedlist>
+</sect1>
+
+</chapter>
+
+<chapter id="interface-overview">
+<title
+>Översikt av gränssnittet</title>
+
+<sect1 id="menu-items">
+<title
+>Menyalternativ</title>
+
+<variablelist>
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spel</guimenu
+> <guimenuitem
+>Nytt</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Startar ett nytt spel.</action
+> Det skapar en slumpmässig spelplan med aktuell svårighetsnivå.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spel</guimenu
+> <guimenuitem
+>Ladda...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Laddar ett förinställt spel.</action
+> Namnen på spel är dolda till de har lösts. Bästa resultatlistor och svårighetsinställningar är inaktiverade.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycap
+>F5</keycap
+></shortcut
+> <guimenu
+>Spel</guimenu
+> <guimenuitem
+>Starta om spel</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Detta startar om pågående spel.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycap
+>P</keycap
+></shortcut
+> <guimenu
+>Spel</guimenu
+> <guimenuitem
+>Paus</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Gör paus i speltidtagningen.</action
+> Klicka på menyalternativet igen för att återuppta spelet. Observera att spelbrädet försvinner när spelet gör paus, eftersom det vore ojust om du kunde leta efter bra drag utan tidspress.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spel</guimenu
+> <guimenuitem
+>Visa bästa resultat...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Visar en dialogruta som innehåller bästa resultat för de olika svårighetsnivåerna.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spel</guimenu
+> <guimenuitem
+>Avsluta</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Avslutar</action
+> &picmi;.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Z</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Flytta</guimenu
+> <guimenuitem
+>Ångra</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Ångra det tidigare draget</action
+> om det finns något.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>I</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Flytta</guimenu
+> <guimenuitem
+>Tips</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Markerar en cell som använd eller tom.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Flytta</guimenu
+> <guimenuitem
+>Lös</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Visa ett demonstrationsspel.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>L</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Flytta</guimenu
+> <guimenuitem
+>Läs in position</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Läser in den senast sparade positionen.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Flytta</guimenu
+> <guimenuitem
+>Spara position</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Sparar brädets nuvarande position.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>F</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Inställningar</guimenu
+> <guimenuitem
+>Fullskärmsläge</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Växlar det grafiska gränssnittet till fullskärmsläge.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Inställningar</guimenu
+><guisubmenu
+>Svårighet</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Låter dig ange svårighetsnivån från en undermeny.</action
+></para>
+    <para
+>Det finns fyra svårighetsnivåer: <itemizedlist>
+        <listitem
+><para
+><guimenuitem
+>Lätt</guimenuitem
+>: 10 rader, 10 kolumner, 55 % av alla celler är använda, <guilabel
+>Förhindra misstag:</guilabel
+> är inaktiverat.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>Normal</guimenuitem
+>: 10 rader, 15 kolumner, 55 % av alla celler är använda, <guilabel
+>Förhindra misstag:</guilabel
+> är inaktiverat.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>Svår</guimenuitem
+>: 15 rader, 15 kolumner, 55 % av alla celler är använda, <guilabel
+>Förhindra misstag:</guilabel
+> är inaktiverat.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>Egen</guimenuitem
+>: Egna dimensioner för brädet och inställningar.</para
+></listitem>
+      </itemizedlist>
+    </para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Inställningar</guimenu
+> <guimenuitem
+>Anpassa &picmi;...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Välj spelets bakgrundsbild, brädets dimensioner och inställningar för egen svårighetsnivå.</action
+></para
+></listitem>
+  </varlistentry>
+</variablelist>
+
+<para
+>Dessutom har &picmi; de vanliga menyalternativen <guimenu
+>Inställningar</guimenu
+> och <guimenu
+>Hjälp</guimenu
+> i &kde;. För mer information, läs avsnitten <ulink url="help:/fundamentals/menus.html#menus-settings"
+>Menyn Inställningar</ulink
+> och <ulink url="help:/fundamentals/menus.html#menus-help"
+>Menyn Hjälp</ulink
+> i &kde;:s Grunder. </para>
+</sect1>
+
+<sect1 id="keybindings">
+<title id="keybindings-title"
+>Genvägar</title>
+
+<para
+>Förvalda genvägar är:</para>
+
+<table>
+  <title
+>Genvägar</title>
+  <tgroup cols="2">
+    <tbody>
+      <row>
+        <entry
+>Starta ett nytt spel</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Läs in ett förinställt spel</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Paus</entry>
+        <entry
+><keycap
+>P</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Visa bästa resultat</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Fullskärmsläge</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>F</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Avsluta</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Hjälp</entry>
+        <entry
+><keycap
+>F1</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Vad är det här? hjälp</entry>
+        <entry
+><keycombo action="simul"
+>&Shift;<keycap
+>F1</keycap
+></keycombo
+></entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+
+<table>
+  <title
+>Tangentbordsstyrning</title>
+  <tgroup cols="2">
+    <tbody>
+      <row>
+        <entry
+>Flytta åt vänster</entry>
+        <entry
+><keycap
+>Vänsterpil</keycap
+> eller <keycap
+>H</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Flytta åt höger</entry>
+        <entry
+><keycap
+>Högerpil</keycap
+> eller <keycap
+>L</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Flytta upp</entry>
+        <entry
+><keycap
+>Uppåtpil</keycap
+> eller <keycap
+>K</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Flytta ner</entry>
+        <entry
+><keycap
+>Neråtpil</keycap
+> eller <keycap
+>J</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Markera eller avmarkera cell som använd</entry>
+        <entry
+><keycap
+>X</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Markera eller avmarkera cell som fri</entry>
+        <entry
+><keycap
+>Mellanslag</keycap
+></entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+
+</sect1>
+</chapter>
+
+
+<chapter id="credits">
+<title
+>Tack till och licens</title>
+
+<para
+>&picmi; </para>
+<para
+>Program copyright 2012 av Jakob Gruber <email
+>jakob.gruber@gmail.com</email
+> </para>
+<para
+>Dokumentation copyright 2012 av Jakob Gruber <email
+>jakob.gruber@gmail.com</email
+> </para>
+
+<para
+>Översättning Stefan Asserhäll <email
+>stefan.asserhall@bredband.net</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+
+&documentation.index;
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-always-quote-attributes:t
+sgml-indent-step:0
+sgml-indent-data:t
+End:
+-->

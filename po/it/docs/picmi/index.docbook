@@ -1,0 +1,722 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Italian "INCLUDE">
+<!ENTITY % addindex "IGNORE">
+]>
+
+<book id="picmi" lang="&language;">
+<bookinfo>
+<title
+>Manuale di &picmi;</title>
+
+<authorgroup>
+<author
+><firstname
+>Jakob</firstname
+> <surname
+>Gruber</surname
+> <affiliation
+><address
+><email
+>jakob.gruber@gmail.com</email
+></address
+></affiliation>
+</author>
+<othercredit role="translator"
+><firstname
+>Vincenzo</firstname
+> <surname
+>Reale</surname
+><affiliation
+><address
+><email
+>smart2128vr@gmail.com</email
+></address
+></affiliation
+><contrib
+>Traduzione della documentazione</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2012</year>
+<holder
+>Jakob Gruber</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>8/10/2021</date>
+<releaseinfo
+>2.0.0 (KDE Gear 21.08)</releaseinfo>
+
+<abstract>
+<para
+>&picmi;, un rompicapo nonogram</para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdegames</keyword>
+<keyword
+>gioco</keyword>
+<keyword
+>rompicapo</keyword>
+<keyword
+>Picmi</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Introduzione</title>
+
+<para
+>&picmi; è un rompicapo a singolo giocatore. </para>
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="gameboard.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>piano da gioco di &picmi;</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>L'obiettivo del gioco è colorare le celle in base ai numeri forniti ai lati del piano di gioco. </para>
+</chapter>
+
+<chapter id="how-to-play">
+<title
+>Come si gioca</title>
+
+<para
+>Al giocatore viene presentata un piano di gioco vuoto, e un elenco di numeri per ogni riga e colonna. Questi numeri rappresentano l'organizzazione delle serie all'interno di una qualsiasi riga o colonna. Ad esempio, una sequenza di numeri di <quote
+>4 8 3</quote
+> significa che ci sono insiemi di quattro, otto e tre celle piene, in quell'ordine, con almeno una cella vuota tra i gruppi successivi. L'obiettivo del gioco è utilizzare questi suggerimenti per scoprire la soluzione effettiva, e farlo il più rapidamente possibile. </para>
+
+<para
+>Un clic sinistro (s)marca una cella come occupata, mentre un clic destro (s)marca una cella vuota. Il trascinamento può essere utilizzato per marcare più celle in una riga o colonna in una volta sola. Il tempo trascorso viene visualizzato nella barra di stato e una panoramica del tabellone di gioco si trova nell'angolo in alto a sinistra. Una partita viene completata quando tutte le celle occupate sono state marcate correttamente. </para>
+
+<para
+>La posizione attuale delle caselle e delle croci («stati» d'ora in poi) può essere salvata in qualsiasi momento. Il salvataggio di un nuovo stato non sovrascrive gli stati salvati in precedenza. Il ripristino di uno stato ritorna sempre allo stato salvato più di recente. Questo può essere ripetuto fino a quando non rimangono più stati salvati. Il numero di azioni dall'ultimo stato salvato viene visualizzato nella barra di stato. </para>
+
+<para
+>&picmi; include due modalità di gioco. Rompicapo casuali (generati selezionando <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Partita</guimenu
+> <guimenuitem
+>Nuova</guimenuitem
+></menuchoice
+> dal menu) sono generati in base alle impostazioni di difficoltà selezionate. In alternativa, i rompicapo predefiniti inclusi possono essere giocati selezionando la voce di menu <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Partita</guimenu
+> <guimenuitem
+>Carica...</guimenuitem
+></menuchoice
+>. </para>
+
+</chapter>
+
+<chapter id="rules-strategies-tips">
+<title
+>Regole del gioco, strategie e suggerimenti</title>
+
+<sect1 id="rules">
+<title
+>Regole</title>
+<para
+>La sequenza di numeri in una riga o colonna fornisce informazioni sul numero delle celle occupate e sulla loro disposizione all'interno di una riga o colonna.</para>
+<itemizedlist>
+  <listitem
+><para
+>Un numero rappresenta la lunghezza di una serie connessa di celle occupate sul piano di gioco. Questa serie ha almeno una cella vuota su ciascun lato o si trova direttamente sul bordo del piano.</para
+></listitem>
+  <listitem
+><para
+>In aggiunta, una sequenza di numeri mostra l'ordine di queste esecuzioni all'interno di una riga o colonna.</para
+></listitem>
+  <listitem
+><para
+>Quando l'opzione <guilabel
+>Impedisci gli sbagli:</guilabel
+> è abilitata, è impossibile marcare una cella come occupata non correttamente - invece,  una penalità è aggiunta al tempo. La penalità viene incrementata da ogni errore commesso.</para
+></listitem>
+  <listitem
+><para
+>Se l'opzione <guilabel
+>Impedisci gli sbagli:</guilabel
+> è disabilitata, non c'è alcun riscontro che una cella sia stata marcata correttamente, e nessun penalità per gli errori commessi.</para
+></listitem>
+  <listitem
+><para
+>Il gioco si fermerà una volta che tutte le celle occupate saranno state marcate correttamente.</para
+></listitem>
+</itemizedlist>
+</sect1>
+
+</chapter>
+
+<chapter id="interface-overview">
+<title
+>Panoramica dell'interfaccia</title>
+
+<sect1 id="menu-items">
+<title
+>Elementi dei menu</title>
+
+<variablelist>
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Partita</guimenu
+> <guimenuitem
+>Nuova</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Inizia una nuova partita.</action
+> Crea un piano di gioco casuale usando il livello di difficoltà attuale.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Partita</guimenu
+><guimenuitem
+>Carica</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Carica un rompicapo preimpostato.</action
+> I nomi dei rompicapo sono nascosti fino alla soluzione. Le classifiche e le impostazioni di difficoltà sono disabilitate.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycap
+>F5</keycap
+></shortcut
+> <guimenu
+>Partita</guimenu
+> <guimenuitem
+>Riavvia la partita</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Questo riavvierà la partita attuale.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycap
+>P</keycap
+></shortcut
+> <guimenu
+>Partita</guimenu
+> <guimenuitem
+>Pausa</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Sospende il gioco</action
+>. Fare clic sulla voce di menu per riprendere il gioco. Il piano di gioco scompare quando il gioco viene messo in pausa, dato che non sarebbe corretto poter determinare mosse ottimali senza la pressione del tempo che passa.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Partita</guimenu
+> <guimenuitem
+>Mostra la classifica...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Mostra una finestra con la classifica dei punteggi migliori per i vari livelli di difficoltà.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Partita</guimenu
+> <guimenuitem
+>Esci</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Esce</action
+> da &picmi;.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Mossa</guimenu
+> <guimenuitem
+>Annulla</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Annulla la mossa precedente</action
+>, se ne esiste una.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>I</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Mossa</guimenu
+> <guimenuitem
+>Suggerimento</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Marca una cella come occupata o vuota.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Mossa</guimenu
+><guimenuitem
+>Risolvi</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Gioca una partita dimostrativa.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>L</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Mossa</guimenu
+> <guimenuitem
+>Carica posizione</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Carica la posizione salvata più recentemente.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Mossa</guimenu
+> <guimenuitem
+>Salva posizione</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Salva la posizione attuale del piano di gioco.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>F</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Visualizza</guimenu
+> <guimenuitem
+>Modalità schermo intero</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Passa dalla modalità a finestre a quella a schermo intero.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Impostazioni</guimenu
+> <guisubmenu
+>Difficoltà</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Consente di impostare il livello di difficoltà da un sottomenu.</action
+></para>
+    <para
+>Ci sono quattro livelli di difficoltà: <itemizedlist>
+        <listitem
+><para
+><guimenuitem
+>Facile</guimenuitem
+>:  10 righe, 10 colonne, 55% di tutte le celle è occupato, l'opzione <guilabel
+>Impedisci gli sbagli:</guilabel
+> è disabilitata.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>Medio</guimenuitem
+>:  10 righe, 15 colonne, 55% di tutte le celle è occupato, l'opzione <guilabel
+>Impedisci gli sbagli:</guilabel
+> è disabilitata.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>Difficile</guimenuitem
+>: 15 righe, 15 colonne, 55% di tutte le celle è occupato, l'opzione <guilabel
+>Impedisci gli sbagli:</guilabel
+> è disabilitata.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>Personalizzato</guimenuitem
+>: Dimensioni e impostazioni personalizzate del</para
+></listitem>
+      </itemizedlist>
+    </para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Impostazioni</guimenu
+> <guimenuitem
+>Configura &picmi;...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Aggiungere l'immagine di sfondo del gioco, dimensioni e impostazioni del piano per il livello di difficoltà personalizzato.</action
+></para
+></listitem>
+  </varlistentry>
+</variablelist>
+
+<para
+>Inoltre, &picmi; ha le voci del menu <guimenu
+>Impostazioni</guimenu
+> e <guimenu
+>Aiuto</guimenu
+> comuni di &kde;; per maggiori informazioni leggere le sezioni sul <ulink url="help:/fundamentals/menus.html#menus-settings"
+>menu Impostazioni</ulink
+> e sul <ulink url="help:/fundamentals/menus.html#menus-help"
+>menu Aiuto</ulink
+> dei «Fondamentali di &kde;». </para>
+</sect1>
+
+<sect1 id="keybindings">
+<title id="keybindings-title"
+>Scorciatoie</title>
+
+<para
+>Le scorciatoie predefinite sono:</para>
+
+<table>
+  <title
+>Scorciatoie</title>
+  <tgroup cols="2">
+    <tbody>
+      <row>
+        <entry
+>Inizia una nuova partita</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Carica una partita preimpostata</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Pausa</entry>
+        <entry
+><keycap
+>P</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Mostra la classifica</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Modalità a schermo intero</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>F</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Esci</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Aiuto</entry>
+        <entry
+><keycap
+>F1</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Spiegazione «Che cos'è?»</entry>
+        <entry
+><keycombo action="simul"
+>&Shift;<keycap
+>F1</keycap
+></keycombo
+></entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+
+<table>
+  <title
+>Controlli da tastiera</title>
+  <tgroup cols="2">
+    <tbody>
+      <row>
+        <entry
+>Sposta a sinistra</entry>
+        <entry
+>&Left; o <keycap
+>H</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Sposta a destra</entry>
+        <entry
+>&Right; o <keycap
+>L</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Sposta in alto</entry>
+        <entry
+>&Up; o <keycap
+>K</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Sposta in basso</entry>
+        <entry
+>&Down; o <keycap
+>J</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>(S)marca la cella occupata</entry>
+        <entry
+><keycap
+>X</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>(S)marca la cella libera</entry>
+        <entry
+>&Space;</entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+
+</sect1>
+</chapter>
+
+
+<chapter id="credits">
+<title
+>Riconoscimenti e licenza</title>
+
+<para
+>&picmi; </para>
+<para
+>Copyright del programma 2012 di Jakob Gruber <email
+>jakob.gruber@gmail.com</email
+> </para>
+<para
+>Copyright della documentazione 2012 di Jakob Gruber <email
+>jakob.gruber@gmail.com</email
+> </para>
+
+<para
+>Traduzione: Vincenzo Reale <email
+>smart2128vr@gmail.com</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+
+&documentation.index;
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-always-quote-attributes:t
+sgml-indent-step:0
+sgml-indent-data:t
+End:
+-->

@@ -1,0 +1,706 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Catalan  "INCLUDE">
+<!ENTITY % addindex "IGNORE">
+]>
+
+<book id="picmi" lang="&language;">
+<bookinfo>
+<title
+>El manual del &picmi;</title>
+
+<authorgroup>
+<author
+><firstname
+>Jakob</firstname
+> <surname
+>Gruber</surname
+> <affiliation
+><address
+><email
+>jakob.gruber@gmail.com</email
+></address
+></affiliation>
+</author>
+&traductor.Antoni.Bella; 
+</authorgroup>
+
+<copyright>
+<year
+>2012</year>
+<holder
+>Jakob Gruber</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>8 d'octubre de 2021</date>
+<releaseinfo
+>2.0.0 (KDE Gear 21.08)</releaseinfo>
+
+<abstract>
+<para
+>El &picmi;, un joc trencaclosques de pintar amb nombres.</para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdegames</keyword>
+<keyword
+>joc</keyword>
+<keyword
+>joc de trencaclosques</keyword>
+<keyword
+>Picmi</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Introducció</title>
+
+<para
+>El &picmi; és un joc de trencaclosques d'un sol jugador. </para>
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="gameboard.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Joc de taula &picmi;</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>L'objectiu del joc és pintar les cel·les d'acord amb els números indicats al costat del tauler. </para>
+</chapter>
+
+<chapter id="how-to-play">
+<title
+>Com jugar</title>
+
+<para
+>Al jugador se li presenta una taula en blanc i una llista de nombres per a cada fila i columna. Aquests nombres representen com s'organitzen les execucions dins de qualsevol fila o columna donada. Per exemple, una seqüència de nombres <quote
+>4 8 3</quote
+> significaria que hi ha conjunts de quatre, vuit i tres cel·les plenes, en aquest ordre, amb almenys una cel·la en blanc entre grups successius. L'objectiu del joc és utilitzar aquests suggeriments per a descobrir la solució real i fer-ho el més ràpid possible. </para>
+
+<para
+>Un clic esquerre des/marcarà una cel·la com ocupada, mentre que un clic dret des/marcarà una cel·la com buida. Es pot emprar l'arrossegament per a marcar d'una sola vegada diverses cel·les en una fila o columna. El temps transcorregut es mostra a la barra d'estat i trobareu un resum del tauler de joc a la cantonada superior esquerra. Es completarà una partida una vegada s'hagin marcat correctament totes les cel·les ocupades. </para>
+
+<para
+>La col·locació actual de les caselles i creus (referides d'ara endavant com «estats») es pot desar en qualsevol moment. Desar un estat nou no sobreescriurà els estats desats anteriorment. Restaurar un estat sempre tornarà a l'estat desat més recentment. Això es pot repetir fins que no quedin més estats desats. El nombre d'accions des de l'últim estat desat es mostra a la barra d'estat. </para>
+
+<para
+>El &picmi; inclou dos modes de joc. Els trencaclosques aleatoris (generats seleccionant l'element de menú <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Joc</guimenu
+> <guimenuitem
+>Nova</guimenuitem
+></menuchoice
+>) es generen d'acord amb la configuració de dificultat seleccionada. De manera alternativa, els trencaclosques predefinits inclosos es poden jugar seleccionant l'element de menú <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Joc</guimenu
+> <guimenuitem
+>Carrega...</guimenuitem
+></menuchoice
+>. </para>
+
+</chapter>
+
+<chapter id="rules-strategies-tips">
+<title
+>Les regles del joc, estratègies i consells</title>
+
+<sect1 id="rules">
+<title
+>Regles</title>
+<para
+>La seqüència de nombres en una fila o columna proporciona certa informació sobre el recompte de cel·les ocupades i la seva disposició dins d'una fila o columna.</para>
+<itemizedlist>
+  <listitem
+><para
+>Un número representa la longitud d'una execució connectada de cel·les ocupades en el tauler. Aquesta execució té almenys una cel·la buida en cada costat o es troba directament a la vora del tauler.</para
+></listitem>
+  <listitem
+><para
+>A més, una seqüència de nombres mostra l'ordre d'aquestes execucions dins d'una fila o columna.</para
+></listitem>
+  <listitem
+><para
+>Quan l'opció <guilabel
+>Evita els errors:</guilabel
+> està habilitada, no serà possible marcar incorrectament una cel·la com ocupada: en el seu lloc, el temps de penalització s'afegirà al temporitzador. La penalització s'incrementarà amb cada error fet.</para
+></listitem>
+  <listitem
+><para
+>Si l'opció <guilabel
+>Evita els errors:</guilabel
+> està inhabilitada, no hi haurà comentaris si una cel·la ha estat marcada correctament i no hi haurà penalització per cometre algun error.</para
+></listitem>
+  <listitem
+><para
+>La partida s'aturarà una vegada s'hagin marcat correctament totes les cel·les ocupades.</para
+></listitem>
+</itemizedlist>
+</sect1>
+
+</chapter>
+
+<chapter id="interface-overview">
+<title
+>Resum de la interfície</title>
+
+<sect1 id="menu-items">
+<title
+>Elements de menú</title>
+
+<variablelist>
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Joc</guimenu
+> <guimenuitem
+>Nova</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Inicia una partida nova.</action
+> Crea un tauler aleatori emprant el nivell de dificultat actual.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Joc</guimenu
+> <guimenuitem
+>Carrega...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Carrega un trencaclosques predefinit.</action
+> Els noms dels trencaclosques estaran ocults fins que es resolguin. Les opcions de configuració llistes de puntuació màxima i la dificultat estaran inhabilitades.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycap
+>F5</keycap
+></shortcut
+> <guimenu
+>Joc</guimenu
+> <guimenuitem
+>Reinicia la partida</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Reinicia la partida actual.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+> <keycap
+>P</keycap
+> </shortcut
+> <guimenu
+>Joc</guimenu
+> <guimenuitem
+>Pausa</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Posa en pausa el temps de la partida.</action
+> Torneu a fer clic sobre l'element de menú per a reprendre-la. Recordeu que quan la partida estigui en pausa, el tauler desapareixerà, ja que seria injust si poguéssiu cercar moviments bons sense la pressió del temps.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Joc</guimenu
+> <guimenuitem
+>Mostra les puntuacions...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Mostra un diàleg que conté les puntuacions més altes per als diferents nivells de dificultat.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Joc</guimenu
+> <guimenuitem
+>Surt</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Surt</action
+> del &picmi;.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Mou</guimenu
+> <guimenuitem
+>Desfés</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Desfà un moviment anterior</action
+> (repetidament si cal).</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>I</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Mou</guimenu
+> <guimenuitem
+>Consell</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Marca una cel·la com ocupada o buida.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Mou</guimenu
+> <guimenuitem
+>Resol</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Juga una demostració.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>L</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Mou</guimenu
+> <guimenuitem
+>Carrega una posició</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Carrega la posició desada més recent.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Desa</guimenu
+> <guimenuitem
+>Desa la posició</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Desa la posició actual en el tauler.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;&Maj;<keycap
+>F</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Visualitza</guimenu
+> <guimenuitem
+>Mode de pantalla completa</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Alterna la interfície gràfica al mode de pantalla completa.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Arranjament</guimenu
+> <guisubmenu
+>Dificultat</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Permet establir el nivell de dificultat des d'un submenú.</action
+></para>
+    <para
+>Hi ha quatre nivells de dificultat: <itemizedlist>
+        <listitem
+><para
+><guimenuitem
+>Fàcil</guimenuitem
+>: 10 files, 10 columnes, està ocupat el 55% de totes les cel·les, l'opció <guilabel
+>Evita els errors:</guilabel
+> està inhabilitada.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>Mitjana</guimenuitem
+>: 10 files, 15 columnes, està ocupat el 55% de totes les cel·les, l'opció <guilabel
+>Evita els errors:</guilabel
+> està inhabilitada.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>Difícil</guimenuitem
+>: 15 files, 15 columnes, està ocupat el 55% de totes les cel·les, l'opció <guilabel
+>Evita els errors:</guilabel
+> està inhabilitada.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>Personalitzada</guimenuitem
+>: Es personalitzen les opcions de configuració i les dimensions del tauler.</para
+></listitem>
+      </itemizedlist>
+    </para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Arranjament</guimenu
+> <guimenuitem
+>Configura el &picmi;...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Mostra un diàleg per a triar la imatge de fons del joc, les dimensions del tauler i les opcions de configuració per a la dificultat personalitzada.</action
+></para
+></listitem>
+  </varlistentry>
+</variablelist>
+
+<para
+>De manera addicional, el &picmi; té la configuració comuna al &kde; i els elements dels menús <guimenu
+>Arranjament</guimenu
+> i <guimenu
+>Ajuda</guimenu
+>. Per a obtenir més informació, llegiu les seccions sobre <ulink url="help:/fundamentals/menus.html#menus-settings"
+>El menú Arranjament</ulink
+> i <ulink url="help:/fundamentals/menus.html#menus-help"
+>El menú Ajuda</ulink
+> en els Fonaments del &kde;. </para>
+</sect1>
+
+<sect1 id="keybindings">
+<title id="keybindings-title"
+>Dreceres</title>
+
+<para
+>Les dreceres predeterminades són les següents:</para>
+
+<table>
+  <title
+>Dreceres</title>
+  <tgroup cols="2">
+    <tbody>
+      <row>
+        <entry
+>Iniciar una partida nova</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Carregar una partida predefinida</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Fer una pausa</entry>
+        <entry
+><keycap
+>P</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Mostrar les millors puntuacions</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Mode de pantalla completa</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;&Maj;<keycap
+>F</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Sortir</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Ajuda</entry>
+        <entry
+><keycap
+>F1</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Ajuda «Què és això?»</entry>
+        <entry
+><keycombo action="simul"
+>&Maj;<keycap
+>F1</keycap
+></keycombo
+></entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+
+<table>
+  <title
+>Controls del teclat</title>
+  <tgroup cols="2">
+    <tbody>
+      <row>
+        <entry
+>Mou a l'esquerra</entry>
+        <entry
+>&Left; o <keycap
+>H</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Mou a la dreta</entry>
+        <entry
+>&Right; o <keycap
+>L</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Mou amunt</entry>
+        <entry
+>&Up; o <keycap
+>K</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Mou avall</entry>
+        <entry
+>&Down; o <keycap
+>J</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Des/marca la cel·la ocupada</entry>
+        <entry
+><keycap
+>X</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Des/marca la cel·la lliure</entry>
+        <entry
+>&Space;</entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+
+</sect1>
+</chapter>
+
+
+<chapter id="credits">
+<title
+>Crèdits i llicència</title>
+
+<para
+>&picmi; </para>
+<para
+>Copyright del programa 2012 per en Jakob Gruber <email
+>jakob.gruber@gmail.com</email
+> </para>
+<para
+>Copyright de la documentació 2012 per en Jakob Gruber <email
+>jakob.gruber@gmail.com</email
+> </para>
+
+<para
+>Traductor de la documentació: &credits.Antoni.Bella;</para
+> &underFDL; &underGPL; </chapter>
+
+
+&documentation.index;
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-always-quote-attributes:t
+sgml-indent-step:0
+sgml-indent-data:t
+End:
+-->

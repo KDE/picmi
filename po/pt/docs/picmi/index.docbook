@@ -1,0 +1,666 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Portuguese "INCLUDE">
+<!ENTITY % addindex "IGNORE">
+]>
+
+<book id="picmi" lang="&language;">
+<bookinfo>
+<title
+>O Manual do &picmi;</title>
+
+<authorgroup>
+<author
+><firstname
+>Jakob</firstname
+> <surname
+>Gruber</surname
+> <affiliation
+><address
+><email
+>jakob.gruber@gmail.com</email
+></address
+></affiliation>
+</author>
+<othercredit role="translator"
+><firstname
+>José</firstname
+><surname
+>Pires</surname
+><affiliation
+><address
+><email
+>zepires@gmail.com</email
+></address
+></affiliation
+><contrib
+>Tradução</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2012</year>
+<holder
+>Jakob Gruber</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2016-05-13</date>
+<releaseinfo
+>2.0.0 (Aplicações 16.04)</releaseinfo>
+
+<abstract>
+<para
+>&picmi;, um jogo de 'puzzles' de nonogramas.</para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdegames</keyword>
+<keyword
+>jogo</keyword>
+<keyword
+>jogo de 'puzzle'</keyword>
+<keyword
+>picmi</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Introdução</title>
+
+<para
+>O &picmi; é um jogo de 'puzzles' para um único jogador. </para>
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="gameboard.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Tabuleiro de jogo do &picmi;</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>O objectivo do jogo é colorir as células de acordo com os números indicados do lado do tabuleiro. </para>
+</chapter>
+
+<chapter id="how-to-play">
+<title
+>Como Jogar</title>
+
+<para
+>É apresentado ao jogador um tabuleiro vazio e uma lista de números para cada linha e coluna. Estes números representam como são organizadas as sequências para qualquer linha ou coluna. Por exemplo, uma sequência de números <quote
+>4 8 3</quote
+> significa que existem conjuntos de quatro, oito e três células preenchidas, por essa ordem, com pelo menos um célula em branco entre grupos sucessivos. O objectivo do jogo é usar essas pistas para descobrir a solução actual o mais rápido possível. </para>
+
+<para
+>Se carregar com o botão esquerdo irá (des)marcar uma célula como ocupada, enquanto o botão direito irá (des)marcar uma célula como vazia. Poderá usar o arrastamento para marcar várias células numa linha ou coluna de uma vez. O tempo decorrido, assim como as células ocupadas em falta, são apresentados no canto superior esquerdo. Um jogo termina quando todas as células ocupadas tiverem sido marcadas correctamente. </para>
+
+<para
+>A colocação actual das caixas e cruzes (referida como 'estados' daqui para a frente) pode ser gravada em qualquer altura. A gravação de um novo estado não substitui os estados gravados previamente. A reposição de um estado volta sempre ao estado gravado mais recentemente. Isto pode ser repetido até que não existam mais estados gravados. O número de acções desde o último estado gravado aparece na barra de estado. </para>
+
+<para
+>O &picmi; inclui dois modos de jogo. Os 'puzzles' aleatórios (gerados ao seleccionar a opção <guilabel
+>Novo</guilabel
+> do menu) são gerados de acordo com a configuração da dificuldade seleccionada. Em alternativa, os 'puzzles' incluídos podem ser jogados se seleccionar a opção <guilabel
+>Carregar</guilabel
+>. </para>
+
+</chapter>
+
+<chapter id="rules-strategies-tips">
+<title
+>Regras do Jogo, Estratégias e Sugestões</title>
+
+<sect1 id="rules">
+<title
+>Regras</title>
+<para
+>A sequência de números numa linha ou coluna dá certas informações acerca da quantidade de células ocupadas e da sua organização dentro de uma linha ou coluna.</para>
+<itemizedlist>
+<listitem
+><para
+>Um número representa o tamanho de uma sequência ligada de células ocupadas no tabuleiro. Esta execução tem pelo menos uma célula vazia de cada lado ou localiza-se directamente no extremo do tabuleiro.</para
+></listitem>
+<listitem
+><para
+>Para além disso, uma sequência de números mostra a ordem dessas sequências dentro de uma linha ou coluna.</para
+></listitem>
+<listitem
+><para
+>Quando a opção <guilabel
+>Impedir os Erros</guilabel
+> estiver activa, não é possível marcar uma célula como ocupada de forma incorrecta - em vez disso, será adicionado um tempo de penalidade ao cronómetro. A penalidade vai aumentando com cada erro que cometer.</para
+></listitem>
+<listitem
+><para
+>Se a opção <guilabel
+>Evitar os Erros</guilabel
+>  estiver desactivada, não existe qualquer reacção quando uma célula for marcada correctamente e não existirá qualquer penalidade por cometer erros.</para
+></listitem>
+<listitem
+><para
+>O jogo irá parar assim que todas as células ocupadas forem marcadas correctamente.</para
+></listitem>
+</itemizedlist>
+</sect1>
+
+</chapter>
+
+<chapter id="interface-overview">
+<title
+>Apresentação à Interface</title>
+
+<sect1 id="menu-items">
+<title
+>Opções do Menu</title>
+
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Jogo</guimenu
+> <guimenuitem
+>Novo</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Começa um jogo novo. Ele cria um tabuleiro novo com base no nível de dificuldade actual. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Jogo</guimenu
+> <guimenuitem
+>Carregar</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Carrega um 'puzzle' predefinido. Os nomes dos 'puzzles' estão escondidos até que sejam resolvidos. As listas de recordes e as definições de dificuldade estão desactivadas. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+><keycap
+>F5</keycap
+></shortcut
+> <guimenu
+>Jogo</guimenu
+> <guimenuitem
+>Reiniciar</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para>
+    <!--FIXME -->
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+><keycap
+>P</keycap
+></shortcut
+> <guimenu
+>Jogo</guimenu
+> <guimenuitem
+>Pausa</guimenuitem
+></menuchoice
+></term>
+<listitem>
+<para
+>Coloca o tempo de jogo em pausa. Carregue de novo no item do menu para prosseguir com o jogo. Repare que o tabuleiro desaparece quando o jogo fica em pausa, dado que seria injusto poder descobrir jogadas boas sem ter a pressão do tempo. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Jogo</guimenu
+> <guimenuitem
+>Mostrar os Recordes</guimenuitem
+></menuchoice
+></term>
+<listitem>
+<para
+>Mostra uma janela que contém os Recordes para os diferentes níveis de dificuldade. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Jogo</guimenu
+> <guimenuitem
+>Sair</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Sai do programa. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Mover</guimenu
+> <guimenuitem
+>Desfazer</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Anula a jogada anterior, se existir. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>I</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Mover</guimenu
+> <guimenuitem
+>Dica</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Marca uma célula como ocupada ou vazia. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Mover</guimenu
+> <guimenuitem
+>Resolver</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Inicia um jogo de demonstração. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>L</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Mover</guimenu
+> <guimenuitem
+>Carregar uma Posição</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Carrega a posição gravada mais recente. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Mover</guimenu
+> <guimenuitem
+>Gravar a Posição</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Grava a posição actual do tabuleiro. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuração</guimenu
+> <guisubmenu
+>Dificuldade</guisubmenu
+> </menuchoice
+></term>
+<listitem>
+<para
+>Permite-lhe definir o nível de dificuldade a partir de um sub-menu.</para>
+<para
+>Existem quatro níveis de dificuldade: <itemizedlist>
+<listitem
+><para
+><guimenuitem
+>Fácil</guimenuitem
+>: 10 linhas, 10 colunas, 55% de todas as células ocupadas; a opção 'Impedir os Erros' está desactivada.</para
+></listitem>
+<listitem
+><para
+><guimenuitem
+>Média</guimenuitem
+>: 10 linhas, 15 colunas, 55% de todas as células ocupadas; a opção 'Impedir os Erros' está desactivada.</para
+></listitem>
+<listitem
+><para
+><guimenuitem
+>Difícil</guimenuitem
+>: 15 linhas, 15 colunas, 55% de todas as células ocupadas; a opção 'Impedir os Erros' está desactivada.</para
+></listitem>
+<listitem
+><para
+><guimenuitem
+>Personalizado</guimenuitem
+>: Dimensões e definições personalizadas do tabuleiro.</para
+></listitem>
+</itemizedlist>
+</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Configuração</guimenu
+> <guimenuitem
+>Configurar o &picmi;...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Escolha a imagem de fundo, as dimensões e definições do tabuleiro para uma dificuldade personalizada.</para
+></listitem>
+</varlistentry>
+</variablelist>
+
+<para
+>Para além disso, o &picmi; tem os menus de <guimenu
+>Configuração</guimenu
+> e <guimenu
+>Ajuda</guimenu
+> normais do &kde;; para mais informações, leia as secções acerca dos menus de <ulink url="help:/fundamentals/ui.html#menus-settings"
+>Configuração</ulink
+> e <ulink url="help:/fundamentals/ui.html#menus-help"
+>Ajuda</ulink
+> dos Fundamentos do &kde;. </para>
+</sect1>
+
+<sect1 id="keybindings">
+<title id="keybindings-title"
+>Atalhos</title>
+
+<para
+>Os atalhos predefinidos são:</para>
+
+<table>
+<title
+>Atalhos</title>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>Iniciar um novo jogo</entry>
+<entry>
+<keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo>
+</entry>
+</row>
+<row>
+<entry
+>Carrega um jogo predefinido</entry>
+<entry>
+<keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo>
+</entry>
+</row>
+<row>
+<entry
+>Pausa</entry>
+<entry
+><keycap
+>P</keycap
+></entry>
+</row>
+<row>
+<entry
+>Mostrar os Recordes</entry>
+<entry>
+<keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo>
+</entry>
+</row>
+<row>
+<entry
+>Modo de Ecrã Completo</entry>
+<entry
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>F</keycap
+></keycombo
+></entry>
+</row>
+<row>
+<entry
+>Sair</entry>
+<entry>
+<keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo>
+</entry>
+</row>
+<row>
+<entry
+>Ajuda</entry>
+<entry
+><keycap
+>F1</keycap
+></entry>
+</row>
+<row>
+<entry
+>O que é isto?</entry>
+<entry>
+<keycombo action="simul"
+>&Shift;<keycap
+>F1</keycap
+></keycombo>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+<table>
+<title
+>Controlos do teclado</title>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>Mover para a Esquerda</entry>
+<entry
+><keycap
+>Esquerda ou H</keycap
+></entry>
+</row>
+<row>
+<entry
+>Mover para a Direita</entry>
+<entry
+><keycap
+>Direita ou L</keycap
+></entry>
+</row>
+<row>
+<entry
+>Subir</entry>
+<entry
+><keycap
+>Cima ou K</keycap
+></entry>
+</row>
+<row>
+<entry
+>Descer</entry>
+<entry
+><keycap
+>Baixo ou J</keycap
+></entry>
+</row>
+<row>
+<entry
+>(Des)marcar a célula como ocupada</entry>
+<entry
+><keycap
+>X</keycap
+></entry>
+</row>
+<row>
+<entry
+>(Des)marcar a célula como livre</entry>
+<entry
+><keycap
+>Espaço</keycap
+></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+</sect1>
+</chapter>
+
+
+<chapter id="credits">
+<title
+>Créditos e Licença</title>
+
+<para
+>&picmi; </para>
+<para
+>Programa com 'copyright' 2012 de Jakob Gruber <email
+>jakob.gruber@gmail.com</email
+> </para>
+<para
+>Documentação com 'copyright' 2012 de Jakob Gruber <email
+>jakob.gruber@gmail.com</email
+> </para>
+
+<para
+>Tradução de José Nuno Pires <email
+>zepires@gmail.com</email
+></para
+> 
+&underFDL; &underGPL; </chapter>
+
+<appendix id="installation">
+<title
+>Instalação</title>
+
+<sect1 id="getting-picmi">
+<title
+>Como obter o &picmi;</title>
+&install.intro.documentation; </sect1>
+
+<sect1 id="compilation">
+<title
+>Compilação e Instalação</title>
+&install.compile.documentation; </sect1>
+</appendix>
+
+
+&documentation.index;
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-always-quote-attributes:t
+sgml-indent-step:0
+sgml-indent-data:t
+End:
+-->

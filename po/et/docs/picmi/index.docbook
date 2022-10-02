@@ -1,0 +1,624 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY picmi "<application
+>Picmi</application
+>">
+<!ENTITY kappname "&picmi;">
+<!ENTITY package "kdegames">
+<!ENTITY % Estonian  "INCLUDE">
+<!ENTITY % addindex "IGNORE">
+]>
+
+<book id="picmi" lang="&language;">
+<bookinfo>
+<title
+>&picmi; käsiraamat</title>
+
+<authorgroup>
+<author
+><firstname
+>Jakob</firstname
+> <surname
+>Gruber</surname
+> <affiliation
+><address
+><email
+>jakob.gruber@gmail.com</email
+></address
+></affiliation>
+</author>
+<othercredit role="translator"
+><firstname
+>Marek</firstname
+><surname
+>Laane</surname
+><affiliation
+><address
+><email
+>bald@smail.ee</email
+></address
+></affiliation
+><contrib
+>Tõlge eesti keelde</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2012</year>
+<holder
+>Jakob Gruber</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2012-02-24</date>
+<releaseinfo
+>2.0.0</releaseinfo>
+
+<abstract>
+<para
+>Picmi on nonogrammimäng.</para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdegames</keyword>
+<keyword
+>mäng</keyword>
+<keyword
+>mõistatus</keyword>
+<keyword
+>picmi</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Sissejuhatus</title>
+
+<para
+>&picmi; on ühele mängijale mõeldud mõistatusmäng. </para>
+
+<para
+>Mängu eesmärk on värvida ruudud vastavalt mängulaua serval antud numbritele. </para>
+</chapter>
+
+<chapter id="how-to-play">
+<title
+>Kuidas mängida</title>
+
+<para
+>Mängija ees seisab tühi mängulaud ning iga rea ja veeru kõrval on näha numbrid. Need panevad paika iga rea ja veeru ruutude korrastuse. Näiteks numbrid <quote
+>4 8 3</quote
+> tähendavad, et üksteise järel on selles reas või veerus neli, kaheksa ja kolm värvitud ruutu, kusjuures iga ruudurühma vahel on vähemalt üks tühi, värvimata ruut. Mängu mõte on selliste vihjete abil jõuda lahenduseni võimalikult kiiresti. </para>
+
+<para
+>Vasakklõpsuga saab ruudukese märkida värvituks või siis märgistuse eemaldada, paremklõpsuga saab aga märkida ruudu tühjaks või samuti märgistuse eemaldada. Kulunud aega näeb olekuribal, mängulaua ülevaadet üleval vasakul nurgas. Mäng lõpeb, kui kõik hõivatud ruudukesed on õigesti märgitud. </para>
+
+<para
+>Kastide ja ristide aktiivse paigutuse (edaspidi oleku) võib igal hetkel salvestada. Uue oleku salvestamine ei kirjuta üle varem salvestatud olekuid. Oleku taastamisel taastatakse alati viimati salvestatud olek. Seda toimingut võib korrata, kuni enam ei leidu varasemaid salvestatud olekuid. Toimingute arvu alates viimasest salvestatud olekust näeb olekuribal. </para>
+
+<para
+>&picmi; pakub kaht mängimisrežiimi. Juhuslikud mõistatused (mis valitakse menüüst käsuga <guilabel
+>Uus</guilabel
+>) genereeritakse vastavalt valitud raskusastmele. Teise võimalusena võib aga mängida kaasasolevaid mõistatusi, milleks tuleb valida <guilabel
+>Laadi</guilabel
+>. </para>
+
+</chapter>
+
+<chapter id="rules-strategies-tips">
+<title
+>Mängureeglid, strateegia ja nõuanded</title>
+
+<sect1 id="rules">
+<title
+>Reeglid</title>
+<para
+>Numbrid rea alguses või veeru kohal annavad mõningat teavet, kui palju ruudukesi reas või veerus on hõivatud ja kuidas nad paiknevad.</para>
+<itemizedlist>
+<listitem
+><para
+>Üks arv väljendab järjestikku hõivatud ruutude arvu reas või veerus. Sellisel ruudurühmal on mõlemal pool tühi ruuduke, kui just üks või mõlemad otsad ei ole vastu mängulaua serva.</para
+></listitem>
+<listitem
+><para
+>Lisaks näitab numbrite järjestus seda, millises järjestuses ruudurühmad reas või veerus esinevad.</para
+></listitem>
+<listitem
+><para
+>Kui sisse on lülitatud valik <guilabel
+>Vigade vältimine</guilabel
+>, ei ole võimalik ruudukest vääralt hõivatuks määrata - selle asemel lisatakse taimerile karistusaeg. Karistus suureneb iga veaga.</para
+></listitem>
+<listitem
+><para
+>Kui <guilabel
+>Vigade vältimine</guilabel
+> pole sisse lülitatud, ei saa mingit tagasisidet, kas ruuduke on õigesti märgitud või mitte, ning vea korral pole ka karistust.</para
+></listitem>
+<listitem
+><para
+>Mäng peatub, kui kõik hõivatud ruudukesed on õigesti märgitud.</para
+></listitem>
+</itemizedlist>
+</sect1>
+
+</chapter>
+
+<chapter id="interface-overview">
+<title
+>Liidese tutvustus</title>
+
+<sect1 id="menu-items">
+<title
+>Menüükirjed</title>
+
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Mäng</guimenu
+> <guimenuitem
+>Uus</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Alustab uut mängu. Selleks luuakse senise raskusastmega juhusliku sisuga mängulaud. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Mäng</guimenu
+> <guimenuitem
+>Laadi</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Laadib valmismõistatuse. Mõistatuse nimi on varjatud, kuni see lahendatud saab. Rekordite näitamine ja raskusastme määramine on keelatud. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+><keycap
+>P</keycap
+></shortcut
+> <guimenu
+>Mäng</guimenu
+> <guimenuitem
+>Paus</guimenuitem
+></menuchoice
+></term>
+<listitem>
+<para
+>Võimaldab mängu peatada. Sama menüükäsu uuesti valimisega saab mängu jätkata. Pane tähele, et pausi ajaks mängulaud varjatakse, sest see poleks üldse aus, kui sa kasutaksid tekkinud aega, mida ju ei arvestata, heade käikude otsimiseks. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Mäng</guimenu
+> <guimenuitem
+>Näita rekordeid</guimenuitem
+></menuchoice
+></term>
+<listitem>
+<para
+>Avab eri raskusastmete rekordeid näitava dialoogi. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Mäng</guimenu
+> <guimenuitem
+>Välju</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Lõpetab rakenduse töö. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>Z</keycap
+> </keycombo
+> </shortcut
+> <guimenu
+>Liikumine</guimenu
+> <guimenuitem
+>Võta tagasi</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Võtab eelmise käigu tagasi, kui see on olemas. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>L</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Liikumine</guimenu
+> <guimenuitem
+>Laadi asetus</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Laadib viimati salvestatud asetuse. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Liikumine</guimenu
+> <guimenuitem
+>Salveesta asetus</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Salvestab mängulaua aktiivse asetuse. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>F</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Seadistused</guimenu
+> <guimenuitem
+>Täisekraanirežiim</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Lülitub täisekraanirežiimi. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Seadistused</guimenu
+> <guisubmenu
+>Raskusaste</guisubmenu
+> </menuchoice
+></term>
+<listitem>
+<para
+>Võimaldab alammenüüst valida mängu raskusastme.</para>
+<para
+>Raskusastmeid on neli: <itemizedlist>
+<listitem
+><para
+><guimenuitem
+>Kerge</guimenuitem
+>: 10 rida, 10 veergu, 55% ruudukestest on hõivatud, vigade vältimine pole sisse lülitatud.</para
+></listitem>
+<listitem
+><para
+><guimenuitem
+>Keskmine</guimenuitem
+>: 10 rida, 15 veergu, 55% ruudukestest on hõivatud, vigade vältimine pole sisse lülitatud.</para
+></listitem>
+<listitem
+><para
+><guimenuitem
+>Raske</guimenuitem
+>: 15 rida, 15 veergu, 55% ruudukestest on hõivatud, vigade vältimine pole sisse lülitatud.</para
+></listitem>
+<listitem
+><para
+><guimenuitem
+>Kohandatud</guimenuitem
+>: kohandatud laua mõõtmed ja seadistused.</para
+></listitem>
+</itemizedlist>
+</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Seadistused</guimenu
+> <guimenuitem
+>&picmi; seadistamine...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Võimaldab muuta mängu taustapilti, mängulaua mõõtmeid ning kohandatud raskusastme seadistusi.</para
+></listitem>
+</varlistentry>
+</variablelist>
+
+<para
+>Lisaks on &picmi;l tavapärased &kde; <guimenu
+>seadistuste</guimenu
+> ja <guimenu
+>abi</guimenu
+>menüü elemendid, mille kohta leiab rohkem teavet &kde; põhialuste käsiraamatu osadest <ulink url="help:/fundamentals/ui.html#menus-settings"
+>Menüü Seadistused</ulink
+> ja <ulink url="help:/fundamentals/ui.html#menus-help"
+>Menüü Abi</ulink
+>. </para>
+</sect1>
+
+<sect1 id="keybindings">
+<title id="keybindings-title"
+>Kiirklahvid</title>
+
+<para
+>Vaikimisi kiirklahvid on järgmised:</para>
+
+<table>
+<title
+>Kiirklahvid</title>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>Uue mängu alustamine</entry>
+<entry>
+<keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo>
+</entry>
+</row>
+<row>
+<entry
+>Valmismängu laadimine</entry>
+<entry>
+<keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo>
+</entry>
+</row>
+<row>
+<entry
+>Paus</entry>
+<entry
+><keycap
+>P</keycap
+></entry>
+</row>
+<row>
+<entry
+>Rekordite näitamine</entry>
+<entry>
+<keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo>
+</entry>
+</row>
+<row>
+<entry
+>Täisekraanirežiim</entry>
+<entry
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>F</keycap
+></keycombo
+></entry>
+</row>
+<row>
+<entry
+>Väljumine</entry>
+<entry>
+<keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo>
+</entry>
+</row>
+<row>
+<entry
+>Abi</entry>
+<entry
+><keycap
+>F1</keycap
+></entry>
+</row>
+<row>
+<entry
+>Mis see on?</entry>
+<entry>
+<keycombo action="simul"
+>&Shift;<keycap
+>F1</keycap
+></keycombo>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+<table>
+<title
+>Juhtimine klaviatuurilt</title>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>Liikumine vasakule</entry>
+<entry
+><keycap
+>Nool vasakule või H</keycap
+></entry>
+</row>
+<row>
+<entry
+>Liikumine paremale</entry>
+<entry
+><keycap
+>Nool paremale või L</keycap
+></entry>
+</row>
+<row>
+<entry
+>Liikumine üles</entry>
+<entry
+><keycap
+>Nool üles või K</keycap
+></entry>
+</row>
+<row>
+<entry
+>Liikumine alla</entry>
+<entry
+><keycap
+>Nool alla või J</keycap
+></entry>
+</row>
+<row>
+<entry
+>Hõivatud ruudukese märkimine või märke eemaldamine</entry>
+<entry
+><keycap
+>X</keycap
+></entry>
+</row>
+<row>
+<entry
+>Vaba ruudukese märkimine või märke eemaldamine</entry>
+<entry
+><keycap
+>Tühikuklahv</keycap
+></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+</sect1>
+</chapter>
+
+
+<chapter id="credits">
+<title
+>Autorid ja litsents</title>
+
+<para
+>&picmi; </para>
+<para
+>Rakenduse autoriõigus 2012: Jakob Gruber <email
+>jakob.gruber@gmail.com</email
+> </para>
+<para
+>Dokumentatsiooni autoriõigus 2012: Jakob Gruber <email
+>jakob.gruber@gmail.com</email
+> </para>
+
+<para
+>Tõlge eesti keelde: Marek Laane <email
+>bald@smail.ee</email
+></para
+> 
+&underFDL; &underGPL; </chapter>
+
+<appendix id="installation">
+<title
+>Paigaldamine</title>
+
+<sect1 id="getting-picmi">
+<title
+>&picmi; hankimine</title>
+&install.intro.documentation; </sect1>
+
+<sect1 id="compilation">
+<title
+>Kompileerimine ja paigaldamine</title>
+&install.compile.documentation; </sect1>
+</appendix>
+
+
+&documentation.index;
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-always-quote-attributes:t
+sgml-indent-step:0
+sgml-indent-data:t
+End:
+-->

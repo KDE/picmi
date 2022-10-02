@@ -1,0 +1,754 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Spanish "INCLUDE">
+<!ENTITY % addindex "IGNORE">
+]>
+
+<book id="picmi" lang="&language;">
+<bookinfo>
+<title
+>Manual de &picmi;</title>
+
+<authorgroup>
+<author
+><firstname
+>Jakob</firstname
+> <surname
+>Gruber</surname
+> <affiliation
+><address
+><email
+>jakob.gruber@gmail.com</email
+></address
+></affiliation>
+</author>
+<othercredit role="translator"
+> <firstname
+>Rocío</firstname
+> <surname
+>Gallego</surname
+> <affiliation
+><address
+><email
+>traducciones@rociogallego.com</email
+></address
+></affiliation
+> <contrib
+>Traducción</contrib
+> </othercredit
+><othercredit role="translator"
+><firstname
+>Kira</firstname
+><surname
+>J. Fernández</surname
+><affiliation
+><address
+><email
+>kirajfdez@gmail.com</email
+></address
+></affiliation
+><contrib
+>Traductora</contrib
+></othercredit
+><othercredit role="translator"
+><firstname
+>Javier</firstname
+><surname
+>Viñal</surname
+><affiliation
+><address
+><email
+>fjvinal@gmail.com</email
+></address
+></affiliation
+><contrib
+>Traductor</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2012</year>
+<holder
+>Jakob Gruber</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2021-10-08</date>
+<releaseinfo
+>2.0.0 (KDE Gear 21.08)</releaseinfo>
+
+<abstract>
+<para
+>&picmi;, un juego de rompecabezas con nonogramas.</para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdegames</keyword>
+<keyword
+>juego</keyword>
+<keyword
+>juego de rompecabezas</keyword>
+<keyword
+>Picmi</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Introducción</title>
+
+<para
+>&picmi; es un juego de rompecabezas para un jugador. </para>
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="gameboard.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>El tablero de juego de &picmi;</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>El objetivo del juego es colorear casillas según los números que se dan al lado del tablero. </para>
+</chapter>
+
+<chapter id="how-to-play">
+<title
+>Cómo jugar</title>
+
+<para
+>Al jugador se le presenta un tablero en blanco y una lista de números para cada fila y columna. Estos números representan cómo se organizan las piezas dentro de una fila o columna dada. Por ejemplo, una secuencia numérica de <quote
+>4 8 3</quote
+> significaría que hay conjuntos de cuatro, ocho y tres casillas rellenadas, en ese orden, con al menos una casilla en blanco entre grupos consecutivos. El objetivo del juego es usar estas pistas para descubrir la solución, y hacerlo lo más rápido posible. </para>
+
+<para
+>Un clic izquierdo (des)marca la casilla como ocupada, mientras que un clic derecho (des)marca la casilla como vacía. Se puede arrastrar para marcar varias casillas seguidas a la vez en una fila o columna. El tiempo transcurrido se muestra en la barra de estado y una vista global del tablero se ubica en la esquina superior izquierda. La partida se completa una vez que todas las casillas ocupadas se han marcado correctamente. </para>
+
+<para
+>La localización actual de las cajas y cruces (referenciadas como «estados» a partir de ahora) puede guardarse en cualquier momento. Al guardar un nuevo estado no se sobrescriben los estados guardados previamente. Al restaurar un estado siempre se vuelve al estado guardado más recientemente. Esto puede repetirse hasta que no queden más estados guardados. El número de acciones desde el último estado guardado se muestra en la barra de estado. </para>
+
+<para
+>&picmi; incluye dos modos de juego. Puzles aleatorios (generados seleccionando la opción del menú <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Juego</guimenu
+> <guimenuitem
+>Nuevo</guimenuitem
+></menuchoice
+>) se generan de acuerdo con niveles de dificultad seleccionados. De otro modo, los puzles preseleccionados incluidos se pueden jugar seleccionando la opción del menú <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Juego</guimenu
+> <guimenuitem
+>Cargar...</guimenuitem
+></menuchoice
+>. </para>
+
+</chapter>
+
+<chapter id="rules-strategies-tips">
+<title
+>Reglas del juego, estrategias y consejos</title>
+
+<sect1 id="rules">
+<title
+>Reglas</title>
+<para
+>La secuencia de números en una fila o columna proporciona cierta información sobre el recuento de casillas ocupadas y su distribución dentro de una fila o columna.</para>
+<itemizedlist>
+  <listitem
+><para
+>Un número representa la longitud de un conjunto conectado de casillas ocupadas sobre el tablero. Este conjunto tiene al menos una casilla vacía a cada lado o está situado directamente en el borde del tablero.</para
+></listitem>
+  <listitem
+><para
+>De forma adicional, una secuencia de números muestra el orden de estos conjuntos en una fila o columna.</para
+></listitem>
+  <listitem
+><para
+>Cuando la opción <guilabel
+>Evitar equivocaciones</guilabel
+> está activada, no es posible marcar una casilla como ocupada. En su lugar, se añade tiempo de penalización al temporizador. La penalización aumenta con cada equivocación cometida.</para
+></listitem>
+  <listitem
+><para
+>Si la opción <guilabel
+>Evitar equivocaciones</guilabel
+> está desactivada, no hay sugerencias sobre si una casilla se ha marcado correctamente y no hay penalización por cometer equivocaciones.</para
+></listitem>
+  <listitem
+><para
+>El juego se detendrá una vez que se hayan marcado correctamente todas las casillas ocupadas.</para
+></listitem>
+</itemizedlist>
+</sect1>
+
+</chapter>
+
+<chapter id="interface-overview">
+<title
+>Vista general de la interfaz</title>
+
+<sect1 id="menu-items">
+<title
+>Opciones de menú</title>
+
+<variablelist>
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Juego</guimenu
+> <guimenuitem
+>Nuevo</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Inicia un nuevo juego</action
+>. Crea un tablero aleatorio usando el nivel de dificultad actual.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Juego</guimenu
+> <guimenuitem
+>Cargar...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Carga un puzle predefinido</action
+>. Los nombres de los puzles están ocultos hasta que se resuelven. Las listas de puntuaciones más altas y preferencias de dificultad están desactivadas.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+> <keycap
+>F5</keycap
+> </shortcut
+> <guimenu
+>Juego</guimenu
+> <guimenuitem
+>Reiniciar el juego</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Esto reiniciará el juego actual.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycap
+>P</keycap
+></shortcut
+> <guimenu
+>Juego</guimenu
+> <guimenuitem
+>Pausa</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Detiene el tiempo de juego.</action
+> Haga clic en la opción del menú otra vez para reanudar el juego. Tenga en cuenta que el tablero desaparece cuando el juego está en pausa, ya que sería injusto si pudiera buscar movimientos buenos sin la presión del tiempo.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Juego</guimenu
+> <guimenuitem
+>Mostrar mejores puntuaciones</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Muestra un diálogo que contiene las puntuaciones más altas para los diversos niveles de dificultad.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Juego</guimenu
+> <guimenuitem
+>Salir</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Sale</action
+> de &picmi;.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Mover</guimenu
+> <guimenuitem
+>Deshacer</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Deshace el movimiento anterior</action
+>, si existe.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>I</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Movimiento</guimenu
+> <guimenuitem
+>Pista</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Marca una casilla como ocupada o como vacía.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Movimiento</guimenu
+> <guimenuitem
+>Resolver</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Iniciar un juego de demostración.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>L</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Movimiento</guimenu
+> <guimenuitem
+>Cargar posición</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Carga la posición guardada anteriormente.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Movimiento</guimenu
+> <guimenuitem
+>Guardar posición</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Guarda la posición actual del tablero.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>F</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Ver</guimenu
+> <guimenuitem
+>Modo de pantalla completa</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Cambia la interfaz gráfica al modo de pantalla completa o vuelve al modo normal.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Preferencias</guimenu
+> <guisubmenu
+>Dificultad</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Le permite establecer el nivel de dificultad desde un submenú.</action
+></para>
+    <para
+>Hay cuatro niveles de dificultad: <itemizedlist>
+        <listitem
+><para
+><guimenuitem
+>Fácil</guimenuitem
+>: 10 filas, 10 columnas, el 55% de las casillas están ocupadas, la opción <guilabel
+>Evitar equivocaciones</guilabel
+> está desactivada.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>Medio</guimenuitem
+>: 10 filas, 15 columnas, el 55% de las casillas están ocupadas, la opción <guilabel
+>Evitar equivocaciones</guilabel
+> está desactivada.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>Difícil</guimenuitem
+>: 15 filas, 15 columnas, el 55% de las casillas están ocupadas, la opción <guilabel
+>Evitar equivocaciones</guilabel
+> está desactivada.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>Personalizado</guimenuitem
+>: Dimensiones del tablero y preferencias personalizadas.</para
+></listitem>
+      </itemizedlist>
+    </para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Preferencias</guimenu
+> <guimenuitem
+>Configurar &picmi;...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Elija la imagen de fondo del juego, dimensiones del tablero y preferencias para la dificultad personalizada.</action
+></para
+></listitem>
+  </varlistentry>
+</variablelist>
+
+<para
+>Además &picmi; tiene las opciones de menú <guimenu
+>Preferencias</guimenu
+> y <guimenu
+>Ayuda</guimenu
+> comunes de &kde;. Para obtener más información, consulte las secciones sobre el <ulink url="help:/fundamentals/menus.html#menus-settings"
+>Menú «Preferencias»</ulink
+> y <ulink url="help:/fundamentals/menus.html#menus-help"
+>Menú «Ayuda» </ulink
+> de «Aspectos básicos de &kde;». </para>
+</sect1>
+
+<sect1 id="keybindings">
+<title id="keybindings-title"
+>Accesos rápidos</title>
+
+<para
+>Los accesos rápidos por defecto son:</para>
+
+<table>
+  <title
+>Accesos rápidos</title>
+  <tgroup cols="2">
+    <tbody>
+      <row>
+        <entry
+>Iniciar un nuevo juego</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Cargar un juego prefijado</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Pausa</entry>
+        <entry
+><keycap
+>P</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Mostrar puntuaciones más altas</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Modo de pantalla completa</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>F</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Salir</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Ayuda</entry>
+        <entry
+><keycap
+>F1</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Ayuda ¿Qué es esto?</entry>
+        <entry
+><keycombo action="simul"
+>&Shift;<keycap
+>F1</keycap
+></keycombo
+></entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+
+<table>
+  <title
+>Controles de teclado</title>
+  <tgroup cols="2">
+    <tbody>
+      <row>
+        <entry
+>Mover a la izquierda</entry>
+        <entry
+>&Left; o <keycap
+>H</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Mover a la derecha</entry>
+        <entry
+>&Right; o <keycap
+>L</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Mover hacia arriba</entry>
+        <entry
+>&Up; o <keycap
+>K</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Mover hacia abajo</entry>
+        <entry
+>&Down; o <keycap
+>J</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>(Des)marcar casilla ocupada</entry>
+        <entry
+><keycap
+>X</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>(Des)marcar casilla libre</entry>
+        <entry
+>&Space;</entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+
+</sect1>
+</chapter>
+
+
+<chapter id="credits">
+<title
+>Créditos y licencia</title>
+
+<para
+>&picmi; </para>
+<para
+>Copyright del programa 2012 Jakob Gruber <email
+>jakob.gruber@gmail.com</email
+> </para>
+<para
+>Copyright de la documentación 2012 Jakob Gruber <email
+>jakob.gruber@gmail.com</email
+> </para>
+
+<para
+>Traducido por Rocío Gallego <email
+>traducciones@rociogallego.com</email
+>, Kira J. Fernández <email
+>kirajfdez@gmail.com</email
+> y Javier Viñal <email
+>fjvinal@gmail.com</email
+>.</para
+> &underFDL; &underGPL; </chapter>
+
+
+&documentation.index;
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-always-quote-attributes:t
+sgml-indent-step:0
+sgml-indent-data:t
+End:
+-->

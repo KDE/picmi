@@ -1,0 +1,759 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2012, 2013, 2015, 2020.
+# Frederik Schwarzer <schwarzer@kde.org>, 2013, 2016, 2022.
+# Frank Steinmetzger <Warp_7@gmx.de>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: picmi\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-20 00:43+0000\n"
+"PO-Revision-Date: 2022-06-09 23:47+0200\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 21.12.2\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Burkhard Lück"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "lueck@hube-lueck.de"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:5
+#, kde-format
+msgid "Basketball"
+msgstr "Basketball"
+
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#: levels/default.xml:5 levels/default.xml:75 levels/default.xml:79
+#: levels/default.xml:83 levels/default.xml:87 levels/default.xml:91
+#: levels/default.xml:95 levels/default.xml:99 levels/default.xml:103
+#: levels/default.xml:107 levels/default.xml:111 levels/default.xml:119
+#: levels/default.xml:164 levels/default.xml:244 levels/default.xml:262
+#: levels/default.xml:512 levels/default.xml:516 levels/default.xml:520
+#: levels/default.xml:528 levels/default.xml:532 levels/default.xml:536
+#: levels/default.xml:540 levels/default.xml:551 levels/default.xml:564
+#: levels/default.xml:577 levels/default.xml:590 levels/default.xml:603
+#, kde-format
+msgid "Jakob Gruber, Moni Linke"
+msgstr "Jakob Gruber, Moni Linke"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:9
+#, kde-format
+msgid "Skull"
+msgstr "Schädel"
+
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#: levels/default.xml:9 levels/default.xml:31 levels/default.xml:195
+#: levels/default.xml:226 levels/default.xml:275 levels/default.xml:295
+#: levels/default.xml:317 levels/default.xml:334 levels/default.xml:360
+#: levels/default.xml:383 src/main.cpp:47
+#, kde-format
+msgid "Jakob Gruber"
+msgstr "Jakob Gruber"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:31
+#, kde-format
+msgid "Wheelchair"
+msgstr "Rollstuhl"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:59
+#, kde-format
+msgid "Baby Chick"
+msgstr "Küken"
+
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#: levels/default.xml:59 levels/default.xml:63 levels/default.xml:67
+#: levels/default.xml:152 levels/default.xml:504 levels/default.xml:508
+#, kde-format
+msgid "Moni Linke"
+msgstr "Moni Linke"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:63
+#, kde-format
+msgid "Pirate Dog"
+msgstr "Piratenhund"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:67
+#, kde-format
+msgid "Clown"
+msgstr "Clown"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:71
+#, kde-format
+msgid "Pirate Ship"
+msgstr "Piratenschiff"
+
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#: levels/default.xml:71 levels/default.xml:115 levels/default.xml:156
+#: levels/default.xml:160 levels/default.xml:524
+#, kde-format
+msgid "Frank Uebbing"
+msgstr "Frank Uebbing"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:75
+#, kde-format
+msgid "Panda"
+msgstr "Panda"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:79
+#, kde-format
+msgid "Elephant"
+msgstr "Elefant"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:83
+#, kde-format
+msgid "Claus the cat"
+msgstr "Klaus die Katze"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:87
+#, kde-format
+msgid "Bird"
+msgstr "Vogel"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:91
+#, kde-format
+msgid "Zebra"
+msgstr "Zebra"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:95
+#, kde-format
+msgid "Antique Phone"
+msgstr "Antikes Telefon"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:99
+#, kde-format
+msgid "Treble Clef"
+msgstr "Violinschlüssel"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:103
+#, kde-format
+msgid "Halloween"
+msgstr "Halloween"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:107
+#, kde-format
+msgid "Hourglass"
+msgstr "Sanduhr"
+
+#. i18n: tag board attribute name
+#. i18n: tag board attribute name
+#: levels/default.xml:111 levels/default.xml:551
+#, kde-format
+msgid "Robot"
+msgstr "Roboter"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:115
+#, kde-format
+msgid "Bike"
+msgstr "Fahrrad"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:119
+#, kde-format
+msgid "Penguin"
+msgstr "Pinguin"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:152
+#, kde-format
+msgid "Baby Panda"
+msgstr "Babypanda"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:156
+#, kde-format
+msgid "House"
+msgstr "Haus"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:160
+#, kde-format
+msgid "Soccer"
+msgstr "Fußball"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:164
+#, kde-format
+msgid "Alarm Clock"
+msgstr "Wecker"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:195
+#, kde-format
+msgid "Taxi!"
+msgstr "Taxi!"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:226
+#, kde-format
+msgid "Marker"
+msgstr "Filzstift"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:244
+#, kde-format
+msgid "Thumbs Up"
+msgstr "Daumen hoch"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:262
+#, kde-format
+msgid "Cup"
+msgstr "Pokal"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:275
+#, kde-format
+msgid "Dinner Time"
+msgstr "Essenszeit"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:295
+#, kde-format
+msgid "Wine Glass"
+msgstr "Weinglas"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:317
+#, kde-format
+msgid "Cocktail Glass"
+msgstr "Cocktailglas"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:334
+#, kde-format
+msgid "Escalator"
+msgstr "Rolltreppe"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:360
+#, kde-format
+msgid "Helicopter"
+msgstr "Hubschrauber"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:383
+#, kde-format
+msgid "Letter A"
+msgstr "Buchstabe A"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:396
+#, kde-format
+msgid "Screw"
+msgstr "Schraube"
+
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#. i18n: tag board attribute author
+#: levels/default.xml:396 levels/default.xml:414 levels/default.xml:432
+#: levels/default.xml:450 levels/default.xml:468 levels/default.xml:486
+#, kde-format
+msgid "Zack Rusin"
+msgstr "Zack Rusin"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:414
+#, kde-format
+msgid "Cup of coffee"
+msgstr "Eine Tasse Kaffee"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:432
+#, kde-format
+msgid "Lion"
+msgstr "Löwe"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:450
+#, kde-format
+msgid "Gas Lamp"
+msgstr "Gaslampe"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:468
+#, kde-format
+msgid "Monkey"
+msgstr "Affe"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:486
+#, kde-format
+msgid "Teddy Bear"
+msgstr "Teddybär"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:504
+#, kde-format
+msgid "Policeman"
+msgstr "Polizist"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:508
+#, kde-format
+msgid "Santa Claus"
+msgstr "Weihnachtsmann"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:512
+#, kde-format
+msgid "Bass Clef"
+msgstr "Bassschlüssel"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:516
+#, kde-format
+msgid "Phone"
+msgstr "Telefon"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:520
+#, kde-format
+msgid "Shopping Cart"
+msgstr "Einkaufswagen"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:524 src/main.cpp:40
+#, kde-format
+msgid "Picmi"
+msgstr "Picmi"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:528
+#, kde-format
+msgid "Mobile Phone"
+msgstr "Mobiltelefon"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:532
+#, kde-format
+msgid "Calculator"
+msgstr "Rechner"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:536
+#, kde-format
+msgid "Camera"
+msgstr "Kamera"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:540
+#, kde-format
+msgid "Car"
+msgstr "Auto"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:564
+#, kde-format
+msgid "Microphone"
+msgstr "Mikrofon"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:577
+#, kde-format
+msgid "Floppy Disk"
+msgstr "Diskette"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:590
+#, kde-format
+msgid "Printer"
+msgstr "Drucker"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:603
+#, kde-format
+msgid "Smiley"
+msgstr "Smiley"
+
+#: src/gui/graphicsitems/textbanneritem.cpp:28
+#, kde-format
+msgid "PAUSED"
+msgstr "Angehalten"
+
+#: src/gui/mainwindow.cpp:62
+#, kde-format
+msgid "Save Position"
+msgstr "Position speichern"
+
+#: src/gui/mainwindow.cpp:68
+#, kde-format
+msgid "Load Position"
+msgstr "Position laden"
+
+#: src/gui/mainwindow.cpp:79
+#, kde-format
+msgid "New Game"
+msgstr "Neues Spiel"
+
+#: src/gui/mainwindow.cpp:84
+#, kde-format
+msgid "Load New Game"
+msgstr "Neues Spiel laden"
+
+#: src/gui/mainwindow.cpp:97
+#, kde-format
+msgctxt "custom difficulty"
+msgid "Custom"
+msgstr "Benutzerdefiniert"
+
+#: src/gui/mainwindow.cpp:246
+#, kde-format
+msgid "Elapsed time: %1"
+msgstr "Verstrichene Zeit: %1"
+
+#: src/gui/mainwindow.cpp:251
+#, kde-format
+msgid "Actions since last saved position: %1"
+msgstr "Aktionen seit der letzten gespeicherten Position: %1"
+
+#: src/gui/mainwindow.cpp:280
+#, kde-format
+msgid "Congratulations, you have solved this board!"
+msgstr "Herzlichen Glückwunsch! Sie haben das Spiel gelöst."
+
+#: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
+#, kde-format
+msgid "Board Solved!"
+msgstr "Spiel gelöst."
+
+#: src/gui/mainwindow.cpp:286
+#, kde-format
+msgid "Congratulations, you have solved board '%1'!"
+msgstr "Herzlichen Glückwunsch! Sie haben das Spiel „%1“ gelöst."
+
+#: src/gui/selectboardwindow.cpp:87
+#, kde-format
+msgid "Level"
+msgstr "Name"
+
+#: src/gui/selectboardwindow.cpp:88
+#, kde-format
+msgid "Level Set"
+msgstr "Spieldatei"
+
+#: src/gui/selectboardwindow.cpp:89
+#, kde-format
+msgid "Difficulty"
+msgstr "Schwierigkeitsgrad"
+
+#: src/gui/selectboardwindow.cpp:90
+#, kde-format
+msgid "Size"
+msgstr "Größe"
+
+#: src/gui/selectboardwindow.cpp:91
+#, kde-format
+msgctxt "board solved"
+msgid "Solved"
+msgstr "Gelöst"
+
+#: src/gui/selectboardwindow.cpp:154
+#, kde-format
+msgctxt "@title:window"
+msgid "Level Selection"
+msgstr "Spielauswahl"
+
+#: src/gui/selectboardwindow.cpp:242
+#, kde-format
+msgid "Ridiculously Easy"
+msgstr "Lächerlich einfach"
+
+#: src/gui/selectboardwindow.cpp:243
+#, kde-format
+msgid "Very Easy"
+msgstr "Sehr einfach"
+
+#: src/gui/selectboardwindow.cpp:244
+#, kde-format
+msgid "Easy"
+msgstr "Einfach"
+
+#: src/gui/selectboardwindow.cpp:245
+#, kde-format
+msgid "Medium"
+msgstr "Mittel"
+
+#: src/gui/selectboardwindow.cpp:246
+#, kde-format
+msgid "Hard"
+msgstr "Schwer"
+
+#: src/gui/selectboardwindow.cpp:247
+#, kde-format
+msgid "Very Hard"
+msgstr "Sehr schwierig"
+
+#: src/gui/selectboardwindow.cpp:248
+#, kde-format
+msgid "Extremely Hard"
+msgstr "Extrem schwierig"
+
+#: src/gui/selectboardwindow.cpp:249
+#, kde-format
+msgid "Impossible"
+msgstr "Unmöglich"
+
+#: src/gui/selectboardwindow.cpp:255
+#, kde-format
+msgid "Name: %1"
+msgstr "Name: %1"
+
+#: src/gui/selectboardwindow.cpp:256
+#, kde-format
+msgid "Author: %1"
+msgstr "Autor: %1"
+
+#: src/gui/selectboardwindow.cpp:257
+#, kde-format
+msgid "Size: %1x%2"
+msgstr "Größe: %1 × %2"
+
+#: src/gui/selectboardwindow.cpp:258
+#, kde-format
+msgid "Difficulty: %1"
+msgstr "Schwierigkeitsgrad: %1"
+
+#: src/gui/selectboardwindow.cpp:260
+#, kde-format
+msgctxt "board solve time"
+msgid "Solved: %1"
+msgstr "Gelöst: %1"
+
+#: src/gui/selectboardwindow.cpp:267
+#, kde-format
+msgctxt "board not solved yet"
+msgid "Solved: -"
+msgstr "Gelöst: -"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, LevelSelectUi)
+#: src/gui/selectboardwindow.ui:23
+#, kde-format
+msgid "Level Selection"
+msgstr "Spielauswahl"
+
+#. i18n: ectx: property (text), widget (QLabel, labelAuthor)
+#: src/gui/selectboardwindow.ui:79
+#, kde-format
+msgid "Author: -"
+msgstr "Autor: -"
+
+#. i18n: ectx: property (text), widget (QLabel, labelName)
+#: src/gui/selectboardwindow.ui:86
+#, kde-format
+msgid "Name: -"
+msgstr "Name: -"
+
+#. i18n: ectx: property (text), widget (QLabel, labelImage)
+#: src/gui/selectboardwindow.ui:110
+#, kde-format
+msgid "?"
+msgstr "?"
+
+#. i18n: ectx: property (text), widget (QLabel, labelSolved)
+#: src/gui/selectboardwindow.ui:120
+#, kde-format
+msgid "Solved: -"
+msgstr "Gelöst: -"
+
+#. i18n: ectx: property (text), widget (QLabel, labelSize)
+#: src/gui/selectboardwindow.ui:127
+#, kde-format
+msgid "Size: -"
+msgstr "Größe: -"
+
+#. i18n: ectx: property (text), widget (QLabel, labelDifficulty)
+#: src/gui/selectboardwindow.ui:134
+#, kde-format
+msgid "Difficulty: -"
+msgstr "Schwierigkeitsgrad: -"
+
+#: src/gui/settingswindow.cpp:63
+#, kde-format
+msgid "Select Background"
+msgstr "Hintergrund auswählen"
+
+#: src/gui/settingswindow.cpp:64
+#, kde-format
+msgid "Image Files (*.png *.jpg)"
+msgstr "Bild-Dateien (*.png *.jpg)"
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, SettingsWindow)
+#: src/gui/settingswindow.ui:20
+#, kde-format
+msgid "Settings"
+msgstr "Einstellungen"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: src/gui/settingswindow.ui:28
+#, kde-format
+msgid "Background Image"
+msgstr "Hintergrundbild"
+
+#. i18n: ectx: property (text), widget (QRadioButton, bgDefaultRadioButton)
+#: src/gui/settingswindow.ui:38
+#, kde-format
+msgctxt "default background image"
+msgid "Default"
+msgstr "Voreinstellung"
+
+#. i18n: ectx: property (text), widget (QRadioButton, bgCustomRadioButton)
+#: src/gui/settingswindow.ui:48
+#, kde-format
+msgctxt "custom background image"
+msgid "Custom"
+msgstr "Benutzerdefiniert"
+
+#. i18n: ectx: property (text), widget (QToolButton, bgToolButton)
+#: src/gui/settingswindow.ui:66
+#, kde-format
+msgid "..."
+msgstr "..."
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: src/gui/settingswindow.ui:80
+#, kde-format
+msgid "Font Colors"
+msgstr "Schriftfarben"
+
+#. i18n: ectx: property (text), widget (QLabel, fontColorSolvedLabel)
+#: src/gui/settingswindow.ui:94
+#, kde-format
+msgid "Solved streaks:"
+msgstr "Gelöste Streifen:"
+
+#. i18n: ectx: property (text), widget (QLabel, fontColorUnsolvedLabel)
+#: src/gui/settingswindow.ui:110
+#, kde-format
+msgid "Unsolved streaks:"
+msgstr "Ungelöste Streifen:"
+
+#. i18n: ectx: property (text), widget (QPushButton, fontColorSolvedPushButton)
+#. i18n: ectx: property (text), widget (QPushButton, fontColorUnsolvedPushButton)
+#: src/gui/settingswindow.ui:120 src/gui/settingswindow.ui:127
+#, kde-format
+msgid "Edit..."
+msgstr "Bearbeiten ..."
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: src/gui/settingswindow.ui:145
+#, kde-format
+msgid "Custom Difficulty"
+msgstr "Benutzerdefinierter Schwierigkeitsgrad"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: src/gui/settingswindow.ui:153
+#, kde-format
+msgid "Height:"
+msgstr "Höhe:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: src/gui/settingswindow.ui:176
+#, kde-format
+msgid "Width:"
+msgstr "Breite:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: src/gui/settingswindow.ui:203
+#, kde-format
+msgid "Density:"
+msgstr "Dichte:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: src/gui/settingswindow.ui:241
+#, kde-format
+msgid "Prevent mistakes:"
+msgstr "Fehler verhindern:"
+
+#: src/main.cpp:42
+#, kde-format
+msgid "Picmi - a nonogram puzzle game"
+msgstr "Picmi - ein Nonogramm-Puzzlespiel"
+
+#: src/main.cpp:44
+#, kde-format
+msgid "(c) 2012 - 2015 The Picmi Authors"
+msgstr "(c) 2012 - 2015, die Picmi-Autoren"
+
+#: src/main.cpp:47
+#, kde-format
+msgid "Picmi Author"
+msgstr "Picmi-Autor"
+
+#~ msgid "Name"
+#~ msgstr "Name"
+
+#~ msgid "Author"
+#~ msgstr "Autor"

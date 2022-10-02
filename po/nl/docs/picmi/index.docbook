@@ -1,0 +1,704 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Dutch "INCLUDE">
+<!ENTITY % addindex "IGNORE">
+]>
+
+<book id="picmi" lang="&language;">
+<bookinfo>
+<title
+>Het handboek van &picmi;</title>
+
+<authorgroup>
+<author
+><firstname
+>Jakob</firstname
+> <surname
+>Gruber</surname
+> <affiliation
+><address
+><email
+>jakob.gruber@gmail.com</email
+></address
+></affiliation>
+</author>
+&Freek.de.Kruijf;&Ronald.Stroethoff; 
+</authorgroup>
+
+<copyright>
+<year
+>2012</year>
+<holder
+>Jakob Gruber</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2021-10-08</date>
+<releaseinfo
+>2.0.0 (KDE Gear 21.08)</releaseinfo>
+
+<abstract>
+<para
+>&picmi;, een nonogram-puzzel.</para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdegames</keyword>
+<keyword
+>spel</keyword>
+<keyword
+>puzzel</keyword>
+<keyword
+>Picmi</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Inleiding</title>
+
+<para
+>&picmi; is een spel voor één speler. </para>
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="gameboard.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Het spelbord van &picmi;</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>Het doel van het spel is om cellen te kleuren volgens nummers gegeven aan de zijkant van het bord. </para>
+</chapter>
+
+<chapter id="how-to-play">
+<title
+>Hoe te spelen</title>
+
+<para
+>De speler krijgt een blank bord te zien en een lijst met nummers voor elke rij en voor elke kolom. Deze nummers geven een voorstelling van hoeveel cellen in elke rij of kolom bezet zijn. Bijvoorbeeld, een nummervolgorde van <quote
+>4 8 3</quote
+> houdt in dat er sets van vier, acht en drie gevulde cellen zijn, in deze volgorde, met minstens een lege cel tussen elke opeenvolgende groep. Het doel van het spel is met gebruik van deze hint tot de ontdekking van de werkelijke situatie te komen en dit zo snel mogelijk te doen. </para>
+
+<para
+>Een klik met de &LMB; (de)markeert een cel als bezet terwijl een klik met de &RMB; een cel (de)markeert als leeg. Door het slepen met de muis kunt u meerdere cellen in een rij of kolom in één beweging markeren. De verbruikte tijd is in de statusbalk zichtbaar, een overzicht van het spelbord is linksboven zichtbaar. Een spelronde is geëindigd als alle bezette cellen correct gemarkeerd zijn. </para>
+
+<para
+>U kunt de huidige locatie van de vierkantjes en de kruisjes (vanaf hier verder 'toestand' genoemd) op elk gewenst moment opslaan. U overschrijft eerdere toestanden niet als u een nieuwe toestand opslaat. Als u de toestand hersteld dan gaat u terug naar de vorige opgeslagen toestand. Dit kunt u herhalen tot er geen opgeslagen toestanden meer over zijn. U kunt het aantal zetten sinds de laatst opgeslagen toestand aflezen in de statusbalk. </para>
+
+<para
+>&picmi; heeft twee speel-modes. Willekeurige puzzels (gegenereerd door het menu-item <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Spel</guimenu
+> <guimenuitem
+>Nieuw</guimenuitem
+></menuchoice
+> te selecteren) worden overeenkomstig de ingestelde moeilijkheidsgraad gegenereerd. Als alternatief kunt u ook de meegeleverde puzzels spelen door het selecteren van het menu-item <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Spel</guimenu
+> <guimenuitem
+>Laden...</guimenuitem
+></menuchoice
+>. </para>
+
+</chapter>
+
+<chapter id="rules-strategies-tips">
+<title
+>Spelregels, strategieën en tips</title>
+
+<sect1 id="rules">
+<title
+>Regels</title>
+<para
+>De nummervolgorde in een rij of kolom geeft een zekere hoeveelheid informatie over het aantal bezette vakjes en de verdeling daarvan over de rij of kolom.</para>
+<itemizedlist>
+  <listitem
+><para
+>Een nummer stelt de lengte van een rijtje van verbonden bezette cellen op het bord. Dit rijtje heeft aan elke zijde tenminste één lege cel of de rand van het bord.</para
+></listitem>
+  <listitem
+><para
+>Daarnaast toont een nummervolgorde de volgorde van de rijtjes in een kolom of rij.</para
+></listitem>
+  <listitem
+><para
+>Wanneer <guilabel
+>Vergissingen voorkomen</guilabel
+> is ingeschakeld dan is het niet mogelijk om een cel foutief te markeren als bezet - in plaats daarvan wordt straftijd bij de verbruikte tijd op de statusbalk opgeteld, De straftijd wordt bij elke fout verhoogd.</para
+></listitem>
+  <listitem
+><para
+>Als <guilabel
+>Vergissingen voorkomen</guilabel
+> is uitgeschakeld dan is er geen melding of een cel correct is gemarkeerd en er volgt ook geen straf voor het maken van een fout.</para
+></listitem>
+  <listitem
+><para
+>Het spel stopt als alle bezette cellen correct zijn gemarkeerd.</para
+></listitem>
+</itemizedlist>
+</sect1>
+
+</chapter>
+
+<chapter id="interface-overview">
+<title
+>Overzicht van het interface</title>
+
+<sect1 id="menu-items">
+<title
+>Menu-items</title>
+
+<variablelist>
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spel</guimenu
+> <guimenuitem
+>Nieuw</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Start een nieuw spel.</action
+> Het maakt een willekeurig bord met de huidige moeilijkheidsgraad.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spel</guimenu
+> <guimenuitem
+>Laden...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Laadt een vooraf ingestelde puzzel.</action
+> De namen van de puzzels zijn onzichtbaar totdat u ze heeft opgelost. De lijst met de hoogste scores en het instellen van de moeilijkheidsgraad zijn uitgeschakeld.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycap
+>F5</keycap
+></shortcut
+> <guimenu
+>Spel</guimenu
+> <guimenuitem
+>Spel herstarten</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Dit zal het spel opnieuw starten.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycap
+>P</keycap
+></shortcut
+> <guimenu
+>Spel</guimenu
+> <guimenuitem
+>Pauze</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Pauzeer de speeltijd.</action
+> Klik opnieuw op het menu-item om het spel te hervatten. Merk op dat het bord verdwijnt wanneer het spel wordt gepauzeerd omdat het oneerlijk zou zijn als u naar goede zetten zou kunnen zoeken zonder de tijdsdruk.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spel</guimenu
+> <guimenuitem
+>Topscores tonen...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Toont een dialoog met de hoge scores voor de verschillende moeilijkheidsgraden.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spel</guimenu
+> <guimenuitem
+>Afsluiten</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+>Het &picmi; <action
+>afsluiten</action
+>.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Z</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Zet</guimenu
+> <guimenuitem
+>Ongedaan maken</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Maak de vorige zet ongedaan</action
+> als er een bestaat.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>I</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Zet</guimenu
+> <guimenuitem
+>Tip</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Markeert een cel op bezet of leeg.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Zet</guimenu
+> <guimenuitem
+>Oplossen</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Start een demo spel.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>L</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Zet</guimenu
+> <guimenuitem
+>Positie laden</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Laadt de laatst opgeslagen positie.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>S</keycap
+></keycombo
+> </shortcut
+><guimenu
+>Zet</guimenu
+> <guimenuitem
+>Positie opslaan</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Slaat de huidige spel-positie op.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>F</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Instellingen</guimenu
+> <guimenuitem
+>Volledig scherm</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Zet de modus Volledig scherm aan/uit.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Instellingen</guimenu
+> <guisubmenu
+>Moeilijkheidsgraad</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Hier kunt u de moeilijkheidsgraad in een submenu selecteren.</action
+></para>
+    <para
+>Er zijn vier moeilijkheidsgraden: <itemizedlist>
+        <listitem
+><para
+><guimenuitem
+>Gemakkelijk</guimenuitem
+>: 10 rijen, 10 kolommen, 55% van alle cellen is bezet, optie <guilabel
+>Vergissingen voorkomen</guilabel
+> is uitgeschakeld.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>Gemiddeld</guimenuitem
+>: 10 rijen, 15 kolommen, 55% van alle cellen is bezet, optie <guilabel
+>Vergissingen voorkomen</guilabel
+> is uitgeschakeld.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>Moeilijk</guimenuitem
+>: 15 rijen, 15 kolommen, 55% van alle cellen is bezet, optie <guilabel
+>Vergissingen voorkomen</guilabel
+> is uitgeschakeld.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>Aangepast</guimenuitem
+>: Aangepaste bord-afmetingen en instellingen.</para
+></listitem>
+      </itemizedlist>
+    </para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Instellingen</guimenu
+> <guimenuitem
+>&picmi; instellen...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Kies een afbeelding als achtergrond voor het spel, stel de afmetingen van het speelbord in en instellingen voor een aangepaste moeilijkheidsgraad.</action
+></para
+></listitem>
+  </varlistentry>
+</variablelist>
+
+<para
+>Bovendien heeft &picmi; de gezamenlijke menu-items van &kde; <guimenu
+>Instellingen</guimenu
+> en <guimenu
+>Help</guimenu
+>, voor meer informatie lees de secties over de <ulink url="help:/fundamentals/menus.html#menus-settings"
+>Menu-instellingen</ulink
+> en <ulink url="help:/fundamentals/menus.html#menus-help"
+>Menu Help</ulink
+> van &kde;-fundamentals. </para>
+</sect1>
+
+<sect1 id="keybindings">
+<title id="keybindings-title"
+>Sneltoetsen</title>
+
+<para
+>De standaard sneltoetsen zijn:</para>
+
+<table>
+  <title
+>Sneltoetsen</title>
+  <tgroup cols="2">
+    <tbody>
+      <row>
+        <entry
+>Start een nieuw spel</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Laad een vooraf ingesteld spel</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Pauze</entry>
+        <entry
+><keycap
+>P</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Topscores tonen</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Modus Volledig scherm</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>F</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Afsluiten</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Help</entry>
+        <entry
+><keycap
+>F1</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Wat is dit? help</entry>
+        <entry
+><keycombo action="simul"
+>&Shift;<keycap
+>F1</keycap
+></keycombo
+></entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+
+<table>
+  <title
+>Toetsenbord bestuurt</title>
+  <tgroup cols="2">
+    <tbody>
+      <row>
+        <entry
+>Naar links</entry>
+        <entry
+>&Left; of <keycap
+>H</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Naar rechts</entry>
+        <entry
+>&Right; of <keycap
+>L</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Omhoog</entry>
+        <entry
+>&Up; of <keycap
+>K</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Omlaag</entry>
+        <entry
+>&Down; of <keycap
+>J</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Zet de cel op (niet-)bezet</entry>
+        <entry
+><keycap
+>X</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Zet de cel op (niet-)vrij</entry>
+        <entry
+>&Space;</entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+
+</sect1>
+</chapter>
+
+
+<chapter id="credits">
+<title
+>Dankbetuigingen en licentie</title>
+
+<para
+>&picmi; </para>
+<para
+>Programma copyright 2012 bij Jakob Gruber <email
+>jakob.gruber@gmail.com</email
+> </para>
+<para
+>Documentatie copyright 2012 bij Jakob Gruber <email
+>jakob.gruber@gmail.com</email
+> </para>
+
+&meld.fouten;&vertaling.freek;&vertaling.ronald;&nagelezen.freek; &underFDL; &underGPL; </chapter>
+
+
+&documentation.index;
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-always-quote-attributes:t
+sgml-indent-step:0
+sgml-indent-data:t
+End:
+-->
