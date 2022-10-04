@@ -7,6 +7,7 @@
 #ifndef BOARDSTATE_H
 #define BOARDSTATE_H
 
+#include <QObject>
 #include <QPoint>
 #include <QStack>
 #include <QSharedPointer>
