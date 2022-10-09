@@ -25,6 +25,7 @@ SentUpstream: 2014-09-25
   <name xml:lang="hu">Picmi</name>
   <name xml:lang="id">Picmi</name>
   <name xml:lang="it">Picmi</name>
+  <name xml:lang="ka">Picmi</name>
   <name xml:lang="ko">Picmi</name>
   <name xml:lang="nl">Picmi</name>
   <name xml:lang="nn">Picmi</name>
@@ -60,6 +61,7 @@ SentUpstream: 2014-09-25
   <summary xml:lang="hu">Számlogika alapú kirakós játék</summary>
   <summary xml:lang="id">Permainan teka-teki berdasarkan pada logika angka</summary>
   <summary xml:lang="it">Gioco ad incastro basato sulla logica dei numeri</summary>
+  <summary xml:lang="ka">რიცხვით ლოგიკაზე დამყარებული პაზლი</summary>
   <summary xml:lang="ko">숫자 논리 기반 퍼즐 게임</summary>
   <summary xml:lang="nl">Een logisch spel met nummers</summary>
   <summary xml:lang="nn">Tenkjespel basert på tallogikk</summary>
