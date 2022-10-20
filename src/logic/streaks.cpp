@@ -116,7 +116,7 @@ Streaks::processStreak(const QVector<StreakPrivate> &map,
     for (int i = 0; i < streaks_reversed.size(); i++) {
         streaks_reversed[i].begin = l.size() - streaks_reversed[i].begin;
         streaks_reversed[i].end   = l.size() - streaks_reversed[i].end;
-        qSwap(streaks_reversed[i].begin, streaks_reversed[i].end);
+        std::swap(streaks_reversed[i].begin, streaks_reversed[i].end);
     }
 
     /* Preliminary checks
