@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: picmi\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-20 00:43+0000\n"
-"PO-Revision-Date: 2022-10-08 07:29+0200\n"
+"PO-Revision-Date: 2022-12-06 09:13+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -126,19 +126,19 @@ msgstr "Moni Linke"
 #: levels/default.xml:63
 #, kde-format
 msgid "Pirate Dog"
-msgstr ""
+msgstr "მეკობრე ძაღლი"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:67
 #, kde-format
 msgid "Clown"
-msgstr ""
+msgstr "კლოუნი"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:71
 #, kde-format
 msgid "Pirate Ship"
-msgstr ""
+msgstr "მეგობრე ხომალდი"
 
 #. i18n: tag board attribute author
 #. i18n: tag board attribute author
@@ -149,7 +149,7 @@ msgstr ""
 #: levels/default.xml:160 levels/default.xml:524
 #, kde-format
 msgid "Frank Uebbing"
-msgstr ""
+msgstr "ფრენკ უებინგი"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:75
@@ -161,19 +161,19 @@ msgstr "პანდა"
 #: levels/default.xml:79
 #, kde-format
 msgid "Elephant"
-msgstr ""
+msgstr "სპილო"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:83
 #, kde-format
 msgid "Claus the cat"
-msgstr ""
+msgstr "კატა კლაუსი"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:87
 #, kde-format
 msgid "Bird"
-msgstr ""
+msgstr "ჩიტი"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:91
@@ -185,25 +185,25 @@ msgstr "Zebra"
 #: levels/default.xml:95
 #, kde-format
 msgid "Antique Phone"
-msgstr ""
+msgstr "ძველებური ტელეფონი"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:99
 #, kde-format
 msgid "Treble Clef"
-msgstr ""
+msgstr "მაღალი სიხშირის ნოტა"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:103
 #, kde-format
 msgid "Halloween"
-msgstr ""
+msgstr "ჰელოუინი"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:107
 #, kde-format
 msgid "Hourglass"
-msgstr ""
+msgstr "ქვიშის საათი"
 
 #. i18n: tag board attribute name
 #. i18n: tag board attribute name
@@ -216,7 +216,7 @@ msgstr "რობოტი"
 #: levels/default.xml:115
 #, kde-format
 msgid "Bike"
-msgstr ""
+msgstr "ველოსიპედი"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:119
@@ -228,7 +228,7 @@ msgstr "პინგვინი"
 #: levels/default.xml:152
 #, kde-format
 msgid "Baby Panda"
-msgstr ""
+msgstr "პატარა პანდა"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:156
@@ -246,7 +246,7 @@ msgstr "სოკერი"
 #: levels/default.xml:164
 #, kde-format
 msgid "Alarm Clock"
-msgstr ""
+msgstr "მაღვიძარა"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:195
@@ -264,7 +264,7 @@ msgstr "სანიშნი"
 #: levels/default.xml:244
 #, kde-format
 msgid "Thumbs Up"
-msgstr ""
+msgstr "ცერა მაღლა"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:262
@@ -276,7 +276,7 @@ msgstr "ჭიქა"
 #: levels/default.xml:275
 #, kde-format
 msgid "Dinner Time"
-msgstr ""
+msgstr "სადილის დრო"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:295
@@ -306,7 +306,7 @@ msgstr "ვერტმფრენი"
 #: levels/default.xml:383
 #, kde-format
 msgid "Letter A"
-msgstr ""
+msgstr "სიმბოლო A"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:396
@@ -354,25 +354,25 @@ msgstr "მაიმუნი"
 #: levels/default.xml:486
 #, kde-format
 msgid "Teddy Bear"
-msgstr ""
+msgstr "სათამაშო დათუნია"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:504
 #, kde-format
 msgid "Policeman"
-msgstr ""
+msgstr "პოლიციელი"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:508
 #, kde-format
 msgid "Santa Claus"
-msgstr ""
+msgstr "სანტა კლაუსი"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:512
 #, kde-format
 msgid "Bass Clef"
-msgstr ""
+msgstr "ბასის ნოტა"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:516
@@ -384,7 +384,7 @@ msgstr "ტელეფონი"
 #: levels/default.xml:520
 #, kde-format
 msgid "Shopping Cart"
-msgstr ""
+msgstr "Საყიდლების კალათი"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:524 src/main.cpp:40
@@ -479,22 +479,22 @@ msgstr "გასული დრო: %1"
 #: src/gui/mainwindow.cpp:251
 #, kde-format
 msgid "Actions since last saved position: %1"
-msgstr ""
+msgstr "ქმედებები ბოლო შენახული მდებარეობის შემდეგ: %1"
 
 #: src/gui/mainwindow.cpp:280
 #, kde-format
 msgid "Congratulations, you have solved this board!"
-msgstr ""
+msgstr "გილოცავთ! თქვენ ამოხსენით დაფა!"
 
 #: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
 #, kde-format
 msgid "Board Solved!"
-msgstr ""
+msgstr "დაფა ამოხსნილია!"
 
 #: src/gui/mainwindow.cpp:286
 #, kde-format
 msgid "Congratulations, you have solved board '%1'!"
-msgstr ""
+msgstr "გილოცავთ! თქვენ ამოხსენით დაფა '%1' !"
 
 #: src/gui/selectboardwindow.cpp:87
 #, kde-format
@@ -504,7 +504,7 @@ msgstr "დონე"
 #: src/gui/selectboardwindow.cpp:88
 #, kde-format
 msgid "Level Set"
-msgstr ""
+msgstr "დონე დაყენებულია"
 
 #: src/gui/selectboardwindow.cpp:89
 #, kde-format
@@ -526,7 +526,7 @@ msgstr "ამოხსნილი"
 #, kde-format
 msgctxt "@title:window"
 msgid "Level Selection"
-msgstr ""
+msgstr "დონის არჩევა"
 
 #: src/gui/selectboardwindow.cpp:242
 #, kde-format
@@ -694,13 +694,13 @@ msgstr "ფონტის ფერები"
 #: src/gui/settingswindow.ui:94
 #, kde-format
 msgid "Solved streaks:"
-msgstr ""
+msgstr "ამოხსნილი დარტყმები:"
 
 #. i18n: ectx: property (text), widget (QLabel, fontColorUnsolvedLabel)
 #: src/gui/settingswindow.ui:110
 #, kde-format
 msgid "Unsolved streaks:"
-msgstr ""
+msgstr "ამოუხსნელი დარტყმები:"
 
 #. i18n: ectx: property (text), widget (QPushButton, fontColorSolvedPushButton)
 #. i18n: ectx: property (text), widget (QPushButton, fontColorUnsolvedPushButton)
@@ -737,19 +737,19 @@ msgstr "სიმკვრივე:"
 #: src/gui/settingswindow.ui:241
 #, kde-format
 msgid "Prevent mistakes:"
-msgstr ""
+msgstr "შეცდომების არიდება:"
 
 #: src/main.cpp:42
 #, kde-format
 msgid "Picmi - a nonogram puzzle game"
-msgstr ""
+msgstr "Picmi - ნონოგრამული პაზლი"
 
 #: src/main.cpp:44
 #, kde-format
 msgid "(c) 2012 - 2015 The Picmi Authors"
-msgstr ""
+msgstr "(c) 2012 - 2015 Picmi -ის ავტორები, ყველა უფლება დაცულია"
 
 #: src/main.cpp:47
 #, kde-format
 msgid "Picmi Author"
-msgstr ""
+msgstr "Picmi -ის ავტორი"
