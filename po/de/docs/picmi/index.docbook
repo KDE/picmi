@@ -1,52 +1,88 @@
 <?xml version="1.0" ?>
 <!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
-<!ENTITY % English "INCLUDE">
+<!ENTITY % German "INCLUDE">
 <!ENTITY % addindex "IGNORE">
 ]>
 
 <book id="picmi" lang="&language;">
 <bookinfo>
-<title>The &picmi; Handbook</title>
+<title
+>Das Handbuch zu &picmi;</title>
 
 <authorgroup>
-<author>
-<firstname>Jakob</firstname>
-<surname>Gruber</surname>
-<affiliation><address><email>jakob.gruber@gmail.com</email></address></affiliation>
+<author
+><firstname
+>Jakob</firstname
+> <surname
+>Gruber</surname
+> <affiliation
+><address
+><email
+>jakob.gruber@gmail.com</email
+></address
+></affiliation>
 </author>
-<!-- TRANS:ROLES_OF_TRANSLATORS -->
+<othercredit role="translator"
+><firstname
+>Burkhard</firstname
+><surname
+>Lück</surname
+><affiliation
+><address
+><email
+>lueck@hube-lueck.de</email
+></address
+></affiliation
+><contrib
+>Übersetzung</contrib
+></othercredit
+> 
 </authorgroup>
 
 <copyright>
-<year>2012</year>
-<holder>Jakob Gruber</holder>
+<year
+>2012</year>
+<holder
+>Jakob Gruber</holder>
 </copyright>
 
-<legalnotice>&FDLNotice;</legalnotice>
+<legalnotice
+>&FDLNotice;</legalnotice>
 
-<date>2021-10-08</date>
-<releaseinfo>2.0.0 (KDE Gear 21.08)</releaseinfo>
+<date
+>2016-05-13</date>
+<releaseinfo
+>2.0.0 (Anwendungen 16.04)</releaseinfo>
 
 <abstract>
-<para>
-&picmi;, a nonogram puzzle game.</para>
+<para
+><application
+>Picmi</application
+> - ein Nonogramm-Puzzlespiel.</para>
 </abstract>
 
 <keywordset>
-<keyword>KDE</keyword>
-<keyword>kdegames</keyword>
-<keyword>game</keyword>
-<keyword>puzzle game</keyword>
-<keyword>Picmi</keyword>
+<keyword
+>KDE</keyword>
+<keyword
+>kdegames</keyword>
+<keyword
+>game</keyword>
+<keyword
+>Puzzlespiel</keyword>
+<keyword
+>picmi</keyword>
 </keywordset>
 </bookinfo>
 
 <chapter id="introduction">
-<title>Introduction</title>
+<title
+>Einleitung</title>
 
-<para>
-&picmi; is a single player puzzle game.
-</para>
+<para
+><application
+>Picmi</application
+> ist ein Puzzlespiel für einen Spieler. </para>
 
 <screenshot>
 <mediaobject>
@@ -54,249 +90,546 @@
 <imagedata fileref="gameboard.png" format="PNG"/>
 </imageobject>
 <textobject>
-<phrase>&picmi; gameboard</phrase>
+<phrase
+>&picmi;-Spielfeld</phrase>
 </textobject>
 </mediaobject>
 </screenshot>
 
-<para>
-The goal of the game is to color cells according to numbers given at the side of the board.
-</para>
+<para
+>Ziel des Spiels ist es, Zellen gemäß den am Rand des Spielfelds angegebenen Zahlen einzufärben. </para>
 </chapter>
 
 <chapter id="how-to-play">
-<title>How to Play</title>
+<title
+>Spielanleitung</title>
 
-<para>
-The player is presented with a blank board, and a list of numbers for each row and column. These numbers represent how runs are organized within any given row or column. For example, a number sequence of <quote>4 8 3</quote> would mean there are sets of four, eight, and three filled cells, in that order, with at least one blank cell between successive groups. The objective of the game is to use these hints to uncover the actual solution, and do this as quickly as possible.
-</para>
+<para
+>Es wird ein leeres Spielfeld und eine Liste von Zahlen für jede Zeile und Spalte angezeigt. Diese Zahlen geben an, wie die Folgen von Zellen in jeder angegebenen Zeile oder Spalte angeordnet sind. Eine Zahlenfolge wie <quote
+>4 8 3</quote
+> bedeutet, dass vier, acht und drei aufeinander folgende ausgefüllte Zellen in dieser Reihenfolge mit mindestens einer leere Zelle dazwischen vorhanden sind. Ziel des Spiels ist es, mit Hilfe dieser Hinweise die aktuelle Lösung so schnell wie möglich aufzudecken. </para>
 
-<para>
-A left-click (un)marks a cell as occupied, while a right click (un)marks a cell as empty. Dragging may be used to mark several cells in a row or column in one go. The elapsed time is displayed in the status bar, and an overview of the game board is located in the upper left corner. A game is completed once all occupied cells have been marked correctly.
-</para>
+<para
+>Ein Klick mit der &LMBn; schaltet die Markierung einer Zelle als besetzt ein und aus. Ein Klick mit der &RMBn; schaltet die Markierung einer Zelle als leer ein oder aus. Ziehen mit der Maus markiert mehrere Zellen in einer Zeile oder Spalte. Die verstrichene Zeit wird in der Statusleiste angezeigt. Ein Spiel ist beendet, wenn alle besetzten Zellen richtig markiert sind. </para>
 
-<para>
-The current placement of boxes and crosses (referred to as 'states' from now on) can be saved at any time. Saving a new state does not overwrite previous saved states. Restoring a state always returns to the most recently saved state. This can be repeated until no more saved states remain. The number of actions since the latest saved state is displayed in the status bar.
-</para>
+<para
+>Die aktuelle Position der Quadrate und Kreuze, die hier fortan als Status bezeichnet wird, kann jederzeit gespeichert werden. Beim Speichern eines neuen Status wird ein vorher gespeicherter Status nicht überschrieben. Beim Wiederherstellen wird immer der zuletzt gespeicherte Status geladen. Diese Wiederherstellung kann solange wiederholt werden, bis es keinen gespeicherten Status mehr gibt. Die Anzahl der Aktionen seit dem letzten Speichern eines Status werden in der Statusleiste angezeigt. </para>
 
-<para>
-&picmi; includes two game modes.
-Random puzzles (generated by selecting the <menuchoice><shortcut><keycombo action="simul">&Ctrl;<keycap>N</keycap></keycombo></shortcut> <guimenu>Game</guimenu> <guimenuitem>New</guimenuitem></menuchoice> menu item) are generated according to the selected difficulty settings. Alternatively, the included preset puzzles can be played by selecting the <menuchoice><shortcut><keycombo action="simul">&Ctrl;<keycap>O</keycap></keycombo></shortcut> <guimenu>Game</guimenu> <guimenuitem>Load...</guimenuitem></menuchoice> menu item.
-</para>
+<para
+><application
+>Picmi</application
+> kennt zwei Spielmodi. Mit <guilabel
+>Neu</guilabel
+> aus dem Menü werden zufällige Spiele entsprechend dem eingestellten Schwierigkeitsgrads generiert. Alternativ können auch vorgegebene Spiele gespielt werden, wenn Sie <guilabel
+>Laden</guilabel
+> aus dem Menü benutzen. </para>
 
 </chapter>
 
 <chapter id="rules-strategies-tips">
-<title>Game Rules, Strategies and Tips</title>
+<title
+>Spielregeln, Spielstrategien und Tipps</title>
 
 <sect1 id="rules">
-<title>Rules</title>
-<para>The number sequence in a row or column provides certain information about the count of occupied cells and their arrangement within a row or column.</para>
+<title
+>Spielregeln</title>
+<para
+>Die Zahlenfolge für eine Zeile oder Spalte gibt die Anzahl der besetzten Zellen und ihre Anordnung innerhalb einer Zeile oder Spalte an.</para>
 <itemizedlist>
-  <listitem><para>A number represents the length of a connected run of occupied cells on the board. This run either has at least one empty cell on each side or is located directly on the board edge.</para></listitem>
-  <listitem><para>Additionally, a number sequence shows the order of these runs within a row or column.</para></listitem>
-  <listitem><para>When the <guilabel>Prevent mistakes:</guilabel> option is enabled, it is not possible to incorrectly mark a cell as occupied - instead, penalty time is added to the timer. The penalty is increased with each mistake made.</para></listitem>
-  <listitem><para>If <guilabel>Prevent mistakes:</guilabel> option is disabled, there is no feedback whether a cell has been marked correctly, and there is no penalty for making mistakes.</para></listitem>
-  <listitem><para>The game will stop once all occupied cells have been marked correctly.</para></listitem>
+<listitem
+><para
+>Eine Zahl bestimmt die Länge miteinander verbundener besetzter Zellen auf dem Spielfeld. Diese Folgen verbundener Zellen haben mindestens eine nicht besetzte Zelle als Trennung oder sind direkt am Rand des Spielfelds angeordnet.</para
+></listitem>
+<listitem
+><para
+>Außerdem geben die Zahlen die Reihenfolge dieser Zahlenfolgen in einer Zeile oder Spalte an.</para
+></listitem>
+<listitem
+><para
+>Wenn die Einstellung <guilabel
+>Fehler verhindern</guilabel
+> aktiviert ist, können Zellen nicht fälschlicherweise als besetzt markiert werden - statt dessen wird ein Zeitstrafe hinzugefügt. Die Zeitstrafe wird mit jeden gemachten Fehler erhöht.</para
+></listitem>
+<listitem
+><para
+>Wenn <guilabel
+>Fehler verhindern</guilabel
+> ausgeschaltet ist, gibt es keine Rückmeldung, ob eine Zelle richtig markiert ist und keine Zeitstrafe für Fehler.</para
+></listitem>
+<listitem
+><para
+>Das Spiel ist beendet, wenn alle besetzten Zellen richtig markiert sind.</para
+></listitem>
 </itemizedlist>
 </sect1>
 
 </chapter>
 
 <chapter id="interface-overview">
-<title>Interface Overview</title>
+<title
+>Die Benutzeroberfläche</title>
 
 <sect1 id="menu-items">
-<title>Menu Items</title>
+<title
+>Menüeinträge</title>
 
 <variablelist>
-  <varlistentry>
-    <term><menuchoice><shortcut><keycombo action="simul">&Ctrl;<keycap>N</keycap></keycombo> </shortcut>
-    <guimenu>Game</guimenu>
-    <guimenuitem>New</guimenuitem></menuchoice></term>
-    <listitem><para><action>Starts a new game.</action> It creates a random board using the current difficulty level.</para></listitem>
-  </varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spiel</guimenu
+> <guimenuitem
+>Neu</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Startet eine neues Spiel mit einem zufälligen Spielbrett im aktuellen Schwierigkeitsgrad. </para>
+</listitem>
+</varlistentry>
 
-  <varlistentry>
-    <term><menuchoice><shortcut><keycombo action="simul">&Ctrl;<keycap>O</keycap></keycombo> </shortcut>
-    <guimenu>Game</guimenu>
-    <guimenuitem>Load...</guimenuitem></menuchoice></term>
-    <listitem><para><action>Loads a preset puzzle.</action> The names of puzzles are hidden until they are solved. High score lists and difficulty settings are disabled.</para></listitem>
-  </varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spiel</guimenu
+> <guimenuitem
+>Laden</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Lädt ein vorgegebenes Spiel. Die Namen der Spiele bleiben ausgeblendet, bis sie gelöst wurden. Bestenlisten und Einstellung des Schwierigkeitsgrads sind deaktiviert. </para>
+</listitem>
+</varlistentry>
 
-  <varlistentry>
-    <term><menuchoice><shortcut><keycap>F5</keycap></shortcut>
-    <guimenu>Game</guimenu>
-    <guimenuitem>Restart Game</guimenuitem></menuchoice></term>
-    <listitem><para><action>This will restart the current game.</action></para></listitem>
-  </varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycap
+>F5</keycap
+> </shortcut
+> <guimenu
+>Spiel</guimenu
+> <guimenuitem
+>Spiel neu starten</guimenuitem
+>  </menuchoice
+></term>
+<listitem>
+<para>
+    <!--FIXME -->
+</para>
+</listitem>
+</varlistentry>
 
-  <varlistentry>
-    <term><menuchoice><shortcut><keycap>P</keycap></shortcut>
-    <guimenu>Game</guimenu>
-    <guimenuitem>Pause</guimenuitem></menuchoice></term>
-    <listitem><para><action>Pauses the game time.</action> Click on the menu item again to make the game resume. Note that the board disappears when the game is paused as it would be unfair if you could search for good moves without the time pressure.</para></listitem>
-  </varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycap
+>P</keycap
+> </shortcut
+> <guimenu
+>Spiel</guimenu
+> <guimenuitem
+>Pause</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Hält die Spielzeit an. Klicken Sie erneut auf den Menüpunkt, um das Spiel fortzusetzen. Beachten Sie, dass das Spielfeld während der Pause verschwindet, da Sie sich sonst unfairer weise ohne Zeitdruck gute Züge überlegen könnten. </para>
+</listitem>
+</varlistentry>
 
-  <varlistentry>
-    <term><menuchoice><shortcut><keycombo action="simul">&Ctrl;<keycap>H</keycap></keycombo> </shortcut>
-    <guimenu>Game</guimenu>
-    <guimenuitem>Show High Scores...</guimenuitem></menuchoice></term>
-    <listitem><para><action>Shows a dialog containing the High Scores for the various difficulty levels.</action></para></listitem>
-  </varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spiel</guimenu
+> <guimenuitem
+>Bestenliste anzeigen</guimenuitem
+></menuchoice
+></term>
+<listitem>
+<para
+>Zeigt einen Dialog mit den Bestenlisten für die unterschiedlichen Schwierigkeitsstufen. </para>
+</listitem>
+</varlistentry>
 
-  <varlistentry>
-    <term><menuchoice><shortcut><keycombo action="simul">&Ctrl;<keycap>Q</keycap></keycombo> </shortcut>
-    <guimenu>Game</guimenu>
-    <guimenuitem>Quit</guimenuitem></menuchoice></term>
-    <listitem><para><action>Quits</action> the &picmi;.</para></listitem>
-  </varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Spiel</guimenu
+> <guimenuitem
+>Beenden</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Beendet das Programm. </para>
+</listitem>
+</varlistentry>
 
-  <varlistentry>
-    <term><menuchoice><shortcut><keycombo action="simul">&Ctrl;<keycap>Z</keycap></keycombo> </shortcut>
-    <guimenu>Move</guimenu>
-    <guimenuitem>Undo</guimenuitem></menuchoice></term>
-    <listitem><para><action>Undo the previous move</action> if one exists.</para></listitem>
-  </varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Z</keycap
+></keycombo
+></shortcut
+><guimenu
+>Zug</guimenu
+><guimenuitem
+>Zurücknehmen</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Nimmt einen vorherigen Zug zurück, wenn bereits ein Zug ausgeführt wurde. </para>
+</listitem>
+</varlistentry>
 
-  <varlistentry>
-    <term><menuchoice><shortcut><keycombo action="simul">&Ctrl;<keycap>I</keycap></keycombo> </shortcut>
-    <guimenu>Move</guimenu>
-    <guimenuitem>Hint</guimenuitem></menuchoice></term>
-    <listitem><para><action>Marks a cell as occupied or empty.</action></para></listitem>
-  </varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>I</keycap
+></keycombo
+></shortcut
+><guimenu
+>Zug</guimenu
+><guimenuitem
+>Tipp</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Markiert eine Zelle als besetzt oder leer. </para>
+</listitem>
+</varlistentry>
 
-  <varlistentry>
-    <term><menuchoice><guimenu>Move</guimenu>
-    <guimenuitem>Solve</guimenuitem></menuchoice></term>
-    <listitem><para><action>Play a demo game.</action></para></listitem>
-  </varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Zug</guimenu
+> <guimenuitem
+>Lösen</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Im Demomodus spielen. </para>
+</listitem>
+</varlistentry>
 
-  <varlistentry>
-    <term><menuchoice><shortcut><keycombo action="simul">&Ctrl;<keycap>L</keycap></keycombo> </shortcut>
-    <guimenu>Move</guimenu>
-    <guimenuitem>Load Position</guimenuitem></menuchoice></term>
-    <listitem><para><action>Loads the most recently saved position.</action></para></listitem>
-  </varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>L</keycap
+></keycombo
+></shortcut
+><guimenu
+>Zug</guimenu
+><guimenuitem
+>Position laden</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Lädt kürzlich gespeicherte Spielpositionen. </para>
+</listitem>
+</varlistentry>
 
-  <varlistentry>
-    <term><menuchoice><shortcut><keycombo action="simul">&Ctrl;<keycap>S</keycap></keycombo> </shortcut>
-    <guimenu>Move</guimenu>
-    <guimenuitem>Save Position</guimenuitem></menuchoice></term>
-    <listitem><para><action>Saves the current board position.</action></para></listitem>
-  </varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>S</keycap
+></keycombo
+></shortcut
+><guimenu
+>Zug</guimenu
+><guimenuitem
+>Position speichern</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+>Speichert die aktuelle Spielposition. </para>
+</listitem>
+</varlistentry>
 
-  <varlistentry>
-    <term><menuchoice><shortcut><keycombo action="simul">&Ctrl;&Shift;<keycap>F</keycap></keycombo> </shortcut>
-    <guimenu>View</guimenu>
-    <guimenuitem>Full Screen Mode</guimenuitem></menuchoice></term>
-    <listitem><para><action>Toggles the graphic interface to full screen mode.</action></para></listitem>
-  </varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+> <guisubmenu
+>Schwierigkeitsgrad</guisubmenu
+> </menuchoice
+></term>
+<listitem>
+<para
+>Hier können Sie den Schwierigkeitsgrad aus einem Untermenü wählen.</para>
+<para
+>Es gibt vier Schwierigkeitsgrade: <itemizedlist>
+<listitem
+><para
+><guimenuitem
+>Einfach</guimenuitem
+>: 10 Zeilen und 10 Spalten, 55 % aller Zellen sind besetzt, „Fehler verhindern“ ist ausgeschaltet.</para
+></listitem>
+<listitem
+><para
+><guimenuitem
+>Mittel</guimenuitem
+>: 10 Zeilen und 15 Spalten, 55 % aller Zellen sind besetzt, „Fehler verhindern“ ist ausgeschaltet.</para
+></listitem>
+<listitem
+><para
+><guimenuitem
+>Schwierig</guimenuitem
+>: 15 Zeilen und 15 Spalten, 55 % aller Zellen sind besetzt, „Fehler verhindern“ ist ausgeschaltet.</para
+></listitem>
+<listitem
+><para
+><guimenuitem
+>Benutzerdefiniert</guimenuitem
+>: Benutzerdefinierte Anzahl von Zeilen und Spalten des Spielfelds und benutzerdefinierte Einstellungen.</para
+></listitem>
+</itemizedlist>
+</para
+></listitem>
+</varlistentry>
 
-  <varlistentry>
-    <term><menuchoice><guimenu>Settings</guimenu>
-    <guisubmenu>Difficulty</guisubmenu></menuchoice></term>
-    <listitem><para><action>Lets you set the difficulty level from a sub-menu.</action></para>
-    <para>There are four levels of difficulty:
-      <itemizedlist>
-        <listitem><para><guimenuitem>Easy</guimenuitem>: 10 rows, 10 columns, 55% of all cells are occupied, <guilabel>Prevent mistakes:</guilabel> option is disabled.</para></listitem>
-        <listitem><para><guimenuitem>Medium</guimenuitem>: 10 rows, 15 columns, 55% of all cells are occupied, <guilabel>Prevent mistakes:</guilabel> option is disabled.</para></listitem>
-        <listitem><para><guimenuitem>Hard</guimenuitem>: 15 rows, 15 columns, 55% of all cells are occupied, <guilabel>Prevent mistakes:</guilabel> option is disabled.</para></listitem>
-        <listitem><para><guimenuitem>Custom</guimenuitem>: Custom board dimensions and settings.</para></listitem>
-      </itemizedlist>
-    </para></listitem>
-  </varlistentry>
-
-  <varlistentry>
-    <term><menuchoice><guimenu>Settings</guimenu>
-    <guimenuitem>Configure &picmi;...</guimenuitem></menuchoice></term>
-    <listitem><para><action>Choose the game background image, board dimensions and settings for custom difficulty.</action></para></listitem>
-  </varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Einstellungen</guimenu
+> <guimenuitem
+>Picmi einrichten ...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Ermöglicht die Auswahl des Bilds für den Spielhintergrund, der Zellengröße des Spielfelds und die Einstellung eines benutzerdefinierten Schwierigkeitsgrads.</para
+></listitem>
+</varlistentry>
 </variablelist>
 
-<para>
-Additionally &picmi; has the common &kde; <guimenu>Settings</guimenu> and <guimenu>Help</guimenu>
-menu items, for more information read the sections about the <ulink url="help:/fundamentals/menus.html#menus-settings">Settings Menu</ulink> and
-<ulink url="help:/fundamentals/menus.html#menus-help">Help Menu</ulink>
-of the &kde; Fundamentals.
-</para>
+<para
+>Zusätzlich hat &picmi;  die bekannten &kde;-Einträge im Menü <guimenu
+>Einstellungen</guimenu
+> und <guimenu
+>Hilfe</guimenu
+>, weitere Informationen dazu finden Sie in den Abschnitten über die Menüs <ulink url="help:/fundamentals/menus.html#menus-settings"
+>Einstellungen</ulink
+> und <ulink url="help:/fundamentals/menus.html#menus-help"
+>Hilfe</ulink
+> der &kde;-Grundlagen. </para>
 </sect1>
 
 <sect1 id="keybindings">
-<title id="keybindings-title">Shortcuts</title>
+<title id="keybindings-title"
+>Kurzbefehle</title>
 
-<para>The default shortcuts are:</para>
+<para
+>Folgende Tastenkürzel sind als Standard eingestellt:</para>
 
 <table>
-  <title>Shortcuts</title>
-  <tgroup cols="2">
-    <tbody>
-      <row>
-        <entry>Start a new game</entry>
-        <entry><keycombo action="simul">&Ctrl;<keycap>N</keycap></keycombo></entry>
-      </row>
-      <row>
-        <entry>Load a preset game</entry>
-        <entry><keycombo action="simul">&Ctrl;<keycap>O</keycap></keycombo></entry>
-      </row>
-      <row>
-        <entry>Pause</entry>
-        <entry><keycap>P</keycap></entry>
-      </row>
-      <row>
-        <entry>Show High Scores</entry>
-        <entry><keycombo action="simul">&Ctrl;<keycap>H</keycap></keycombo></entry>
-      </row>
-      <row>
-        <entry>Full Screen Mode</entry>
-        <entry><keycombo action="simul">&Ctrl;&Shift;<keycap>F</keycap></keycombo></entry>
-      </row>
-      <row>
-        <entry>Quit</entry>
-        <entry><keycombo action="simul">&Ctrl;<keycap>Q</keycap></keycombo></entry>
-      </row>
-      <row>
-        <entry>Help</entry>
-        <entry><keycap>F1</keycap></entry>
-      </row>
-      <row>
-        <entry>What's this? help</entry>
-        <entry><keycombo action="simul">&Shift;<keycap>F1</keycap></keycombo></entry>
-      </row>
-    </tbody>
-  </tgroup>
+<title
+>Kurzbefehle</title>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>Neues Spiel starten</entry>
+<entry>
+<keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo>
+</entry>
+</row>
+<row>
+<entry
+>Ein vorgegebenes Spiel laden</entry>
+<entry>
+<keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo>
+</entry>
+</row>
+<row>
+<entry
+>Anhalten</entry>
+<entry
+><keycap
+>P</keycap
+></entry>
+</row>
+<row>
+<entry
+>Bestenliste anzeigen</entry>
+<entry>
+<keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo>
+</entry>
+</row>
+<row>
+<entry
+>Vollbildmodus</entry>
+<entry
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>F</keycap
+></keycombo
+></entry>
+</row>
+<row>
+<entry
+>Beenden</entry>
+<entry>
+<keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo>
+</entry>
+</row>
+<row>
+<entry
+>Hilfe</entry>
+<entry
+><keycap
+>F1</keycap
+></entry>
+</row>
+<row>
+<entry
+>Was ist das?</entry>
+<entry>
+<keycombo action="simul"
+>&Shift;<keycap
+>F1</keycap
+></keycombo>
+</entry>
+</row>
+</tbody>
+</tgroup>
 </table>
 
 <table>
-  <title>Keyboard controls</title>
-  <tgroup cols="2">
-    <tbody>
-      <row>
-        <entry>Move Left</entry>
-        <entry>&Left; or <keycap>H</keycap></entry>
-      </row>
-      <row>
-        <entry>Move Right</entry>
-        <entry>&Right; or <keycap>L</keycap></entry>
-      </row>
-      <row>
-        <entry>Move Up</entry>
-        <entry>&Up; or <keycap>K</keycap></entry>
-      </row>
-      <row>
-        <entry>Move Down</entry>
-        <entry>&Down; or <keycap>J</keycap></entry>
-      </row>
-      <row>
-        <entry>(Un)mark cell occupied</entry>
-        <entry><keycap>X</keycap></entry>
-      </row>
-      <row>
-        <entry>(Un)mark cell free</entry>
-        <entry>&Space;</entry>
-      </row>
-    </tbody>
-  </tgroup>
+<title
+>Tastatursteuerung</title>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>Nach links</entry>
+<entry
+><keycap
+><keysym
+>Pfeil links</keysym
+> oder <keycap
+>H</keycap
+></keycap
+></entry>
+</row>
+<row>
+<entry
+>Nach rechts</entry>
+<entry
+><keycap
+><keysym
+>Pfeil rechts</keysym
+> oder <keycap
+>L</keycap
+></keycap
+></entry>
+</row>
+<row>
+<entry
+>Nach oben</entry>
+<entry
+><keycap
+><keysym
+>Pfeil hoch</keysym
+> oder <keycap
+>K</keycap
+></keycap
+></entry>
+</row>
+<row>
+<entry
+>Nach unten</entry>
+<entry
+><keycap
+><keysym
+>Pfeil runter</keysym
+> oder <keycap
+>J</keycap
+></keycap
+></entry>
+</row>
+<row>
+<entry
+>Hervorhebung besetzter Zellen ein- und ausschalten</entry>
+<entry
+><keycap
+>X</keycap
+></entry>
+</row>
+<row>
+<entry
+>Markierung freier Zellen ein- und ausschalten</entry>
+<entry
+><keycap
+>Leertaste</keycap
+></entry>
+</row>
+</tbody>
+</tgroup>
 </table>
 
 </sect1>
@@ -304,24 +637,27 @@ of the &kde; Fundamentals.
 
 
 <chapter id="credits">
-<title>Credits and License</title>
+<title
+>Mitwirkende und Lizenz</title>
 
-<para>
-&picmi;
-</para>
-<para>
-Program copyright 2012 by Jakob Gruber <email>jakob.gruber@gmail.com</email>
-</para>
-<para>
-Documentation copyright 2012 by Jakob Gruber <email>jakob.gruber@gmail.com</email>
-</para>
+<para
+><application
+>Picmi</application
+> </para>
+<para
+>Programm Copyright 2012 Jakob Gruber <email
+>jakob.gruber@gmail.com</email
+> </para>
+<para
+>Dokumentation Copyright 2012 Jakob Gruber <email
+>jakob.gruber@gmail.com</email
+> </para>
 
-<!-- TRANS:CREDIT_FOR_TRANSLATORS -->
-
-&underFDL;
-&underGPL;
-
-</chapter>
+<para
+>Übersetzung Burkhard Lück<email
+>lueck@hube-lueck.de</email
+></para
+> &underFDL; &underGPL; </chapter>
 
 
 &documentation.index;
