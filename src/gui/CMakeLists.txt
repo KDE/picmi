@@ -1,21 +1,21 @@
 add_library(picmi_gui STATIC)
 
 target_sources(picmi_gui PRIVATE
-    mainwindow.cpp
-    renderer.cpp
-    scene.cpp
-    selectboardwindow.cpp
-    settingswindow.cpp
-    view.cpp
+    mainwindow.cpp mainwindow.h
+    renderer.cpp renderer.h
+    scene.cpp scene.h
+    selectboardwindow.cpp selectboardwindow.h
+    settingswindow.cpp settingswindow.h
+    view.cpp view.h
 )
 
 target_sources(picmi_gui PRIVATE
-    graphicsitems/cellitem.cpp
-    graphicsitems/highlightitem.cpp
-    graphicsitems/pixmapitem.cpp
-    graphicsitems/reloadableitem.cpp
-    graphicsitems/streakitem.cpp
-    graphicsitems/textbanneritem.cpp
+    graphicsitems/cellitem.cpp graphicsitems/cellitem.h
+    graphicsitems/highlightitem.cpp graphicsitems/highlightitem.h
+    graphicsitems/pixmapitem.cpp graphicsitems/pixmapitem.h
+    graphicsitems/reloadableitem.cpp graphicsitems/reloadableitem.h
+    graphicsitems/streakitem.cpp graphicsitems/streakitem.h
+    graphicsitems/textbanneritem.cpp graphicsitems/textbanneritem.h
 )
 
 ki18n_wrap_ui(picmi_gui

@@ -3,7 +3,7 @@ include_directories(
     ${CMAKE_SOURCE_DIR}
 )
 
-add_executable(streaks_test streaks_test.cpp)
+add_executable(streaks_test streaks_test.cpp streaks_test.h)
 add_test(NAME streaks_test COMMAND streaks_test)
 ecm_mark_as_test(streaks_test)
 
