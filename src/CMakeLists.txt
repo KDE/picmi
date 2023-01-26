@@ -47,12 +47,12 @@ ecm_add_app_icon(picmi ICONS ${ICONS_SRCS})
 
 target_link_libraries(picmi
     Qt${QT_MAJOR_VERSION}::Svg
-    KF5::CoreAddons
-    KF5::Crash
-    KF5::DBusAddons
-    KF5::I18n
-    KF5::KIOWidgets
-    KF5::XmlGui
+    KF${KF_MAJOR_VERSION}::CoreAddons
+    KF${KF_MAJOR_VERSION}::Crash
+    KF${KF_MAJOR_VERSION}::DBusAddons
+    KF${KF_MAJOR_VERSION}::I18n
+    KF${KF_MAJOR_VERSION}::KIOWidgets
+    KF${KF_MAJOR_VERSION}::XmlGui
     KF5KDEGames
     picmi_gui
     picmi_logic

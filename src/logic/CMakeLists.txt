@@ -13,8 +13,8 @@ target_sources(picmi_logic PRIVATE
 
 target_link_libraries(picmi_logic
     KF5KDEGames
-    KF5::CoreAddons
-    KF5::I18n
+    KF${KF_MAJOR_VERSION}::CoreAddons
+    KF${KF_MAJOR_VERSION}::I18n
     Qt${QT_MAJOR_VERSION}::Core
     Qt${QT_MAJOR_VERSION}::Xml
 )

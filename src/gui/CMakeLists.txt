@@ -25,9 +25,9 @@ ki18n_wrap_ui(picmi_gui
 
 target_link_libraries(picmi_gui
     KF5KDEGames
-    KF5::CoreAddons
-    KF5::I18n
-    KF5::XmlGui
+    KF${KF_MAJOR_VERSION}::CoreAddons
+    KF${KF_MAJOR_VERSION}::I18n
+    KF${KF_MAJOR_VERSION}::XmlGui
     Qt${QT_MAJOR_VERSION}::Core
     Qt${QT_MAJOR_VERSION}::Svg
 )
