@@ -23,8 +23,13 @@ ki18n_wrap_ui(picmi_gui
     ${CMAKE_CURRENT_SOURCE_DIR}/selectboardwindow.ui
 )
 
+if (QT_MAJOR_VERSION STREQUAL "6")
+    target_link_libraries(picmi_gui KDEGames6)
+else()
+    target_link_libraries(picmi_gui KF5KDEGames)
+endif()
+
 target_link_libraries(picmi_gui
-    KF5KDEGames
     KF${KF_MAJOR_VERSION}::CoreAddons
     KF${KF_MAJOR_VERSION}::I18n
     KF${KF_MAJOR_VERSION}::XmlGui

@@ -11,8 +11,13 @@ target_sources(picmi_logic PRIVATE
     settings.cpp settings.h
 )
 
+if (QT_MAJOR_VERSION STREQUAL "6")
+    target_link_libraries(picmi_logic KDEGames6)
+else()
+    target_link_libraries(picmi_logic KF5KDEGames)
+endif()
+
 target_link_libraries(picmi_logic
-    KF5KDEGames
     KF${KF_MAJOR_VERSION}::CoreAddons
     KF${KF_MAJOR_VERSION}::I18n
     Qt${QT_MAJOR_VERSION}::Core
