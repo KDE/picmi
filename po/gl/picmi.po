@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Adrian Chaves Fernandez <adriyetichaves@gmail.com>, 2012, 2015, 2016.
 # Marce Villarino <mvillarino@kde-espana.es>, 2013.
-# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2019, 2020.
+# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2019, 2020, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-20 00:43+0000\n"
-"PO-Revision-Date: 2020-02-16 08:49+0100\n"
+"PO-Revision-Date: 2023-04-28 17:10+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 19.08.3\n"
+"X-Generator: Lokalize 23.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -524,8 +524,7 @@ msgid "Solved"
 msgstr "Resolto"
 
 #: src/gui/selectboardwindow.cpp:154
-#, fuzzy, kde-format
-#| msgid "Level Selection"
+#, kde-format
 msgctxt "@title:window"
 msgid "Level Selection"
 msgstr "Escolla do nivel"
@@ -694,17 +693,15 @@ msgstr "Cores da fonte"
 
 #. i18n: ectx: property (text), widget (QLabel, fontColorSolvedLabel)
 #: src/gui/settingswindow.ui:94
-#, fuzzy, kde-format
-#| msgid "Solved Streaks"
+#, kde-format
 msgid "Solved streaks:"
-msgstr "Sucesións resoltas"
+msgstr "Sucesións resoltas:"
 
 #. i18n: ectx: property (text), widget (QLabel, fontColorUnsolvedLabel)
 #: src/gui/settingswindow.ui:110
-#, fuzzy, kde-format
-#| msgid "Unsolved Streaks"
+#, kde-format
 msgid "Unsolved streaks:"
-msgstr "Sucesións sen resolver"
+msgstr "Sucesións sen resolver:"
 
 #. i18n: ectx: property (text), widget (QPushButton, fontColorSolvedPushButton)
 #. i18n: ectx: property (text), widget (QPushButton, fontColorUnsolvedPushButton)
@@ -739,8 +736,7 @@ msgstr "Densidade:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: src/gui/settingswindow.ui:241
-#, fuzzy, kde-format
-#| msgid "Prevent Mistakes:"
+#, kde-format
 msgid "Prevent mistakes:"
 msgstr "Evitar erros:"
 
