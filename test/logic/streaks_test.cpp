@@ -223,3 +223,5 @@ void StreaksTest::bench00()
         s->getRowStreak(0);
     }
 }
+
+#include "moc_streaks_test.cpp"

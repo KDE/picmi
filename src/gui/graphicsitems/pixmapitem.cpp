@@ -67,3 +67,5 @@ void StreakVBackgroundItem::reload(const QSize &size) {
     setPixmap(Renderer::instance()->getPixmap(m_resource));
     setPos((m_x + 1) * tilesize, 0 - offset);
 }
+
+#include "moc_pixmapitem.cpp"

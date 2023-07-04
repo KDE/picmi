@@ -101,3 +101,5 @@ void SettingsWindow::accept() {
     saveSettings();
     QDialog::accept();
 }
+
+#include "moc_settingswindow.cpp"

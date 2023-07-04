@@ -287,3 +287,5 @@ void GameCellItem::keyPressEvent(QKeyEvent *event) {
     default: break;
     }
 }
+
+#include "moc_cellitem.cpp"

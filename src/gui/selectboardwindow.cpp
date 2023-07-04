@@ -280,3 +280,5 @@ QSharedPointer<Level> SelectBoardWindow::selectedBoard() const {
     int index = ui->tableView->selectionModel()->selectedIndexes().at(0).row();
     return m_levels[index];
 }
+
+#include "moc_selectboardwindow.cpp"

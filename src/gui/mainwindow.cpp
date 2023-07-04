@@ -345,3 +345,5 @@ void MainWindow::settings() {
     w->exec();
     delete w;
 }
+
+#include "moc_mainwindow.cpp"

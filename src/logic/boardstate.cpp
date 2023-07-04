@@ -123,3 +123,5 @@ void BoardState::solve(const Board *board) {
 
     replace(Board::Nothing, Board::Cross);
 }
+
+#include "moc_boardstate.cpp"

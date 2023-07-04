@@ -114,3 +114,5 @@ void ColStreakItem::reload(const QSize &size) {
 
     setPos(x, y);
 }
+
+#include "moc_streakitem.cpp"

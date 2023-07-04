@@ -245,3 +245,5 @@ QVector<Streaks::Streak> Picmi::getRowStreak(int y) const {
 QVector<Streaks::Streak> Picmi::getColStreak(int x) const {
     return m_streaks->getColStreak(x);
 }
+
+#include "moc_picmi.cpp"

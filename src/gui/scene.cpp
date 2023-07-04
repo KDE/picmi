@@ -271,3 +271,5 @@ void Scene::resize(const QSize &size) {
         m_items[i]->reload(size);
     }
 }
+
+#include "moc_scene.cpp"

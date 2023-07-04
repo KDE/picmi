@@ -146,3 +146,5 @@ Settings *Settings::instance()
     static Settings settings;
     return &settings;
 }
+
+#include "moc_settings.cpp"
