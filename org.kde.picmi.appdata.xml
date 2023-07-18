@@ -16,7 +16,6 @@ SentUpstream: 2014-09-25
   <name xml:lang="de">Picmi</name>
   <name xml:lang="el">Picmi</name>
   <name xml:lang="en-GB">Picmi</name>
-  <name xml:lang="eo">Picmi</name>
   <name xml:lang="es">Picmi</name>
   <name xml:lang="et">Picmi</name>
   <name xml:lang="eu">Picmi</name>
@@ -53,7 +52,6 @@ SentUpstream: 2014-09-25
   <summary xml:lang="de">Rätselspiel auf der Grundlage von Zahlenlogik</summary>
   <summary xml:lang="el">Παιχνίδι γρίφος με βάση τη λογική των αριθμών</summary>
   <summary xml:lang="en-GB">Puzzle game based on number logic</summary>
-  <summary xml:lang="eo">Puzela ludo bazita sur numera logiko</summary>
   <summary xml:lang="es">Juego de rompecabezas basado en lógica numérica</summary>
   <summary xml:lang="et">Arvuloogikal põhinev mõistatusmäng</summary>
   <summary xml:lang="eu">Zenbaki logikan oinarritutako buruhausteko jokoa</summary>
@@ -95,7 +93,6 @@ SentUpstream: 2014-09-25
     <p xml:lang="de">Das Ziel ist, das verborgene Muster zu enthüllen, indem Sie Zellen einfärben oder leer lassen. Hinweise geben die Zahlen am Rand des Rasters. Dieses Spiel ist für einen Spieler.</p>
     <p xml:lang="el">Ο στόχος είναι να αποκαλυφθεί το κρυμμένο μοτίβο στον πίνακα χρωματίζοντας ή αφήνοντας κενά τα κελιά ενός καννάβου σύμφωνα με αριθμούς που δίνονται στο περιθώριο του καννάβου. Είναι παιχνίδι για έναν παίκτη.</p>
     <p xml:lang="en-GB">The goal is to reveal the hidden pattern in the board by colouring or leaving blank the cells in a grid according to numbers given at the side of the grid. This is a single player game.</p>
-    <p xml:lang="eo">La celo estas malkaŝi la kaŝitan ŝablonon en la tabulo kolorante aŭ lasante malplenajn la ĉelojn en krado laŭ nombroj donitaj ĉe la flanko de la krado. Ĉi tio estas unu-ludanta ludo.</p>
     <p xml:lang="es">El objetivo consiste en revelar el patrón oculto en el tablero coloreando o dejando en blanco las casillas de una rejilla según los números que se muestran al lado de la rejilla. Este juego es para un único jugador.</p>
     <p xml:lang="et">Mängu eesmärk on paljastada mängulauale peidetud muster, andes ruudustiku lahtritele värvi või jättes nad tühjaks vastavalt ruudustiku serval näidatavatele arvudele. See on ühele mängijale mõeldud mäng.</p>
     <p xml:lang="eu">Helburua taulan dagoen ezkutuko eredua azaleratzea da, sareta bateko gelaxkak koloreztatu edo dauden bezala utziz saretaren alboetan emandako zenbakiei erreparatuz. Jokalari bakarreko joko erraz bat da hau.</p>
