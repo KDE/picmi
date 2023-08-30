@@ -164,15 +164,22 @@ void LevelLoader::setLevelset(const QString& filename)
         throw SystemException(QStringLiteral("Can't open file %1").arg(filename));
     }
 
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+    const QDomDocument::ParseResult parseResult = m_levelset->setContent(&file);
+    file.close();
+    if (!parseResult) {
+        qCDebug(PICMIC_LOG) << QStringLiteral("Can't read levelset from %1 \nError: %2 in Line %3, Column %4")
+                              .arg(filename, parseResult.errorMessage).arg(parseResult.errorLine).arg(parseResult.errorColumn);
+#else
     QString errorString;
     int errorLine;
     int errorColumn;
     bool success = m_levelset->setContent( &file, false, &errorString, &errorLine, &errorColumn);
-
     file.close();
     if (!success) {
         qCDebug(PICMIC_LOG) << QStringLiteral("Can't read levelset from %1 \nError: %2 in Line %3, Column %4")
                               .arg(filename, errorString).arg(errorLine).arg(errorColumn);
+#endif
         m_valid = false;
     }
 }
