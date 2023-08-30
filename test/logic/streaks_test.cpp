@@ -79,7 +79,7 @@ streakEquals(const QVector<Streaks::Streak> &actual,
              const QString &expected)
 {
     if (actual.size() != expected.size()) {
-        QWARN("Actual size not equal to expected size.");
+        qWarning() << "Actual size not equal to expected size.";
         return false;
     }
 
@@ -97,8 +97,7 @@ streakEquals(const QVector<Streaks::Streak> &actual,
         return true;
     }
 
-    QString msg = QStringLiteral("Result mismatch. Actual: ") + actualString + QStringLiteral(", Expected: ") + expected;
-    QWARN(msg.toLatin1().constData());
+    qWarning() << QStringLiteral("Result mismatch. Actual: ") + actualString + QStringLiteral(", Expected: ") + expected;
 
     return false;
 }
