@@ -23,18 +23,13 @@ ki18n_wrap_ui(picmi_gui
     ${CMAKE_CURRENT_SOURCE_DIR}/selectboardwindow.ui
 )
 
-if (QT_MAJOR_VERSION STREQUAL "6")
-    target_link_libraries(picmi_gui KDEGames6)
-else()
-    target_link_libraries(picmi_gui KF5KDEGames)
-endif()
-
 target_link_libraries(picmi_gui
-    KF${KF_MAJOR_VERSION}::CoreAddons
-    KF${KF_MAJOR_VERSION}::I18n
-    KF${KF_MAJOR_VERSION}::XmlGui
-    Qt${QT_MAJOR_VERSION}::Core
-    Qt${QT_MAJOR_VERSION}::Svg
+    KDEGames6
+    KF6::CoreAddons
+    KF6::I18n
+    KF6::XmlGui
+    Qt6::Core
+    Qt6::Svg
 )
 
 # vim:set ts=4 sw=4 et:

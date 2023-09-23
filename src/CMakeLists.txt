@@ -45,22 +45,17 @@ ecm_qt_declare_logging_category(picmi
 file(GLOB ICONS_SRCS "${CMAKE_SOURCE_DIR}/icons/*-apps-picmi.png")
 ecm_add_app_icon(picmi ICONS ${ICONS_SRCS})
 
-if (QT_MAJOR_VERSION STREQUAL "6")
-    target_link_libraries(picmi KDEGames6)
-else()
-    target_link_libraries(picmi KF5KDEGames)
-endif()
-
 target_link_libraries(picmi
-    Qt${QT_MAJOR_VERSION}::Svg
-    KF${KF_MAJOR_VERSION}::CoreAddons
-    KF${KF_MAJOR_VERSION}::Crash
-    KF${KF_MAJOR_VERSION}::DBusAddons
-    KF${KF_MAJOR_VERSION}::I18n
-    KF${KF_MAJOR_VERSION}::KIOWidgets
-    KF${KF_MAJOR_VERSION}::XmlGui
     picmi_gui
     picmi_logic
+    KDEGames6
+    KF6::CoreAddons
+    KF6::Crash
+    KF6::DBusAddons
+    KF6::I18n
+    KF6::KIOWidgets
+    KF6::XmlGui
+    Qt6::Svg
 )
 
 install(TARGETS picmi DESTINATION ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
