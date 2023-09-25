@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: picmi\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-05-12 03:25+0200\n"
+"POT-Creation-Date: 2023-09-25 01:40+0000\n"
 "PO-Revision-Date: 2016-02-14 17:49+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -64,10 +64,10 @@ msgstr "Кошаркашка лопта"
 #: levels/default.xml:5 levels/default.xml:75 levels/default.xml:79
 #: levels/default.xml:83 levels/default.xml:87 levels/default.xml:91
 #: levels/default.xml:95 levels/default.xml:99 levels/default.xml:103
-#: levels/default.xml:107 levels/default.xml:111 levels/default.xml:115
-#: levels/default.xml:123 levels/default.xml:168 levels/default.xml:248
-#: levels/default.xml:266 levels/default.xml:516 levels/default.xml:520
-#: levels/default.xml:524 levels/default.xml:532 levels/default.xml:536
+#: levels/default.xml:107 levels/default.xml:111 levels/default.xml:119
+#: levels/default.xml:164 levels/default.xml:244 levels/default.xml:262
+#: levels/default.xml:512 levels/default.xml:516 levels/default.xml:520
+#: levels/default.xml:528 levels/default.xml:532 levels/default.xml:536
 #: levels/default.xml:540 levels/default.xml:551 levels/default.xml:564
 #: levels/default.xml:577 levels/default.xml:590 levels/default.xml:603
 #, kde-format
@@ -90,10 +90,10 @@ msgstr "Лобања"
 #. i18n: tag board attribute author
 #. i18n: tag board attribute author
 #. i18n: tag board attribute author
-#: levels/default.xml:9 levels/default.xml:31 levels/default.xml:199
-#: levels/default.xml:230 levels/default.xml:279 levels/default.xml:299
-#: levels/default.xml:321 levels/default.xml:338 levels/default.xml:364
-#: levels/default.xml:387 src/main.cpp:54
+#: levels/default.xml:9 levels/default.xml:31 levels/default.xml:195
+#: levels/default.xml:226 levels/default.xml:275 levels/default.xml:295
+#: levels/default.xml:317 levels/default.xml:334 levels/default.xml:360
+#: levels/default.xml:383 src/main.cpp:33
 #, kde-format
 msgid "Jakob Gruber"
 msgstr "Јакоб Грубер"
@@ -117,7 +117,7 @@ msgstr "Пиле"
 #. i18n: tag board attribute author
 #. i18n: tag board attribute author
 #: levels/default.xml:59 levels/default.xml:63 levels/default.xml:67
-#: levels/default.xml:156 levels/default.xml:508 levels/default.xml:512
+#: levels/default.xml:152 levels/default.xml:504 levels/default.xml:508
 #, kde-format
 msgid "Moni Linke"
 msgstr "Мони Линке"
@@ -146,8 +146,8 @@ msgstr "Гусарски пас"
 #. i18n: tag board attribute author
 #. i18n: tag board attribute author
 #. i18n: tag board attribute author
-#: levels/default.xml:71 levels/default.xml:119 levels/default.xml:160
-#: levels/default.xml:164 levels/default.xml:528
+#: levels/default.xml:71 levels/default.xml:115 levels/default.xml:156
+#: levels/default.xml:160 levels/default.xml:524
 #, kde-format
 msgid "Frank Uebbing"
 msgstr "Франк Ибинг"
@@ -207,118 +207,112 @@ msgid "Hourglass"
 msgstr "Пешчаник"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:111
-#, kde-format
-msgid "Mobile Phone"
-msgstr "Мобилни телефон"
-
 #. i18n: tag board attribute name
-#. i18n: tag board attribute name
-#: levels/default.xml:115 levels/default.xml:551
+#: levels/default.xml:111 levels/default.xml:551
 #, kde-format
 msgid "Robot"
 msgstr "Робот"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:119
+#: levels/default.xml:115
 #, kde-format
 msgid "Bike"
 msgstr "Бицикл"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:123
+#: levels/default.xml:119
 #, kde-format
 msgid "Penguin"
 msgstr "Пингвин"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:156
+#: levels/default.xml:152
 #, kde-format
 msgid "Baby Panda"
 msgstr "Мала панда"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:160
+#: levels/default.xml:156
 #, kde-format
 msgid "House"
 msgstr ""
 
 #. i18n: tag board attribute name
-#: levels/default.xml:164
+#: levels/default.xml:160
 #, kde-format
 msgid "Soccer"
 msgstr "Фудбал"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:168
+#: levels/default.xml:164
 #, kde-format
 msgid "Alarm Clock"
 msgstr "Будилник"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:199
+#: levels/default.xml:195
 #, kde-format
 msgid "Taxi!"
 msgstr "Такси!"
 
 # >> as in writing tool
 #. i18n: tag board attribute name
-#: levels/default.xml:230
+#: levels/default.xml:226
 #, kde-format
 msgid "Marker"
 msgstr "Маркер"
 
 # Личи.
 #. i18n: tag board attribute name
-#: levels/default.xml:248
+#: levels/default.xml:244
 #, kde-format
 msgid "Thumbs Up"
 msgstr "Аутостоперски"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:266
+#: levels/default.xml:262
 #, kde-format
 msgid "Cup"
 msgstr "Пехар"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:279
+#: levels/default.xml:275
 #, kde-format
 msgid "Dinner Time"
 msgstr "Вечера на столу"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:299
+#: levels/default.xml:295
 #, kde-format
 msgid "Wine Glass"
 msgstr "Винска чаша"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:321
+#: levels/default.xml:317
 #, kde-format
 msgid "Cocktail Glass"
 msgstr "Коктелска чаша"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:338
+#: levels/default.xml:334
 #, kde-format
 msgid "Escalator"
 msgstr "Покретне степенице"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:364
+#: levels/default.xml:360
 #, kde-format
 msgid "Helicopter"
 msgstr "Хеликоптер"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:387
+#: levels/default.xml:383
 #, kde-format
 msgid "Letter A"
 msgstr "Слово А"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:400
+#: levels/default.xml:396
 #, kde-format
 msgid "Screw"
 msgstr "Завртањ"
@@ -329,77 +323,83 @@ msgstr "Завртањ"
 #. i18n: tag board attribute author
 #. i18n: tag board attribute author
 #. i18n: tag board attribute author
-#: levels/default.xml:400 levels/default.xml:418 levels/default.xml:436
-#: levels/default.xml:454 levels/default.xml:472 levels/default.xml:490
+#: levels/default.xml:396 levels/default.xml:414 levels/default.xml:432
+#: levels/default.xml:450 levels/default.xml:468 levels/default.xml:486
 #, kde-format
 msgid "Zack Rusin"
 msgstr "Зaк Расин"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:418
+#: levels/default.xml:414
 #, kde-format
 msgid "Cup of coffee"
 msgstr "Шоља чаја"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:436
+#: levels/default.xml:432
 #, kde-format
 msgid "Lion"
 msgstr "Лав"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:454
+#: levels/default.xml:450
 #, kde-format
 msgid "Gas Lamp"
 msgstr "Плинска лампа"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:472
+#: levels/default.xml:468
 #, kde-format
 msgid "Monkey"
 msgstr "Мајмун"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:490
+#: levels/default.xml:486
 #, kde-format
 msgid "Teddy Bear"
 msgstr "Плишани меда"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:508
+#: levels/default.xml:504
 #, kde-format
 msgid "Policeman"
 msgstr "Полицајац"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:512
+#: levels/default.xml:508
 #, kde-format
 msgid "Santa Claus"
 msgstr "Деда Мраз"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:516
+#: levels/default.xml:512
 #, kde-format
 msgid "Bass Clef"
 msgstr "Бас кључ"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:520
+#: levels/default.xml:516
 #, kde-format
 msgid "Phone"
 msgstr "Телефон"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:524
+#: levels/default.xml:520
 #, kde-format
 msgid "Shopping Cart"
 msgstr "Колица за куповину"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:528 src/main.cpp:45
+#: levels/default.xml:524 src/main.cpp:26
 #, kde-format
 msgid "Picmi"
 msgstr "Пикми"
+
+#. i18n: tag board attribute name
+#: levels/default.xml:528
+#, kde-format
+msgid "Mobile Phone"
+msgstr "Мобилни телефон"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:532
@@ -443,179 +443,186 @@ msgstr "Штампач"
 msgid "Smiley"
 msgstr "Смешко"
 
-#: src/gui/graphicsitems/textbanneritem.cpp:40
+#: src/gui/graphicsitems/textbanneritem.cpp:28
 #, kde-format
 msgid "PAUSED"
 msgstr "ПАУЗА"
 
-#: src/gui/mainwindow.cpp:74
+#: src/gui/mainwindow.cpp:62
 #, kde-format
 msgid "Save Position"
 msgstr "Сачувај позицију"
 
-#: src/gui/mainwindow.cpp:80
+#: src/gui/mainwindow.cpp:68
 #, kde-format
 msgid "Load Position"
 msgstr "Учитај позицију"
 
-#: src/gui/mainwindow.cpp:91
+#: src/gui/mainwindow.cpp:79
 #, kde-format
 msgid "New Game"
 msgstr "Нова партија"
 
-#: src/gui/mainwindow.cpp:96
+#: src/gui/mainwindow.cpp:84
 #, kde-format
 msgid "Load New Game"
 msgstr "Учитај нову партију"
 
 # >> @item difficulty
-#: src/gui/mainwindow.cpp:109
+#: src/gui/mainwindow.cpp:97
 #, kde-format
 msgctxt "custom difficulty"
 msgid "Custom"
 msgstr "посебна"
 
-#: src/gui/mainwindow.cpp:258
+#: src/gui/mainwindow.cpp:246
 #, kde-format
 msgid "Elapsed time: %1"
 msgstr "Протекло време: %1"
 
-#: src/gui/mainwindow.cpp:263
+#: src/gui/mainwindow.cpp:251
 #, kde-format
 msgid "Actions since last saved position: %1"
 msgstr "Радњи од последњег уписивања позиције: %1"
 
-#: src/gui/mainwindow.cpp:292
+#: src/gui/mainwindow.cpp:280
 #, kde-format
 msgid "Congratulations, you have solved this board!"
 msgstr "Честитамо, решили сте ову таблу!"
 
-#: src/gui/mainwindow.cpp:293 src/gui/mainwindow.cpp:300
+#: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
 #, kde-format
 msgid "Board Solved!"
 msgstr "Табла решена!"
 
-#: src/gui/mainwindow.cpp:298
+#: src/gui/mainwindow.cpp:286
 #, kde-format
 msgid "Congratulations, you have solved board '%1'!"
 msgstr "Честитамо, решили сте таблу „%1“!"
 
 # >> @title:column
-#: src/gui/selectboardwindow.cpp:98
+#: src/gui/selectboardwindow.cpp:87
 #, kde-format
 msgid "Level"
 msgstr "ниво"
 
 # >> @title:column
-#: src/gui/selectboardwindow.cpp:99
+#: src/gui/selectboardwindow.cpp:88
 #, kde-format
 msgid "Level Set"
 msgstr "скуп нивоа"
 
 # >> @title:column
-#: src/gui/selectboardwindow.cpp:100
+#: src/gui/selectboardwindow.cpp:89
 #, kde-format
 msgid "Difficulty"
 msgstr "тежина"
 
 # >> @title:column
-#: src/gui/selectboardwindow.cpp:101
+#: src/gui/selectboardwindow.cpp:90
 #, kde-format
 msgid "Size"
 msgstr "величина"
 
 # >> @title:column
-#: src/gui/selectboardwindow.cpp:102
+#: src/gui/selectboardwindow.cpp:91
 #, kde-format
 msgctxt "board solved"
 msgid "Solved"
 msgstr "решена"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, LevelSelectUi)
-#: src/gui/selectboardwindow.cpp:165 src/gui/selectboardwindow.ui:23
-#, kde-format
+#: src/gui/selectboardwindow.cpp:154
+#, fuzzy, kde-format
+#| msgid "Level Selection"
+msgctxt "@title:window"
 msgid "Level Selection"
 msgstr "Избор нивоа"
 
 # >> @item difficulty
-#: src/gui/selectboardwindow.cpp:253
+#: src/gui/selectboardwindow.cpp:242
 #, kde-format
 msgid "Ridiculously Easy"
 msgstr "смешно лако"
 
 # >> @item difficulty
-#: src/gui/selectboardwindow.cpp:254
+#: src/gui/selectboardwindow.cpp:243
 #, kde-format
 msgid "Very Easy"
 msgstr "врло лако"
 
 # >> @item difficulty
-#: src/gui/selectboardwindow.cpp:255
+#: src/gui/selectboardwindow.cpp:244
 #, kde-format
 msgid "Easy"
 msgstr "лако"
 
 # >> @item difficulty
-#: src/gui/selectboardwindow.cpp:256
+#: src/gui/selectboardwindow.cpp:245
 #, kde-format
 msgid "Medium"
 msgstr "средње"
 
 # >> @item difficulty
-#: src/gui/selectboardwindow.cpp:257
+#: src/gui/selectboardwindow.cpp:246
 #, kde-format
 msgid "Hard"
 msgstr "тешко"
 
 # >> @item difficulty
-#: src/gui/selectboardwindow.cpp:258
+#: src/gui/selectboardwindow.cpp:247
 #, kde-format
 msgid "Very Hard"
 msgstr "врло тешко"
 
 # >> @item difficulty
-#: src/gui/selectboardwindow.cpp:259
+#: src/gui/selectboardwindow.cpp:248
 #, kde-format
 msgid "Extremely Hard"
 msgstr "изузетно тешко"
 
 # >> @item difficulty
-#: src/gui/selectboardwindow.cpp:260
+#: src/gui/selectboardwindow.cpp:249
 #, kde-format
 msgid "Impossible"
 msgstr "немогуће"
 
-#: src/gui/selectboardwindow.cpp:266
+#: src/gui/selectboardwindow.cpp:255
 #, kde-format
 msgid "Name: %1"
 msgstr "Име: %1"
 
-#: src/gui/selectboardwindow.cpp:267
+#: src/gui/selectboardwindow.cpp:256
 #, kde-format
 msgid "Author: %1"
 msgstr "Аутор: %1"
 
-#: src/gui/selectboardwindow.cpp:268
+#: src/gui/selectboardwindow.cpp:257
 #, kde-format
 msgid "Size: %1x%2"
 msgstr "Величина: %1×%2"
 
-#: src/gui/selectboardwindow.cpp:269
+#: src/gui/selectboardwindow.cpp:258
 #, kde-format
 msgid "Difficulty: %1"
 msgstr "Тежина: %1"
 
-#: src/gui/selectboardwindow.cpp:271
+#: src/gui/selectboardwindow.cpp:260
 #, kde-format
 msgctxt "board solve time"
 msgid "Solved: %1"
 msgstr "Решена: %1"
 
-#: src/gui/selectboardwindow.cpp:278
+#: src/gui/selectboardwindow.cpp:267
 #, kde-format
 msgctxt "board not solved yet"
 msgid "Solved: -"
 msgstr "Решена: —"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, LevelSelectUi)
+#: src/gui/selectboardwindow.ui:23
+#, kde-format
+msgid "Level Selection"
+msgstr "Избор нивоа"
 
 #. i18n: ectx: property (text), widget (QLabel, labelAuthor)
 #: src/gui/selectboardwindow.ui:79
@@ -654,12 +661,12 @@ msgid "Difficulty: -"
 msgstr "Тежина: —"
 
 # >> @title:window
-#: src/gui/settingswindow.cpp:75
+#: src/gui/settingswindow.cpp:63
 #, kde-format
 msgid "Select Background"
 msgstr "Избор позадине"
 
-#: src/gui/settingswindow.cpp:76
+#: src/gui/settingswindow.cpp:64
 #, kde-format
 msgid "Image Files (*.png *.jpg)"
 msgstr "фајлови слика (*.png *.jpg)"
@@ -706,14 +713,16 @@ msgstr "Боје фонта"
 
 #. i18n: ectx: property (text), widget (QLabel, fontColorSolvedLabel)
 #: src/gui/settingswindow.ui:94
-#, kde-format
-msgid "Solved Streaks"
+#, fuzzy, kde-format
+#| msgid "Solved Streaks"
+msgid "Solved streaks:"
 msgstr "Решених низова"
 
 #. i18n: ectx: property (text), widget (QLabel, fontColorUnsolvedLabel)
 #: src/gui/settingswindow.ui:110
-#, kde-format
-msgid "Unsolved Streaks"
+#, fuzzy, kde-format
+#| msgid "Unsolved Streaks"
+msgid "Unsolved streaks:"
 msgstr "Нерешених низова"
 
 #. i18n: ectx: property (text), widget (QPushButton, fontColorSolvedPushButton)
@@ -749,21 +758,22 @@ msgstr "Густина:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: src/gui/settingswindow.ui:241
-#, kde-format
-msgid "Prevent Mistakes:"
+#, fuzzy, kde-format
+#| msgid "Prevent Mistakes:"
+msgid "Prevent mistakes:"
 msgstr "Спречавање грешака:"
 
-#: src/main.cpp:50
+#: src/main.cpp:28
 #, kde-format
 msgid "Picmi - a nonogram puzzle game"
 msgstr "Пикми — логичка игра нонограма"
 
-#: src/main.cpp:52
+#: src/main.cpp:30
 #, kde-format
 msgid "(c) 2012 - 2015 The Picmi Authors"
 msgstr "© 2012–2015, аутори Пикмија"
 
-#: src/main.cpp:54
+#: src/main.cpp:33
 #, kde-format
 msgid "Picmi Author"
 msgstr "Аутор Пикмија"

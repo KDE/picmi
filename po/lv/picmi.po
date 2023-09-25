@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: picmi\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-20 00:43+0000\n"
+"POT-Creation-Date: 2023-09-25 01:40+0000\n"
 "PO-Revision-Date: 2013-08-03 13:04+0300\n"
 "Last-Translator: Maris Nartiss <maris.kde@gmail.com>\n"
 "Language-Team: Latvian\n"
@@ -95,7 +95,7 @@ msgstr "Galvaskauss"
 #: levels/default.xml:9 levels/default.xml:31 levels/default.xml:195
 #: levels/default.xml:226 levels/default.xml:275 levels/default.xml:295
 #: levels/default.xml:317 levels/default.xml:334 levels/default.xml:360
-#: levels/default.xml:383 src/main.cpp:47
+#: levels/default.xml:383 src/main.cpp:33
 #, kde-format
 msgid "Jakob Gruber"
 msgstr "Jakob Gruber"
@@ -390,7 +390,7 @@ msgid "Shopping Cart"
 msgstr "Iepirkšanās grozs"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:524 src/main.cpp:40
+#: levels/default.xml:524 src/main.cpp:26
 #, kde-format
 msgid "Picmi"
 msgstr "Picmi"
@@ -749,18 +749,18 @@ msgstr "Blīvums:"
 msgid "Prevent mistakes:"
 msgstr "Novērst kļūdas:"
 
-#: src/main.cpp:42
+#: src/main.cpp:28
 #, kde-format
 msgid "Picmi - a nonogram puzzle game"
 msgstr "Picmi — nomogrammu mīklu spēle"
 
-#: src/main.cpp:44
+#: src/main.cpp:30
 #, fuzzy, kde-format
 #| msgid "(c) 2012 The Picmi Authors"
 msgid "(c) 2012 - 2015 The Picmi Authors"
 msgstr "(c) 2012 Picmi autori"
 
-#: src/main.cpp:47
+#: src/main.cpp:33
 #, kde-format
 msgid "Picmi Author"
 msgstr "Picmi autors"

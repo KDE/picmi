@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: picmi\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-20 00:43+0000\n"
+"POT-Creation-Date: 2023-09-25 01:40+0000\n"
 "PO-Revision-Date: 2021-10-09 09:01+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -95,7 +95,7 @@ msgstr "Череп"
 #: levels/default.xml:9 levels/default.xml:31 levels/default.xml:195
 #: levels/default.xml:226 levels/default.xml:275 levels/default.xml:295
 #: levels/default.xml:317 levels/default.xml:334 levels/default.xml:360
-#: levels/default.xml:383 src/main.cpp:47
+#: levels/default.xml:383 src/main.cpp:33
 #, kde-format
 msgid "Jakob Gruber"
 msgstr "Jakob Gruber"
@@ -389,7 +389,7 @@ msgid "Shopping Cart"
 msgstr "Кошик"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:524 src/main.cpp:40
+#: levels/default.xml:524 src/main.cpp:26
 #, kde-format
 msgid "Picmi"
 msgstr "Picmi"
@@ -741,17 +741,17 @@ msgstr "Щільність:"
 msgid "Prevent mistakes:"
 msgstr "Запобігання помилкам:"
 
-#: src/main.cpp:42
+#: src/main.cpp:28
 #, kde-format
 msgid "Picmi - a nonogram puzzle game"
 msgstr "Picmi — японський кросворд"
 
-#: src/main.cpp:44
+#: src/main.cpp:30
 #, kde-format
 msgid "(c) 2012 - 2015 The Picmi Authors"
 msgstr "© Автори Picmi, 2012–2015"
 
-#: src/main.cpp:47
+#: src/main.cpp:33
 #, kde-format
 msgid "Picmi Author"
 msgstr "Автор Picmi"
