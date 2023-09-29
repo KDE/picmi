@@ -47,7 +47,7 @@ RowStreakItem::RowStreakItem(QSharedPointer<Picmi> game, int y, QGraphicsItem *p
 }
 
 void RowStreakItem::refresh() {
-    QVector<Streaks::Streak> streak = m_game->getRowStreak(m_y);
+    QList<Streaks::Streak> streak = m_game->getRowStreak(m_y);
     QString text;
 
     for (int i = 0; i < (int)streak.size(); i++) {
@@ -86,7 +86,7 @@ ColStreakItem::ColStreakItem(QSharedPointer<Picmi> game, int x, QGraphicsItem *p
 }
 
 void ColStreakItem::refresh() {
-    QVector<Streaks::Streak> streak = m_game->getColStreak(m_x);
+    QList<Streaks::Streak> streak = m_game->getColStreak(m_x);
     QString text;
 
     for (int i = 0; i < (int)streak.size(); i++) {

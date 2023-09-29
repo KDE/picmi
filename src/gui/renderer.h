@@ -8,9 +8,9 @@
 #define RENDERER_H
 
 #include <QFont>
+#include <QList>
 #include <QPixmap>
 #include <QString>
-#include <QVector>
 #include <QSvgRenderer>
 #include <QSharedPointer>
 
@@ -88,7 +88,7 @@ private:
 
     QSharedPointer<QSvgRenderer> m_renderer;
 
-    QVector<QString> m_names;
+    QList<QString> m_names;
 };
 
 #endif // RENDERER_H

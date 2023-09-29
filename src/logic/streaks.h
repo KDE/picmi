@@ -7,7 +7,7 @@
 #ifndef STREAKS_H
 #define STREAKS_H
 
-#include <QVector>
+#include <QList>
 #include <QSharedPointer>
 
 #include "boardmap.h"
@@ -33,8 +33,8 @@ public:
     /* Returns the request row/col streak. These contain the least information required by
        the frontend, which is (for each position within a streak): "which number is this",
        and "is this position solved" */
-    QVector<Streaks::Streak> getRowStreak(int y) const;
-    QVector<Streaks::Streak> getColStreak(int x) const;
+    QList<Streaks::Streak> getRowStreak(int y) const;
+    QList<Streaks::Streak> getColStreak(int x) const;
 
 private: /* Types. */
     struct StreakPrivate : public Streak {
@@ -44,13 +44,13 @@ private: /* Types. */
 
 private: /* Functions. */
     /* Takes a sequence of states and returns streaks. */
-    static QVector<StreakPrivate> lineToStreaks(const QVector<Board::State> &line,
+    static QList<StreakPrivate> lineToStreaks(const QList<Board::State> &line,
                                                 Board::State filler);
 
     /** Given a map streak sequence as well as the current state of the associated line,
      *  processStreak() returns the state streaks. */
-    static QVector<Streak> processStreak(const QVector<StreakPrivate> &map,
-                                         const QVector<Board::State> &l);
+    static QList<Streak> processStreak(const QList<StreakPrivate> &map,
+                                         const QList<Board::State> &l);
 
 private: /* Variables. */
     QSharedPointer<BoardMap> m_map;
@@ -60,14 +60,14 @@ private: /* Variables. */
      *  for the remaining lifetime of a Streaks object. They store information about
      *  the actual map streaks, including the streak beginning index, end index, and
      *  length. */
-    QVector<QVector<StreakPrivate> > m_map_row_streaks;
-    QVector<QVector<StreakPrivate> > m_map_col_streaks;
+    QList<QList<StreakPrivate> > m_map_row_streaks;
+    QList<QList<StreakPrivate> > m_map_col_streaks;
 
     /** State streaks are recomputed whenever the state of an associated cell changes.
      *  Unlike the map streaks, row streaks only store the publicly available information:
      *  the length of a streak, and whether it's solved or not. */
-    QVector<QVector<Streak> > m_state_row_streaks;
-    QVector<QVector<Streak> > m_state_col_streaks;
+    QList<QList<Streak> > m_state_row_streaks;
+    QList<QList<Streak> > m_state_col_streaks;
 };
 
 #endif // STREAKS_H

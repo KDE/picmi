@@ -7,7 +7,7 @@
 #include "boardmap.h"
 
 #include <qglobal.h>
-#include <QVector>
+#include <QList>
 #include <QRandomGenerator>
 
 static int box_count(const QList<Board::State> &data) {
@@ -38,7 +38,7 @@ void BoardMap::genRandom() {
     /* To maintain a uniformly random selection of k elements:
      * element i enters the selection with probability k/i. */
 
-    QVector<int> indices(m_box_count);
+    QList<int> indices(m_box_count);
     auto *generator = QRandomGenerator::global();
     for (int i = 0; i < m_size; i++) {
         if (i < m_box_count) {

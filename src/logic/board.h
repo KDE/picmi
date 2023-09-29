@@ -7,7 +7,7 @@
 #ifndef BOARD_H
 #define BOARD_H
 
-#include <QVector>
+#include <QList>
 
 #include "src/outofboundsexception.h"
 
@@ -45,7 +45,7 @@ protected:
     int i_to_y(int i) const;
 
     const int m_width, m_height, m_size;
-    QVector<enum State> m_state;
+    QList<enum State> m_state;
 };
 
 #endif // BOARD_H

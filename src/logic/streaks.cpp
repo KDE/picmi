@@ -9,10 +9,10 @@
 #include <algorithm>
 
 /** 0 <= x < m_width; 0 <= y < m_height; returns a row as a sequence of states */
-static QVector<Board::State> colToLine(const QSharedPointer<Board> &board,
+static QList<Board::State> colToLine(const QSharedPointer<Board> &board,
                                        int x)
 {
-    QVector<Board::State> line;
+    QList<Board::State> line;
     for (int y = 0; y < board->height(); y++) {
         line.push_back(board->get(x, y));
     }
@@ -20,10 +20,10 @@ static QVector<Board::State> colToLine(const QSharedPointer<Board> &board,
 }
 
 /** 0 <= x < m_width; 0 <= y < m_height; returns a row as a sequence of states */
-static QVector<Board::State> rowToLine(const QSharedPointer<Board> &board,
+static QList<Board::State> rowToLine(const QSharedPointer<Board> &board,
                                        int y)
 {
-    QVector<Board::State> line;
+    QList<Board::State> line;
     for (int x = 0; x < board->width(); x++) {
         line.push_back(board->get(x, y));
     }
@@ -42,12 +42,12 @@ enum {
     S_END
 };
 
-QVector<Streaks::StreakPrivate>
-Streaks::lineToStreaks(const QVector<Board::State> &line,
+QList<Streaks::StreakPrivate>
+Streaks::lineToStreaks(const QList<Board::State> &line,
                        Board::State filler)
 {
     StreakPrivate s;
-    QVector<StreakPrivate> streaks;
+    QList<StreakPrivate> streaks;
     int state = S_FILLER;
 
     for (int i = 0; i < line.size(); i++) {
@@ -90,12 +90,12 @@ Streaks::lineToStreaks(const QVector<Board::State> &line,
     return streaks;
 }
 
-QVector<Streaks::Streak>
-Streaks::processStreak(const QVector<StreakPrivate> &map,
-                       const QVector<Board::State> &l)
+QList<Streaks::Streak>
+Streaks::processStreak(const QList<StreakPrivate> &map,
+                       const QList<Board::State> &l)
 {        
-    QVector<Streaks::Streak> streak;
-    QVector<StreakPrivate *> assocs(map.size(), NULL);
+    QList<Streaks::Streak> streak;
+    QList<StreakPrivate *> assocs(map.size(), NULL);
 
     /* Initial values for returned streaks. */
 
@@ -105,11 +105,11 @@ Streaks::processStreak(const QVector<StreakPrivate> &map,
 
     /* Create the state streaks. */
 
-    QVector<StreakPrivate> streaks_regular = lineToStreaks(l, Board::Cross);
+    QList<StreakPrivate> streaks_regular = lineToStreaks(l, Board::Cross);
 
-    QVector<Board::State> line_reversed(l);
+    QList<Board::State> line_reversed(l);
     std::reverse(line_reversed.begin(), line_reversed.end());
-    QVector<StreakPrivate> streaks_reversed = lineToStreaks(line_reversed, Board::Cross);
+    QList<StreakPrivate> streaks_reversed = lineToStreaks(line_reversed, Board::Cross);
 
     /* Fix begin and end indices of reversed streaks. */
 
@@ -162,12 +162,12 @@ Streaks::Streaks(QSharedPointer<BoardMap> map, QSharedPointer<BoardState> state)
     : m_map(map), m_state(state)
 {
     for (int x = 0; x < m_map->width(); x++) {
-        QVector<Board::State> line = colToLine(m_map, x);
+        QList<Board::State> line = colToLine(m_map, x);
         m_map_col_streaks.push_back(lineToStreaks(line, Board::Nothing));
     }
 
     for (int y = 0; y < m_map->height(); y++) {
-        QVector<Board::State> line = rowToLine(m_map, y);
+        QList<Board::State> line = rowToLine(m_map, y);
         m_map_row_streaks.push_back(lineToStreaks(line, Board::Nothing));
     }
 
@@ -191,10 +191,10 @@ void Streaks::update() {
     }
 }
 
-QVector<Streaks::Streak> Streaks::getRowStreak(int y) const {
+QList<Streaks::Streak> Streaks::getRowStreak(int y) const {
     return m_state_row_streaks[y];
 }
 
-QVector<Streaks::Streak> Streaks::getColStreak(int x) const {
+QList<Streaks::Streak> Streaks::getColStreak(int x) const {
     return m_state_col_streaks[x];
 }

@@ -7,8 +7,8 @@
 #ifndef SETTINGS_H
 #define SETTINGS_H
 
+#include <QList>
 #include <QSettings>
-#include <QVector>
 #include <QSharedPointer>
 #include <KgDifficulty>
 
@@ -67,7 +67,7 @@ private:
     void restore();
     void setValue(SettingsType type, const QVariant &value);
 
-    QVector<QString> m_keys;
+    QList<QString> m_keys;
 
     int m_width, m_height;
     double m_box_density;

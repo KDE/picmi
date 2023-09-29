@@ -129,7 +129,7 @@ bool Picmi::won() const {
        this by ending the game once all streaks are marked solved. */
 
     for (int x = 0; x < width(); x++) {
-        QVector<Streaks::Streak> streak = getColStreak(x);
+        QList<Streaks::Streak> streak = getColStreak(x);
         for (int i = 0; i < (int)streak.size(); i++) {
             if (!streak[i].solved) {
                 return false;
@@ -138,7 +138,7 @@ bool Picmi::won() const {
     }
 
     for (int y = 0; y < height(); y++) {
-        QVector<Streaks::Streak> streak = getRowStreak(y);
+        QList<Streaks::Streak> streak = getRowStreak(y);
         for (int i = 0; i < (int)streak.size(); i++) {
             if (!streak[i].solved) {
                 return false;
@@ -158,7 +158,7 @@ QPoint Picmi::undo() {
 
 QPoint Picmi::hint()
 {
-    QVector<QPoint> incorrect_cells;
+    QList<QPoint> incorrect_cells;
     for (int x = 0; x != width(); ++x) {
         for (int y = 0; y != height(); ++y) {
             const Board::State m = m_map->get(x, y);
@@ -238,11 +238,11 @@ void Picmi::setState(int x, int y, Board::State state) {
     }
 }
 
-QVector<Streaks::Streak> Picmi::getRowStreak(int y) const {
+QList<Streaks::Streak> Picmi::getRowStreak(int y) const {
     return m_streaks->getRowStreak(y);
 }
 
-QVector<Streaks::Streak> Picmi::getColStreak(int x) const {
+QList<Streaks::Streak> Picmi::getColStreak(int x) const {
     return m_streaks->getColStreak(x);
 }
 

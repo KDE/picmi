@@ -75,8 +75,8 @@ public:
     /* returns the request row/col streak. these contain the least information required by
       the frontend, which is (for each position within a streak): "which number is this",
       and "is this position solved" */
-    QVector<Streaks::Streak> getRowStreak(int y) const;
-    QVector<Streaks::Streak> getColStreak(int x) const;
+    QList<Streaks::Streak> getRowStreak(int y) const;
+    QList<Streaks::Streak> getColStreak(int x) const;
 
 Q_SIGNALS:
     /** Emitted when the game has been completed in any way. Also triggered if "Solve" was used. */
