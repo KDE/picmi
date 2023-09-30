@@ -43,6 +43,7 @@ find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS
     DocTools
     I18n
     KIO
+    WidgetsAddons
     XmlGui
 )
 
