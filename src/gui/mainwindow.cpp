@@ -90,15 +90,15 @@ void MainWindow::setupActions() {
     this->statusBar()->addWidget(m_status_position, 1);
     this->statusBar()->addWidget(m_status_time, 1);
 
-    Kg::difficulty()->addStandardLevel(KgDifficultyLevel::Easy);
-    Kg::difficulty()->addStandardLevel(KgDifficultyLevel::Medium, true);
-    Kg::difficulty()->addStandardLevel(KgDifficultyLevel::Hard);
+    KGameDifficulty::global()->addStandardLevel(KGameDifficultyLevel::Easy);
+    KGameDifficulty::global()->addStandardLevel(KGameDifficultyLevel::Medium, true);
+    KGameDifficulty::global()->addStandardLevel(KGameDifficultyLevel::Hard);
 
-    KgDifficultyLevel *configurable = new KgDifficultyLevel(90, QByteArray("Custom"), i18nc("custom difficulty", "Custom"));
-    Kg::difficulty()->addLevel(configurable);
+    KGameDifficultyLevel *configurable = new KGameDifficultyLevel(90, QByteArray("Custom"), i18nc("custom difficulty", "Custom"));
+    KGameDifficulty::global()->addLevel(configurable);
 
-    KgDifficultyGUI::init(this);
-    connect(Kg::difficulty(), &KgDifficulty::currentLevelChanged, this,
+    KGameDifficultyGUI::init(this);
+    connect(KGameDifficulty::global(), &KGameDifficulty::currentLevelChanged, this,
             &MainWindow::levelChanged);
 
     /* Disable the toolbar configuration menu entry.
@@ -114,7 +114,7 @@ void MainWindow::loadBoard() {
     delete w;
 }
 
-void MainWindow::levelChanged(const KgDifficultyLevel* level) {
+void MainWindow::levelChanged(const KGameDifficultyLevel* level) {
     Settings::instance()->setLevel(level->standardLevel());
     Settings::instance()->sync();
     startRandomGame();
@@ -221,7 +221,7 @@ void MainWindow::startGame() {
     m_status_position->setVisible(true);
     m_load_game->setVisible(false);
     m_new_game->setVisible(false);
-    Kg::difficulty()->setGameRunning(true);
+    KGameDifficulty::global()->setGameRunning(true);
 
     m_timer.start();
     m_scene = m_view.createScene(m_game);
@@ -255,7 +255,7 @@ void MainWindow::updatePositions() {
 QSharedPointer<KScoreDialog> MainWindow::createScoreDialog() {
     QSharedPointer<KScoreDialog> p(new KScoreDialog(KScoreDialog::Name | KScoreDialog::Date | KScoreDialog::Time));
 
-    p->initFromDifficulty(Kg::difficulty());
+    p->initFromDifficulty(KGameDifficulty::global());
     p->hideField(KScoreDialog::Score);
 
     return p;
@@ -267,7 +267,7 @@ void MainWindow::gameWon() {
     if (m_mode == Random) {
         bool notified = false;
         m_new_game->setVisible(true);
-        if (Kg::difficultyLevel() != KgDifficultyLevel::Custom) {
+        if (KGameDifficulty::globalLevel() != KGameDifficultyLevel::Custom) {
             QSharedPointer<KScoreDialog> scoreDialog = createScoreDialog();
             if (scoreDialog->addScore(score, KScoreDialog::LessIsMore | KScoreDialog::AskName) != 0) {
                 scoreDialog->exec();
@@ -299,7 +299,7 @@ void MainWindow::gameCompleted() {
     m_action_undo->setEnabled(false);
     m_action_save_state->setEnabled(false);
     m_action_load_state->setEnabled(false);
-    Kg::difficulty()->setGameRunning(false);
+    KGameDifficulty::global()->setGameRunning(false);
     m_timer.stop();
     updatePlayedTime();
     m_in_progress = false;

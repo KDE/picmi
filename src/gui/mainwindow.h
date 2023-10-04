@@ -14,7 +14,7 @@
 #include <QAction>
 #include <KToggleAction>
 #include <KXmlGuiWindow>
-#include <KgDifficulty>
+#include <KGameDifficulty>
 
 #include "view.h"
 
@@ -45,7 +45,7 @@ private Q_SLOTS:
     void saveState();
     void loadState();
     void highscores();
-    void levelChanged(const KgDifficultyLevel* level);
+    void levelChanged(const KGameDifficultyLevel* level);
     void updatePlayedTime();
     void updatePositions();
     void loadBoard();
