@@ -21,7 +21,6 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
     KLocalizedString::setApplicationDomain("picmi");
 
-
     KAboutData about(QStringLiteral("picmi"),
                       i18n("Picmi"),
                       QStringLiteral(PICMI_VERSION_STRING),
@@ -32,10 +31,11 @@ int main(int argc, char *argv[])
                       QStringLiteral("https://apps.kde.org/picmi"));
     about.addAuthor(i18n("Jakob Gruber"), i18n("Picmi Author"), QStringLiteral("jakob.gruber@gmail.com"));
 
+    KAboutData::setApplicationData(about);
+
+    KCrash::initialize();
 
     QCommandLineParser parser;
-    KAboutData::setApplicationData(about);
-    KCrash::initialize();
     about.setupCommandLine(&parser);
     parser.process(app);
     about.processCommandLine(&parser);
