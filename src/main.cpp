@@ -32,6 +32,7 @@ int main(int argc, char *argv[])
     about.addAuthor(i18n("Jakob Gruber"), i18n("Picmi Author"), QStringLiteral("jakob.gruber@gmail.com"));
 
     KAboutData::setApplicationData(about);
+    QApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("picmi")));
 
     KCrash::initialize();
 
@@ -44,8 +45,6 @@ int main(int argc, char *argv[])
 
     MainWindow *w = new MainWindow;
     w->show();
-
-    app.setWindowIcon(QIcon::fromTheme(QStringLiteral("picmi")));
 
     return app.exec();
 }
