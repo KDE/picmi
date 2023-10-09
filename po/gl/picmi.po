@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-25 01:40+0000\n"
+"POT-Creation-Date: 2023-10-09 01:45+0000\n"
 "PO-Revision-Date: 2023-04-28 17:10+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
@@ -94,7 +94,7 @@ msgstr "Cabeira"
 #: levels/default.xml:9 levels/default.xml:31 levels/default.xml:195
 #: levels/default.xml:226 levels/default.xml:275 levels/default.xml:295
 #: levels/default.xml:317 levels/default.xml:334 levels/default.xml:360
-#: levels/default.xml:383 src/main.cpp:33
+#: levels/default.xml:383 src/main.cpp:32
 #, kde-format
 msgid "Jakob Gruber"
 msgstr "Jakob Gruber"
@@ -388,7 +388,7 @@ msgid "Shopping Cart"
 msgstr "Lista da compra"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:524 src/main.cpp:26
+#: levels/default.xml:524 src/main.cpp:25
 #, kde-format
 msgid "Picmi"
 msgstr "Picmi"
@@ -740,17 +740,17 @@ msgstr "Densidade:"
 msgid "Prevent mistakes:"
 msgstr "Evitar erros:"
 
-#: src/main.cpp:28
+#: src/main.cpp:27
 #, kde-format
 msgid "Picmi - a nonogram puzzle game"
 msgstr "Picmi — Un quebracabezas de pintar con números."
 
-#: src/main.cpp:30
+#: src/main.cpp:29
 #, kde-format
 msgid "(c) 2012 - 2015 The Picmi Authors"
 msgstr "© 2012-2015 Os autores de Picmi"
 
-#: src/main.cpp:33
+#: src/main.cpp:32
 #, kde-format
 msgid "Picmi Author"
 msgstr "Autor de Picmi."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdegames-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-25 01:40+0000\n"
+"POT-Creation-Date: 2023-10-09 01:45+0000\n"
 "PO-Revision-Date: 2022-05-11 12:45+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -94,7 +94,7 @@ msgstr "Kafatası"
 #: levels/default.xml:9 levels/default.xml:31 levels/default.xml:195
 #: levels/default.xml:226 levels/default.xml:275 levels/default.xml:295
 #: levels/default.xml:317 levels/default.xml:334 levels/default.xml:360
-#: levels/default.xml:383 src/main.cpp:33
+#: levels/default.xml:383 src/main.cpp:32
 #, kde-format
 msgid "Jakob Gruber"
 msgstr "Jakob Gruber"
@@ -388,7 +388,7 @@ msgid "Shopping Cart"
 msgstr "Alışveriş Sepeti"
 
 #. i18n: tag board attribute name
-#: levels/default.xml:524 src/main.cpp:26
+#: levels/default.xml:524 src/main.cpp:25
 #, kde-format
 msgid "Picmi"
 msgstr "Picmi"
@@ -740,17 +740,17 @@ msgstr "Yoğunluk:"
 msgid "Prevent mistakes:"
 msgstr "Hataları önle:"
 
-#: src/main.cpp:28
+#: src/main.cpp:27
 #, kde-format
 msgid "Picmi - a nonogram puzzle game"
 msgstr "Picmi - bir nonogram yapboz oyunu"
 
-#: src/main.cpp:30
+#: src/main.cpp:29
 #, kde-format
 msgid "(c) 2012 - 2015 The Picmi Authors"
 msgstr "(c) 2012 - 2015 Picmi Yazarları"
 
-#: src/main.cpp:33
+#: src/main.cpp:32
 #, kde-format
 msgid "Picmi Author"
 msgstr "Picmi Yazar"
