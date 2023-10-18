@@ -9,7 +9,7 @@
 #include <KActionCollection>
 #include <KLocalizedString>
 #include <KMessageBox>
-#include <KStandardGameAction>
+#include <KGameStandardAction>
 #include <KToggleFullScreenAction>
 #include <QCoreApplication>
 #include <QGraphicsSimpleTextItem>
@@ -43,17 +43,17 @@ MainWindow::MainWindow(QWidget *parent) :
 }
 
 void MainWindow::setupActions() {
-    KStandardGameAction::gameNew(this, &MainWindow::startRandomGame, actionCollection());
-    KStandardGameAction::load(this, &MainWindow::loadBoard, actionCollection());
-    KStandardGameAction::restart(this, &MainWindow::restartGame, actionCollection());
-    KStandardGameAction::highscores(this, &MainWindow::highscores, actionCollection());
-    KStandardGameAction::quit(this, &MainWindow::close, actionCollection());
+    KGameStandardAction::gameNew(this, &MainWindow::startRandomGame, actionCollection());
+    KGameStandardAction::load(this, &MainWindow::loadBoard, actionCollection());
+    KGameStandardAction::restart(this, &MainWindow::restartGame, actionCollection());
+    KGameStandardAction::highscores(this, &MainWindow::highscores, actionCollection());
+    KGameStandardAction::quit(this, &MainWindow::close, actionCollection());
     KStandardAction::preferences(this, &MainWindow::settings, actionCollection());
     KStandardAction::fullScreen(this, &MainWindow::toggleFullscreen, this, actionCollection());
-    m_action_pause = KStandardGameAction::pause(this, &MainWindow::togglePaused, actionCollection());
-    m_action_undo = KStandardGameAction::undo(this, &MainWindow::undo, actionCollection());
-    m_action_hint = KStandardGameAction::hint(this, &MainWindow::hint, actionCollection());
-    m_action_solve = KStandardGameAction::solve(this, &MainWindow::solve, actionCollection());
+    m_action_pause = KGameStandardAction::pause(this, &MainWindow::togglePaused, actionCollection());
+    m_action_undo = KGameStandardAction::undo(this, &MainWindow::undo, actionCollection());
+    m_action_hint = KGameStandardAction::hint(this, &MainWindow::hint, actionCollection());
+    m_action_solve = KGameStandardAction::solve(this, &MainWindow::solve, actionCollection());
 
     /* Prevent the default hint shortcut from overwriting our HJKL vim-like control mapping. */
     KActionCollection::setDefaultShortcut(m_action_hint, QKeySequence(Qt::CTRL | Qt::Key_I));
