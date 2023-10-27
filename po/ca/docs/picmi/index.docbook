@@ -87,9 +87,7 @@
 >Com jugar</title>
 
 <para
->Al jugador se li presenta una taula en blanc i una llista de nombres per a cada fila i columna. Aquests nombres representen com s'organitzen les execucions dins de qualsevol fila o columna donada. Per exemple, una seqüència de nombres <quote
->4 8 3</quote
-> significaria que hi ha conjunts de quatre, vuit i tres cel·les plenes, en aquest ordre, amb almenys una cel·la en blanc entre grups successius. L'objectiu del joc és utilitzar aquests suggeriments per a descobrir la solució real i fer-ho el més ràpid possible. </para>
+>Al jugador se li presenta una taula en blanc i una llista de nombres per a cada fila i columna. Aquests nombres representen com s'organitzen les execucions dins de qualsevol fila o columna donada. Per exemple, una seqüència de nombres «4 8 3» significaria que hi ha conjunts de quatre, vuit i tres cel·les plenes, en aquest ordre, amb almenys una cel·la en blanc entre grups successius. L'objectiu del joc és utilitzar aquests suggeriments per a descobrir la solució real i fer-ho el més ràpid possible. </para>
 
 <para
 >Un clic esquerre des/marcarà una cel·la com ocupada, mentre que un clic dret des/marcarà una cel·la com buida. Es pot emprar l'arrossegament per a marcar d'una sola vegada diverses cel·les en una fila o columna. El temps transcorregut es mostra a la barra d'estat i trobareu un resum del tauler de joc a la cantonada superior esquerra. Es completarà una partida una vegada s'hagin marcat correctament totes les cel·les ocupades. </para>
