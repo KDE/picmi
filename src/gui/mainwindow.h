@@ -10,10 +10,12 @@
 #include <config.h>
 
 #include <QTimer>
-#include <highscore/kscoredialog.h>
 #include <QAction>
+
 #include <KToggleAction>
 #include <KXmlGuiWindow>
+
+#include <KGameHighScoreDialog>
 #include <KGameDifficulty>
 
 #include "view.h"
@@ -67,7 +69,7 @@ private:
     void restoreWindowState();
     void saveWindowState();
     void pauseGame();
-    QSharedPointer<KScoreDialog> createScoreDialog();
+    QSharedPointer<KGameHighScoreDialog> createScoreDialog();
     void setupActions();
 
     QAction *m_action_undo,

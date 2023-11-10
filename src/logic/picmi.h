@@ -7,7 +7,7 @@
 #ifndef PICMI_H
 #define PICMI_H
 
-#include <highscore/kscoredialog.h>
+#include <KGameHighScoreDialog>
 
 #include "boardmap.h"
 #include "boardstate.h"
@@ -56,7 +56,7 @@ public:
     int elapsedSecs() const;
 
     /* ends the current game and returns the current high score object */
-    KScoreDialog::FieldInfo endGame();
+    KGameHighScoreDialog::FieldInfo endGame();
 
     /* undo last action (if it exists) and return the changed coordinate. */
     QPoint undo();
