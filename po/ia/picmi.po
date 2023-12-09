@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: picmi\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-09 01:45+0000\n"
-"PO-Revision-Date: 2023-12-05 11:07+0100\n"
+"PO-Revision-Date: 2023-12-08 10:14+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -488,7 +488,7 @@ msgstr ""
 #: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
 #, kde-format
 msgid "Board Solved!"
-msgstr ""
+msgstr "Tabula solvite!"
 
 #: src/gui/mainwindow.cpp:286
 #, kde-format
@@ -503,7 +503,7 @@ msgstr "Nivello"
 #: src/gui/selectboardwindow.cpp:88
 #, kde-format
 msgid "Level Set"
-msgstr ""
+msgstr "Insimul de nivello"
 
 #: src/gui/selectboardwindow.cpp:89
 #, kde-format
