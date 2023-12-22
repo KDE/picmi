@@ -7,7 +7,6 @@
 #include "boardmap.h"
 
 #include <qglobal.h>
-#include <QList>
 #include <QRandomGenerator>
 
 static int box_count(const QList<Board::State> &data) {
