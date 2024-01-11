@@ -53,7 +53,7 @@ void Renderer::loadResources() {
 
     /* try loading first from working directory, then the system directories */
     for (int i = 0; i < paths.size(); i++) {
-        const QString filenameSvg = QDir::toNativeSeparators(paths[i] + QStringLiteral("picmi.svg"));
+        const QString filenameSvg = QDir::toNativeSeparators(paths[i] + QStringLiteral("picmi.svgz"));
 
         if (!QFile::exists(filenameSvg)) {
             continue;
