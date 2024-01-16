@@ -19,7 +19,7 @@
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-    KLocalizedString::setApplicationDomain("picmi");
+    KLocalizedString::setApplicationDomain(QByteArrayLiteral("picmi"));
 
     KAboutData about(QStringLiteral("picmi"),
                       i18n("Picmi"),
