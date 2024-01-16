@@ -148,4 +148,3 @@ Type=Application
 StartupNotify=true
 Categories=Qt;KDE;Game;LogicGame;
 X-DocPath=picmi/index.html
-X-DBUS-ServiceName=org.kde.picmi
