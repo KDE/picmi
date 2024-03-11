@@ -4,31 +4,32 @@
 #
 # Einars Sprugis <einars8@gmail.com>, 2013.
 # Maris Nartiss <maris.kde@gmail.com>, 2013.
+# SPDX-FileCopyrightText: 2024 Toms Trasuns <toms.trasuns@posteo.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: picmi\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-09 01:45+0000\n"
-"PO-Revision-Date: 2013-08-03 13:04+0300\n"
-"Last-Translator: Maris Nartiss <maris.kde@gmail.com>\n"
-"Language-Team: Latvian\n"
+"PO-Revision-Date: 2024-03-08 12:25+0200\n"
+"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
+"Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Einārs Sprūģis"
+msgstr "Einārs Sprūģis, Toms Trasūns"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "einars8@gmail.com"
+msgstr "einars8@gmail.com, toms.trasuns@posteo.net"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:5
@@ -138,10 +139,9 @@ msgstr "Klauns"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:71
-#, fuzzy, kde-format
-#| msgid "Pirate Dog"
+#, kde-format
 msgid "Pirate Ship"
-msgstr "Pirātu suns"
+msgstr "Pirātu kuģis"
 
 #. i18n: tag board attribute author
 #. i18n: tag board attribute author
@@ -152,7 +152,7 @@ msgstr "Pirātu suns"
 #: levels/default.xml:160 levels/default.xml:524
 #, kde-format
 msgid "Frank Uebbing"
-msgstr ""
+msgstr "Frank Uebbing"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:75
@@ -194,7 +194,7 @@ msgstr "Sens telefons"
 #: levels/default.xml:99
 #, kde-format
 msgid "Treble Clef"
-msgstr "Diēzs"
+msgstr "Vijoles atslēga"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:103
@@ -219,7 +219,7 @@ msgstr "Robots"
 #: levels/default.xml:115
 #, kde-format
 msgid "Bike"
-msgstr ""
+msgstr "Divritenis"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:119
@@ -231,19 +231,19 @@ msgstr "Pingvīns"
 #: levels/default.xml:152
 #, kde-format
 msgid "Baby Panda"
-msgstr "Mazā panda"
+msgstr "Pandiņa"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:156
 #, kde-format
 msgid "House"
-msgstr ""
+msgstr "Māja"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:160
 #, kde-format
 msgid "Soccer"
-msgstr ""
+msgstr "Futbols"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:164
@@ -261,7 +261,7 @@ msgstr "Taksometrs"
 #: levels/default.xml:226
 #, kde-format
 msgid "Marker"
-msgstr "Marķējums"
+msgstr "Marķieris"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:244
@@ -297,7 +297,7 @@ msgstr "Kokteiļa glāze"
 #: levels/default.xml:334
 #, kde-format
 msgid "Escalator"
-msgstr "Pacēlājs"
+msgstr "Eskalators"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:360
@@ -309,7 +309,7 @@ msgstr "Helikopters"
 #: levels/default.xml:383
 #, kde-format
 msgid "Letter A"
-msgstr "Burts A"
+msgstr "A burts"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:396
@@ -375,7 +375,7 @@ msgstr "Santaklauss"
 #: levels/default.xml:512
 #, kde-format
 msgid "Bass Clef"
-msgstr "Bemols"
+msgstr "Basa atslēga"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:516
@@ -399,13 +399,13 @@ msgstr "Picmi"
 #: levels/default.xml:528
 #, kde-format
 msgid "Mobile Phone"
-msgstr "Mobīlais tālrunis"
+msgstr "Mobilais tālrunis"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:532
 #, kde-format
 msgid "Calculator"
-msgstr "Kalkulators"
+msgstr "Skaitīkļi"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:536
@@ -417,7 +417,7 @@ msgstr "Fotoaparāts"
 #: levels/default.xml:540
 #, kde-format
 msgid "Car"
-msgstr "Mašīna"
+msgstr "Automobilis"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:564
@@ -446,7 +446,7 @@ msgstr "Smaidiņš"
 #: src/gui/graphicsitems/textbanneritem.cpp:28
 #, kde-format
 msgid "PAUSED"
-msgstr "PAUZĒTS"
+msgstr "PAUZĒTA"
 
 #: src/gui/mainwindow.cpp:62
 #, kde-format
@@ -461,12 +461,12 @@ msgstr "Ielādēt pozīciju"
 #: src/gui/mainwindow.cpp:79
 #, kde-format
 msgid "New Game"
-msgstr ""
+msgstr "Jauna spēle"
 
 #: src/gui/mainwindow.cpp:84
 #, kde-format
 msgid "Load New Game"
-msgstr ""
+msgstr "Ielādēt jaunu spēli"
 
 #: src/gui/mainwindow.cpp:97
 #, kde-format
@@ -485,21 +485,19 @@ msgid "Actions since last saved position: %1"
 msgstr "Darbības kopš pēdējās saglabātās pozīcijas: %1"
 
 #: src/gui/mainwindow.cpp:280
-#, fuzzy, kde-format
-#| msgid "Congratulations, you've solved this board!"
+#, kde-format
 msgid "Congratulations, you have solved this board!"
-msgstr "Apsveicam, esi atrisinājis šo laukumu!"
+msgstr "Apsveicam, Tev izdevās atrisināt mīklu!"
 
 #: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
 #, kde-format
 msgid "Board Solved!"
-msgstr "Laukums atrisināts!"
+msgstr "Mīkla ir atrisināta!"
 
 #: src/gui/mainwindow.cpp:286
-#, fuzzy, kde-format
-#| msgid "Congratulations, you've solved this board!"
+#, kde-format
 msgid "Congratulations, you have solved board '%1'!"
-msgstr "Apsveicam, esi atrisinājis šo laukumu!"
+msgstr "Apsveicam, Te izdevās atrisināt mīklu „%1“!"
 
 #: src/gui/selectboardwindow.cpp:87
 #, kde-format
@@ -525,11 +523,10 @@ msgstr "Izmērs"
 #, kde-format
 msgctxt "board solved"
 msgid "Solved"
-msgstr "Atrisināts"
+msgstr "Atrisināta"
 
 #: src/gui/selectboardwindow.cpp:154
-#, fuzzy, kde-format
-#| msgid "Level Selection"
+#, kde-format
 msgctxt "@title:window"
 msgid "Level Selection"
 msgstr "Līmeņa izvēle"
@@ -587,7 +584,7 @@ msgstr "Autors: %1"
 #: src/gui/selectboardwindow.cpp:257
 #, kde-format
 msgid "Size: %1x%2"
-msgstr "Izmērs: %1x%2"
+msgstr "Izmērs: %1×%2"
 
 #: src/gui/selectboardwindow.cpp:258
 #, kde-format
@@ -604,7 +601,7 @@ msgstr "Atrisināts: %1"
 #, kde-format
 msgctxt "board not solved yet"
 msgid "Solved: -"
-msgstr "Atrisināts: -"
+msgstr "Atrisināts: —"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, LevelSelectUi)
 #: src/gui/selectboardwindow.ui:23
@@ -616,13 +613,13 @@ msgstr "Līmeņa izvēle"
 #: src/gui/selectboardwindow.ui:79
 #, kde-format
 msgid "Author: -"
-msgstr "Autors: -"
+msgstr "Autors: —"
 
 #. i18n: ectx: property (text), widget (QLabel, labelName)
 #: src/gui/selectboardwindow.ui:86
 #, kde-format
 msgid "Name: -"
-msgstr "Nosaukums: -"
+msgstr "Nosaukums: —"
 
 #. i18n: ectx: property (text), widget (QLabel, labelImage)
 #: src/gui/selectboardwindow.ui:110
@@ -634,19 +631,19 @@ msgstr "?"
 #: src/gui/selectboardwindow.ui:120
 #, kde-format
 msgid "Solved: -"
-msgstr "Atrisināts: -"
+msgstr "Atrisināts: —"
 
 #. i18n: ectx: property (text), widget (QLabel, labelSize)
 #: src/gui/selectboardwindow.ui:127
 #, kde-format
 msgid "Size: -"
-msgstr "Izmērs: -"
+msgstr "Izmērs: —"
 
 #. i18n: ectx: property (text), widget (QLabel, labelDifficulty)
 #: src/gui/selectboardwindow.ui:134
 #, kde-format
 msgid "Difficulty: -"
-msgstr "Grūtības pakāpe: -"
+msgstr "Grūtības pakāpe: —"
 
 #: src/gui/settingswindow.cpp:63
 #, kde-format
@@ -654,10 +651,9 @@ msgid "Select Background"
 msgstr "Izvēlēties fona attēlu"
 
 #: src/gui/settingswindow.cpp:64
-#, fuzzy, kde-format
-#| msgid "*.png *.jpg|Image Files (*.png *.jpg)"
+#, kde-format
 msgid "Image Files (*.png *.jpg)"
-msgstr "*.png *.jpg|Attēlu faili (*.png *.jpg)"
+msgstr "Attēlu datnes (*.png *.jpg)"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, SettingsWindow)
 #: src/gui/settingswindow.ui:20
@@ -699,17 +695,15 @@ msgstr "Fontu krāsas"
 
 #. i18n: ectx: property (text), widget (QLabel, fontColorSolvedLabel)
 #: src/gui/settingswindow.ui:94
-#, fuzzy, kde-format
-#| msgid "Solved Streaks"
+#, kde-format
 msgid "Solved streaks:"
-msgstr "Atrisinātās svītras"
+msgstr "Atrisināšanas sērija:"
 
 #. i18n: ectx: property (text), widget (QLabel, fontColorUnsolvedLabel)
 #: src/gui/settingswindow.ui:110
-#, fuzzy, kde-format
-#| msgid "Unsolved Streaks"
+#, kde-format
 msgid "Unsolved streaks:"
-msgstr "Neatrisinātās svītras"
+msgstr "Neatrisināšanas sērija:"
 
 #. i18n: ectx: property (text), widget (QPushButton, fontColorSolvedPushButton)
 #. i18n: ectx: property (text), widget (QPushButton, fontColorUnsolvedPushButton)
@@ -744,23 +738,21 @@ msgstr "Blīvums:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: src/gui/settingswindow.ui:241
-#, fuzzy, kde-format
-#| msgid "Prevent Mistakes:"
+#, kde-format
 msgid "Prevent mistakes:"
 msgstr "Novērst kļūdas:"
 
 #: src/main.cpp:27
 #, kde-format
 msgid "Picmi - a nonogram puzzle game"
-msgstr "Picmi — nomogrammu mīklu spēle"
+msgstr "„Picmi“ — nomogrammu mīklu spēle"
 
 #: src/main.cpp:29
-#, fuzzy, kde-format
-#| msgid "(c) 2012 The Picmi Authors"
+#, kde-format
 msgid "(c) 2012 - 2015 The Picmi Authors"
-msgstr "(c) 2012 Picmi autori"
+msgstr "(c) 2012—2015 „Picmi“ autori"
 
 #: src/main.cpp:32
 #, kde-format
 msgid "Picmi Author"
-msgstr "Picmi autors"
+msgstr "„Picmi“ autors"
