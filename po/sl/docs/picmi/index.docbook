@@ -1,0 +1,722 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Slovenian "INCLUDE">
+<!ENTITY % addindex "IGNORE">
+]>
+
+<book id="picmi" lang="&language;">
+<bookinfo>
+<title
+>&picmi; Priročnik</title>
+
+<authorgroup>
+<author
+><firstname
+>Jakob</firstname
+> <surname
+>Gruber</surname
+> <affiliation
+><address
+><email
+>jakob.gruber@gmail.com</email
+></address
+></affiliation>
+</author>
+<othercredit role="translator"
+><firstname
+>Matjaž</firstname
+><surname
+>Jeran</surname
+><affiliation
+><address
+><email
+>matjaz.jeran@amis.net</email
+></address
+></affiliation
+><contrib
+>Prevod</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2012</year>
+<holder
+>Jakob Gruber</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>08.10.2021</date>
+<releaseinfo
+>2.0.0 (KDE Gear 21.08)</releaseinfo>
+
+<abstract>
+<para
+>&picmi;, nonogramska ugankarska igra.</para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdegames</keyword>
+<keyword
+>igra</keyword>
+<keyword
+>igra ugank</keyword>
+<keyword
+>Picmi</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Uvod</title>
+
+<para
+>&picmi; je igra ugank za enega igralca. </para>
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="gameboard.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>&picmi; igralna plošča</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>Cilj igre je pobarvati celice glede na številke, ki so podane ob strani plošče. </para>
+</chapter>
+
+<chapter id="how-to-play">
+<title
+>Kako igrati</title>
+
+<para
+>Igralec ima prazno tablo in seznam številk za vsako vrstico in stolpec. Te številke predstavljajo, kako so zagoni organizirani v kateri koli vrstici ali stolpcu. Na primer, številsko zaporedje <quote
+>4 8 3</quote
+> bi pomenilo, da obstajajo nizi štirih, osmih in treh zapolnjenih celic v tem vrstnem redu, z vsaj eno prazno celico med zaporednimi skupinami. Cilj igre je s pomočjo teh namigov odkriti dejansko rešitev, in to čim hitreje. </para>
+
+<para
+>Levi klik (od)označi celico kot zasedeno, medtem ko desni klik (od)označi celico kot prazno. Z vlečenjem lahko naenkrat označite več celic v vrstici ali stolpcu. V statusni vrstici je prikazan pretečeni čas, v zgornjem levem kotu pa je pregled igralne plošče. Igra je končana, ko so vse zasedene celice pravilno označene. </para>
+
+<para
+>Trenutna postavitev polj in križcev (odslej imenovana 'stanja') lahko kadar koli shranite. Shranjevanje novega stanja ne prepiše prejšnjih shranjenih stanj. Obnovitev stanja se vedno vrne v nazadnje shranjeno stanje. To lahko ponavljate, dokler ne ostane nobeno shranjeno stanje. Število dejanj od zadnjega shranjenega stanja je prikazano v vrstici stanja. </para>
+
+<para
+>&picmi; vključuje dva načina igre. Naključne uganke (generirane z izbiro <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Igra</guimenu
+> <guimenuitem
+> Nov</guimenuitem
+></menuchoice
+> menijski element) se ustvarijo glede na izbrane nastavitve težavnosti. Druga možnost je, da vključene prednastavljene uganke igrate tako, da izberete element menija <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Igra</guimenu
+> <guimenuitem
+>Naloži...</guimenuitem
+></menuchoice
+>. </para>
+
+</chapter>
+
+<chapter id="rules-strategies-tips">
+<title
+>Pravila igre, strategije in nasveti</title>
+
+<sect1 id="rules">
+<title
+>Pravila</title>
+<para
+>Zaporedje številk v vrstici ali stolpcu zagotavlja določene informacije o številu zasedenih celic in njihovi razporeditvi v vrstici ali stolpcu.</para>
+<itemizedlist>
+  <listitem
+><para
+>Število predstavlja dolžino povezanega zaporedja zasedenih celic na plošči. Ta niz ima vsaj eno prazno celico na vsaki strani ali pa se nahaja neposredno na robu plošče.</para
+></listitem>
+  <listitem
+><para
+>Poleg tega številčno zaporedje prikazuje vrstni red teh izvajanj v vrstici ali stolpcu.</para
+></listitem>
+  <listitem
+><para
+>Ko je možnost <guilabel
+>Preprečevanje napak:</guilabel
+> omogočena, celice ni mogoče nepravilno označiti kot zasedeno - namesto tega se časovniku doda kazenski čas. Kazen se poveča z vsako storjeno napako.</para
+></listitem>
+  <listitem
+><para
+>Če je možnost <guilabel
+>Preprečevanje napak:</guilabel
+> onemogočena, ni povratne informacije, ali je bila celica pravilno označena, in ni kazni za napake.</para
+></listitem>
+  <listitem
+><para
+>Igra se bo ustavila, ko bodo vse zasedene celice pravilno označene.</para
+></listitem>
+</itemizedlist>
+</sect1>
+
+</chapter>
+
+<chapter id="interface-overview">
+<title
+>Pregled vmesnika</title>
+
+<sect1 id="menu-items">
+<title
+>Elementi menija</title>
+
+<variablelist>
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Igra</guimenu
+> <guimenuitem
+>Nova</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Začne novo igro.</action
+> Ustvari naključno tablo z uporabo trenutne težavnostne stopnje.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Igra</guimenu
+> <guimenuitem
+>Naloži...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Naloži prednastavljeno uganko.</action
+> Imena ugank so skrita, dokler niso rešena. Seznami najboljših rezultatov in nastavitve težavnosti so onemogočeni.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycap
+>F5</keycap
+></shortcut
+> <guimenu
+>Igra</guimenu
+> <guimenuitem
+>Znova zaženi igro</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>To bo znova zagnalo trenutno igro.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycap
+>P</keycap
+></shortcut
+> <guimenu
+>Igra</guimenu
+> <guimenuitem
+>Premor</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Začasno ustavi čas igre.</action
+> Znova kliknite element menija, da se igra nadaljuje. Upoštevajte, da tabla izgine, ko je igra začasno ustavljena, saj bi bilo nepošteno, če bi lahko iskali dobre poteze brez časovnega pritiska.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Igra</guimenu
+> <guimenuitem
+>Prikaži najboljše rezultate ...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Prikaže pogovorno okno z najboljšimi rezultati za različne težavnostne stopnje.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Igra</guimenu
+> <guimenuitem
+>Zapusti</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Zapusti</action
+> &picmi;.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Premakni</guimenu
+> <guimenuitem
+>Razveljavi</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Razveljavi prejšnji premik</action
+>, če obstaja.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>I</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Premakni</guimenu
+> <guimenuitem
+>Namig</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Označi celico kot zasedeno ali prazno.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Premakni</guimenu
+> <guimenuitem
+>Reši</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Igrajte demo igro.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>L</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Premakni</guimenu
+> <guimenuitem
+>Naloži položaj</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Naloži nazadnje shranjen položaj.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Premakni</guimenu
+> <guimenuitem
+>Shrani položaj</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Shrani trenutni položaj plošče.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>F</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Pogled</guimenu
+> <guimenuitem
+>Celozaslonski način</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Preklopi grafični vmesnik v celozaslonski način.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Nastavitve</guimenu
+> <guisubmenu
+>Težavnost</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Omogoča nastavitev težavnostne stopnje iz podmenija.</action
+></para>
+    <para
+>Obstajajo štiri težavnostne stopnje: <itemizedlist>
+        <listitem
+><para
+><guimenuitem
+>Enostavno</guimenuitem
+>: 10 vrstic, 10 stolpcev, 55 % vseh celic je zasedenih, <guilabel
+>Prepreči napake:</guilabel
+> možnost je onemogočena.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>Srednje</guimenuitem
+>: 10 vrstic, 15 stolpcev, 55 % vseh celic je zasedenih, <guilabel
+>Prepreči napake:</guilabel
+> možnost je onemogočena.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>Težko</guimenuitem
+>: 15 vrstic, 15 stolpcev, 55 % vseh celic je zasedenih, <guilabel
+>Prepreči napake:</guilabel
+> možnost je onemogočena.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>Po meri</guimenuitem
+>: Mere in nastavitve plošče po meri.</para
+></listitem>
+      </itemizedlist>
+    </para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Nastavitve</guimenu
+> <guimenuitem
+>Konfiguriraj &picmi;...</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Izberite sliko ozadja igre, dimenzije plošče in nastavitve za težavnost po meri.</action
+></para
+></listitem>
+  </varlistentry>
+</variablelist>
+
+<para
+>Poleg tega &picmi; ima skupno &kde; Elemente menija <guimenu
+>Nastavitve</guimenu
+> in <guimenu
+>Pomoč</guimenu
+>, za več informacij preberite razdelke o <ulink url="help:/fundamentals/menus.html#menus-settings"
+>meniju z nastavitvami</ulink
+> in <ulink url="help:/fundamentals/menus.html#menus-help"
+>meni Pomoč</ulink
+> v &kde; Osnove. </para>
+</sect1>
+
+<sect1 id="keybindings">
+<title id="keybindings-title"
+>Bližnjice</title>
+
+<para
+>Privzete bližnjice so:</para>
+
+<table>
+  <title
+>Bližnjice</title>
+  <tgroup cols="2">
+    <tbody>
+      <row>
+        <entry
+>Začni novo igro</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Naložite prednastavljeno igro</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Premor</entry>
+        <entry
+><keycap
+>P</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Pokaži najboljše rezultate</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Celozaslonski način</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>F</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Zapusti</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Pomoč</entry>
+        <entry
+><keycap
+>F1</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Kaj je to? pomoč</entry>
+        <entry
+><keycombo action="simul"
+>&Shift;<keycap
+>F1</keycap
+></keycombo
+></entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+
+<table>
+  <title
+>Kontrole na tipkovnici</title>
+  <tgroup cols="2">
+    <tbody>
+      <row>
+        <entry
+>Premakni levo</entry>
+        <entry
+>&Left; ali <keycap
+>H</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Premakni desno</entry>
+        <entry
+>&Right; ali <keycap
+>L</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Pomakni se navzgor</entry>
+        <entry
+>&Up; ali <keycap
+>K</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Premik navzdol</entry>
+        <entry
+>&Down; ali <keycap
+>J</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>(Od)označi celico zasedeno</entry>
+        <entry
+><keycap
+>X</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>(Od)označi prosto celico</entry>
+        <entry
+>&Space;</entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+
+</sect1>
+</chapter>
+
+
+<chapter id="credits">
+<title
+>Zasluge in licenca</title>
+
+<para
+>&picmi; </para>
+<para
+>Avtorske pravice za program 2012 Jakob Gruber <email
+>jakob.gruber@gmail.com</email
+> </para>
+<para
+>Avtorske pravice za dokumentacijo 2012 Jakob Gruber <email
+>jakob.gruber@gmail.com</email
+> </para>
+
+<para
+>Prevod: Matjaž Jeran<email
+>matjaz.jeran@amis.net</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+
+&documentation.index;
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-always-quote-attributes:t
+sgml-indent-step:0
+sgml-indent-data:t
+End:
+-->
