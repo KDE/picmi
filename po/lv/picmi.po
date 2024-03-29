@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: picmi\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-09 01:45+0000\n"
-"PO-Revision-Date: 2024-03-08 12:25+0200\n"
+"PO-Revision-Date: 2024-03-27 18:38+0200\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
@@ -35,7 +35,7 @@ msgstr "einars8@gmail.com, toms.trasuns@posteo.net"
 #: levels/default.xml:5
 #, kde-format
 msgid "Basketball"
-msgstr "Basketbols"
+msgstr "Basketbola bumba"
 
 #. i18n: tag board attribute author
 #. i18n: tag board attribute author
@@ -188,7 +188,7 @@ msgstr "Zebra"
 #: levels/default.xml:95
 #, kde-format
 msgid "Antique Phone"
-msgstr "Sens telefons"
+msgstr "Veco laiku telefons"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:99
