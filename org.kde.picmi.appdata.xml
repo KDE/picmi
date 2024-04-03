@@ -8,6 +8,9 @@ SentUpstream: 2014-09-25
   <id>org.kde.picmi.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
+  <developer id="org.kde">
+    <name translate="no">KDE</name>
+  </developer>
   <name>Picmi</name>
   <name xml:lang="ast">Picmi</name>
   <name xml:lang="ca">Picmi</name>
