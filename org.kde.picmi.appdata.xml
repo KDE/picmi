@@ -33,7 +33,6 @@ SentUpstream: 2014-09-25
   <name xml:lang="it">Picmi</name>
   <name xml:lang="ka">Picmi</name>
   <name xml:lang="ko">Picmi</name>
-  <name xml:lang="lv">Picmi</name>
   <name xml:lang="nl">Picmi</name>
   <name xml:lang="nn">Picmi</name>
   <name xml:lang="pl">Picmi</name>
@@ -71,7 +70,6 @@ SentUpstream: 2014-09-25
   <summary xml:lang="it">Gioco ad incastro basato sulla logica dei numeri</summary>
   <summary xml:lang="ka">რიცხვით ლოგიკაზე დამყარებული პაზლი</summary>
   <summary xml:lang="ko">숫자 논리 기반 퍼즐 게임</summary>
-  <summary xml:lang="lv">Mīkla, kas balstīta skaitļos un loģikā</summary>
   <summary xml:lang="nl">Een logisch spel met nummers</summary>
   <summary xml:lang="nn">Tenkjespel basert på tallogikk</summary>
   <summary xml:lang="pl">Układanka z elementami logiki numerycznej</summary>
@@ -114,7 +112,6 @@ SentUpstream: 2014-09-25
     <p xml:lang="it">L'obbiettivo è rivelare il motivo nascosto nel tavoliere colorando o lasciando vuote le celle contenute in una griglia in base ai numeri forniti sul lato della griglia. È un gioco per giocatore singolo.</p>
     <p xml:lang="ka">თამაშის აზრია გამოაჩინოთ დაფაზე დამალული ნიმუში უჯრედების გაფერადებით ან ისე დატოვებით, მასზე დახატულ რიცხვებზე დამოკიდებულებით. თამაში ერთკაციანია.</p>
     <p xml:lang="ko">게임의 목표는 그리드 왼쪽과 위쪽에 주어진 숫자 패턴을 통해서 게임 판에 숨겨진 그림을 찾는 것입니다. 1인용 게임입니다.</p>
-    <p xml:lang="lv">Spēles mērķis ir atklāt spēles laukumā apslēpto zīmējumu, iekrāsojot vai atstājot tukšas rūtiņas saskaņā ar laukum malā esošajiem skaitļiem. Šī ir spēle vienam spēlētājam.</p>
     <p xml:lang="nl">Het doel is het onthullen van het verborgen patroon in het bord door kleuren of leeg laten van de cellen in een raster volgens cijfers gegeven aan de rand van het raster. Dit is een spel voor een enkele speler.</p>
     <p xml:lang="nn">Målet med spelet er å avdekkja eit mønster på eit spelebrett ved å fargeleggja eit rutenettet basert på tal skrivne i margen på rutenettet. Dette er eit spel for éin spelar.</p>
     <p xml:lang="pl">Celem jest odkrycie ukrytego wzoru na planszy poprzez kolorowanie lub pozostawianie kratek pustych według liczb podawanych na boku siatki. Jest to gra dla jednego gracza.</p>
