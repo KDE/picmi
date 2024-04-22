@@ -27,6 +27,7 @@ SentUpstream: 2014-09-25
   <name xml:lang="fi">Picmi</name>
   <name xml:lang="fr">Picmi</name>
   <name xml:lang="gl">Picmi</name>
+  <name xml:lang="he">פיקמי</name>
   <name xml:lang="hu">Picmi</name>
   <name xml:lang="ia">Picmi</name>
   <name xml:lang="id">Picmi</name>
@@ -66,6 +67,7 @@ SentUpstream: 2014-09-25
   <summary xml:lang="fi">Lukulogiikkaan perustuva arvoituspeli</summary>
   <summary xml:lang="fr">Un jeu de puzzle avec des chiffres</summary>
   <summary xml:lang="gl">Quebracabezas baseado en lóxica numérica.</summary>
+  <summary xml:lang="he">משחק חידתי שמבוסס על חשיבה מספרית</summary>
   <summary xml:lang="hu">Számlogika alapú kirakós játék</summary>
   <summary xml:lang="id">Permainan teka-teki berdasarkan pada logika angka</summary>
   <summary xml:lang="it">Gioco ad incastro basato sulla logica dei numeri</summary>
@@ -109,6 +111,7 @@ SentUpstream: 2014-09-25
     <p xml:lang="fi">Tavoitteena on paljastaa laudan salainen hahmo värittämällä tai jättämällä tyhjiksi ruudukon soluja sen sivulla annettujen lukujen mukaan. Tämä on yksinpeli.</p>
     <p xml:lang="fr">L'objectif est de révéler le motif caché du plateau en colorant ou en laissant les cellules d'une grille blanches selon les nombres affichés sur les côtés de la grille. Ce jeu se joue à un joueur.</p>
     <p xml:lang="gl">O obxectivo consiste en descubrir o padrón agochado no taboleiro. Para facelo, ten que colorar ou deixar en branco celas nunha grade segundo os números que aparecen nas celas contiguas. Trátase dun xogo para un único xogador.</p>
+    <p xml:lang="he">היעד הוא לחשוף את התבנית הסודית שעל הלוח על ידי צביעה או הימנעות מצביעה של תאים בטבלה לפי המספר שמצוין לצד הטבלה. המשחק מיועד לשחקן יחיד.</p>
     <p xml:lang="hu">A cél a táblán elrejtett minta felfedése a cellák beszínezésével vagy üresen hagyásával, a rács szélén megadott számok szerint. Egyjátékos játék.</p>
     <p xml:lang="id">Tujuannya adalah untuk mengungkap pola yang tersembunyi di dalam papan dengan mewarnai atau membiarkan sel-sel blank dalam sebuah kisi menurut angka yang diberikan di sebelah kisi. Ini adalah permainan pemain tunggal.</p>
     <p xml:lang="it">L'obbiettivo è rivelare il motivo nascosto nel tavoliere colorando o lasciando vuote le celle contenute in una griglia in base ai numeri forniti sul lato della griglia. È un gioco per giocatore singolo.</p>
