@@ -37,8 +37,9 @@ target_sources(picmi PRIVATE
 ecm_qt_declare_logging_category(picmi
     HEADER picmi_debug.h
     IDENTIFIER PICMIC_LOG
-    CATEGORY_NAME org.kde.kdegames.picmi
-    DESCRIPTION "picmi (kdegames)"
+    CATEGORY_NAME picmi
+    OLD_CATEGORY_NAMES org.kde.kdegames.picmi
+    DESCRIPTION "Picmi game"
     EXPORT PICMI
 )
 
