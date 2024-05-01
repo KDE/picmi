@@ -62,8 +62,8 @@
             </item>
             <item>
              <widget class="QToolButton" name="bgToolButton">
-              <property name="text">
-               <string>...</string>
+              <property name="icon">
+               <iconset theme="document-open"/>
               </property>
              </widget>
             </item>
