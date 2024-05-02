@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: picmi\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-09 01:45+0000\n"
+"POT-Creation-Date: 2024-05-02 00:37+0000\n"
 "PO-Revision-Date: 2023-09-25 10:18+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -449,28 +449,38 @@ msgid "PAUSED"
 msgstr "EN PAUSA"
 
 #: src/gui/mainwindow.cpp:62
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Save Position"
+msgctxt "@action"
 msgid "Save Position"
 msgstr "Guarda la posició"
 
 #: src/gui/mainwindow.cpp:68
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Load Position"
+msgctxt "@action"
 msgid "Load Position"
 msgstr "Carrega una posició"
 
 #: src/gui/mainwindow.cpp:79
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "New Game"
+msgctxt "@action:button"
 msgid "New Game"
 msgstr "Partida nova"
 
 #: src/gui/mainwindow.cpp:84
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Load New Game"
+msgctxt "@action:button"
 msgid "Load New Game"
 msgstr "Carrega una partida nova"
 
 #: src/gui/mainwindow.cpp:97
-#, kde-format
-msgctxt "custom difficulty"
+#, fuzzy, kde-format
+#| msgctxt "custom difficulty"
+#| msgid "Custom"
+msgctxt "@item difficulty"
 msgid "Custom"
 msgstr "Personalitzada"
 
@@ -490,7 +500,9 @@ msgid "Congratulations, you have solved this board!"
 msgstr "Felicitats, has resolt este tauler!"
 
 #: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Board Solved!"
+msgctxt "@title:window"
 msgid "Board Solved!"
 msgstr "Tauler resolt!"
 
@@ -500,28 +512,38 @@ msgid "Congratulations, you have solved board '%1'!"
 msgstr "Felicitats, has resolt el tauler «%1»!"
 
 #: src/gui/selectboardwindow.cpp:87
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Level"
+msgctxt "@title:column"
 msgid "Level"
 msgstr "Nivell"
 
 #: src/gui/selectboardwindow.cpp:88
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Level Set"
+msgctxt "@title:column"
 msgid "Level Set"
 msgstr "Conjunt de nivells"
 
 #: src/gui/selectboardwindow.cpp:89
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Difficulty"
+msgctxt "@title:column"
 msgid "Difficulty"
 msgstr "Dificultat"
 
 #: src/gui/selectboardwindow.cpp:90
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Size"
+msgctxt "@title:column"
 msgid "Size"
 msgstr "Mida"
 
 #: src/gui/selectboardwindow.cpp:91
-#, kde-format
-msgctxt "board solved"
+#, fuzzy, kde-format
+#| msgctxt "board solved"
+#| msgid "Solved"
+msgctxt "@title:column board solved"
 msgid "Solved"
 msgstr "Resolt"
 
@@ -532,42 +554,58 @@ msgid "Level Selection"
 msgstr "Seleccioneu el nivell"
 
 #: src/gui/selectboardwindow.cpp:242
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Ridiculously Easy"
+msgctxt "@item difficulty"
 msgid "Ridiculously Easy"
 msgstr "Ridículament fàcil"
 
 #: src/gui/selectboardwindow.cpp:243
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Very Easy"
+msgctxt "@item difficulty"
 msgid "Very Easy"
 msgstr "Molt fàcil"
 
 #: src/gui/selectboardwindow.cpp:244
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Easy"
+msgctxt "@item difficulty"
 msgid "Easy"
 msgstr "Fàcil"
 
 #: src/gui/selectboardwindow.cpp:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Medium"
+msgctxt "@item difficulty"
 msgid "Medium"
 msgstr "Mitjana"
 
 #: src/gui/selectboardwindow.cpp:246
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hard"
+msgctxt "@item difficulty"
 msgid "Hard"
 msgstr "Difícil"
 
 #: src/gui/selectboardwindow.cpp:247
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Very Hard"
+msgctxt "@item difficulty"
 msgid "Very Hard"
 msgstr "Molt difícil"
 
 #: src/gui/selectboardwindow.cpp:248
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Extremely Hard"
+msgctxt "@item difficulty"
 msgid "Extremely Hard"
 msgstr "Extremadament difícil"
 
 #: src/gui/selectboardwindow.cpp:249
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Impossible"
+msgctxt "@item difficulty"
 msgid "Impossible"
 msgstr "Impossible"
 
@@ -646,7 +684,9 @@ msgid "Difficulty: -"
 msgstr "Dificultat: -"
 
 #: src/gui/settingswindow.cpp:63
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Background"
+msgctxt "@title:window"
 msgid "Select Background"
 msgstr "Selecciona el fons"
 
@@ -681,12 +721,6 @@ msgctxt "custom background image"
 msgid "Custom"
 msgstr "Personalitzada"
 
-#. i18n: ectx: property (text), widget (QToolButton, bgToolButton)
-#: src/gui/settingswindow.ui:66
-#, kde-format
-msgid "..."
-msgstr "..."
-
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: src/gui/settingswindow.ui:80
 #, kde-format
@@ -709,8 +743,8 @@ msgstr "Línies no resoltes:"
 #. i18n: ectx: property (text), widget (QPushButton, fontColorUnsolvedPushButton)
 #: src/gui/settingswindow.ui:120 src/gui/settingswindow.ui:127
 #, kde-format
-msgid "Edit..."
-msgstr "Edita..."
+msgid "Edit…"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: src/gui/settingswindow.ui:145
@@ -756,3 +790,9 @@ msgstr "(c) 2012 - 2015 Els autors de Picmi"
 #, kde-format
 msgid "Picmi Author"
 msgstr "Autoria de Picmi"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Edit..."
+#~ msgstr "Edita..."

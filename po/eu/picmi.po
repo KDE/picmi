@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: picmi\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-09 01:45+0000\n"
+"POT-Creation-Date: 2024-05-02 00:37+0000\n"
 "PO-Revision-Date: 2022-07-29 09:00+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -448,28 +448,38 @@ msgid "PAUSED"
 msgstr "ETENDA"
 
 #: src/gui/mainwindow.cpp:62
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Save Position"
+msgctxt "@action"
 msgid "Save Position"
 msgstr "Gorde kokapena"
 
 #: src/gui/mainwindow.cpp:68
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Load Position"
+msgctxt "@action"
 msgid "Load Position"
 msgstr "Zamatu kokapena"
 
 #: src/gui/mainwindow.cpp:79
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "New Game"
+msgctxt "@action:button"
 msgid "New Game"
 msgstr "Joko berria"
 
 #: src/gui/mainwindow.cpp:84
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Load New Game"
+msgctxt "@action:button"
 msgid "Load New Game"
 msgstr "Zamatu joko berria"
 
 #: src/gui/mainwindow.cpp:97
-#, kde-format
-msgctxt "custom difficulty"
+#, fuzzy, kde-format
+#| msgctxt "custom difficulty"
+#| msgid "Custom"
+msgctxt "@item difficulty"
 msgid "Custom"
 msgstr "Norberak finkatua"
 
@@ -489,7 +499,9 @@ msgid "Congratulations, you have solved this board!"
 msgstr "Zorionak, taula hau ebatzi duzu!"
 
 #: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Board Solved!"
+msgctxt "@title:window"
 msgid "Board Solved!"
 msgstr "Taula ebatzita!"
 
@@ -499,28 +511,38 @@ msgid "Congratulations, you have solved board '%1'!"
 msgstr "Zorionak, '%1' taula ebatzi duzu!"
 
 #: src/gui/selectboardwindow.cpp:87
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Level"
+msgctxt "@title:column"
 msgid "Level"
 msgstr "Maila"
 
 #: src/gui/selectboardwindow.cpp:88
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Level Set"
+msgctxt "@title:column"
 msgid "Level Set"
 msgstr "Maila multzoa"
 
 #: src/gui/selectboardwindow.cpp:89
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Difficulty"
+msgctxt "@title:column"
 msgid "Difficulty"
 msgstr "Zailtasuna"
 
 #: src/gui/selectboardwindow.cpp:90
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Size"
+msgctxt "@title:column"
 msgid "Size"
 msgstr "Neurria"
 
 #: src/gui/selectboardwindow.cpp:91
-#, kde-format
-msgctxt "board solved"
+#, fuzzy, kde-format
+#| msgctxt "board solved"
+#| msgid "Solved"
+msgctxt "@title:column board solved"
 msgid "Solved"
 msgstr "Ebatzia"
 
@@ -531,42 +553,58 @@ msgid "Level Selection"
 msgstr "Maila hautaketa"
 
 #: src/gui/selectboardwindow.cpp:242
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Ridiculously Easy"
+msgctxt "@item difficulty"
 msgid "Ridiculously Easy"
 msgstr "Erraztasun barregarrikoa"
 
 #: src/gui/selectboardwindow.cpp:243
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Very Easy"
+msgctxt "@item difficulty"
 msgid "Very Easy"
 msgstr "Oso erraza"
 
 #: src/gui/selectboardwindow.cpp:244
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Easy"
+msgctxt "@item difficulty"
 msgid "Easy"
 msgstr "Erraza"
 
 #: src/gui/selectboardwindow.cpp:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Medium"
+msgctxt "@item difficulty"
 msgid "Medium"
 msgstr "Ertaina"
 
 #: src/gui/selectboardwindow.cpp:246
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hard"
+msgctxt "@item difficulty"
 msgid "Hard"
 msgstr "Zaila"
 
 #: src/gui/selectboardwindow.cpp:247
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Very Hard"
+msgctxt "@item difficulty"
 msgid "Very Hard"
 msgstr "Oso zaila"
 
 #: src/gui/selectboardwindow.cpp:248
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Extremely Hard"
+msgctxt "@item difficulty"
 msgid "Extremely Hard"
 msgstr "Muturreko zailtasuna"
 
 #: src/gui/selectboardwindow.cpp:249
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Impossible"
+msgctxt "@item difficulty"
 msgid "Impossible"
 msgstr "Ezinezkoa"
 
@@ -645,7 +683,9 @@ msgid "Difficulty: -"
 msgstr "Zailtasuna: -"
 
 #: src/gui/settingswindow.cpp:63
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Background"
+msgctxt "@title:window"
 msgid "Select Background"
 msgstr "Hautatu atzeko planoa"
 
@@ -680,12 +720,6 @@ msgctxt "custom background image"
 msgid "Custom"
 msgstr "Norberak finkatua"
 
-#. i18n: ectx: property (text), widget (QToolButton, bgToolButton)
-#: src/gui/settingswindow.ui:66
-#, kde-format
-msgid "..."
-msgstr "..."
-
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: src/gui/settingswindow.ui:80
 #, kde-format
@@ -708,8 +742,8 @@ msgstr "Ebatzi gabeko arrastoak:"
 #. i18n: ectx: property (text), widget (QPushButton, fontColorUnsolvedPushButton)
 #: src/gui/settingswindow.ui:120 src/gui/settingswindow.ui:127
 #, kde-format
-msgid "Edit..."
-msgstr "Editatu..."
+msgid "Edit…"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: src/gui/settingswindow.ui:145
@@ -755,3 +789,9 @@ msgstr "(c) 2012 - 2015 Picmi-en egileak"
 #, kde-format
 msgid "Picmi Author"
 msgstr "Picmi egilea"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Edit..."
+#~ msgstr "Editatu..."

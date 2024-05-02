@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-09 01:45+0000\n"
+"POT-Creation-Date: 2024-05-02 00:37+0000\n"
 "PO-Revision-Date: 2021-10-17 16:20+0200\n"
 "Last-Translator: Kristof Kiszel <kiszel.kristof@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -447,28 +447,38 @@ msgid "PAUSED"
 msgstr "SZÜNET"
 
 #: src/gui/mainwindow.cpp:62
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Save Position"
+msgctxt "@action"
 msgid "Save Position"
 msgstr "Pozíció mentése"
 
 #: src/gui/mainwindow.cpp:68
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Load Position"
+msgctxt "@action"
 msgid "Load Position"
 msgstr "Pozíció betöltése"
 
 #: src/gui/mainwindow.cpp:79
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "New Game"
+msgctxt "@action:button"
 msgid "New Game"
 msgstr "Új játék"
 
 #: src/gui/mainwindow.cpp:84
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Load New Game"
+msgctxt "@action:button"
 msgid "Load New Game"
 msgstr "Új játék betöltése"
 
 #: src/gui/mainwindow.cpp:97
-#, kde-format
-msgctxt "custom difficulty"
+#, fuzzy, kde-format
+#| msgctxt "custom difficulty"
+#| msgid "Custom"
+msgctxt "@item difficulty"
 msgid "Custom"
 msgstr "Egyéni"
 
@@ -488,7 +498,9 @@ msgid "Congratulations, you have solved this board!"
 msgstr "Gratulálunk, Ön megoldotta ezt a táblát!"
 
 #: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Board Solved!"
+msgctxt "@title:window"
 msgid "Board Solved!"
 msgstr "Tábla megoldva!"
 
@@ -498,28 +510,38 @@ msgid "Congratulations, you have solved board '%1'!"
 msgstr "Gratulálunk, Ön megoldotta a(z) „%1” táblát!"
 
 #: src/gui/selectboardwindow.cpp:87
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Level"
+msgctxt "@title:column"
 msgid "Level"
 msgstr "Szint"
 
 #: src/gui/selectboardwindow.cpp:88
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Level Set"
+msgctxt "@title:column"
 msgid "Level Set"
 msgstr "Beállított szint"
 
 #: src/gui/selectboardwindow.cpp:89
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Difficulty"
+msgctxt "@title:column"
 msgid "Difficulty"
 msgstr "Nehézség"
 
 #: src/gui/selectboardwindow.cpp:90
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Size"
+msgctxt "@title:column"
 msgid "Size"
 msgstr "Méret"
 
 #: src/gui/selectboardwindow.cpp:91
-#, kde-format
-msgctxt "board solved"
+#, fuzzy, kde-format
+#| msgctxt "board solved"
+#| msgid "Solved"
+msgctxt "@title:column board solved"
 msgid "Solved"
 msgstr "Megoldva"
 
@@ -530,42 +552,58 @@ msgid "Level Selection"
 msgstr "Szint kiválasztás"
 
 #: src/gui/selectboardwindow.cpp:242
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Ridiculously Easy"
+msgctxt "@item difficulty"
 msgid "Ridiculously Easy"
 msgstr "Rendkívül könnyű"
 
 #: src/gui/selectboardwindow.cpp:243
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Very Easy"
+msgctxt "@item difficulty"
 msgid "Very Easy"
 msgstr "Nagyon könnyű"
 
 #: src/gui/selectboardwindow.cpp:244
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Easy"
+msgctxt "@item difficulty"
 msgid "Easy"
 msgstr "Könnyű"
 
 #: src/gui/selectboardwindow.cpp:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Medium"
+msgctxt "@item difficulty"
 msgid "Medium"
 msgstr "Közepes"
 
 #: src/gui/selectboardwindow.cpp:246
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hard"
+msgctxt "@item difficulty"
 msgid "Hard"
 msgstr "Nehéz"
 
 #: src/gui/selectboardwindow.cpp:247
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Very Hard"
+msgctxt "@item difficulty"
 msgid "Very Hard"
 msgstr "Nagyon nehéz"
 
 #: src/gui/selectboardwindow.cpp:248
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Extremely Hard"
+msgctxt "@item difficulty"
 msgid "Extremely Hard"
 msgstr "Rendkívül nehéz"
 
 #: src/gui/selectboardwindow.cpp:249
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Impossible"
+msgctxt "@item difficulty"
 msgid "Impossible"
 msgstr "Lehetetlen"
 
@@ -644,7 +682,9 @@ msgid "Difficulty: -"
 msgstr "Nehézség: -"
 
 #: src/gui/settingswindow.cpp:63
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Background"
+msgctxt "@title:window"
 msgid "Select Background"
 msgstr "Háttér kiválasztása"
 
@@ -679,12 +719,6 @@ msgctxt "custom background image"
 msgid "Custom"
 msgstr "Egyéni"
 
-#. i18n: ectx: property (text), widget (QToolButton, bgToolButton)
-#: src/gui/settingswindow.ui:66
-#, kde-format
-msgid "..."
-msgstr "..."
-
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: src/gui/settingswindow.ui:80
 #, kde-format
@@ -707,8 +741,8 @@ msgstr "Megoldatlan sávok:"
 #. i18n: ectx: property (text), widget (QPushButton, fontColorUnsolvedPushButton)
 #: src/gui/settingswindow.ui:120 src/gui/settingswindow.ui:127
 #, kde-format
-msgid "Edit..."
-msgstr "Szerkesztés…"
+msgid "Edit…"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: src/gui/settingswindow.ui:145
@@ -754,6 +788,12 @@ msgstr "© A Picmi szerzői, 2012-2015."
 #, kde-format
 msgid "Picmi Author"
 msgstr "Picmi szerző"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Edit..."
+#~ msgstr "Szerkesztés…"
 
 #~ msgid "Name"
 #~ msgstr "Név"

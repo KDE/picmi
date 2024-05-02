@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-09 01:45+0000\n"
+"POT-Creation-Date: 2024-05-02 00:37+0000\n"
 "PO-Revision-Date: 2013-11-18 04:23+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -448,28 +448,36 @@ msgid "PAUSED"
 msgstr "АЯЛДАУДА"
 
 #: src/gui/mainwindow.cpp:62
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Save Position"
+msgctxt "@action"
 msgid "Save Position"
 msgstr "Жағдайды сақтау"
 
 #: src/gui/mainwindow.cpp:68
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Load Position"
+msgctxt "@action"
 msgid "Load Position"
 msgstr "Жағдайды жүктеп алу"
 
 #: src/gui/mainwindow.cpp:79
 #, kde-format
+msgctxt "@action:button"
 msgid "New Game"
 msgstr ""
 
 #: src/gui/mainwindow.cpp:84
 #, kde-format
+msgctxt "@action:button"
 msgid "Load New Game"
 msgstr ""
 
 #: src/gui/mainwindow.cpp:97
-#, kde-format
-msgctxt "custom difficulty"
+#, fuzzy, kde-format
+#| msgctxt "custom difficulty"
+#| msgid "Custom"
+msgctxt "@item difficulty"
 msgid "Custom"
 msgstr "Өзгеше"
 
@@ -490,7 +498,9 @@ msgid "Congratulations, you have solved this board!"
 msgstr "Құттықтаймыз, кроссворд шешілді!"
 
 #: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Board Solved!"
+msgctxt "@title:window"
 msgid "Board Solved!"
 msgstr "Кроссворд шешілді!"
 
@@ -501,28 +511,38 @@ msgid "Congratulations, you have solved board '%1'!"
 msgstr "Құттықтаймыз, кроссворд шешілді!"
 
 #: src/gui/selectboardwindow.cpp:87
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Level"
+msgctxt "@title:column"
 msgid "Level"
 msgstr "Деңгей"
 
 #: src/gui/selectboardwindow.cpp:88
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Level Set"
+msgctxt "@title:column"
 msgid "Level Set"
 msgstr "Деңгейін орнату"
 
 #: src/gui/selectboardwindow.cpp:89
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Difficulty"
+msgctxt "@title:column"
 msgid "Difficulty"
 msgstr "Қиындығы"
 
 #: src/gui/selectboardwindow.cpp:90
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Size"
+msgctxt "@title:column"
 msgid "Size"
 msgstr "Өлшемі"
 
 #: src/gui/selectboardwindow.cpp:91
-#, kde-format
-msgctxt "board solved"
+#, fuzzy, kde-format
+#| msgctxt "board solved"
+#| msgid "Solved"
+msgctxt "@title:column board solved"
 msgid "Solved"
 msgstr "Шешілді"
 
@@ -534,42 +554,58 @@ msgid "Level Selection"
 msgstr "Деңгейін таңдау"
 
 #: src/gui/selectboardwindow.cpp:242
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Ridiculously Easy"
+msgctxt "@item difficulty"
 msgid "Ridiculously Easy"
 msgstr "Мүлдем оңай"
 
 #: src/gui/selectboardwindow.cpp:243
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Very Easy"
+msgctxt "@item difficulty"
 msgid "Very Easy"
 msgstr "Өте оңай"
 
 #: src/gui/selectboardwindow.cpp:244
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Easy"
+msgctxt "@item difficulty"
 msgid "Easy"
 msgstr "Оңай"
 
 #: src/gui/selectboardwindow.cpp:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Medium"
+msgctxt "@item difficulty"
 msgid "Medium"
 msgstr "Орташа"
 
 #: src/gui/selectboardwindow.cpp:246
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hard"
+msgctxt "@item difficulty"
 msgid "Hard"
 msgstr "Қиын"
 
 #: src/gui/selectboardwindow.cpp:247
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Very Hard"
+msgctxt "@item difficulty"
 msgid "Very Hard"
 msgstr "Өте қиын"
 
 #: src/gui/selectboardwindow.cpp:248
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Extremely Hard"
+msgctxt "@item difficulty"
 msgid "Extremely Hard"
 msgstr "Аса қиын"
 
 #: src/gui/selectboardwindow.cpp:249
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Impossible"
+msgctxt "@item difficulty"
 msgid "Impossible"
 msgstr "Орасан қиын"
 
@@ -648,7 +684,9 @@ msgid "Difficulty: -"
 msgstr "Қиындығы: -"
 
 #: src/gui/settingswindow.cpp:63
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Background"
+msgctxt "@title:window"
 msgid "Select Background"
 msgstr "Аясын таңдау"
 
@@ -684,12 +722,6 @@ msgctxt "custom background image"
 msgid "Custom"
 msgstr "Өзгеше"
 
-#. i18n: ectx: property (text), widget (QToolButton, bgToolButton)
-#: src/gui/settingswindow.ui:66
-#, kde-format
-msgid "..."
-msgstr "..."
-
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: src/gui/settingswindow.ui:80
 #, kde-format
@@ -714,8 +746,8 @@ msgstr "Шешілмеген жолақтар"
 #. i18n: ectx: property (text), widget (QPushButton, fontColorUnsolvedPushButton)
 #: src/gui/settingswindow.ui:120 src/gui/settingswindow.ui:127
 #, kde-format
-msgid "Edit..."
-msgstr "Өзгерту..."
+msgid "Edit…"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: src/gui/settingswindow.ui:145
@@ -763,3 +795,9 @@ msgstr "(c) 2012 Picmi авторлары"
 #, kde-format
 msgid "Picmi Author"
 msgstr "Picmi авторы"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Edit..."
+#~ msgstr "Өзгерту..."

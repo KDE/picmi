@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-09 01:45+0000\n"
+"POT-Creation-Date: 2024-05-02 00:37+0000\n"
 "PO-Revision-Date: 2013-03-13 13:23+0530\n"
 "Last-Translator: Chetan Khona <chetan@kompkin.com>\n"
 "Language-Team: Marathi <kde-i18n-doc@kde.org>\n"
@@ -446,27 +446,33 @@ msgstr "स्तब्ध केले"
 
 #: src/gui/mainwindow.cpp:62
 #, kde-format
+msgctxt "@action"
 msgid "Save Position"
 msgstr ""
 
 #: src/gui/mainwindow.cpp:68
 #, kde-format
+msgctxt "@action"
 msgid "Load Position"
 msgstr ""
 
 #: src/gui/mainwindow.cpp:79
 #, kde-format
+msgctxt "@action:button"
 msgid "New Game"
 msgstr ""
 
 #: src/gui/mainwindow.cpp:84
 #, kde-format
+msgctxt "@action:button"
 msgid "Load New Game"
 msgstr ""
 
 #: src/gui/mainwindow.cpp:97
-#, kde-format
-msgctxt "custom difficulty"
+#, fuzzy, kde-format
+#| msgctxt "custom difficulty"
+#| msgid "Custom"
+msgctxt "@item difficulty"
 msgid "Custom"
 msgstr "ऐच्छिक"
 
@@ -487,6 +493,7 @@ msgstr ""
 
 #: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
 #, kde-format
+msgctxt "@title:window"
 msgid "Board Solved!"
 msgstr ""
 
@@ -496,28 +503,35 @@ msgid "Congratulations, you have solved board '%1'!"
 msgstr ""
 
 #: src/gui/selectboardwindow.cpp:87
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Level"
+msgctxt "@title:column"
 msgid "Level"
 msgstr "पातळी"
 
 #: src/gui/selectboardwindow.cpp:88
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Level"
+msgctxt "@title:column"
 msgid "Level Set"
-msgstr ""
+msgstr "पातळी"
 
 #: src/gui/selectboardwindow.cpp:89
 #, kde-format
+msgctxt "@title:column"
 msgid "Difficulty"
 msgstr ""
 
 #: src/gui/selectboardwindow.cpp:90
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Size"
+msgctxt "@title:column"
 msgid "Size"
 msgstr "आकार"
 
 #: src/gui/selectboardwindow.cpp:91
 #, kde-format
-msgctxt "board solved"
+msgctxt "@title:column board solved"
 msgid "Solved"
 msgstr ""
 
@@ -529,41 +543,55 @@ msgstr ""
 
 #: src/gui/selectboardwindow.cpp:242
 #, kde-format
+msgctxt "@item difficulty"
 msgid "Ridiculously Easy"
 msgstr ""
 
 #: src/gui/selectboardwindow.cpp:243
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Very Easy"
+msgctxt "@item difficulty"
 msgid "Very Easy"
 msgstr "खूप सोपे"
 
 #: src/gui/selectboardwindow.cpp:244
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Easy"
+msgctxt "@item difficulty"
 msgid "Easy"
 msgstr "सोपे"
 
 #: src/gui/selectboardwindow.cpp:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Medium"
+msgctxt "@item difficulty"
 msgid "Medium"
 msgstr "मध्यम"
 
 #: src/gui/selectboardwindow.cpp:246
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hard"
+msgctxt "@item difficulty"
 msgid "Hard"
 msgstr "कठिण"
 
 #: src/gui/selectboardwindow.cpp:247
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Very Hard"
+msgctxt "@item difficulty"
 msgid "Very Hard"
 msgstr "खूप कठिण"
 
 #: src/gui/selectboardwindow.cpp:248
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Very Hard"
+msgctxt "@item difficulty"
 msgid "Extremely Hard"
-msgstr ""
+msgstr "खूप कठिण"
 
 #: src/gui/selectboardwindow.cpp:249
 #, kde-format
+msgctxt "@item difficulty"
 msgid "Impossible"
 msgstr ""
 
@@ -642,7 +670,9 @@ msgid "Difficulty: -"
 msgstr ""
 
 #: src/gui/settingswindow.cpp:63
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Select Background"
+msgctxt "@title:window"
 msgid "Select Background"
 msgstr "पार्श्वभूमी निवडा"
 
@@ -677,12 +707,6 @@ msgctxt "custom background image"
 msgid "Custom"
 msgstr "ऐच्छिक"
 
-#. i18n: ectx: property (text), widget (QToolButton, bgToolButton)
-#: src/gui/settingswindow.ui:66
-#, kde-format
-msgid "..."
-msgstr "..."
-
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: src/gui/settingswindow.ui:80
 #, kde-format
@@ -705,8 +729,8 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, fontColorUnsolvedPushButton)
 #: src/gui/settingswindow.ui:120 src/gui/settingswindow.ui:127
 #, kde-format
-msgid "Edit..."
-msgstr "संपादन...."
+msgid "Edit…"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: src/gui/settingswindow.ui:145
@@ -752,3 +776,9 @@ msgstr ""
 #, kde-format
 msgid "Picmi Author"
 msgstr ""
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Edit..."
+#~ msgstr "संपादन...."
