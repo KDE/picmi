@@ -25,7 +25,7 @@ void TextBannerItem::reload(const QSize &size) {
 
 PauseBannerItem::PauseBannerItem(QGraphicsItem *parent) : TextBannerItem(parent)
 {
-    setPlainText(ki18n("PAUSED").toString());
+    setPlainText(i18n("PAUSED"));
     setVisible(false);
 }
 
