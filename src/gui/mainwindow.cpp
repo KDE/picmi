@@ -59,13 +59,13 @@ void MainWindow::setupActions() {
     KActionCollection::setDefaultShortcut(m_action_hint, QKeySequence(Qt::CTRL | Qt::Key_I));
 
     m_action_save_state = actionCollection()->addAction(QStringLiteral("save-position"));
-    m_action_save_state->setText(i18n("Save Position"));
+    m_action_save_state->setText(i18nc("@action", "Save Position"));
     m_action_save_state->setIcon(QIcon::fromTheme(QStringLiteral("list-add")));
     KActionCollection::setDefaultShortcut(m_action_save_state, QKeySequence(Qt::CTRL | Qt::Key_S));
     connect(m_action_save_state, &QAction::triggered, this, &MainWindow::saveState);
 
     m_action_load_state = actionCollection()->addAction(QStringLiteral("load-position"));
-    m_action_load_state->setText(i18n("Load Position"));
+    m_action_load_state->setText(i18nc("@action", "Load Position"));
     m_action_load_state->setIcon(QIcon::fromTheme(QStringLiteral("view-refresh")));
     KActionCollection::setDefaultShortcut(m_action_load_state, QKeySequence(Qt::CTRL | Qt::Key_L));
     connect(m_action_load_state, &QAction::triggered, this, &MainWindow::loadState);
@@ -76,12 +76,12 @@ void MainWindow::setupActions() {
     m_status_position->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
 
     m_new_game = new QPushButton;
-    m_new_game->setText(i18n("New Game"));
+    m_new_game->setText(i18nc("@action:button", "New Game"));
     m_new_game->setVisible(false);
     connect(m_new_game, &QAbstractButton::clicked, this, &MainWindow::startRandomGame);
 
     m_load_game = new QPushButton;
-    m_load_game->setText(i18n("Load New Game"));
+    m_load_game->setText(i18nc("@action:button", "Load New Game"));
     m_load_game->setVisible(false);
     connect(m_load_game, &QAbstractButton::clicked, this, &MainWindow::loadBoard);
 
@@ -94,7 +94,7 @@ void MainWindow::setupActions() {
     KGameDifficulty::global()->addStandardLevel(KGameDifficultyLevel::Medium, true);
     KGameDifficulty::global()->addStandardLevel(KGameDifficultyLevel::Hard);
 
-    KGameDifficultyLevel *configurable = new KGameDifficultyLevel(90, QByteArray("Custom"), i18nc("custom difficulty", "Custom"));
+    KGameDifficultyLevel *configurable = new KGameDifficultyLevel(90, QByteArray("Custom"), i18nc("@item difficulty", "Custom"));
     KGameDifficulty::global()->addLevel(configurable);
 
     KGameDifficultyGUI::init(this);
@@ -278,14 +278,14 @@ void MainWindow::gameWon() {
         /* Ensure that the user gets some kind of feedback about solving the board. */
         if (!notified) {
             KMessageBox::information(this, i18n("Congratulations, you have solved this board!"),
-                                     i18n("Board Solved!"));
+                                     i18nc("@title:window", "Board Solved!"));
         }
     } else if (m_mode == Preset) {
         m_load_game->setVisible(true);
         m_current_level->setSolved(m_game->elapsedSecs());
         KMessageBox::information(this, i18n("Congratulations, you have solved board '%1'!",
                                             m_current_level->name()),
-                                 i18n("Board Solved!"));
+                                 i18nc("@title:window", "Board Solved!"));
     }
 
     m_view.setFocus();

@@ -84,11 +84,11 @@ QVariant LevelTableModel::data(const QModelIndex &index, int role) const {
 QVariant LevelTableModel::headerData(int section, Qt::Orientation orientation, int role) const {
     if (role == Qt::DisplayRole && orientation == Qt::Horizontal) {
         switch (section) {
-        case Name: return QVariant(ki18n("Level").toString());
-        case LevelSet: return QVariant(ki18n("Level Set").toString());
-        case Difficulty: return QVariant(ki18n("Difficulty").toString());
-        case Size: return QVariant(ki18n("Size").toString());
-        case Solved: return QVariant(ki18nc("board solved", "Solved").toString());
+        case Name: return QVariant(i18nc("@title:column", "Level"));
+        case LevelSet: return QVariant(i18nc("@title:column", "Level Set"));
+        case Difficulty: return QVariant(i18nc("@title:column", "Difficulty"));
+        case Size: return QVariant(i18nc("@title:column", "Size"));
+        case Solved: return QVariant(i18nc("@title:column board solved", "Solved"));
         default: assert(0);
         }
     }
@@ -239,14 +239,14 @@ static QString diffString(const int difficulty) {
     }
 
     switch (difficulty) {
-    case 0: return ki18n("Ridiculously Easy").toString();
-    case 1: return ki18n("Very Easy").toString();
-    case 2: return ki18n("Easy").toString();
-    case 3: return ki18n("Medium").toString();
-    case 4: return ki18n("Hard").toString();
-    case 5: return ki18n("Very Hard").toString();
-    case 6: return ki18n("Extremely Hard").toString();
-    case 7: return ki18n("Impossible").toString();
+    case 0: return i18nc("@item difficulty", "Ridiculously Easy");
+    case 1: return i18nc("@item difficulty", "Very Easy");
+    case 2: return i18nc("@item difficulty", "Easy");
+    case 3: return i18nc("@item difficulty", "Medium");
+    case 4: return i18nc("@item difficulty", "Hard");
+    case 5: return i18nc("@item difficulty", "Very Hard");
+    case 6: return i18nc("@item difficulty", "Extremely Hard");
+    case 7: return i18nc("@item difficulty", "Impossible");
     default: throw OutOfBoundsException();
     }
 }
