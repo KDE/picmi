@@ -1,34 +1,36 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Eloy Cuadra <ecuadra@eloihr.net>, 2012, 2013, 2015, 2016, 2020, 2021.
+# SPDX-FileCopyrightText: 2012, 2013, 2015, 2016, 2020, 2021, 2024 Eloy Cuadra <ecuadra@eloihr.net>
 # Javier Vinal <fjvinalgmail.com>, 2012.
 # Javier Viñal <fjvinal@gmail.com>, 2012.
 # Rocio Gallego <traducciones@rociogallego.com>, 2012, 2013.
+# Sofía Priego <spriego@darksylvania.net>, %Y.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-09 01:45+0000\n"
-"PO-Revision-Date: 2021-10-09 03:37+0200\n"
-"Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
+"PO-Revision-Date: 2024-05-02 18:12+0100\n"
+"Last-Translator: Sofía Priego <spriego@darksylvania.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.08.2\n"
+"X-Generator: Lokalize 24.02.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Rocío Gallego,Kira J. Fernández"
+msgstr "Sofía Priego,Rocío Gallego,Kira J. Fernández"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "traducciones@rociogallego.com,kirajfdez@gmail.com"
+msgstr ""
+"spriego@darksylvania.net,traducciones@rociogallego.com,kirajfdez@gmail.com"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:5
@@ -230,7 +232,7 @@ msgstr "Pingüino"
 #: levels/default.xml:152
 #, kde-format
 msgid "Baby Panda"
-msgstr "Cachorro de panda"
+msgstr "Bebé panda"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:156
@@ -445,7 +447,7 @@ msgstr "Emoticono"
 #: src/gui/graphicsitems/textbanneritem.cpp:28
 #, kde-format
 msgid "PAUSED"
-msgstr "PAUSADO"
+msgstr "EN PAUSA"
 
 #: src/gui/mainwindow.cpp:62
 #, kde-format
@@ -486,7 +488,7 @@ msgstr "Acciones desde la última posición guardada: %1"
 #: src/gui/mainwindow.cpp:280
 #, kde-format
 msgid "Congratulations, you have solved this board!"
-msgstr "¡Enhorabuena! ¡Ha resuelto este tablero!"
+msgstr "¡Enhorabuena! ¡Has resuelto este tablero!"
 
 #: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
 #, kde-format
@@ -496,7 +498,7 @@ msgstr "¡Tablero resuelto!"
 #: src/gui/mainwindow.cpp:286
 #, kde-format
 msgid "Congratulations, you have solved board '%1'!"
-msgstr "¡Enhorabuena! ¡Ha resuelto el tablero «%1»!"
+msgstr "¡Enhorabuena! ¡Has resuelto el tablero «%1»!"
 
 #: src/gui/selectboardwindow.cpp:87
 #, kde-format
@@ -690,7 +692,7 @@ msgstr "..."
 #: src/gui/settingswindow.ui:80
 #, kde-format
 msgid "Font Colors"
-msgstr "Colores de los tipos de letra"
+msgstr "Colores del texto"
 
 #. i18n: ectx: property (text), widget (QLabel, fontColorSolvedLabel)
 #: src/gui/settingswindow.ui:94
@@ -744,7 +746,7 @@ msgstr "Evitar equivocaciones:"
 #: src/main.cpp:27
 #, kde-format
 msgid "Picmi - a nonogram puzzle game"
-msgstr "Picmi - un juego de rompecabezas con nonogramas"
+msgstr "Picmi: juego de rompecabezas con nonogramas"
 
 #: src/main.cpp:29
 #, kde-format
