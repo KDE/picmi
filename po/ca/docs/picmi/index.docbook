@@ -118,7 +118,7 @@
 > <guimenu
 >Joc</guimenu
 > <guimenuitem
->Carrega...</guimenuitem
+>Carrega…</guimenuitem
 ></menuchoice
 >. </para>
 
@@ -207,7 +207,7 @@
 > <guimenu
 >Joc</guimenu
 > <guimenuitem
->Carrega...</guimenuitem
+>Carrega…</guimenuitem
 ></menuchoice
 ></term>
     <listitem
@@ -272,7 +272,7 @@
 > <guimenu
 >Joc</guimenu
 > <guimenuitem
->Mostra les puntuacions...</guimenuitem
+>Mostra les puntuacions…</guimenuitem
 ></menuchoice
 ></term>
     <listitem
@@ -495,7 +495,7 @@
 ><guimenu
 >Arranjament</guimenu
 > <guimenuitem
->Configura el &picmi;...</guimenuitem
+>Configura el &picmi;…</guimenuitem
 ></menuchoice
 ></term>
     <listitem

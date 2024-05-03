@@ -120,7 +120,7 @@
 > <guimenu
 >Spel</guimenu
 > <guimenuitem
->Laden...</guimenuitem
+>Laden…</guimenuitem
 ></menuchoice
 >. </para>
 
@@ -209,7 +209,7 @@
 > <guimenu
 >Spel</guimenu
 > <guimenuitem
->Laden...</guimenuitem
+>Laden…</guimenuitem
 ></menuchoice
 ></term>
     <listitem
@@ -274,7 +274,7 @@
 > <guimenu
 >Spel</guimenu
 > <guimenuitem
->Topscores tonen...</guimenuitem
+>Topscores tonen…</guimenuitem
 ></menuchoice
 ></term>
     <listitem
@@ -497,7 +497,7 @@
 ><guimenu
 >Instellingen</guimenu
 > <guimenuitem
->&picmi; instellen...</guimenuitem
+>&picmi; instellen…</guimenuitem
 ></menuchoice
 ></term>
     <listitem
