@@ -63,7 +63,7 @@ void SettingsWindow::bgToolButtonClicked()
     QString fileName = QFileDialog::getOpenFileName(this, i18nc("@title:window", "Select Background"), QString(),
                                                     i18n("Image Files (*.png *.jpg)"));
 
-    if (fileName.isNull()) {
+    if (fileName.isEmpty()) {
         return;
     }
 
