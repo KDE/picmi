@@ -1,14 +1,14 @@
 # Copyright (C) 2013 This_file_is_part_of_KDE
 # This file is distributed under the same license as the Kdegames package.
 # Luciano Montanaro <mikelima@gmail.com>, 2013, 2016.
-# Vincenzo Reale <smart2128vr@gmail.com>, 2020, 2021.
+# SPDX-FileCopyrightText: 2020, 2021, 2024 Vincenzo Reale <smart2128vr@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: picmi\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-02 00:37+0000\n"
-"PO-Revision-Date: 2021-10-11 11:33+0200\n"
+"PO-Revision-Date: 2024-05-02 14:24+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 21.08.2\n"
+"X-Generator: Lokalize 24.02.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -446,40 +446,34 @@ msgid "PAUSED"
 msgstr "IN PAUSA"
 
 #: src/gui/mainwindow.cpp:62
-#, fuzzy, kde-format
-#| msgid "Save Position"
+#, kde-format
 msgctxt "@action"
 msgid "Save Position"
 msgstr "Salva posizione"
 
 #: src/gui/mainwindow.cpp:68
-#, fuzzy, kde-format
-#| msgid "Load Position"
+#, kde-format
 msgctxt "@action"
 msgid "Load Position"
 msgstr "Carica posizione"
 
 #: src/gui/mainwindow.cpp:79
-#, fuzzy, kde-format
-#| msgid "New Game"
+#, kde-format
 msgctxt "@action:button"
 msgid "New Game"
 msgstr "Nuova partita"
 
 #: src/gui/mainwindow.cpp:84
-#, fuzzy, kde-format
-#| msgid "Load New Game"
+#, kde-format
 msgctxt "@action:button"
 msgid "Load New Game"
 msgstr "Carica una nuova partita"
 
 #: src/gui/mainwindow.cpp:97
-#, fuzzy, kde-format
-#| msgctxt "custom difficulty"
-#| msgid "Custom"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Custom"
-msgstr "Personalizzato"
+msgstr "Personalizzata"
 
 #: src/gui/mainwindow.cpp:246
 #, kde-format
@@ -497,8 +491,7 @@ msgid "Congratulations, you have solved this board!"
 msgstr "Congratulazioni, hai risolto questo schema!"
 
 #: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
-#, fuzzy, kde-format
-#| msgid "Board Solved!"
+#, kde-format
 msgctxt "@title:window"
 msgid "Board Solved!"
 msgstr "Schema risolto!"
@@ -509,37 +502,31 @@ msgid "Congratulations, you have solved board '%1'!"
 msgstr "Congratulazioni, hai risolto lo schema «%1»!"
 
 #: src/gui/selectboardwindow.cpp:87
-#, fuzzy, kde-format
-#| msgid "Level"
+#, kde-format
 msgctxt "@title:column"
 msgid "Level"
 msgstr "Livello"
 
 #: src/gui/selectboardwindow.cpp:88
-#, fuzzy, kde-format
-#| msgid "Level Set"
+#, kde-format
 msgctxt "@title:column"
 msgid "Level Set"
 msgstr "Raccolta di livelli"
 
 #: src/gui/selectboardwindow.cpp:89
-#, fuzzy, kde-format
-#| msgid "Difficulty"
+#, kde-format
 msgctxt "@title:column"
 msgid "Difficulty"
 msgstr "Difficoltà"
 
 #: src/gui/selectboardwindow.cpp:90
-#, fuzzy, kde-format
-#| msgid "Size"
+#, kde-format
 msgctxt "@title:column"
 msgid "Size"
 msgstr "Dimensione"
 
 #: src/gui/selectboardwindow.cpp:91
-#, fuzzy, kde-format
-#| msgctxt "board solved"
-#| msgid "Solved"
+#, kde-format
 msgctxt "@title:column board solved"
 msgid "Solved"
 msgstr "Risolto"
@@ -551,57 +538,49 @@ msgid "Level Selection"
 msgstr "Selezione del livello"
 
 #: src/gui/selectboardwindow.cpp:242
-#, fuzzy, kde-format
-#| msgid "Ridiculously Easy"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Ridiculously Easy"
-msgstr "Ridicolmente facile"
+msgstr "Incredibilmente facile"
 
 #: src/gui/selectboardwindow.cpp:243
-#, fuzzy, kde-format
-#| msgid "Very Easy"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Very Easy"
 msgstr "Molto facile"
 
 #: src/gui/selectboardwindow.cpp:244
-#, fuzzy, kde-format
-#| msgid "Easy"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Easy"
 msgstr "Facile"
 
 #: src/gui/selectboardwindow.cpp:245
-#, fuzzy, kde-format
-#| msgid "Medium"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Medium"
 msgstr "Media"
 
 #: src/gui/selectboardwindow.cpp:246
-#, fuzzy, kde-format
-#| msgid "Hard"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Hard"
 msgstr "Difficile"
 
 #: src/gui/selectboardwindow.cpp:247
-#, fuzzy, kde-format
-#| msgid "Very Hard"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Very Hard"
 msgstr "Molto difficile"
 
 #: src/gui/selectboardwindow.cpp:248
-#, fuzzy, kde-format
-#| msgid "Extremely Hard"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Extremely Hard"
 msgstr "Estremamente difficile"
 
 #: src/gui/selectboardwindow.cpp:249
-#, fuzzy, kde-format
-#| msgid "Impossible"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Impossible"
 msgstr "Impossibile"
@@ -681,8 +660,7 @@ msgid "Difficulty: -"
 msgstr "Difficoltà: —"
 
 #: src/gui/settingswindow.cpp:63
-#, fuzzy, kde-format
-#| msgid "Select Background"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Background"
 msgstr "Seleziona lo sfondo"
@@ -741,7 +719,7 @@ msgstr "Righe non risolte:"
 #: src/gui/settingswindow.ui:120 src/gui/settingswindow.ui:127
 #, kde-format
 msgid "Edit…"
-msgstr ""
+msgstr "Modifica…"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: src/gui/settingswindow.ui:145
