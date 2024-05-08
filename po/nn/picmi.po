@@ -790,9 +790,3 @@ msgstr "© 2012–2015 Picmi-utviklarane"
 #, kde-format
 msgid "Picmi Author"
 msgstr "Picmi-utviklar"
-
-#~ msgid "..."
-#~ msgstr "…"
-
-#~ msgid "Edit..."
-#~ msgstr "Rediger …"

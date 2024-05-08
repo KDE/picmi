@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-02 00:37+0000\n"
 "PO-Revision-Date: 2021-11-02 11:19+0100\n"
-"Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
+"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -446,40 +446,34 @@ msgid "PAUSED"
 msgstr "POZASTAVENO"
 
 #: src/gui/mainwindow.cpp:62
-#, fuzzy, kde-format
-#| msgid "Save Position"
+#, kde-format
 msgctxt "@action"
 msgid "Save Position"
-msgstr "Uložit pozici"
+msgstr ""
 
 #: src/gui/mainwindow.cpp:68
-#, fuzzy, kde-format
-#| msgid "Load Position"
+#, kde-format
 msgctxt "@action"
 msgid "Load Position"
-msgstr "Načíst pozici"
+msgstr ""
 
 #: src/gui/mainwindow.cpp:79
-#, fuzzy, kde-format
-#| msgid "New Game"
+#, kde-format
 msgctxt "@action:button"
 msgid "New Game"
-msgstr "Nová hra"
+msgstr ""
 
 #: src/gui/mainwindow.cpp:84
-#, fuzzy, kde-format
-#| msgid "Load New Game"
+#, kde-format
 msgctxt "@action:button"
 msgid "Load New Game"
-msgstr "Načíst novou hru"
+msgstr ""
 
 #: src/gui/mainwindow.cpp:97
-#, fuzzy, kde-format
-#| msgctxt "custom difficulty"
-#| msgid "Custom"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Custom"
-msgstr "Vlastní"
+msgstr ""
 
 #: src/gui/mainwindow.cpp:246
 #, kde-format
@@ -497,11 +491,10 @@ msgid "Congratulations, you have solved this board!"
 msgstr "Gratuluji, vyřešili jste tuto desku!"
 
 #: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
-#, fuzzy, kde-format
-#| msgid "Board Solved!"
+#, kde-format
 msgctxt "@title:window"
 msgid "Board Solved!"
-msgstr "Deska vyřešena."
+msgstr ""
 
 #: src/gui/mainwindow.cpp:286
 #, kde-format
@@ -509,40 +502,34 @@ msgid "Congratulations, you have solved board '%1'!"
 msgstr "Gratuluji, vyřešili jste desku '%1'!"
 
 #: src/gui/selectboardwindow.cpp:87
-#, fuzzy, kde-format
-#| msgid "Level"
+#, kde-format
 msgctxt "@title:column"
 msgid "Level"
-msgstr "Úroveň"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:88
-#, fuzzy, kde-format
-#| msgid "Level Set"
+#, kde-format
 msgctxt "@title:column"
 msgid "Level Set"
-msgstr "Úroveň nastavena"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:89
-#, fuzzy, kde-format
-#| msgid "Difficulty"
+#, kde-format
 msgctxt "@title:column"
 msgid "Difficulty"
-msgstr "Obtížnost"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:90
-#, fuzzy, kde-format
-#| msgid "Size"
+#, kde-format
 msgctxt "@title:column"
 msgid "Size"
 msgstr "Velikost"
 
 #: src/gui/selectboardwindow.cpp:91
-#, fuzzy, kde-format
-#| msgctxt "board solved"
-#| msgid "Solved"
+#, kde-format
 msgctxt "@title:column board solved"
 msgid "Solved"
-msgstr "Vyřešeno"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:154
 #, kde-format
@@ -551,60 +538,52 @@ msgid "Level Selection"
 msgstr "Výběr úrovně"
 
 #: src/gui/selectboardwindow.cpp:242
-#, fuzzy, kde-format
-#| msgid "Ridiculously Easy"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Ridiculously Easy"
-msgstr "Směšně jednoduchá"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:243
-#, fuzzy, kde-format
-#| msgid "Very Easy"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Very Easy"
-msgstr "Velmi jednoduchá"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:244
-#, fuzzy, kde-format
-#| msgid "Easy"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Easy"
-msgstr "Jednoduchá"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:245
-#, fuzzy, kde-format
-#| msgid "Medium"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Medium"
-msgstr "Střední"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:246
-#, fuzzy, kde-format
-#| msgid "Hard"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Hard"
-msgstr "Těžká"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:247
-#, fuzzy, kde-format
-#| msgid "Very Hard"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Very Hard"
-msgstr "Velmi těžká"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:248
-#, fuzzy, kde-format
-#| msgid "Extremely Hard"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Extremely Hard"
-msgstr "Extrémně těžká"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:249
-#, fuzzy, kde-format
-#| msgid "Impossible"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Impossible"
-msgstr "Nemožná"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:255
 #, kde-format
@@ -681,11 +660,10 @@ msgid "Difficulty: -"
 msgstr "Obtížnost: -"
 
 #: src/gui/settingswindow.cpp:63
-#, fuzzy, kde-format
-#| msgid "Select Background"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Background"
-msgstr "Vybrat pozadí"
+msgstr ""
 
 #: src/gui/settingswindow.cpp:64
 #, kde-format
@@ -741,7 +719,7 @@ msgstr ""
 #: src/gui/settingswindow.ui:120 src/gui/settingswindow.ui:127
 #, kde-format
 msgid "Edit…"
-msgstr ""
+msgstr "Upravit…"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: src/gui/settingswindow.ui:145
@@ -787,9 +765,3 @@ msgstr "(c) 2012 - 2015 autoři Picmi"
 #, kde-format
 msgid "Picmi Author"
 msgstr "Autor Picmi"
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "Edit..."
-#~ msgstr "Upravit..."

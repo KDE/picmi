@@ -788,9 +788,3 @@ msgstr ""
 #, kde-format
 msgid "Picmi Author"
 msgstr "Picmi utvikler"
-
-#~ msgid "..."
-#~ msgstr " …"
-
-#~ msgid "Edit..."
-#~ msgstr "Rediger …"
