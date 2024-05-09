@@ -112,7 +112,7 @@
 >La posizione attuale delle caselle e delle croci («stati» d'ora in poi) può essere salvata in qualsiasi momento. Il salvataggio di un nuovo stato non sovrascrive gli stati salvati in precedenza. Il ripristino di uno stato ritorna sempre allo stato salvato più di recente. Questo può essere ripetuto fino a quando non rimangono più stati salvati. Il numero di azioni dall'ultimo stato salvato viene visualizzato nella barra di stato. </para>
 
 <para
->&picmi; include due modalità di gioco. Rompicapo casuali (generati selezionando <menuchoice
+>&picmi; include due modalità di gioco. Rompicapo casuali (generati selezionando la voce di menu <menuchoice
 ><shortcut
 ><keycombo action="simul"
 >&Ctrl;<keycap
@@ -124,7 +124,7 @@
 > <guimenuitem
 >Nuova</guimenuitem
 ></menuchoice
-> dal menu) sono generati in base alle impostazioni di difficoltà selezionate. In alternativa, i rompicapo predefiniti inclusi possono essere giocati selezionando la voce di menu <menuchoice
+>) sono generati in base alle impostazioni di difficoltà selezionate. In alternativa, i rompicapo predefiniti inclusi possono essere giocati selezionando la voce di menu <menuchoice
 ><shortcut
 ><keycombo action="simul"
 >&Ctrl;<keycap
@@ -219,11 +219,11 @@
 >&Ctrl;<keycap
 >O</keycap
 ></keycombo
-></shortcut
+> </shortcut
 > <guimenu
 >Partita</guimenu
-><guimenuitem
->Carica</guimenuitem
+> <guimenuitem
+>Carica...</guimenuitem
 ></menuchoice
 ></term>
     <listitem
@@ -288,7 +288,7 @@
 > <guimenu
 >Partita</guimenu
 > <guimenuitem
->Mostra la classifica...</guimenuitem
+>Mostra la classifica…</guimenuitem
 ></menuchoice
 ></term>
     <listitem
