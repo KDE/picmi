@@ -36,13 +36,13 @@
 >&FDLNotice;</legalnotice>
 
 <date
->13-05-2016</date>
+>08-10-2021</date>
 <releaseinfo
->2.0.0 (Applications 16.04)</releaseinfo>
+>2.0.0 (KDE Gear 21.08)</releaseinfo>
 
 <abstract>
 <para
->&picmi;, un jeu de puzzle de type logimage.</para>
+>&picmi;, un jeu de puzzle de type « logimage ».</para>
 </abstract>
 
 <keywordset>
@@ -98,10 +98,30 @@
 >La position actuelle des cases et des croix (dénommée à partir de maintenant comme des états) peut être enregistrée à tout moment. L'enregistrement d'un nouvel état n'écrase pas les états précédemment enregistrés. Le rechargement d'un état se fait à partir de la dernière version enregistrée. Cela peut être répété jusqu'à ce qu'il ne reste plus aucun état enregistré. Le nombre d'actions depuis le dernier état enregistré est affiché dans la barre d'outils. </para>
 
 <para
->&picmi; permet deux modes de jeu. Les puzzles aléatoires (générés en sélectionnant <guilabel
->Nouveau</guilabel
-> dans le menu) sont générés selon les paramètres de difficultés sélectionnés. Sinon, les puzzles fournis et prédéfinis peuvent être utilisés pour jouer en sélectionnant <guilabel
->Chargement</guilabel
+>&picmi; permet deux modes de jeu. Les puzzles aléatoires (Générés par sélection de l'élément de menu <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Jeu</guimenu
+> <guimenuitem
+>Nouveau</guimenuitem
+></menuchoice
+>) sont générés selon les paramètres de difficultés sélectionnés. Sinon, les puzzles fournis et prédéfinis peuvent être utilisés pour jouer par sélection de l'élément de menu <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Jeu</guimenu
+> <guimenuitem
+>Charger...</guimenuitem
+></menuchoice
 >. </para>
 
 </chapter>
@@ -116,27 +136,27 @@
 <para
 >La séquence de nombre dans une ligne et une colonne fournit certaines informations sur le nombre de cellules occupées et leurs dispositions dans une ligne ou colonne.</para>
 <itemizedlist>
-<listitem
+  <listitem
 ><para
 >Un nombre représente une longueur pour un groupe de cellules reliées entre elles et occupées sur la grille. Ce groupe possède au moins une cellule vide de chaque coté ou est placé sur le bord de la grille.</para
 ></listitem>
-<listitem
+  <listitem
 ><para
 >De plus, une séquence de nombre affiche l'ordre de ces groupes dans une ligne ou une colonne.</para
 ></listitem>
-<listitem
+  <listitem
 ><para
 >Quand l'option <guilabel
 >Éviter les erreurs</guilabel
 > est activée, il est impossible de marquer par erreur une cellule comme occupée. A la place, une pénalité en temps est appliquée sur le chronomètre. La pénalité est de plus en plus importante à chaque erreur faite.</para
 ></listitem>
-<listitem
+  <listitem
 ><para
 >Quand l'option <guilabel
 >Éviter les erreurs</guilabel
 > est désactivée, vous n'avez aucune indication sur le marquage correct ou non d'une cellule et il n'y a aucune pénalité lors d'erreurs.</para
 ></listitem>
-<listitem
+  <listitem
 ><para
 >La partie sera terminée une fois que toutes les cellules occupées auront été marquées correctement.</para
 ></listitem>
@@ -154,11 +174,11 @@
 >Éléments de menu</title>
 
 <variablelist>
-<varlistentry>
-<term
+  <varlistentry>
+    <term
 ><menuchoice
 ><shortcut
-> <keycombo action="simul"
+><keycombo action="simul"
 >&Ctrl;<keycap
 >N</keycap
 ></keycombo
@@ -167,19 +187,21 @@
 >Jeu</guimenu
 > <guimenuitem
 >Nouveau</guimenuitem
-> </menuchoice
+></menuchoice
 ></term>
-<listitem>
-<para
->Démarre une nouvelle partie. Une grille aléatoire sera créée en utilisant le niveau de difficulté courant. </para>
-</listitem>
-</varlistentry>
+    <listitem
+><para
+><action
+>Démarre une nouvelle partie.</action
+> Cela conduit à la création d'une grille aléatoire en utilisant le niveau de difficulté courant.</para
+></listitem>
+  </varlistentry>
 
-<varlistentry>
-<term
+  <varlistentry>
+    <term
 ><menuchoice
 ><shortcut
-> <keycombo action="simul"
+><keycombo action="simul"
 >&Ctrl;<keycap
 >O</keycap
 ></keycombo
@@ -187,17 +209,19 @@
 > <guimenu
 >Jeu</guimenu
 > <guimenuitem
->Charger</guimenuitem
-> </menuchoice
+>Charger...</guimenuitem
+></menuchoice
 ></term>
-<listitem>
-<para
->Charges un puzzle prédéfini. Les noms des puzzles sont cachés jusqu'à ce qu'ils soient terminés. Les listes des scores les plus élevés et les paramètres de difficultés sont désactivés </para>
-</listitem>
-</varlistentry>
+    <listitem
+><para
+><action
+>Charges un puzzle prédéfini.</action
+>  Les noms des puzzles sont masqués jusqu'à ce qu'ils soient terminés. Les listes des scores les plus élevés et les paramètres de difficultés sont désactivés.</para
+></listitem>
+  </varlistentry>
 
-<varlistentry>
-<term
+  <varlistentry>
+    <term
 ><menuchoice
 ><shortcut
 ><keycap
@@ -206,18 +230,19 @@
 > <guimenu
 >Jeu</guimenu
 > <guimenuitem
->Rejouer</guimenuitem
-> </menuchoice
+>Re-démarrer le jeu</guimenuitem
+></menuchoice
 ></term>
-<listitem>
-<para>
-    <!--FIXME -->
-</para>
-</listitem>
-</varlistentry>
+    <listitem
+><para
+><action
+>Ceci va re-démarrer la partie actuelle.</action
+></para
+></listitem>
+  </varlistentry>
 
-<varlistentry>
-<term
+  <varlistentry>
+    <term
 ><menuchoice
 ><shortcut
 ><keycap
@@ -229,14 +254,16 @@
 >Pause</guimenuitem
 ></menuchoice
 ></term>
-<listitem>
-<para
->Mets le temps du jeu en pause. Cliquez sur l'élément de menu une nouvelle fois pour reprendre le jeu. Veuillez noter que la grille disparaît quand le jeu est en pause car il serait déloyal si vous pouviez chercher de bons déplacements sans avoir la pression du chronomètre. </para>
-</listitem>
-</varlistentry>
+    <listitem
+><para
+><action
+>Mets em pause le chronomètre du jeu.</action
+>Cliquez sur l'élément de menu une nouvelle fois pour reprendre le jeu. Veuillez noter que la grille disparaît quand le jeu est en pause car il serait déloyal si vous pouviez chercher de bons déplacements sans avoir la pression du chronomètre.</para
+></listitem>
+  </varlistentry>
 
-<varlistentry>
-<term
+  <varlistentry>
+    <term
 ><menuchoice
 ><shortcut
 > <keycombo action="simul"
@@ -247,20 +274,22 @@
 > <guimenu
 >Jeu</guimenu
 > <guimenuitem
->Afficher les meilleurs scores</guimenuitem
+>Afficher les meilleurs scores...</guimenuitem
 ></menuchoice
 ></term>
-<listitem>
-<para
->Affiche une boîte de dialogue contenant les meilleurs scores pour les différents niveaux de difficultés. </para>
-</listitem>
-</varlistentry>
+    <listitem
+><para
+><action
+>Affiche une boîte de dialogue contenant les meilleurs scores pour les différents niveaux de difficultés.</action
+></para
+></listitem>
+  </varlistentry>
 
-<varlistentry>
-<term
+  <varlistentry>
+    <term
 ><menuchoice
 ><shortcut
-> <keycombo action="simul"
+><keycombo action="simul"
 >&Ctrl;<keycap
 >Q</keycap
 ></keycombo
@@ -269,40 +298,44 @@
 >Jeu</guimenu
 > <guimenuitem
 >Quitter</guimenuitem
-> </menuchoice
+></menuchoice
 ></term>
-<listitem>
-<para
->Quitte le programme. </para>
-</listitem>
-</varlistentry>
+    <listitem
+><para
+><action
+>Quitte</action
+> la partie de &picmi;.</para
+></listitem>
+  </varlistentry>
 
-<varlistentry>
-<term
+  <varlistentry>
+    <term
 ><menuchoice
 ><shortcut
-> <keycombo action="simul"
+><keycombo action="simul"
 >&Ctrl;<keycap
 >Z</keycap
 ></keycombo
 > </shortcut
 > <guimenu
->Bouger</guimenu
+>Déplacer</guimenu
 > <guimenuitem
 >Annuler</guimenuitem
-> </menuchoice
+></menuchoice
 ></term>
-<listitem>
-<para
->Annuler le mouvement précédent s'il en existe un. </para>
-</listitem>
-</varlistentry>
+    <listitem
+><para
+><action
+>Annuler le mouvement précédent</action
+> s'il en existe un.</para
+></listitem>
+  </varlistentry>
 
-<varlistentry>
-<term
+  <varlistentry>
+    <term
 ><menuchoice
 ><shortcut
-> <keycombo action="simul"
+><keycombo action="simul"
 >&Ctrl;<keycap
 >I</keycap
 ></keycombo
@@ -311,31 +344,35 @@
 >Déplacer</guimenu
 > <guimenuitem
 >Astuces</guimenuitem
-> </menuchoice
+></menuchoice
 ></term>
-<listitem>
-<para
->Marque une cellule comme occupée ou vide. </para>
-</listitem>
-</varlistentry>
+    <listitem
+><para
+><action
+>Marque une cellule comme occupée ou vide.</action
+></para
+></listitem>
+  </varlistentry>
 
-<varlistentry>
-<term
+  <varlistentry>
+    <term
 ><menuchoice
 ><guimenu
 >Déplacer</guimenu
 > <guimenuitem
 >Trouver la solution</guimenuitem
-> </menuchoice
+></menuchoice
 ></term>
-<listitem>
-<para
->Démarrer une démonstration du jeu. </para>
-</listitem>
-</varlistentry>
+    <listitem
+><para
+><action
+>Démarrer une démonstration du jeu.</action
+></para
+></listitem>
+  </varlistentry>
 
-<varlistentry>
-<term
+  <varlistentry>
+    <term
 ><menuchoice
 ><shortcut
 > <keycombo action="simul"
@@ -344,19 +381,21 @@
 ></keycombo
 > </shortcut
 > <guimenu
->Bouger</guimenu
+>Déplacer</guimenu
 > <guimenuitem
 >Charger une position</guimenuitem
-> </menuchoice
+></menuchoice
 ></term>
-<listitem>
-<para
->Charge la position la plus récemment enregistrée. </para>
-</listitem>
-</varlistentry>
+    <listitem
+><para
+><action
+>Charge la position la plus récemment enregistrée.</action
+></para
+></listitem>
+  </varlistentry>
 
-<varlistentry>
-<term
+  <varlistentry>
+    <term
 ><menuchoice
 ><shortcut
 > <keycombo action="simul"
@@ -365,74 +404,103 @@
 ></keycombo
 > </shortcut
 > <guimenu
->Bouger</guimenu
+>Déplacer</guimenu
 > <guimenuitem
 >Enregistrer la position</guimenuitem
-> </menuchoice
+></menuchoice
 ></term>
-<listitem>
-<para
->Enregistre la configuration actuelle de la grille. </para>
-</listitem>
-</varlistentry>
+    <listitem
+><para
+><action
+>Enregistre la configuration actuelle de la grille.</action
+></para
+></listitem>
+  </varlistentry>
 
-<varlistentry>
-<term
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl; &Maj;<keycap
+>F</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Affichage</guimenu
+> <guimenuitem
+>Mode « Plein écran » </guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Bascule l'interface graphique en mode plein écran.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
 ><menuchoice
 ><guimenu
 >Paramètres</guimenu
 > <guisubmenu
 >Difficulté</guisubmenu
-> </menuchoice
+></menuchoice
 ></term>
-<listitem>
-<para
->Permet de définir par vous même un niveau de difficulté à partir d'un sous-menu.</para>
-<para
+    <listitem
+><para
+><action
+>Permet de définir par vous même un niveau de difficulté à partir d'un sous-menu.</action
+></para>
+    <para
 >Il y a quatre niveaux de difficultés : <itemizedlist>
-<listitem
+        <listitem
 ><para
 ><guimenuitem
 >Facile</guimenuitem
-> : 10 lignes, 10 colonnes, 55 % de toutes les cellules sont occupées, l'option « Éviter les erreurs » est désactivée.</para
+> : 10 lignes, 10 colonnes, 55 % de toutes les cellules sont occupées. L'option « Éviter les erreurs » est désactivée.</para
 ></listitem>
-<listitem
+        <listitem
 ><para
 ><guimenuitem
 >Moyen</guimenuitem
-> : 10 lignes, 15 colonnes, 55 % de toutes les cellules sont occupées, l'option « Éviter les erreurs » est désactivée.</para
+> : 10 lignes, 15 colonnes, 55 % de toutes les cellules sont occupées et l'option « Éviter les erreurs » est désactivée.</para
 ></listitem>
-<listitem
+        <listitem
 ><para
 ><guimenuitem
 >Difficile</guimenuitem
-> : 15 lignes, 10 colonnes, 55 % de toutes les cellules sont occupées, l'option « Éviter les erreurs » est désactivée.</para
+> : 15 lignes, 10 colonnes, 55 % de toutes les cellules sont occupées. L'option « Éviter les erreurs » est désactivée.</para
 ></listitem>
-<listitem
+        <listitem
 ><para
 ><guimenuitem
 >Personnalisées</guimenuitem
 > : dimensions et paramètres personnalisés de la grille.</para
 ></listitem>
-</itemizedlist>
-</para
+      </itemizedlist>
+    </para
 ></listitem>
-</varlistentry>
+  </varlistentry>
 
-<varlistentry>
-<term
+  <varlistentry>
+    <term
 ><menuchoice
 ><guimenu
->Paramètres</guimenu
+>Configuration</guimenu
 > <guimenuitem
->Configurer &picmi;...</guimenuitem
-> </menuchoice
+>Configurer &picmi;…</guimenuitem
+></menuchoice
 ></term>
-<listitem
+    <listitem
 ><para
->Choisir une image de fond pour le jeu, des dimensions de grilles ou des paramètres pour une difficulté personnalisée.</para
+><action
+>Choisir une image de fond pour le jeu, des dimensions de grilles ou des paramètres pour une difficulté personnalisée.</action
+></para
 ></listitem>
-</varlistentry>
+  </varlistentry>
 </variablelist>
 
 <para
@@ -455,145 +523,143 @@
 >Les raccourcis par défaut sont : </para>
 
 <table>
-<title
+  <title
 >Raccourcis</title>
-<tgroup cols="2">
-<tbody>
-<row>
-<entry
+  <tgroup cols="2">
+    <tbody>
+      <row>
+        <entry
 >Démarrer une nouvelle partie</entry>
-<entry>
-<keycombo action="simul"
+        <entry
+><keycombo action="simul"
 >&Ctrl;<keycap
 >N</keycap
-></keycombo>
-</entry>
-</row>
-<row>
-<entry
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
 >Charger une partie prédéfinie</entry>
-<entry>
-<keycombo action="simul"
+        <entry
+><keycombo action="simul"
 >&Ctrl;<keycap
 >O</keycap
-></keycombo>
-</entry>
-</row>
-<row>
-<entry
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
 >Mettre en pause</entry>
-<entry
+        <entry
 ><keycap
 >P</keycap
 ></entry>
-</row>
-<row>
-<entry
+      </row>
+      <row>
+        <entry
 >Afficher les meilleurs scores</entry>
-<entry>
-<keycombo action="simul"
+        <entry
+><keycombo action="simul"
 >&Ctrl;<keycap
 >H</keycap
-></keycombo>
-</entry>
-</row>
-<row>
-<entry
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
 >Mode plein écran</entry>
-<entry
+        <entry
 ><keycombo action="simul"
 >&Ctrl;&Maj;<keycap
 >F</keycap
 ></keycombo
 ></entry>
-</row>
-<row>
-<entry
+      </row>
+      <row>
+        <entry
 >Quitter</entry>
-<entry>
-<keycombo action="simul"
+        <entry
+><keycombo action="simul"
 >&Ctrl;<keycap
 >Q</keycap
-></keycombo>
-</entry>
-</row>
-<row>
-<entry
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
 >Aide</entry>
-<entry
+        <entry
 ><keycap
 >F1</keycap
 ></entry>
-</row>
-<row>
-<entry
->Qu'est ce que c'est ? </entry>
-<entry>
-<keycombo action="simul"
+      </row>
+      <row>
+        <entry
+>Qu'est ce que c'est ? De l'aide</entry>
+        <entry
+><keycombo action="simul"
 >&Maj;<keycap
 >F1</keycap
-></keycombo>
-</entry>
-</row>
-</tbody>
-</tgroup>
+></keycombo
+></entry>
+      </row>
+    </tbody>
+  </tgroup>
 </table>
 
 <table>
-<title
+  <title
 >Contrôles du clavier</title>
-<tgroup cols="2">
-<tbody>
-<row>
-<entry
+  <tgroup cols="2">
+    <tbody>
+      <row>
+        <entry
 >Déplacer à gauche</entry>
-<entry
-><keycap
->Gauche ou H</keycap
+        <entry
+>&Left; ou <keycap
+>H</keycap
 ></entry>
-</row>
-<row>
-<entry
+      </row>
+      <row>
+        <entry
 >Déplacer à droite</entry>
-<entry
-><keycap
->Droite ou L</keycap
+        <entry
+>&Right; ou <keycap
+>L</keycap
 ></entry>
-</row>
-<row>
-<entry
+      </row>
+      <row>
+        <entry
 >Déplacer vers le haut</entry>
-<entry
-><keycap
->Haut ou K</keycap
+        <entry
+>&Up; ou <keycap
+>K</keycap
 ></entry>
-</row>
-<row>
-<entry
+      </row>
+      <row>
+        <entry
 >Déplacer vers le bas</entry>
-<entry
-><keycap
->Bas ou J</keycap
+        <entry
+>&Down; ou <keycap
+>J</keycap
 ></entry>
-</row>
-<row>
-<entry
+      </row>
+      <row>
+        <entry
 >Marquer ou démarquer les cellules occupées</entry>
-<entry
+        <entry
 ><keycap
 >X</keycap
 ></entry>
-</row>
-<row>
-<entry
+      </row>
+      <row>
+        <entry
 >Marquer ou démarquer les cellules vides</entry>
-<entry
-><keycap
->Espace</keycap
-></entry>
-</row>
-</tbody>
-</tgroup>
+        <entry
+>&Space;</entry>
+      </row>
+    </tbody>
+  </tgroup>
 </table>
 
 </sect1>
