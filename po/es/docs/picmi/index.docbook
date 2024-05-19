@@ -64,6 +64,20 @@
 ><contrib
 >Traductor</contrib
 ></othercredit
+> <othercredit role="translator"
+><firstname
+>Eloy</firstname
+> <surname
+>Cuadra</surname
+> <affiliation
+><address
+><email
+>ecuadra@eloihr.net</email
+></address
+></affiliation
+> <contrib
+>Corrección de la traducción</contrib
+></othercredit
 > 
 </authorgroup>
 
@@ -129,18 +143,18 @@
 >Cómo jugar</title>
 
 <para
->Al jugador se le presenta un tablero en blanco y una lista de números para cada fila y columna. Estos números representan cómo se organizan las piezas dentro de una fila o columna dada. Por ejemplo, una secuencia numérica de <quote
+>Se muestra un tablero en blanco y una lista de números para cada fila y columna. Estos números representan cómo se organizan las piezas dentro de una determinada fila o columna. Por ejemplo, una secuencia numérica de <quote
 >4 8 3</quote
-> significaría que hay conjuntos de cuatro, ocho y tres casillas rellenadas, en ese orden, con al menos una casilla en blanco entre grupos consecutivos. El objetivo del juego es usar estas pistas para descubrir la solución, y hacerlo lo más rápido posible. </para>
+> significaría que hay conjuntos de cuatro, ocho y tres casillas rellenadas, en ese orden, con al menos una casilla en blanco entre grupos consecutivos. El objetivo del juego es usar estas pistas para descubrir la solución y hacerlo lo más rápido posible. </para>
 
 <para
 >Un clic izquierdo (des)marca la casilla como ocupada, mientras que un clic derecho (des)marca la casilla como vacía. Se puede arrastrar para marcar varias casillas seguidas a la vez en una fila o columna. El tiempo transcurrido se muestra en la barra de estado y una vista global del tablero se ubica en la esquina superior izquierda. La partida se completa una vez que todas las casillas ocupadas se han marcado correctamente. </para>
 
 <para
->La localización actual de las cajas y cruces (referenciadas como «estados» a partir de ahora) puede guardarse en cualquier momento. Al guardar un nuevo estado no se sobrescriben los estados guardados previamente. Al restaurar un estado siempre se vuelve al estado guardado más recientemente. Esto puede repetirse hasta que no queden más estados guardados. El número de acciones desde el último estado guardado se muestra en la barra de estado. </para>
+>La ubicación actual de las cajas y cruces (referenciadas como «estados» a partir de ahora) puede guardarse en cualquier momento. Al guardar un nuevo estado no se sobrescriben los estados guardados previamente. Al restaurar un estado siempre se vuelve al estado guardado más recientemente. Esto puede repetirse hasta que no queden más estados guardados. El número de acciones desde el último estado guardado se muestra en la barra de estado. </para>
 
 <para
->&picmi; incluye dos modos de juego. Puzles aleatorios (generados seleccionando la opción del menú <menuchoice
+>&picmi; incluye dos modos de juego. Los puzles aleatorios (generados seleccionando la opción del menú <menuchoice
 ><shortcut
 ><keycombo action="simul"
 >&Ctrl;<keycap
@@ -152,7 +166,7 @@
 > <guimenuitem
 >Nuevo</guimenuitem
 ></menuchoice
->) se generan de acuerdo con niveles de dificultad seleccionados. De otro modo, los puzles preseleccionados incluidos se pueden jugar seleccionando la opción del menú <menuchoice
+>) se generan según el nivel de dificultad seleccionado. De forma alternativa, se puede jugar con los puzles preestablecidos que se incluyen seleccionando la opción del menú <menuchoice
 ><shortcut
 ><keycombo action="simul"
 >&Ctrl;<keycap
@@ -176,7 +190,7 @@
 <title
 >Reglas</title>
 <para
->La secuencia de números en una fila o columna proporciona cierta información sobre el recuento de casillas ocupadas y su distribución dentro de una fila o columna.</para>
+>La secuencia de números de una fila o columna proporciona cierta información sobre el recuento de casillas ocupadas y su distribución dentro de una fila o columna.</para>
 <itemizedlist>
   <listitem
 ><para
@@ -213,7 +227,7 @@
 
 <sect1 id="menu-items">
 <title
->Opciones de menú</title>
+>Opciones del menú</title>
 
 <variablelist>
   <varlistentry>
@@ -300,7 +314,7 @@
 ><para
 ><action
 >Detiene el tiempo de juego.</action
-> Haga clic en la opción del menú otra vez para reanudar el juego. Tenga en cuenta que el tablero desaparece cuando el juego está en pausa, ya que sería injusto si pudiera buscar movimientos buenos sin la presión del tiempo.</para
+> Haz clic en la opción del menú otra vez para reanudar el juego. Ten en cuenta que el tablero desaparece cuando el juego está en pausa, ya que sería injusto que pudieras buscar movimientos buenos sin la presión del tiempo.</para
 ></listitem>
   </varlistentry>
 
@@ -322,7 +336,7 @@
     <listitem
 ><para
 ><action
->Muestra un diálogo que contiene las puntuaciones más altas para los diversos niveles de dificultad.</action
+>Muestra un diálogo que contiene las puntuaciones más altas para los distintos niveles de dificultad.</action
 ></para
 ></listitem>
   </varlistentry>
@@ -494,15 +508,15 @@
     <listitem
 ><para
 ><action
->Le permite establecer el nivel de dificultad desde un submenú.</action
+>Permite establecer el nivel de dificultad usando un submenú.</action
 ></para>
     <para
->Hay cuatro niveles de dificultad: <itemizedlist>
+>Existen cuatro niveles de dificultad: <itemizedlist>
         <listitem
 ><para
 ><guimenuitem
 >Fácil</guimenuitem
->: 10 filas, 10 columnas, el 55% de las casillas están ocupadas, la opción <guilabel
+>: 10 filas, 10 columnas, el 55 % de las casillas están ocupadas, la opción <guilabel
 >Evitar equivocaciones</guilabel
 > está desactivada.</para
 ></listitem>
@@ -510,7 +524,7 @@
 ><para
 ><guimenuitem
 >Medio</guimenuitem
->: 10 filas, 15 columnas, el 55% de las casillas están ocupadas, la opción <guilabel
+>: 10 filas, 15 columnas, el 55 % de las casillas están ocupadas, la opción <guilabel
 >Evitar equivocaciones</guilabel
 > está desactivada.</para
 ></listitem>
@@ -518,7 +532,7 @@
 ><para
 ><guimenuitem
 >Difícil</guimenuitem
->: 15 filas, 15 columnas, el 55% de las casillas están ocupadas, la opción <guilabel
+>: 15 filas, 15 columnas, el 55 % de las casillas están ocupadas, la opción <guilabel
 >Evitar equivocaciones</guilabel
 > está desactivada.</para
 ></listitem>
@@ -545,18 +559,18 @@
     <listitem
 ><para
 ><action
->Elija la imagen de fondo del juego, dimensiones del tablero y preferencias para la dificultad personalizada.</action
+>Escoger la imagen de fondo del juego, la dimensiones del tablero y las preferencias para el nivel de dificultad personalizado.</action
 ></para
 ></listitem>
   </varlistentry>
 </variablelist>
 
 <para
->Además &picmi; tiene las opciones de menú <guimenu
+>Además, &picmi; tiene las opciones de los menús <guimenu
 >Preferencias</guimenu
 > y <guimenu
 >Ayuda</guimenu
-> comunes de &kde;. Para obtener más información, consulte las secciones sobre el <ulink url="help:/fundamentals/menus.html#menus-settings"
+> comunes de &kde;. Para obtener más información, consulta las secciones sobre el <ulink url="help:/fundamentals/menus.html#menus-settings"
 >Menú «Preferencias»</ulink
 > y <ulink url="help:/fundamentals/menus.html#menus-help"
 >Menú «Ayuda» </ulink
@@ -643,7 +657,7 @@
       </row>
       <row>
         <entry
->Ayuda ¿Qué es esto?</entry>
+>Ayuda «¿Qué es esto?»</entry>
         <entry
 ><keycombo action="simul"
 >&Shift;<keycap
@@ -657,7 +671,7 @@
 
 <table>
   <title
->Controles de teclado</title>
+>Controles del teclado</title>
   <tgroup cols="2">
     <tbody>
       <row>
@@ -730,12 +744,16 @@
 > </para>
 
 <para
->Traducido por Rocío Gallego <email
+>Documentación traducida por Rocío Gallego <email
 >traducciones@rociogallego.com</email
 >, Kira J. Fernández <email
 >kirajfdez@gmail.com</email
 > y Javier Viñal <email
 >fjvinal@gmail.com</email
+>.</para
+><para
+>Corregida por Eloy Cuadra <email
+>ecuadra@eloihr.net</email
 >.</para
 > &underFDL; &underGPL; </chapter>
 
