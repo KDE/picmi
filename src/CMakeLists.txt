@@ -1,6 +1,6 @@
-if (NOT PICMI_FILEPATH)
+if(NOT PICMI_FILEPATH)
     set(PICMI_FILEPATH ${KDE_INSTALL_DATADIR}/picmi/)
-endif ()
+endif()
 
 kde_enable_exceptions()
 

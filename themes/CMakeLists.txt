@@ -4,10 +4,10 @@
 
 function(install_theme name)
     cmake_parse_arguments(ARG "" "SVG;PREVIEW" "" ${ARGN})
-    if (NOT ARG_SVG)
+    if(NOT ARG_SVG)
         set(ARG_SVG "${name}.svg")
     endif()
-    if (NOT ARG_PREVIEW)
+    if(NOT ARG_PREVIEW)
         set(ARG_PREVIEW "${name}_preview.png")
     endif()
     set(svgz "${CMAKE_CURRENT_BINARY_DIR}/${ARG_SVG}z")
