@@ -202,6 +202,14 @@
 ></listitem>
   <listitem
 ><para
+>La opción <guilabel
+>Impedir errores:</guilabel
+> se aplica solo a las partidas con la dificultad <guimenu
+>Personalizada</guimenu
+>.</para
+></listitem>
+  <listitem
+><para
 >Cuando la opción <guilabel
 >Evitar equivocaciones</guilabel
 > está activada, no es posible marcar una casilla como ocupada. En su lugar, se añade tiempo de penalización al temporizador. La penalización aumenta con cada equivocación cometida.</para
