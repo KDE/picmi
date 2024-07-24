@@ -144,6 +144,14 @@
 ></listitem>
   <listitem
 ><para
+>L'opció <guilabel
+>Evita els errors:</guilabel
+> només s'aplica a partides amb una dificultat <guimenu
+>Personalitzada</guimenu
+>.</para
+></listitem>
+  <listitem
+><para
 >Quan l'opció <guilabel
 >Evita els errors:</guilabel
 > està habilitada, no serà possible marcar incorrectament una cel·la com ocupada: en el seu lloc, el temps de penalització s'afegirà al temporitzador. La penalització s'incrementarà amb cada error fet.</para
