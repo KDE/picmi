@@ -146,6 +146,14 @@
 ></listitem>
   <listitem
 ><para
+>De optie <guilabel
+>Vergissingen voorkomen:</guilabel
+> is alleen van toepassing op spellen met <guimenu
+>Aanpasbare</guimenu
+> moeilijkheidsgraad.</para
+></listitem>
+  <listitem
+><para
 >Wanneer <guilabel
 >Vergissingen voorkomen</guilabel
 > is ingeschakeld dan is het niet mogelijk om een cel foutief te markeren als bezet - in plaats daarvan wordt straftijd bij de verbruikte tijd op de statusbalk opgeteld, De straftijd wordt bij elke fout verhoogd.</para
