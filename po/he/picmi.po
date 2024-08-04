@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: picmi\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-02 00:37+0000\n"
-"PO-Revision-Date: 2024-08-02 09:13+0300\n"
+"PO-Revision-Date: 2024-08-03 06:31+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: en_US\n"
@@ -445,37 +445,31 @@ msgid "PAUSED"
 msgstr "מושהה"
 
 #: src/gui/mainwindow.cpp:62
-#, fuzzy, kde-format
-#| msgid "Save Position"
+#, kde-format
 msgctxt "@action"
 msgid "Save Position"
 msgstr "שמירת מקום"
 
 #: src/gui/mainwindow.cpp:68
-#, fuzzy, kde-format
-#| msgid "Load Position"
+#, kde-format
 msgctxt "@action"
 msgid "Load Position"
 msgstr "טעינת מקום"
 
 #: src/gui/mainwindow.cpp:79
-#, fuzzy, kde-format
-#| msgid "New Game"
+#, kde-format
 msgctxt "@action:button"
 msgid "New Game"
 msgstr "משחק חדש"
 
 #: src/gui/mainwindow.cpp:84
-#, fuzzy, kde-format
-#| msgid "Load New Game"
+#, kde-format
 msgctxt "@action:button"
 msgid "Load New Game"
 msgstr "טעינת משחק חדש"
 
 #: src/gui/mainwindow.cpp:97
-#, fuzzy, kde-format
-#| msgctxt "custom difficulty"
-#| msgid "Custom"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Custom"
 msgstr "מותאם אישית"
@@ -496,8 +490,7 @@ msgid "Congratulations, you have solved this board!"
 msgstr "כל הכבוד, פתרת את הלוח!"
 
 #: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
-#, fuzzy, kde-format
-#| msgid "Board Solved!"
+#, kde-format
 msgctxt "@title:window"
 msgid "Board Solved!"
 msgstr "הלוח נפתר!"
@@ -508,37 +501,31 @@ msgid "Congratulations, you have solved board '%1'!"
 msgstr "כל הכבוד, פתרת את הלוח ‚%1’!"
 
 #: src/gui/selectboardwindow.cpp:87
-#, fuzzy, kde-format
-#| msgid "Level"
+#, kde-format
 msgctxt "@title:column"
 msgid "Level"
 msgstr "שלב"
 
 #: src/gui/selectboardwindow.cpp:88
-#, fuzzy, kde-format
-#| msgid "Level Set"
+#, kde-format
 msgctxt "@title:column"
 msgid "Level Set"
 msgstr "ערכת שלבים"
 
 #: src/gui/selectboardwindow.cpp:89
-#, fuzzy, kde-format
-#| msgid "Difficulty"
+#, kde-format
 msgctxt "@title:column"
 msgid "Difficulty"
 msgstr "קושי"
 
 #: src/gui/selectboardwindow.cpp:90
-#, fuzzy, kde-format
-#| msgid "Size"
+#, kde-format
 msgctxt "@title:column"
 msgid "Size"
 msgstr "גודל"
 
 #: src/gui/selectboardwindow.cpp:91
-#, fuzzy, kde-format
-#| msgctxt "board solved"
-#| msgid "Solved"
+#, kde-format
 msgctxt "@title:column board solved"
 msgid "Solved"
 msgstr "נפתח"
@@ -550,57 +537,49 @@ msgid "Level Selection"
 msgstr "בחירת שלב"
 
 #: src/gui/selectboardwindow.cpp:242
-#, fuzzy, kde-format
-#| msgid "Ridiculously Easy"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Ridiculously Easy"
 msgstr "קל להפליא"
 
 #: src/gui/selectboardwindow.cpp:243
-#, fuzzy, kde-format
-#| msgid "Very Easy"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Very Easy"
 msgstr "קל מאוד"
 
 #: src/gui/selectboardwindow.cpp:244
-#, fuzzy, kde-format
-#| msgid "Easy"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Easy"
 msgstr "קל"
 
 #: src/gui/selectboardwindow.cpp:245
-#, fuzzy, kde-format
-#| msgid "Medium"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Medium"
 msgstr "בינוני"
 
 #: src/gui/selectboardwindow.cpp:246
-#, fuzzy, kde-format
-#| msgid "Hard"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Hard"
 msgstr "קשה"
 
 #: src/gui/selectboardwindow.cpp:247
-#, fuzzy, kde-format
-#| msgid "Very Hard"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Very Hard"
 msgstr "קשה מאוד"
 
 #: src/gui/selectboardwindow.cpp:248
-#, fuzzy, kde-format
-#| msgid "Extremely Hard"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Extremely Hard"
 msgstr "קשה במיוחד"
 
 #: src/gui/selectboardwindow.cpp:249
-#, fuzzy, kde-format
-#| msgid "Impossible"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Impossible"
 msgstr "בלתי אפשרי"
@@ -680,8 +659,7 @@ msgid "Difficulty: -"
 msgstr "קושי: -"
 
 #: src/gui/settingswindow.cpp:63
-#, fuzzy, kde-format
-#| msgid "Select Background"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Background"
 msgstr "בחירת רקע"
@@ -740,7 +718,7 @@ msgstr "רצפי פסילות:"
 #: src/gui/settingswindow.ui:120 src/gui/settingswindow.ui:127
 #, kde-format
 msgid "Edit…"
-msgstr ""
+msgstr "עריכה…"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: src/gui/settingswindow.ui:145
