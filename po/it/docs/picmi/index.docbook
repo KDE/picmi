@@ -160,6 +160,14 @@
 ></listitem>
   <listitem
 ><para
+>L'opzione <guilabel
+>Impedisci gli sbagli:</guilabel
+> si applica solo ai giochi con difficoltà <guimenu
+>Personalizzata</guimenu
+>.</para
+></listitem>
+  <listitem
+><para
 >Quando l'opzione <guilabel
 >Impedisci gli sbagli:</guilabel
 > è abilitata, è impossibile marcare una cella come occupata non correttamente - invece,  una penalità è aggiunta al tempo. La penalità viene incrementata da ogni errore commesso.</para
