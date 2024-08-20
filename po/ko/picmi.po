@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the picmi package.
-# Shinjo Park <kde@peremen.name>, 2019, 2020, 2021.
+# SPDX-FileCopyrightText: 2019, 2020, 2021, 2024 Shinjo Park <kde@peremen.name>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: picmi\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-02 00:37+0000\n"
-"PO-Revision-Date: 2021-11-12 01:33+0100\n"
+"PO-Revision-Date: 2024-08-19 23:35+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 21.08.1\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -445,37 +445,31 @@ msgid "PAUSED"
 msgstr "일시 정지됨"
 
 #: src/gui/mainwindow.cpp:62
-#, fuzzy, kde-format
-#| msgid "Save Position"
+#, kde-format
 msgctxt "@action"
 msgid "Save Position"
 msgstr "위치 저장"
 
 #: src/gui/mainwindow.cpp:68
-#, fuzzy, kde-format
-#| msgid "Load Position"
+#, kde-format
 msgctxt "@action"
 msgid "Load Position"
 msgstr "위치 불러오기"
 
 #: src/gui/mainwindow.cpp:79
-#, fuzzy, kde-format
-#| msgid "New Game"
+#, kde-format
 msgctxt "@action:button"
 msgid "New Game"
 msgstr "새 게임"
 
 #: src/gui/mainwindow.cpp:84
-#, fuzzy, kde-format
-#| msgid "Load New Game"
+#, kde-format
 msgctxt "@action:button"
 msgid "Load New Game"
 msgstr "새 게임 불러오기"
 
 #: src/gui/mainwindow.cpp:97
-#, fuzzy, kde-format
-#| msgctxt "custom difficulty"
-#| msgid "Custom"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Custom"
 msgstr "사용자 정의"
@@ -496,8 +490,7 @@ msgid "Congratulations, you have solved this board!"
 msgstr "축하합니다! 이 보드를 풀었습니다!"
 
 #: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
-#, fuzzy, kde-format
-#| msgid "Board Solved!"
+#, kde-format
 msgctxt "@title:window"
 msgid "Board Solved!"
 msgstr "보드를 풀었습니다!"
@@ -510,37 +503,31 @@ msgstr ""
 "었습니다"
 
 #: src/gui/selectboardwindow.cpp:87
-#, fuzzy, kde-format
-#| msgid "Level"
+#, kde-format
 msgctxt "@title:column"
 msgid "Level"
 msgstr "레벨"
 
 #: src/gui/selectboardwindow.cpp:88
-#, fuzzy, kde-format
-#| msgid "Level Set"
+#, kde-format
 msgctxt "@title:column"
 msgid "Level Set"
 msgstr "레벨 모음"
 
 #: src/gui/selectboardwindow.cpp:89
-#, fuzzy, kde-format
-#| msgid "Difficulty"
+#, kde-format
 msgctxt "@title:column"
 msgid "Difficulty"
 msgstr "난이도"
 
 #: src/gui/selectboardwindow.cpp:90
-#, fuzzy, kde-format
-#| msgid "Size"
+#, kde-format
 msgctxt "@title:column"
 msgid "Size"
 msgstr "크기"
 
 #: src/gui/selectboardwindow.cpp:91
-#, fuzzy, kde-format
-#| msgctxt "board solved"
-#| msgid "Solved"
+#, kde-format
 msgctxt "@title:column board solved"
 msgid "Solved"
 msgstr "해결됨"
@@ -552,57 +539,49 @@ msgid "Level Selection"
 msgstr "레벨 선택"
 
 #: src/gui/selectboardwindow.cpp:242
-#, fuzzy, kde-format
-#| msgid "Ridiculously Easy"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Ridiculously Easy"
 msgstr "이해가 안 가게 쉬움"
 
 #: src/gui/selectboardwindow.cpp:243
-#, fuzzy, kde-format
-#| msgid "Very Easy"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Very Easy"
 msgstr "매우 쉬움"
 
 #: src/gui/selectboardwindow.cpp:244
-#, fuzzy, kde-format
-#| msgid "Easy"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Easy"
 msgstr "쉬움"
 
 #: src/gui/selectboardwindow.cpp:245
-#, fuzzy, kde-format
-#| msgid "Medium"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Medium"
 msgstr "중간"
 
 #: src/gui/selectboardwindow.cpp:246
-#, fuzzy, kde-format
-#| msgid "Hard"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Hard"
 msgstr "어려움"
 
 #: src/gui/selectboardwindow.cpp:247
-#, fuzzy, kde-format
-#| msgid "Very Hard"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Very Hard"
 msgstr "매우 어려움"
 
 #: src/gui/selectboardwindow.cpp:248
-#, fuzzy, kde-format
-#| msgid "Extremely Hard"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Extremely Hard"
 msgstr "엄청나게 어려움"
 
 #: src/gui/selectboardwindow.cpp:249
-#, fuzzy, kde-format
-#| msgid "Impossible"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Impossible"
 msgstr "불가능함"
@@ -682,8 +661,7 @@ msgid "Difficulty: -"
 msgstr "난이도: -"
 
 #: src/gui/settingswindow.cpp:63
-#, fuzzy, kde-format
-#| msgid "Select Background"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Background"
 msgstr "배경 선택"
@@ -742,7 +720,7 @@ msgstr "풀지 않은 부분:"
 #: src/gui/settingswindow.ui:120 src/gui/settingswindow.ui:127
 #, kde-format
 msgid "Edit…"
-msgstr ""
+msgstr "편집…"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: src/gui/settingswindow.ui:145
