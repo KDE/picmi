@@ -146,6 +146,14 @@
 ></listitem>
   <listitem
 ><para
+>L'option <guilabel
+>Prévenir des erreurs :</guilabel
+> ne s'applique qu'aux jeux avec une difficulté <guimenu
+>personnalisée</guimenu
+>.</para
+></listitem>
+  <listitem
+><para
 >Quand l'option <guilabel
 >Éviter les erreurs</guilabel
 > est activée, il est impossible de marquer par erreur une cellule comme occupée. A la place, une pénalité en temps est appliquée sur le chronomètre. La pénalité est de plus en plus importante à chaque erreur faite.</para
