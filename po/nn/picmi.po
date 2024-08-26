@@ -450,36 +450,30 @@ msgstr "Pause"
 
 #: src/gui/mainwindow.cpp:62
 #, fuzzy, kde-format
-#| msgid "Save Position"
 msgctxt "@action"
 msgid "Save Position"
 msgstr "Lagra posisjon"
 
 #: src/gui/mainwindow.cpp:68
 #, fuzzy, kde-format
-#| msgid "Load Position"
 msgctxt "@action"
 msgid "Load Position"
 msgstr "Last inn posisjon"
 
 #: src/gui/mainwindow.cpp:79
 #, fuzzy, kde-format
-#| msgid "New Game"
 msgctxt "@action:button"
 msgid "New Game"
 msgstr "Nytt spel"
 
 #: src/gui/mainwindow.cpp:84
 #, fuzzy, kde-format
-#| msgid "Load New Game"
 msgctxt "@action:button"
 msgid "Load New Game"
 msgstr "Last nytt spel"
 
 #: src/gui/mainwindow.cpp:97
 #, fuzzy, kde-format
-#| msgctxt "custom difficulty"
-#| msgid "Custom"
 msgctxt "@item difficulty"
 msgid "Custom"
 msgstr "Tilpassa"
@@ -501,7 +495,6 @@ msgstr "Gratulerer! Du klarte å løysa brettet!"
 
 #: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
 #, fuzzy, kde-format
-#| msgid "Board Solved!"
 msgctxt "@title:window"
 msgid "Board Solved!"
 msgstr "Brettet løyst!"
@@ -513,36 +506,30 @@ msgstr "Gratulerer! Du klarte å løysa brettet «%1»!"
 
 #: src/gui/selectboardwindow.cpp:87
 #, fuzzy, kde-format
-#| msgid "Level"
 msgctxt "@title:column"
 msgid "Level"
 msgstr "Brett"
 
 #: src/gui/selectboardwindow.cpp:88
 #, fuzzy, kde-format
-#| msgid "Level Set"
 msgctxt "@title:column"
 msgid "Level Set"
 msgstr "Brettsett"
 
 #: src/gui/selectboardwindow.cpp:89
 #, fuzzy, kde-format
-#| msgid "Difficulty"
 msgctxt "@title:column"
 msgid "Difficulty"
 msgstr "Vanskegrad"
 
 #: src/gui/selectboardwindow.cpp:90
 #, fuzzy, kde-format
-#| msgid "Size"
 msgctxt "@title:column"
 msgid "Size"
 msgstr "Storleik"
 
 #: src/gui/selectboardwindow.cpp:91
 #, fuzzy, kde-format
-#| msgctxt "board solved"
-#| msgid "Solved"
 msgctxt "@title:column board solved"
 msgid "Solved"
 msgstr "Løyst"
@@ -555,56 +542,48 @@ msgstr "Brettval"
 
 #: src/gui/selectboardwindow.cpp:242
 #, fuzzy, kde-format
-#| msgid "Ridiculously Easy"
 msgctxt "@item difficulty"
 msgid "Ridiculously Easy"
 msgstr "Latterleg lett"
 
 #: src/gui/selectboardwindow.cpp:243
 #, fuzzy, kde-format
-#| msgid "Very Easy"
 msgctxt "@item difficulty"
 msgid "Very Easy"
 msgstr "Veldig lett"
 
 #: src/gui/selectboardwindow.cpp:244
 #, fuzzy, kde-format
-#| msgid "Easy"
 msgctxt "@item difficulty"
 msgid "Easy"
 msgstr "Lett"
 
 #: src/gui/selectboardwindow.cpp:245
 #, fuzzy, kde-format
-#| msgid "Medium"
 msgctxt "@item difficulty"
 msgid "Medium"
 msgstr "Middels vanskeleg"
 
 #: src/gui/selectboardwindow.cpp:246
 #, fuzzy, kde-format
-#| msgid "Hard"
 msgctxt "@item difficulty"
 msgid "Hard"
 msgstr "Vanskeleg"
 
 #: src/gui/selectboardwindow.cpp:247
 #, fuzzy, kde-format
-#| msgid "Very Hard"
 msgctxt "@item difficulty"
 msgid "Very Hard"
 msgstr "Veldig vanskeleg"
 
 #: src/gui/selectboardwindow.cpp:248
 #, fuzzy, kde-format
-#| msgid "Extremely Hard"
 msgctxt "@item difficulty"
 msgid "Extremely Hard"
 msgstr "Ekstremt vanskeleg"
 
 #: src/gui/selectboardwindow.cpp:249
 #, fuzzy, kde-format
-#| msgid "Impossible"
 msgctxt "@item difficulty"
 msgid "Impossible"
 msgstr "Umogleg"
@@ -685,7 +664,6 @@ msgstr "Vanskegrad: –"
 
 #: src/gui/settingswindow.cpp:63
 #, fuzzy, kde-format
-#| msgid "Select Background"
 msgctxt "@title:window"
 msgid "Select Background"
 msgstr "Vel bakgrunn"
