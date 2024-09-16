@@ -446,37 +446,31 @@ msgid "PAUSED"
 msgstr "ΣΕ ΠΑΥΣΗ"
 
 #: src/gui/mainwindow.cpp:62
-#, fuzzy, kde-format
-#| msgid "Save Position"
+#, kde-format
 msgctxt "@action"
 msgid "Save Position"
 msgstr "Αποθήκευση θέσης"
 
 #: src/gui/mainwindow.cpp:68
-#, fuzzy, kde-format
-#| msgid "Load Position"
+#, kde-format
 msgctxt "@action"
 msgid "Load Position"
 msgstr "Φόρτωση θέσης"
 
 #: src/gui/mainwindow.cpp:79
-#, fuzzy, kde-format
-#| msgid "New Game"
+#, kde-format
 msgctxt "@action:button"
 msgid "New Game"
 msgstr "Νέο παιχνίδι"
 
 #: src/gui/mainwindow.cpp:84
-#, fuzzy, kde-format
-#| msgid "Load New Game"
+#, kde-format
 msgctxt "@action:button"
 msgid "Load New Game"
 msgstr "Φόρτωση νέου παιχνιδιού"
 
 #: src/gui/mainwindow.cpp:97
-#, fuzzy, kde-format
-#| msgctxt "custom difficulty"
-#| msgid "Custom"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Custom"
 msgstr "Προσαρμοσμένη"
@@ -497,8 +491,7 @@ msgid "Congratulations, you have solved this board!"
 msgstr "Συγχαρητήρια, επιλύσατε αυτόν τον πίνακα!"
 
 #: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
-#, fuzzy, kde-format
-#| msgid "Board Solved!"
+#, kde-format
 msgctxt "@title:window"
 msgid "Board Solved!"
 msgstr "Ο πίνακας επιλύθηκε!"
@@ -509,37 +502,31 @@ msgid "Congratulations, you have solved board '%1'!"
 msgstr "Συγχαρητήρια, επιλύσατε τον πίνακα '%1'!"
 
 #: src/gui/selectboardwindow.cpp:87
-#, fuzzy, kde-format
-#| msgid "Level"
+#, kde-format
 msgctxt "@title:column"
 msgid "Level"
 msgstr "Επίπεδο"
 
 #: src/gui/selectboardwindow.cpp:88
-#, fuzzy, kde-format
-#| msgid "Level Set"
+#, kde-format
 msgctxt "@title:column"
 msgid "Level Set"
 msgstr "Σύνολο επιπέδων"
 
 #: src/gui/selectboardwindow.cpp:89
-#, fuzzy, kde-format
-#| msgid "Difficulty"
+#, kde-format
 msgctxt "@title:column"
 msgid "Difficulty"
 msgstr "Δυσκολία"
 
 #: src/gui/selectboardwindow.cpp:90
-#, fuzzy, kde-format
-#| msgid "Size"
+#, kde-format
 msgctxt "@title:column"
 msgid "Size"
 msgstr "Μέγεθος"
 
 #: src/gui/selectboardwindow.cpp:91
-#, fuzzy, kde-format
-#| msgctxt "board solved"
-#| msgid "Solved"
+#, kde-format
 msgctxt "@title:column board solved"
 msgid "Solved"
 msgstr "Επιλύθηκε"
@@ -551,57 +538,49 @@ msgid "Level Selection"
 msgstr "Επιλογή επιπέδου"
 
 #: src/gui/selectboardwindow.cpp:242
-#, fuzzy, kde-format
-#| msgid "Ridiculously Easy"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Ridiculously Easy"
 msgstr "Γελοιωδώς εύκολο"
 
 #: src/gui/selectboardwindow.cpp:243
-#, fuzzy, kde-format
-#| msgid "Very Easy"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Very Easy"
 msgstr "Πολύ εύκολο"
 
 #: src/gui/selectboardwindow.cpp:244
-#, fuzzy, kde-format
-#| msgid "Easy"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Easy"
 msgstr "Εύκολο"
 
 #: src/gui/selectboardwindow.cpp:245
-#, fuzzy, kde-format
-#| msgid "Medium"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Medium"
 msgstr "Μεσαίο"
 
 #: src/gui/selectboardwindow.cpp:246
-#, fuzzy, kde-format
-#| msgid "Hard"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Hard"
 msgstr "Δύσκολο"
 
 #: src/gui/selectboardwindow.cpp:247
-#, fuzzy, kde-format
-#| msgid "Very Hard"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Very Hard"
 msgstr "Πολύ δύσκολο"
 
 #: src/gui/selectboardwindow.cpp:248
-#, fuzzy, kde-format
-#| msgid "Extremely Hard"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Extremely Hard"
 msgstr "Εξαιρετικά δύσκολο"
 
 #: src/gui/selectboardwindow.cpp:249
-#, fuzzy, kde-format
-#| msgid "Impossible"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Impossible"
 msgstr "Ανέφικτο"
@@ -681,8 +660,7 @@ msgid "Difficulty: -"
 msgstr "Δυσκολία: -"
 
 #: src/gui/settingswindow.cpp:63
-#, fuzzy, kde-format
-#| msgid "Select Background"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Background"
 msgstr "επιλογή φόντου"
