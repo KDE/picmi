@@ -1,12 +1,11 @@
 # Translation of picmi to Norwegian Nynorsk
 #
-# Karl Ove Hufthammer <karl@huftis.org>, 2013, 2015, 2016, 2020, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-02 00:37+0000\n"
-"PO-Revision-Date: 2022-06-19 13:51+0200\n"
+"PO-Revision-Date: 2024-09-25 19:29+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -14,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.04.2\n"
+"X-Generator: Lokalize 24.11.70\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -449,31 +448,31 @@ msgid "PAUSED"
 msgstr "Pause"
 
 #: src/gui/mainwindow.cpp:62
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@action"
 msgid "Save Position"
 msgstr "Lagra posisjon"
 
 #: src/gui/mainwindow.cpp:68
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@action"
 msgid "Load Position"
 msgstr "Last inn posisjon"
 
 #: src/gui/mainwindow.cpp:79
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@action:button"
 msgid "New Game"
 msgstr "Nytt spel"
 
 #: src/gui/mainwindow.cpp:84
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@action:button"
 msgid "Load New Game"
 msgstr "Last nytt spel"
 
 #: src/gui/mainwindow.cpp:97
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Custom"
 msgstr "Tilpassa"
@@ -494,7 +493,7 @@ msgid "Congratulations, you have solved this board!"
 msgstr "Gratulerer! Du klarte å løysa brettet!"
 
 #: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:window"
 msgid "Board Solved!"
 msgstr "Brettet løyst!"
@@ -505,31 +504,31 @@ msgid "Congratulations, you have solved board '%1'!"
 msgstr "Gratulerer! Du klarte å løysa brettet «%1»!"
 
 #: src/gui/selectboardwindow.cpp:87
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:column"
 msgid "Level"
 msgstr "Brett"
 
 #: src/gui/selectboardwindow.cpp:88
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:column"
 msgid "Level Set"
 msgstr "Brettsett"
 
 #: src/gui/selectboardwindow.cpp:89
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:column"
 msgid "Difficulty"
 msgstr "Vanskegrad"
 
 #: src/gui/selectboardwindow.cpp:90
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:column"
 msgid "Size"
 msgstr "Storleik"
 
 #: src/gui/selectboardwindow.cpp:91
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:column board solved"
 msgid "Solved"
 msgstr "Løyst"
@@ -541,49 +540,49 @@ msgid "Level Selection"
 msgstr "Brettval"
 
 #: src/gui/selectboardwindow.cpp:242
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Ridiculously Easy"
 msgstr "Latterleg lett"
 
 #: src/gui/selectboardwindow.cpp:243
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Very Easy"
 msgstr "Veldig lett"
 
 #: src/gui/selectboardwindow.cpp:244
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Easy"
 msgstr "Lett"
 
 #: src/gui/selectboardwindow.cpp:245
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Medium"
 msgstr "Middels vanskeleg"
 
 #: src/gui/selectboardwindow.cpp:246
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Hard"
 msgstr "Vanskeleg"
 
 #: src/gui/selectboardwindow.cpp:247
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Very Hard"
 msgstr "Veldig vanskeleg"
 
 #: src/gui/selectboardwindow.cpp:248
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Extremely Hard"
 msgstr "Ekstremt vanskeleg"
 
 #: src/gui/selectboardwindow.cpp:249
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Impossible"
 msgstr "Umogleg"
@@ -663,7 +662,7 @@ msgid "Difficulty: -"
 msgstr "Vanskegrad: –"
 
 #: src/gui/settingswindow.cpp:63
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Background"
 msgstr "Vel bakgrunn"
@@ -722,7 +721,7 @@ msgstr "Ikkje løyst på rad:"
 #: src/gui/settingswindow.ui:120 src/gui/settingswindow.ui:127
 #, kde-format
 msgid "Edit…"
-msgstr ""
+msgstr "Rediger …"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: src/gui/settingswindow.ui:145
