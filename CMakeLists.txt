@@ -70,6 +70,6 @@ ki18n_install(po)
 kdoctools_install(po)
 
 ecm_qt_install_logging_categories(EXPORT PICMI FILE picmi.categories DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
-feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
+feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
 # vim:set ts=4 sw=4 et:
