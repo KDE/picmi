@@ -54,6 +54,7 @@ target_link_libraries(picmi
     KF6::Crash
     KF6::DBusAddons
     KF6::I18n
+    KF6::IconThemes
     KF6::XmlGui
     Qt6::Svg
 )
