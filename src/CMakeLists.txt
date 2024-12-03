@@ -46,6 +46,18 @@ ecm_qt_declare_logging_category(picmi
 file(GLOB ICONS_SRCS "${CMAKE_SOURCE_DIR}/icons/*-apps-picmi.png")
 ecm_add_app_icon(picmi ICONS ${ICONS_SRCS})
 
+if(APPLE)
+    set_target_properties(picmi PROPERTIES
+           MACOSX_BUNDLE_DISPLAY_NAME "Picmi"
+        MACOSX_BUNDLE_BUNDLE_NAME "Picmi"
+       MACOSX_BUNDLE_LONG_VERSION_STRING "Picmi ${RELEASE_SERVICE_VERSION}"
+        MACOSX_BUNDLE_SHORT_VERSION_STRING "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_VERSION_MINOR}"
+        MACOSX_BUNDLE_BUNDLE_VERSION "${RELEASE_SERVICE_VERSION}"
+        MACOSX_BUNDLE_GUI_IDENTIFIER "org.kde.picmi"
+        MACOSX_BUNDLE_COPYRIGHT "2024 The Picmi Developers")
+endif()
+
+
 target_link_libraries(picmi
     picmi_gui
     picmi_logic
