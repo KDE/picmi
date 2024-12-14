@@ -41,6 +41,7 @@ SentUpstream: 2014-09-25
   <name xml:lang="pt">Picmi</name>
   <name xml:lang="pt-BR">Picmi</name>
   <name xml:lang="ru">Picmi</name>
+  <name xml:lang="sa">पिचमि</name>
   <name xml:lang="sk">Picmi</name>
   <name xml:lang="sl">Picmi</name>
   <name xml:lang="sr">Пикми</name>
@@ -80,6 +81,7 @@ SentUpstream: 2014-09-25
   <summary xml:lang="pt">'Puzzle' baseado na lógica de números</summary>
   <summary xml:lang="pt-BR">Quebra-cabeça baseado na lógica de números</summary>
   <summary xml:lang="ru">Японские кроссворды</summary>
+  <summary xml:lang="sa">संख्यातर्कस्य आधारेण पहेलीक्रीडा</summary>
   <summary xml:lang="sk">Puzzle hra založené na číselnej logike</summary>
   <summary xml:lang="sl">Igra sestavljank temelječa na številkah</summary>
   <summary xml:lang="sr">Логичка игра на основу бројевне логике</summary>
@@ -124,6 +126,7 @@ SentUpstream: 2014-09-25
     <p xml:lang="pt">O objectivo é revelar o padrão escondido no tabuleiro, colorindo ou deixando em branco as células de uma grelha, de acordo com os números indicados de lado na grelha. Este é um jogo apenas para um jogador.</p>
     <p xml:lang="pt-BR">O objetivo é revelar o padrão oculto no tabuleiro, colorindo ou deixando em branco as células de uma grade, de acordo com os números indicados ao lado da grade. Este é um jogo para apenas um jogador.</p>
     <p xml:lang="ru">Цель состоит в том, чтобы выявить скрытый узор на доске, раскрасив или оставив пустыми ячейки в сетке в соответствии с числами, указанными сбоку сетки. Это одиночная игра.</p>
+    <p xml:lang="sa">लक्ष्यं भवति यत् जालस्य पार्श्वे दत्तसङ्ख्यानुसारं जालपुटे कोष्ठकान् वर्णयित्वा अथवा रिक्तं त्यक्त्वा फलकस्य अन्तः गुप्तं प्रतिरूपं प्रकाशयितुं शक्यते एषः एकः क्रीडकः क्रीडा अस्ति ।</p>
     <p xml:lang="sk">Cieľom je odhaliť skrytý vzor na ploche vyfarbením alebo ponechaním buniek v mriežke podľa čísel na stranách mriežky. Je to hra pre jedného hráča.</p>
     <p xml:lang="sl">Cilj je razkriti skrit vzorec na igralni površini z barvanjem celic mreže glede na številčne namige. Gre za enoigralsko igro.</p>
     <p xml:lang="sr">Циљ је открити скривени образац на табли тако што се боје или остављају празним ћелије у мрежи, према бројевима датим са стране мреже. Ово је игра за једног играча.</p>
