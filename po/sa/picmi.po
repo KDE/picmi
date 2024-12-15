@@ -19,12 +19,12 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "भवतः नामानि"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "भवतः ईमेलपत्राणि"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:5
@@ -447,31 +447,31 @@ msgstr "PAUSED इति"
 #, kde-format
 msgctxt "@action"
 msgid "Save Position"
-msgstr ""
+msgstr "पदं रक्षतु"
 
 #: src/gui/mainwindow.cpp:68
 #, kde-format
 msgctxt "@action"
 msgid "Load Position"
-msgstr ""
+msgstr "भार स्थिति"
 
 #: src/gui/mainwindow.cpp:79
 #, kde-format
 msgctxt "@action:button"
 msgid "New Game"
-msgstr ""
+msgstr "नवीन खेल"
 
 #: src/gui/mainwindow.cpp:84
 #, kde-format
 msgctxt "@action:button"
 msgid "Load New Game"
-msgstr ""
+msgstr "New Game लोड करें"
 
 #: src/gui/mainwindow.cpp:97
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Custom"
-msgstr ""
+msgstr "आचारः"
 
 #: src/gui/mainwindow.cpp:246
 #, kde-format
@@ -492,7 +492,7 @@ msgstr "अभिनन्दनम्, भवता अस्य बोर्�
 #, kde-format
 msgctxt "@title:window"
 msgid "Board Solved!"
-msgstr ""
+msgstr "बोर्ड हल हुआ !"
 
 #: src/gui/mainwindow.cpp:286
 #, kde-format
@@ -503,31 +503,31 @@ msgstr "अभिनन्दनम्, भवता बोर्ड '%1' सम
 #, kde-format
 msgctxt "@title:column"
 msgid "Level"
-msgstr ""
+msgstr "स्तर"
 
 #: src/gui/selectboardwindow.cpp:88
 #, kde-format
 msgctxt "@title:column"
 msgid "Level Set"
-msgstr ""
+msgstr "स्तर सेट्"
 
 #: src/gui/selectboardwindow.cpp:89
 #, kde-format
 msgctxt "@title:column"
 msgid "Difficulty"
-msgstr ""
+msgstr "कष्टम्"
 
 #: src/gui/selectboardwindow.cpp:90
 #, kde-format
 msgctxt "@title:column"
 msgid "Size"
-msgstr ""
+msgstr "आकृति"
 
 #: src/gui/selectboardwindow.cpp:91
 #, kde-format
 msgctxt "@title:column board solved"
 msgid "Solved"
-msgstr ""
+msgstr "समाधानं कृतम्"
 
 #: src/gui/selectboardwindow.cpp:154
 #, kde-format
@@ -539,49 +539,49 @@ msgstr "स्तरचयनम्"
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Ridiculously Easy"
-msgstr ""
+msgstr "हास्यास्पदरूपेण सुलभम्"
 
 #: src/gui/selectboardwindow.cpp:243
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Very Easy"
-msgstr ""
+msgstr "अतीव सुलभम्"
 
 #: src/gui/selectboardwindow.cpp:244
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Easy"
-msgstr ""
+msgstr "सरलम्‌"
 
 #: src/gui/selectboardwindow.cpp:245
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Medium"
-msgstr ""
+msgstr "मध्यम"
 
 #: src/gui/selectboardwindow.cpp:246
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Hard"
-msgstr ""
+msgstr "रूक्षः"
 
 #: src/gui/selectboardwindow.cpp:247
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Very Hard"
-msgstr ""
+msgstr "अतीव कठिनम्"
 
 #: src/gui/selectboardwindow.cpp:248
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Extremely Hard"
-msgstr ""
+msgstr "अत्यन्तं कठिनम्"
 
 #: src/gui/selectboardwindow.cpp:249
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Impossible"
-msgstr ""
+msgstr "असंभवः"
 
 #: src/gui/selectboardwindow.cpp:255
 #, kde-format
@@ -607,7 +607,7 @@ msgstr "कठिनता : %1"
 #, kde-format
 msgctxt "board solve time"
 msgid "Solved: %1"
-msgstr ""
+msgstr "समाधानं कृतम् : %1"
 
 #: src/gui/selectboardwindow.cpp:267
 #, kde-format
@@ -661,7 +661,7 @@ msgstr "कठिनता : - ."
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Background"
-msgstr ""
+msgstr "Background इति चिनोतु"
 
 #: src/gui/settingswindow.cpp:64
 #, kde-format
@@ -685,14 +685,14 @@ msgstr "पृष्ठभूमि चित्र"
 #, kde-format
 msgctxt "default background image"
 msgid "Default"
-msgstr ""
+msgstr "मूलभूतम्‌"
 
 #. i18n: ectx: property (text), widget (QRadioButton, bgCustomRadioButton)
 #: src/gui/settingswindow.ui:48
 #, kde-format
 msgctxt "custom background image"
 msgid "Custom"
-msgstr ""
+msgstr "आचारः"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: src/gui/settingswindow.ui:80
