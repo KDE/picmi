@@ -1,4 +1,4 @@
-# Sanskrit translations for picmi package.
+# Hindi translations for picmi package.
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the picmi package.
 # Kali <EMAIL@ADDRESS>, 2024.
@@ -8,30 +8,29 @@ msgstr ""
 "Project-Id-Version: picmi\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-22 00:38+0000\n"
-"PO-Revision-Date: 2024-12-13 19:10+0530\n"
+"PO-Revision-Date: 2024-12-15 15:58+0530\n"
 "Last-Translator: Kali <EMAIL@ADDRESS>\n"
-"Language-Team: Sanskrit\n"
-"Language: sa\n"
+"Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
+"Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n>2);\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "भवतः नामानि"
+msgstr ""
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "भवतः ईमेलपत्राणि"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:5
 #, kde-format
 msgid "Basketball"
-msgstr "बास्केटबॉल"
+msgstr ""
 
 #. i18n: tag board attribute author
 #. i18n: tag board attribute author
@@ -71,13 +70,13 @@ msgstr "बास्केटबॉल"
 #: levels/default.xml:577 levels/default.xml:590 levels/default.xml:603
 #, kde-format
 msgid "Jakob Gruber, Moni Linke"
-msgstr "जैकब ग्रुबर, मोनी लिङ्के"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:9
 #, kde-format
 msgid "Skull"
-msgstr "कपालम्"
+msgstr ""
 
 #. i18n: tag board attribute author
 #. i18n: tag board attribute author
@@ -95,19 +94,19 @@ msgstr "कपालम्"
 #: levels/default.xml:383 src/main.cpp:51
 #, kde-format
 msgid "Jakob Gruber"
-msgstr "जैकब ग्रुबर"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:31
 #, kde-format
 msgid "Wheelchair"
-msgstr "चक्रचालकः"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:59
 #, kde-format
 msgid "Baby Chick"
-msgstr "शिशु चिक"
+msgstr ""
 
 #. i18n: tag board attribute author
 #. i18n: tag board attribute author
@@ -119,25 +118,25 @@ msgstr "शिशु चिक"
 #: levels/default.xml:152 levels/default.xml:504 levels/default.xml:508
 #, kde-format
 msgid "Moni Linke"
-msgstr "मोनि लिङ्के"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:63
 #, kde-format
 msgid "Pirate Dog"
-msgstr "समुद्री डाकू कुक्कुर"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:67
 #, kde-format
 msgid "Clown"
-msgstr "विदूषक"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:71
 #, kde-format
 msgid "Pirate Ship"
-msgstr "समुद्री डाकू जहाज"
+msgstr ""
 
 #. i18n: tag board attribute author
 #. i18n: tag board attribute author
@@ -148,170 +147,170 @@ msgstr "समुद्री डाकू जहाज"
 #: levels/default.xml:160 levels/default.xml:524
 #, kde-format
 msgid "Frank Uebbing"
-msgstr "फ्रैंक उएबिंग"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:75
 #, kde-format
 msgid "Panda"
-msgstr "पाण्डा"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:79
 #, kde-format
 msgid "Elephant"
-msgstr "गज"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:83
 #, kde-format
 msgid "Claus the cat"
-msgstr "क्लाउस् बिडालः"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:87
 #, kde-format
 msgid "Bird"
-msgstr "पक्षी"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:91
 #, kde-format
 msgid "Zebra"
-msgstr "ज़ेबरा"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:95
 #, kde-format
 msgid "Antique Phone"
-msgstr "प्राचीन फोन"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:99
 #, kde-format
 msgid "Treble Clef"
-msgstr "Treble Clef"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:103
 #, kde-format
 msgid "Halloween"
-msgstr "हेलोवीन"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:107
 #, kde-format
 msgid "Hourglass"
-msgstr "रेतघटिका"
+msgstr ""
 
 #. i18n: tag board attribute name
 #. i18n: tag board attribute name
 #: levels/default.xml:111 levels/default.xml:551
 #, kde-format
 msgid "Robot"
-msgstr "रोबोट"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:115
 #, kde-format
 msgid "Bike"
-msgstr "यन्त्रद्विचक्रिका"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:119
 #, kde-format
 msgid "Penguin"
-msgstr "पेंगुइन"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:152
 #, kde-format
 msgid "Baby Panda"
-msgstr "शिशु पाण्डा"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:156
 #, kde-format
 msgid "House"
-msgstr "गृहम्‌"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:160
 #, kde-format
 msgid "Soccer"
-msgstr "फुटबॉलं"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:164
 #, kde-format
 msgid "Alarm Clock"
-msgstr "अलार्म घड़ी"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:195
 #, kde-format
 msgid "Taxi!"
-msgstr "टैक्सी !"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:226
 #, kde-format
 msgid "Marker"
-msgstr "मार्करः"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:244
 #, kde-format
 msgid "Thumbs Up"
-msgstr "अङ्गुष्ठाभ्यां नमः"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:262
 #, kde-format
 msgid "Cup"
-msgstr "चषक"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:275
 #, kde-format
 msgid "Dinner Time"
-msgstr "रात्रिभोजसमयः"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:295
 #, kde-format
 msgid "Wine Glass"
-msgstr "वाइन ग्लास"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:317
 #, kde-format
 msgid "Cocktail Glass"
-msgstr "काकटेल काच"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:334
 #, kde-format
 msgid "Escalator"
-msgstr "एस्केलेटर"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:360
 #, kde-format
 msgid "Helicopter"
-msgstr "हेलिकॉप्टर"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:383
 #, kde-format
 msgid "Letter A"
-msgstr "अक्षरम् क"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:396
 #, kde-format
 msgid "Screw"
-msgstr "भ्रामि"
+msgstr ""
 
 #. i18n: tag board attribute author
 #. i18n: tag board attribute author
@@ -323,444 +322,444 @@ msgstr "भ्रामि"
 #: levels/default.xml:450 levels/default.xml:468 levels/default.xml:486
 #, kde-format
 msgid "Zack Rusin"
-msgstr "जैक रुसिन्"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:414
 #, kde-format
 msgid "Cup of coffee"
-msgstr "काफीकपः"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:432
 #, kde-format
 msgid "Lion"
-msgstr "सिंहः"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:450
 #, kde-format
 msgid "Gas Lamp"
-msgstr "गैस दीपक"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:468
 #, kde-format
 msgid "Monkey"
-msgstr "वानरः"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:486
 #, kde-format
 msgid "Teddy Bear"
-msgstr "टेडी बियर"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:504
 #, kde-format
 msgid "Policeman"
-msgstr "पुलिसकर्मी"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:508
 #, kde-format
 msgid "Santa Claus"
-msgstr "सांता क्लॉज"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:512
 #, kde-format
 msgid "Bass Clef"
-msgstr "बास Clef"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:516
 #, kde-format
 msgid "Phone"
-msgstr "फोनं"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:520
 #, kde-format
 msgid "Shopping Cart"
-msgstr "शॉपिंग कार्ट"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:524 src/main.cpp:44
 #, kde-format
 msgid "Picmi"
-msgstr "पिचमि"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:528
 #, kde-format
 msgid "Mobile Phone"
-msgstr "मोबाईल फ़ोन"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:532
 #, kde-format
 msgid "Calculator"
-msgstr "गणकम्"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:536
 #, kde-format
 msgid "Camera"
-msgstr "कॅमेरा"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:540
 #, kde-format
 msgid "Car"
-msgstr "कारयानम्‌"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:564
 #, kde-format
 msgid "Microphone"
-msgstr "माइक्रोफोन"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:577
 #, kde-format
 msgid "Floppy Disk"
-msgstr "फ्लॉपी डिस्क"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:590
 #, kde-format
 msgid "Printer"
-msgstr "मुद्रक"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:603
 #, kde-format
 msgid "Smiley"
-msgstr "स्माइली"
+msgstr ""
 
 #: src/gui/graphicsitems/textbanneritem.cpp:28
 #, kde-format
 msgid "PAUSED"
-msgstr "PAUSED इति"
+msgstr ""
 
 #: src/gui/mainwindow.cpp:62
 #, kde-format
 msgctxt "@action"
 msgid "Save Position"
-msgstr "पदं रक्षतु"
+msgstr ""
 
 #: src/gui/mainwindow.cpp:68
 #, kde-format
 msgctxt "@action"
 msgid "Load Position"
-msgstr "भार स्थिति"
+msgstr ""
 
 #: src/gui/mainwindow.cpp:79
 #, kde-format
 msgctxt "@action:button"
 msgid "New Game"
-msgstr "नवीन खेल"
+msgstr ""
 
 #: src/gui/mainwindow.cpp:84
 #, kde-format
 msgctxt "@action:button"
 msgid "Load New Game"
-msgstr "New Game लोड करें"
+msgstr ""
 
 #: src/gui/mainwindow.cpp:97
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Custom"
-msgstr "आचारः"
+msgstr ""
 
 #: src/gui/mainwindow.cpp:246
 #, kde-format
 msgid "Elapsed time: %1"
-msgstr "व्यतीतः समयः %1"
+msgstr ""
 
 #: src/gui/mainwindow.cpp:251
 #, kde-format
 msgid "Actions since last saved position: %1"
-msgstr "अन्तिमे रक्षितस्थानात् क्रियाः: %1"
+msgstr ""
 
 #: src/gui/mainwindow.cpp:280
 #, kde-format
 msgid "Congratulations, you have solved this board!"
-msgstr "अभिनन्दनम्, भवता अस्य बोर्डस्य समाधानं कृतम्!"
+msgstr ""
 
 #: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
 #, kde-format
 msgctxt "@title:window"
 msgid "Board Solved!"
-msgstr "बोर्ड हल हुआ !"
+msgstr ""
 
 #: src/gui/mainwindow.cpp:286
 #, kde-format
 msgid "Congratulations, you have solved board '%1'!"
-msgstr "अभिनन्दनम्, भवता बोर्ड '%1' समाधानं कृतम्!"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:87
 #, kde-format
 msgctxt "@title:column"
 msgid "Level"
-msgstr "स्तर"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:88
 #, kde-format
 msgctxt "@title:column"
 msgid "Level Set"
-msgstr "स्तर सेट्"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:89
 #, kde-format
 msgctxt "@title:column"
 msgid "Difficulty"
-msgstr "कष्टम्"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:90
 #, kde-format
 msgctxt "@title:column"
 msgid "Size"
-msgstr "आकृति"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:91
 #, kde-format
 msgctxt "@title:column board solved"
 msgid "Solved"
-msgstr "समाधानं कृतम्"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:154
 #, kde-format
 msgctxt "@title:window"
 msgid "Level Selection"
-msgstr "स्तरचयनम्"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:242
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Ridiculously Easy"
-msgstr "हास्यास्पदरूपेण सुलभम्"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:243
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Very Easy"
-msgstr "अतीव सुलभम्"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:244
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Easy"
-msgstr "सरलम्‌"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:245
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Medium"
-msgstr "मध्यम"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:246
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Hard"
-msgstr "रूक्षः"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:247
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Very Hard"
-msgstr "अतीव कठिनम्"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:248
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Extremely Hard"
-msgstr "अत्यन्तं कठिनम्"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:249
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Impossible"
-msgstr "असंभवः"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:255
 #, kde-format
 msgid "Name: %1"
-msgstr "नाम: %1"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:256
 #, kde-format
 msgid "Author: %1"
-msgstr "लेखकः %1"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:257
 #, kde-format
 msgid "Size: %1x%2"
-msgstr "आकारः %1x%2"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:258
 #, kde-format
 msgid "Difficulty: %1"
-msgstr "कठिनता : %1"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:260
 #, kde-format
 msgctxt "board solve time"
 msgid "Solved: %1"
-msgstr "समाधानं कृतम् : %1"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:267
 #, kde-format
 msgctxt "board not solved yet"
 msgid "Solved: -"
-msgstr "समाधानम् : - ."
+msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, LevelSelectUi)
 #: src/gui/selectboardwindow.ui:23
 #, kde-format
 msgid "Level Selection"
-msgstr "स्तरचयनम्"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, labelAuthor)
 #: src/gui/selectboardwindow.ui:79
 #, kde-format
 msgid "Author: -"
-msgstr "लेखकः: -"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, labelName)
 #: src/gui/selectboardwindow.ui:86
 #, kde-format
 msgid "Name: -"
-msgstr "नामः: -"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, labelImage)
 #: src/gui/selectboardwindow.ui:110
 #, kde-format
 msgid "?"
-msgstr "?"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, labelSolved)
 #: src/gui/selectboardwindow.ui:120
 #, kde-format
 msgid "Solved: -"
-msgstr "समाधानम् : - ."
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, labelSize)
 #: src/gui/selectboardwindow.ui:127
 #, kde-format
 msgid "Size: -"
-msgstr "आकृति: -"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, labelDifficulty)
 #: src/gui/selectboardwindow.ui:134
 #, kde-format
 msgid "Difficulty: -"
-msgstr "कठिनता : - ."
+msgstr ""
 
 #: src/gui/settingswindow.cpp:63
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Background"
-msgstr "Background इति चिनोतु"
+msgstr ""
 
 #: src/gui/settingswindow.cpp:64
 #, kde-format
 msgid "Image Files (*.png *.jpg)"
-msgstr "चित्रसञ्चिकाः (*.png *.jpg)"
+msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, SettingsWindow)
 #: src/gui/settingswindow.ui:20
 #, kde-format
 msgid "Settings"
-msgstr "सेटिंग्स्"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: src/gui/settingswindow.ui:28
 #, kde-format
 msgid "Background Image"
-msgstr "पृष्ठभूमि चित्र"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, bgDefaultRadioButton)
 #: src/gui/settingswindow.ui:38
 #, kde-format
 msgctxt "default background image"
 msgid "Default"
-msgstr "मूलभूतम्‌"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, bgCustomRadioButton)
 #: src/gui/settingswindow.ui:48
 #, kde-format
 msgctxt "custom background image"
 msgid "Custom"
-msgstr "आचारः"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: src/gui/settingswindow.ui:80
 #, kde-format
 msgid "Font Colors"
-msgstr "फॉन्ट रङ्ग"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, fontColorSolvedLabel)
 #: src/gui/settingswindow.ui:94
 #, kde-format
 msgid "Solved streaks:"
-msgstr "समाधानं कृत्वा धाराः : १."
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, fontColorUnsolvedLabel)
 #: src/gui/settingswindow.ui:110
 #, kde-format
 msgid "Unsolved streaks:"
-msgstr "अनसमाधानं धाराः : १."
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, fontColorSolvedPushButton)
 #. i18n: ectx: property (text), widget (QPushButton, fontColorUnsolvedPushButton)
 #: src/gui/settingswindow.ui:120 src/gui/settingswindow.ui:127
 #, kde-format
 msgid "Edit…"
-msgstr "सम्पादन…"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: src/gui/settingswindow.ui:145
 #, kde-format
 msgid "Custom Difficulty"
-msgstr "रूढिगत कठिनाई"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: src/gui/settingswindow.ui:153
 #, kde-format
 msgid "Height:"
-msgstr "औनत्यम्‌:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: src/gui/settingswindow.ui:176
 #, kde-format
 msgid "Width:"
-msgstr "विस्तार:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: src/gui/settingswindow.ui:203
 #, kde-format
 msgid "Density:"
-msgstr "घनत्व:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: src/gui/settingswindow.ui:241
 #, kde-format
 msgid "Prevent mistakes:"
-msgstr "त्रुटयः निवारयन्तु : १."
+msgstr ""
 
 #: src/main.cpp:46
 #, kde-format
 msgid "Picmi - a nonogram puzzle game"
-msgstr "Picmi - एकः नोनोग्राम पहेली क्रीडा"
+msgstr ""
 
 #: src/main.cpp:48
 #, kde-format
 msgid "(c) 2012 - 2015 The Picmi Authors"
-msgstr "(ग) 2012 - 2015 द पिच्मी लेखक"
+msgstr ""
 
 #: src/main.cpp:51
 #, kde-format
 msgid "Picmi Author"
-msgstr "पिचमी लेखक"
+msgstr ""
