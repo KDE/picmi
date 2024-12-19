@@ -5,7 +5,7 @@
 SentUpstream: 2014-09-25
 -->
 <component type="desktop-application">
-  <id>org.kde.picmi.desktop</id>
+  <id>org.kde.picmi</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
   <developer id="org.kde">
