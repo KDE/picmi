@@ -687,7 +687,7 @@ msgstr "ფონის სურათი"
 #, kde-format
 msgctxt "default background image"
 msgid "Default"
-msgstr "ნაგულისხმები"
+msgstr "ნაგულისხმევი"
 
 #. i18n: ectx: property (text), widget (QRadioButton, bgCustomRadioButton)
 #: src/gui/settingswindow.ui:48
