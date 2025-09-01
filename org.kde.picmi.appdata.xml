@@ -12,6 +12,7 @@ SentUpstream: 2014-09-25
     <name translate="no">KDE</name>
   </developer>
   <name>Picmi</name>
+  <name xml:lang="ar">بيكمي</name>
   <name xml:lang="ast">Picmi</name>
   <name xml:lang="ca">Picmi</name>
   <name xml:lang="ca-valencia">Picmi</name>
@@ -55,6 +56,7 @@ SentUpstream: 2014-09-25
   <name xml:lang="zh-CN">Picmi</name>
   <name xml:lang="zh-TW">Picmi</name>
   <summary>Puzzle game based on number logic</summary>
+  <summary xml:lang="ar">لعبة ألغاز تعتمد على منطق الأرقام</summary>
   <summary xml:lang="ca">Joc de puzle basat en lògica de nombres</summary>
   <summary xml:lang="ca-valencia">Joc de puzle basat en lògica de nombres</summary>
   <summary xml:lang="cs">Hra puzzle založená na číselné logice</summary>
@@ -101,6 +103,7 @@ SentUpstream: 2014-09-25
       of the grid.
       This is a single player game.
     </p>
+    <p xml:lang="ar">الهدف هو الكشف عن النمط الخفي في اللوحة عن طريق تلوين الخلايا في الشبكة أو تركها فارغة وفقًا للأرقام الموجودة على جانب الشبكة. هذه لعبة لاعب واحد.</p>
     <p xml:lang="ca">L'objectiu és descobrir el patró ocult en el tauler, acolorint o deixant en blanc les cel·les en una quadrícula d'acord amb els nombres indicats en el lateral de la quadrícula. És un joc d'un jugador.</p>
     <p xml:lang="ca-valencia">L'objectiu és descobrir el patró ocult en el tauler, acolorint o deixant en blanc les cel·les en una quadrícula d'acord amb els nombres indicats en el lateral de la quadrícula. És un joc d'un jugador.</p>
     <p xml:lang="de">Das Ziel ist, das verborgene Muster zu enthüllen, indem Sie Zellen einfärben oder leer lassen. Hinweise geben die Zahlen am Rand des Rasters. Dieses Spiel ist für einen Spieler.</p>
