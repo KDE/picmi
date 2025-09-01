@@ -538,7 +538,7 @@ msgstr "Resolt"
 #, kde-format
 msgctxt "@title:window"
 msgid "Level Selection"
-msgstr "Seleccioneu el nivell"
+msgstr "Trieu el nivell"
 
 #: src/gui/selectboardwindow.cpp:242
 #, kde-format
@@ -624,7 +624,7 @@ msgstr "Resolt: -"
 #: src/gui/selectboardwindow.ui:23
 #, kde-format
 msgid "Level Selection"
-msgstr "Seleccioneu el nivell"
+msgstr "Trieu el nivell"
 
 #. i18n: ectx: property (text), widget (QLabel, labelAuthor)
 #: src/gui/selectboardwindow.ui:79
@@ -666,7 +666,7 @@ msgstr "Dificultat: -"
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Background"
-msgstr "Seleccioneu el fons"
+msgstr "Trieu el fons"
 
 #: src/gui/settingswindow.cpp:64
 #, kde-format
