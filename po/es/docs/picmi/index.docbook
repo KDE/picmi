@@ -176,7 +176,7 @@
 > <guimenu
 >Juego</guimenu
 > <guimenuitem
->Cargar...</guimenuitem
+>Cargar…</guimenuitem
 ></menuchoice
 >. </para>
 
@@ -273,7 +273,7 @@
 > <guimenu
 >Juego</guimenu
 > <guimenuitem
->Cargar...</guimenuitem
+>Cargar…</guimenuitem
 ></menuchoice
 ></term>
     <listitem
@@ -561,7 +561,7 @@
 ><guimenu
 >Preferencias</guimenu
 > <guimenuitem
->Configurar &picmi;...</guimenuitem
+>Configurar &picmi;…</guimenuitem
 ></menuchoice
 ></term>
     <listitem
