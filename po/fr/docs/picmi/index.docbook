@@ -266,7 +266,7 @@
 ><para
 ><action
 >Mets em pause le chronomètre du jeu.</action
->Cliquez sur l'élément de menu une nouvelle fois pour reprendre le jeu. Veuillez noter que la grille disparaît quand le jeu est en pause car il serait déloyal si vous pouviez chercher de bons déplacements sans avoir la pression du chronomètre.</para
+>Cliquez sur l'élément de menu une nouvelle fois pour reprendre le jeu. Veuillez noter que la grille disparait quand le jeu est en pause car il serait déloyal si vous pouviez chercher de bons déplacements sans avoir la pression du chronomètre.</para
 ></listitem>
   </varlistentry>
 
@@ -288,7 +288,7 @@
     <listitem
 ><para
 ><action
->Affiche une boîte de dialogue contenant les meilleurs scores pour les différents niveaux de difficultés.</action
+>Affiche une boite de dialogue contenant les meilleurs scores pour les différents niveaux de difficultés.</action
 ></para
 ></listitem>
   </varlistentry>
