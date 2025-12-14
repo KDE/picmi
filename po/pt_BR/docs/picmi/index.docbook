@@ -50,9 +50,9 @@
 >&FDLNotice;</legalnotice>
 
 <date
->13/05/2016</date>
+>08/10/2021</date>
 <releaseinfo
->2.0.0 (Applications 16.04)</releaseinfo>
+>2.0.0 (KDE Gear 21.08)</releaseinfo>
 
 <abstract>
 <para
@@ -69,7 +69,7 @@
 <keyword
 >jogo de quebra-cabeça</keyword>
 <keyword
->picmi</keyword>
+>Picmi</keyword>
 </keywordset>
 </bookinfo>
 
@@ -112,10 +112,30 @@
 >A colocação atual das caixas e cruzes (referida como 'estados' daqui para a frente) pode ser gravada a qualquer momento. A gravação de um novo estado não sobrescreve os estados gravados anteriormente. A restauração de um estado sempre volta ao estado gravado mais recentemente. Isto pode ser repetido até que não existam mais estados gravados. O número de ações desde o último estado gravado é apresentado na barra de status. </para>
 
 <para
->O &picmi; inclui dois modos de jogo. Os quebra-cabeças aleatórios (gerados ao selecionar a opção <guilabel
->Novo</guilabel
-> do menu) são gerados de acordo com as configurações de dificuldade selecionada. Alternativamente, os quebra-cabeças incluídos podem ser jogados ao selecionar a opção <guilabel
->Carregar</guilabel
+>&picmi; inclui dois modos de jogo. Quebra-cabeças aleatórios (gerados selecionando o item de menu <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Jogo</guimenu
+> <guimenuitem
+>Novo</guimenuitem
+></menuchoice
+>) são gerados de acordo com as configurações de dificuldade selecionadas. Alternativamente, os quebra-cabeças predefinidos incluídos podem ser jogados selecionando o item de menu <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Jogo</guimenu
+> <guimenuitem
+>Carregar…</guimenuitem
+></menuchoice
 >. </para>
 
 </chapter>
@@ -130,27 +150,35 @@
 <para
 >A sequência de números numa linha ou coluna dá certas informações sobre a quantidade de células ocupadas e a sua organização dentro de uma linha ou coluna.</para>
 <itemizedlist>
-<listitem
+  <listitem
 ><para
 >Um número representa o tamanho de uma sequência ligada de células ocupadas no tabuleiro. Esta execução tem pelo menos uma célula vazia de cada lado ou localiza-se diretamente no extremo do tabuleiro.</para
 ></listitem>
-<listitem
+  <listitem
 ><para
 >Além disso, uma sequência de números mostra a ordem dessas sequências dentro de uma linha ou coluna.</para
 ></listitem>
-<listitem
+  <listitem
+><para
+>A opção <guilabel
+>Evitar os erros:</guilabel
+> aplica-se apenas a jogos com dificuldade <guimenu
+>Personalizada</guimenu
+>.</para
+></listitem>
+  <listitem
 ><para
 >Quando a opção <guilabel
->Impedir os erros</guilabel
+>Evitar os erros</guilabel
 > estiver ativa, não é possível marcar uma célula como ocupada de forma incorreta - em vez disso, será adicionado um tempo de penalidade ao cronômetro. A penalidade vai aumentando com cada erro que cometer.</para
 ></listitem>
-<listitem
+  <listitem
 ><para
 >Se a opção <guilabel
 >Evitar os erros</guilabel
 > estiver desativada, não existe qualquer reação quando uma célula for marcada corretamente e não existirá qualquer penalidade por cometer erros.</para
 ></listitem>
-<listitem
+  <listitem
 ><para
 >O jogo irá parar assim que todas as células ocupadas forem marcadas corretamente.</para
 ></listitem>
@@ -168,11 +196,11 @@
 >Itens dos menus</title>
 
 <variablelist>
-<varlistentry>
-<term
+  <varlistentry>
+    <term
 ><menuchoice
 ><shortcut
-> <keycombo action="simul"
+><keycombo action="simul"
 >&Ctrl;<keycap
 >N</keycap
 ></keycombo
@@ -181,19 +209,21 @@
 >Jogo</guimenu
 > <guimenuitem
 >Novo</guimenuitem
-> </menuchoice
+></menuchoice
 ></term>
-<listitem>
-<para
->Inicia um novo jogo. Ele cria um tabuleiro randomicamente no nível de dificuldade atual. </para>
-</listitem>
-</varlistentry>
+    <listitem
+><para
+><action
+>Inicia um novo jogo.</action
+> Ele cria um tabuleiro randomicamente no nível de dificuldade atual.</para
+></listitem>
+  </varlistentry>
 
-<varlistentry>
-<term
+  <varlistentry>
+    <term
 ><menuchoice
 ><shortcut
-> <keycombo action="simul"
+><keycombo action="simul"
 >&Ctrl;<keycap
 >O</keycap
 ></keycombo
@@ -201,37 +231,40 @@
 > <guimenu
 >Jogo</guimenu
 > <guimenuitem
->Carregar</guimenuitem
-> </menuchoice
+>Carregar…</guimenuitem
+></menuchoice
 ></term>
-<listitem>
-<para
->Carrega um quebra-cabeça predefinido. Os nomes dos quebra-cabeças ficam ocultos até que sejam resolvidos. As listas de recordes e as configurações de dificuldade estão desativadas. </para>
-</listitem>
-</varlistentry>
+    <listitem
+><para
+><action
+>Carrega um quebra-cabeça predefinido.</action
+> Os nomes dos quebra-cabeças ficam ocultos até que sejam resolvidos. As listas de recordes e as configurações de dificuldade estão desativadas.</para
+></listitem>
+  </varlistentry>
 
-<varlistentry>
-<term
+  <varlistentry>
+    <term
 ><menuchoice
 ><shortcut
-> <keycap
+><keycap
 >F5</keycap
 > </shortcut
 > <guimenu
 >Jogo</guimenu
 > <guimenuitem
->Reiniciar</guimenuitem
-> </menuchoice
+>Reiniciar jogo</guimenuitem
+></menuchoice
 ></term>
-<listitem>
-<para>
-    <!--FIXME -->
-</para>
-</listitem>
-</varlistentry>
+    <listitem
+><para
+><action
+>Isto irá reiniciar o jogo atual.</action
+></para
+></listitem>
+  </varlistentry>
 
-<varlistentry>
-<term
+  <varlistentry>
+    <term
 ><menuchoice
 ><shortcut
 ><keycap
@@ -243,17 +276,19 @@
 >Pausa</guimenuitem
 ></menuchoice
 ></term>
-<listitem>
-<para
->Coloca o tempo de jogo em pausa. Clique de novo no item do menu para prosseguir com o jogo. Repare que o tabuleiro desaparece quando o jogo fica em pausa, uma vez que seria injusto poder descobrir jogadas boas sem ter a pressão do tempo. </para>
-</listitem>
-</varlistentry>
+    <listitem
+><para
+><action
+>Coloca o tempo de jogo em pausa.</action
+> Clique de novo no item do menu para prosseguir com o jogo. Repare que o tabuleiro desaparece quando o jogo fica em pausa, uma vez que seria injusto poder descobrir jogadas boas sem ter a pressão do tempo.</para
+></listitem>
+  </varlistentry>
 
-<varlistentry>
-<term
+  <varlistentry>
+    <term
 ><menuchoice
 ><shortcut
-> <keycombo action="simul"
+><keycombo action="simul"
 >&Ctrl;<keycap
 >H</keycap
 ></keycombo
@@ -261,20 +296,22 @@
 > <guimenu
 >Jogo</guimenu
 > <guimenuitem
->Exibir recordes</guimenuitem
+>Exibir recordes…</guimenuitem
 ></menuchoice
 ></term>
-<listitem>
-<para
->Exibe uma caixa de diálogo, contendo as pontuações mais altas de vários níveis de dificuldade. </para>
-</listitem>
-</varlistentry>
+    <listitem
+><para
+><action
+>Exibe uma caixa de diálogo, contendo as pontuações mais altas de vários níveis de dificuldade.</action
+></para
+></listitem>
+  </varlistentry>
 
-<varlistentry>
-<term
+  <varlistentry>
+    <term
 ><menuchoice
 ><shortcut
-> <keycombo action="simul"
+><keycombo action="simul"
 >&Ctrl;<keycap
 >Q</keycap
 ></keycombo
@@ -283,19 +320,21 @@
 >Jogo</guimenu
 > <guimenuitem
 >Sair</guimenuitem
-> </menuchoice
+></menuchoice
 ></term>
-<listitem>
-<para
->Sai do programa. </para>
-</listitem>
-</varlistentry>
+    <listitem
+><para
+><action
+>Sai</action
+> do &picmi;.</para
+></listitem>
+  </varlistentry>
 
-<varlistentry>
-<term
+  <varlistentry>
+    <term
 ><menuchoice
 ><shortcut
-> <keycombo action="simul"
+><keycombo action="simul"
 >&Ctrl;<keycap
 >Z</keycap
 ></keycombo
@@ -304,55 +343,61 @@
 >Mover</guimenu
 > <guimenuitem
 >Desfazer</guimenuitem
-> </menuchoice
+></menuchoice
 ></term>
-<listitem>
-<para
->Anula a jogada anterior, se existir. </para>
-</listitem>
-</varlistentry>
+    <listitem
+><para
+><action
+>Anula a jogada anterior</action
+>, se existir.</para
+></listitem>
+  </varlistentry>
 
-<varlistentry>
-<term
+  <varlistentry>
+    <term
 ><menuchoice
 ><shortcut
-> <keycombo action="simul"
+><keycombo action="simul"
 >&Ctrl;<keycap
->Z</keycap
+>I</keycap
 ></keycombo
 > </shortcut
 > <guimenu
 >Mover</guimenu
 > <guimenuitem
 >Dica</guimenuitem
-> </menuchoice
+></menuchoice
 ></term>
-<listitem>
-<para
->Marca uma célula como ocupada ou vazia. </para>
-</listitem>
-</varlistentry>
+    <listitem
+><para
+><action
+>Marca uma célula como ocupada ou vazia.</action
+></para
+></listitem>
+  </varlistentry>
 
-<varlistentry>
-<term
+  <varlistentry>
+    <term
 ><menuchoice
 ><guimenu
 >Mover</guimenu
 > <guimenuitem
 >Solucionar</guimenuitem
-> </menuchoice
+></menuchoice
 ></term>
-<listitem>
-<para
->Inicia um jogo de demonstração. </para>
-</listitem>
-</varlistentry>
+    <listitem
+><para
+><action
+>Inicia um jogo de demonstração.</action
+></para
+></listitem>
+  </varlistentry>
 
-<varlistentry>
-<term
+  <varlistentry>
+    <term
 ><menuchoice
 ><shortcut
-> <keycombo action="simul"
+><keycombo action="simul"
 >&Ctrl;<keycap
 >L</keycap
 ></keycombo
@@ -361,19 +406,21 @@
 >Mover</guimenu
 > <guimenuitem
 >Carregar posição</guimenuitem
-> </menuchoice
+></menuchoice
 ></term>
-<listitem>
-<para
->Carrega a posição salva recentemente. </para>
-</listitem>
-</varlistentry>
+    <listitem
+><para
+><action
+>Carrega a posição salva recentemente.</action
+></para
+></listitem>
+  </varlistentry>
 
-<varlistentry>
-<term
+  <varlistentry>
+    <term
 ><menuchoice
 ><shortcut
-> <keycombo action="simul"
+><keycombo action="simul"
 >&Ctrl;<keycap
 >S</keycap
 ></keycombo
@@ -382,71 +429,106 @@
 >Mover</guimenu
 > <guimenuitem
 >Salvar posição</guimenuitem
-> </menuchoice
+></menuchoice
 ></term>
-<listitem>
-<para
->Salva a posição atual do tabuleiro. </para>
-</listitem>
-</varlistentry>
+    <listitem
+><para
+><action
+>Salva a posição atual do tabuleiro.</action
+></para
+></listitem>
+  </varlistentry>
 
-<varlistentry>
-<term
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>F</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Exibir</guimenu
+> <guimenuitem
+>Modo tela cheia</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Comuta o modo de tela cheia na interface gráfica.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
 ><menuchoice
 ><guimenu
 >Configurações</guimenu
 > <guisubmenu
 >Dificuldade</guisubmenu
-> </menuchoice
+></menuchoice
 ></term>
-<listitem>
-<para
->Permite-lhe definir o nível de dificuldade a partir de um submenu.</para>
-<para
+    <listitem
+><para
+><action
+>Permite-lhe definir o nível de dificuldade a partir de um submenu.</action
+></para>
+    <para
 >Existem quatro níveis de dificuldade: <itemizedlist>
-<listitem
+        <listitem
 ><para
 ><guimenuitem
 >Fácil</guimenuitem
->: 10 linhas, 10 colunas, 55% de todas as células ocupadas; a opção 'Impedir os erros' está desativada.</para
+>: 10 linhas, 10 colunas, 55% de todas as células ocupadas; a opção <guilabel
+>Evitar os erros</guilabel
+> está desativada.</para
 ></listitem>
-<listitem
+        <listitem
 ><para
 ><guimenuitem
 >Média</guimenuitem
->: 10 linhas, 15 colunas, 55% de todas as células ocupadas; a opção 'Impedir os erros' está desativada.</para
+>: 10 linhas, 15 colunas, 55% de todas as células ocupadas; a opção <guilabel
+>Evitar os erros</guilabel
+> está desativada.</para
 ></listitem>
-<listitem
+        <listitem
 ><para
 ><guimenuitem
 >Difícil</guimenuitem
->: 15 linhas, 15 colunas, 55% de todas as células ocupadas; a opção 'Impedir os erros' está desativada.</para
+>: 15 linhas, 15 colunas, 55% de todas as células ocupadas; a opção <guilabel
+>Evitar os erros</guilabel
+> está desativada.</para
 ></listitem>
-<listitem
+        <listitem
 ><para
 ><guimenuitem
 >Personalizado</guimenuitem
 >: Dimensões e definições personalizadas do tabuleiro.</para
 ></listitem>
-</itemizedlist>
-</para
+      </itemizedlist>
+    </para
 ></listitem>
-</varlistentry>
+  </varlistentry>
 
-<varlistentry>
-<term
+  <varlistentry>
+    <term
 ><menuchoice
 ><guimenu
 >Configurações</guimenu
 > <guimenuitem
->Configurar &picmi;...</guimenuitem
-> </menuchoice
+>Configurar &picmi;…</guimenuitem
+></menuchoice
 ></term>
-<listitem
+    <listitem
 ><para
->Escolha a imagem de fundo do jogo, as dimensões e definições do tabuleiro para uma dificuldade personalizada.</para
+><action
+>Escolha a imagem de fundo do jogo, as dimensões e definições do tabuleiro para uma dificuldade personalizada.</action
+></para
 ></listitem>
-</varlistentry>
+  </varlistentry>
 </variablelist>
 
 <para
@@ -469,145 +551,143 @@
 >Os atalhos padrão são:</para>
 
 <table>
-<title
+  <title
 >Atalhos</title>
-<tgroup cols="2">
-<tbody>
-<row>
-<entry
+  <tgroup cols="2">
+    <tbody>
+      <row>
+        <entry
 >Inicia um novo jogo</entry>
-<entry>
-<keycombo action="simul"
+        <entry
+><keycombo action="simul"
 >&Ctrl;<keycap
 >N</keycap
-></keycombo>
-</entry>
-</row>
-<row>
-<entry
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
 >Carrega um jogo predefinido</entry>
-<entry>
-<keycombo action="simul"
+        <entry
+><keycombo action="simul"
 >&Ctrl;<keycap
 >O</keycap
-></keycombo>
-</entry>
-</row>
-<row>
-<entry
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
 >Pausar</entry>
-<entry
+        <entry
 ><keycap
 >P</keycap
 ></entry>
-</row>
-<row>
-<entry
+      </row>
+      <row>
+        <entry
 >Exibe os recordes</entry>
-<entry>
-<keycombo action="simul"
+        <entry
+><keycombo action="simul"
 >&Ctrl;<keycap
 >H</keycap
-></keycombo>
-</entry>
-</row>
-<row>
-<entry
->Modo de tela inteira</entry>
-<entry
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Modo de tela cheia</entry>
+        <entry
 ><keycombo action="simul"
 >&Ctrl;&Shift;<keycap
 >F</keycap
 ></keycombo
 ></entry>
-</row>
-<row>
-<entry
+      </row>
+      <row>
+        <entry
 >Sair</entry>
-<entry>
-<keycombo action="simul"
+        <entry
+><keycombo action="simul"
 >&Ctrl;<keycap
 >Q</keycap
-></keycombo>
-</entry>
-</row>
-<row>
-<entry
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
 >Ajuda</entry>
-<entry
+        <entry
 ><keycap
 >F1</keycap
 ></entry>
-</row>
-<row>
-<entry
->O que é isto?</entry>
-<entry>
-<keycombo action="simul"
+      </row>
+      <row>
+        <entry
+>Ajuda 'O que é isto?'</entry>
+        <entry
+><keycombo action="simul"
 >&Shift;<keycap
 >F1</keycap
-></keycombo>
-</entry>
-</row>
-</tbody>
-</tgroup>
+></keycombo
+></entry>
+      </row>
+    </tbody>
+  </tgroup>
 </table>
 
 <table>
-<title
+  <title
 >Controles do teclado</title>
-<tgroup cols="2">
-<tbody>
-<row>
-<entry
+  <tgroup cols="2">
+    <tbody>
+      <row>
+        <entry
 >Mover para a esquerda</entry>
-<entry
-><keycap
->Esquerda ou H</keycap
+        <entry
+>&Left; ou <keycap
+>H</keycap
 ></entry>
-</row>
-<row>
-<entry
+      </row>
+      <row>
+        <entry
 >Mover para a direita</entry>
-<entry
-><keycap
->Direita ou L</keycap
+        <entry
+>&Right; ou <keycap
+>L</keycap
 ></entry>
-</row>
-<row>
-<entry
+      </row>
+      <row>
+        <entry
 >Mover para cima</entry>
-<entry
-><keycap
->Cima ou K</keycap
+        <entry
+>&Up; ou <keycap
+>K</keycap
 ></entry>
-</row>
-<row>
-<entry
+      </row>
+      <row>
+        <entry
 >Mover para baixo</entry>
-<entry
-><keycap
->Baixo ou J</keycap
+        <entry
+>&Down; ou <keycap
+>J</keycap
 ></entry>
-</row>
-<row>
-<entry
+      </row>
+      <row>
+        <entry
 >(Des)marcar a célula como ocupada</entry>
-<entry
+        <entry
 ><keycap
 >X</keycap
 ></entry>
-</row>
-<row>
-<entry
+      </row>
+      <row>
+        <entry
 >(Des)marcar a célula como livre</entry>
-<entry
-><keycap
->Espaço</keycap
-></entry>
-</row>
-</tbody>
-</tgroup>
+        <entry
+>&Space;</entry>
+      </row>
+    </tbody>
+  </tgroup>
 </table>
 
 </sect1>
@@ -634,21 +714,6 @@
 >marcus.gama@gmail.com</email
 ></para
 > &underFDL; &underGPL; </chapter>
-
-<appendix id="installation">
-<title
->Instalação</title>
-
-<sect1 id="getting-picmi">
-<title
->Como obter o &picmi;</title
->&install.intro.documentation; </sect1>
-
-<sect1 id="compilation">
-<title
->Compilação e instalação</title
->&install.compile.documentation; </sect1>
-</appendix>
 
 
 &documentation.index;
