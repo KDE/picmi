@@ -69,10 +69,9 @@ msgstr ""
 #: levels/default.xml:528 levels/default.xml:532 levels/default.xml:536
 #: levels/default.xml:540 levels/default.xml:551 levels/default.xml:564
 #: levels/default.xml:577 levels/default.xml:590 levels/default.xml:603
-#, fuzzy, kde-format
-#| msgid "Jakob Gruber"
+#, kde-format
 msgid "Jakob Gruber, Moni Linke"
-msgstr "Jakob Gruber"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:9
@@ -470,12 +469,10 @@ msgid "Load New Game"
 msgstr ""
 
 #: src/gui/mainwindow.cpp:97
-#, fuzzy, kde-format
-#| msgctxt "custom difficulty"
-#| msgid "Custom"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Custom"
-msgstr "Saincheaptha"
+msgstr ""
 
 #: src/gui/mainwindow.cpp:246
 #, kde-format
@@ -504,39 +501,34 @@ msgid "Congratulations, you have solved board '%1'!"
 msgstr ""
 
 #: src/gui/selectboardwindow.cpp:87
-#, fuzzy, kde-format
-#| msgid "Level"
+#, kde-format
 msgctxt "@title:column"
 msgid "Level"
-msgstr "Leibhéal"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:88
-#, fuzzy, kde-format
-#| msgid "Level"
+#, kde-format
 msgctxt "@title:column"
 msgid "Level Set"
-msgstr "Leibhéal"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:89
-#, fuzzy, kde-format
-#| msgid "Difficulty"
+#, kde-format
 msgctxt "@title:column"
 msgid "Difficulty"
-msgstr "Deacracht"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:90
-#, fuzzy, kde-format
-#| msgid "Size"
+#, kde-format
 msgctxt "@title:column"
 msgid "Size"
-msgstr "Méid"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:91
-#, fuzzy, kde-format
-#| msgid "Solved: -"
+#, kde-format
 msgctxt "@title:column board solved"
 msgid "Solved"
-msgstr "Réitithe: -"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:154
 #, kde-format
@@ -551,53 +543,46 @@ msgid "Ridiculously Easy"
 msgstr ""
 
 #: src/gui/selectboardwindow.cpp:243
-#, fuzzy, kde-format
-#| msgid "Very Easy"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Very Easy"
-msgstr "An-Éasca"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:244
-#, fuzzy, kde-format
-#| msgid "Easy"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Easy"
-msgstr "Éasca"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:245
-#, fuzzy, kde-format
-#| msgid "Medium"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Medium"
-msgstr "Measartha"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:246
-#, fuzzy, kde-format
-#| msgid "Hard"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Hard"
-msgstr "Crua"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:247
-#, fuzzy, kde-format
-#| msgid "Very Hard"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Very Hard"
-msgstr "An-Chrua"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:248
-#, fuzzy, kde-format
-#| msgid "Extremely Hard"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Extremely Hard"
-msgstr "Fíorchrua"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:249
-#, fuzzy, kde-format
-#| msgid "Impossible"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Impossible"
-msgstr "Dodhéanta"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:255
 #, kde-format
@@ -674,17 +659,15 @@ msgid "Difficulty: -"
 msgstr "Deacracht: -"
 
 #: src/gui/settingswindow.cpp:63
-#, fuzzy, kde-format
-#| msgid "Select Background"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Background"
-msgstr "Roghnaigh Cúlra"
+msgstr ""
 
 #: src/gui/settingswindow.cpp:64
-#, fuzzy, kde-format
-#| msgid "*.png *.jpg|Image Files (*.png *.jpg)"
+#, kde-format
 msgid "Image Files (*.png *.jpg)"
-msgstr "*.png *.jpg|Comhaid Íomhá (*.png *.jpg)"
+msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, SettingsWindow)
 #: src/gui/settingswindow.ui:20
@@ -720,17 +703,15 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, fontColorSolvedLabel)
 #: src/gui/settingswindow.ui:94
-#, fuzzy, kde-format
-#| msgid "Solved: -"
+#, kde-format
 msgid "Solved streaks:"
-msgstr "Réitithe: -"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, fontColorUnsolvedLabel)
 #: src/gui/settingswindow.ui:110
-#, fuzzy, kde-format
-#| msgid "Solved: -"
+#, kde-format
 msgid "Unsolved streaks:"
-msgstr "Réitithe: -"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, fontColorSolvedPushButton)
 #. i18n: ectx: property (text), widget (QPushButton, fontColorUnsolvedPushButton)
@@ -765,10 +746,9 @@ msgstr "Dlús:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: src/gui/settingswindow.ui:241
-#, fuzzy, kde-format
-#| msgid "Prevent Mistakes:"
+#, kde-format
 msgid "Prevent mistakes:"
-msgstr "Cosc ar Bhotúin:"
+msgstr ""
 
 #: src/main.cpp:46
 #, kde-format
@@ -776,18 +756,11 @@ msgid "Picmi - a nonogram puzzle game"
 msgstr "Picmi - cluiche naonagram"
 
 #: src/main.cpp:48
-#, fuzzy, kde-format
-#| msgid "(c) 2012 The Picmi Authors"
+#, kde-format
 msgid "(c) 2012 - 2015 The Picmi Authors"
-msgstr "© 2012 Údair Picmi"
+msgstr ""
 
 #: src/main.cpp:51
 #, kde-format
 msgid "Picmi Author"
 msgstr "Údar Picmi"
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "Edit..."
-#~ msgstr "Eagar..."
