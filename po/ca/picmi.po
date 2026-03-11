@@ -768,9 +768,3 @@ msgstr "(c) 2012 - 2015 Els autors del Picmi"
 #, kde-format
 msgid "Picmi Author"
 msgstr "Autor del Picmi"
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "Edit..."
-#~ msgstr "Edita..."
