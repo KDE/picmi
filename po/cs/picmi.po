@@ -2,31 +2,32 @@
 # This file is distributed under the same license as the PACKAGE package.
 # SPDX-FileCopyrightText: 2012, 2013, 2015, 2016, 2020, 2021, 2024 Vit Pelcak <vit@pelcak.org>
 # Tomáš Chvátal <tomas.chvatal@gmail.com>, 2012.
+# SPDX-FileCopyrightText: 2026 Libor Filípek <filipek.libor@protonmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:50+0000\n"
-"PO-Revision-Date: 2024-05-30 10:47+0200\n"
-"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
-"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2026-04-18 10:26+0200\n"
+"Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
+"Language-Team: \n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Poedit 3.8\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Vít Pelčák"
+msgstr "Vít Pelčák,Libor Filípek"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "vit@pelcak.org"
+msgstr "vit@pelcak.org,libor.filipek@gmail.com"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:5
@@ -120,13 +121,13 @@ msgstr "Kuřátko"
 #: levels/default.xml:152 levels/default.xml:504 levels/default.xml:508
 #, kde-format
 msgid "Moni Linke"
-msgstr ""
+msgstr "Moni Linke"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:63
 #, kde-format
 msgid "Pirate Dog"
-msgstr ""
+msgstr "Pirátský pes"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:67
@@ -149,7 +150,7 @@ msgstr "Pirátská loď"
 #: levels/default.xml:160 levels/default.xml:524
 #, kde-format
 msgid "Frank Uebbing"
-msgstr ""
+msgstr "Frank Uebbing"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:75
@@ -167,7 +168,7 @@ msgstr "Slon"
 #: levels/default.xml:83
 #, kde-format
 msgid "Claus the cat"
-msgstr ""
+msgstr "Kocour Claus"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:87
@@ -185,19 +186,19 @@ msgstr "Zebra"
 #: levels/default.xml:95
 #, kde-format
 msgid "Antique Phone"
-msgstr ""
+msgstr "Starožitný telefon"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:99
 #, kde-format
 msgid "Treble Clef"
-msgstr ""
+msgstr "Houslový klíč"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:103
 #, kde-format
 msgid "Halloween"
-msgstr ""
+msgstr "Halloween"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:107
@@ -228,7 +229,7 @@ msgstr "Tučňák"
 #: levels/default.xml:152
 #, kde-format
 msgid "Baby Panda"
-msgstr ""
+msgstr "Mládě pandy"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:156
@@ -240,7 +241,7 @@ msgstr "Dům"
 #: levels/default.xml:160
 #, kde-format
 msgid "Soccer"
-msgstr ""
+msgstr "Fotbal"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:164
@@ -264,7 +265,7 @@ msgstr "Značka"
 #: levels/default.xml:244
 #, kde-format
 msgid "Thumbs Up"
-msgstr ""
+msgstr "Palec nahoru"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:262
@@ -276,7 +277,7 @@ msgstr "Nádoba"
 #: levels/default.xml:275
 #, kde-format
 msgid "Dinner Time"
-msgstr ""
+msgstr "Čas večeře"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:295
@@ -288,7 +289,7 @@ msgstr "Sklenice na víno"
 #: levels/default.xml:317
 #, kde-format
 msgid "Cocktail Glass"
-msgstr ""
+msgstr "Koktejlová sklenice"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:334
@@ -306,13 +307,13 @@ msgstr "Vrtulník"
 #: levels/default.xml:383
 #, kde-format
 msgid "Letter A"
-msgstr ""
+msgstr "Písmeno A"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:396
 #, kde-format
 msgid "Screw"
-msgstr ""
+msgstr "Šroub"
 
 #. i18n: tag board attribute author
 #. i18n: tag board attribute author
@@ -330,7 +331,7 @@ msgstr "Zack Rusin"
 #: levels/default.xml:414
 #, kde-format
 msgid "Cup of coffee"
-msgstr ""
+msgstr "Šálek kávy"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:432
@@ -372,7 +373,7 @@ msgstr "Santa Klaus"
 #: levels/default.xml:512
 #, kde-format
 msgid "Bass Clef"
-msgstr ""
+msgstr "Basový klíč"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:516
@@ -494,7 +495,7 @@ msgstr "Gratuluji, vyřešili jste tuto desku!"
 #, kde-format
 msgctxt "@title:window"
 msgid "Board Solved!"
-msgstr "Deska vyřešena."
+msgstr "Deska vyřešena!"
 
 #: src/gui/mainwindow.cpp:286
 #, kde-format
@@ -706,13 +707,13 @@ msgstr "Barvy písma"
 #: src/gui/settingswindow.ui:94
 #, kde-format
 msgid "Solved streaks:"
-msgstr ""
+msgstr "Vyřešené případy:"
 
 #. i18n: ectx: property (text), widget (QLabel, fontColorUnsolvedLabel)
 #: src/gui/settingswindow.ui:110
 #, kde-format
 msgid "Unsolved streaks:"
-msgstr ""
+msgstr "Nevyřešené případy:"
 
 #. i18n: ectx: property (text), widget (QPushButton, fontColorSolvedPushButton)
 #. i18n: ectx: property (text), widget (QPushButton, fontColorUnsolvedPushButton)
@@ -754,7 +755,7 @@ msgstr "Zabránit chybám:"
 #: src/main.cpp:46
 #, kde-format
 msgid "Picmi - a nonogram puzzle game"
-msgstr ""
+msgstr "Picmi – logická hra typu nonogram"
 
 #: src/main.cpp:48
 #, kde-format
