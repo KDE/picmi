@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2026 This file is copyright:
 # This file is distributed under the same license as the picmi package.
 #
-# giovanni <g.sora@tiscali.it>, 2023, 2024.
+# SPDX-FileCopyrightText: 2023, 2024, 2026 giovanni <g.sora@tiscali.it>
 msgid ""
 msgstr ""
 "Project-Id-Version: picmi\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:50+0000\n"
-"PO-Revision-Date: 2024-05-02 12:34+0200\n"
+"PO-Revision-Date: 2026-05-15 10:28+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -31,7 +31,7 @@ msgstr "g.sora@tiscali.it"
 #: levels/default.xml:5
 #, kde-format
 msgid "Basketball"
-msgstr ""
+msgstr "Basketball"
 
 #. i18n: tag board attribute author
 #. i18n: tag board attribute author
@@ -71,13 +71,13 @@ msgstr ""
 #: levels/default.xml:577 levels/default.xml:590 levels/default.xml:603
 #, kde-format
 msgid "Jakob Gruber, Moni Linke"
-msgstr ""
+msgstr "Jakob Gruber, Moni Linke"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:9
 #, kde-format
 msgid "Skull"
-msgstr ""
+msgstr "Cranio"
 
 #. i18n: tag board attribute author
 #. i18n: tag board attribute author
@@ -101,13 +101,13 @@ msgstr "Jakob Gruber"
 #: levels/default.xml:31
 #, kde-format
 msgid "Wheelchair"
-msgstr ""
+msgstr "Sedia de Rotas"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:59
 #, kde-format
 msgid "Baby Chick"
-msgstr ""
+msgstr "Pulletto"
 
 #. i18n: tag board attribute author
 #. i18n: tag board attribute author
@@ -119,25 +119,25 @@ msgstr ""
 #: levels/default.xml:152 levels/default.xml:504 levels/default.xml:508
 #, kde-format
 msgid "Moni Linke"
-msgstr ""
+msgstr "Moni Linke"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:63
 #, kde-format
 msgid "Pirate Dog"
-msgstr ""
+msgstr "Can de Pirata"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:67
 #, kde-format
 msgid "Clown"
-msgstr ""
+msgstr "paleasso"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:71
 #, kde-format
 msgid "Pirate Ship"
-msgstr ""
+msgstr "Nave de Pirata"
 
 #. i18n: tag board attribute author
 #. i18n: tag board attribute author
@@ -148,68 +148,68 @@ msgstr ""
 #: levels/default.xml:160 levels/default.xml:524
 #, kde-format
 msgid "Frank Uebbing"
-msgstr ""
+msgstr "Frank Uebbing"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:75
 #, kde-format
 msgid "Panda"
-msgstr ""
+msgstr "Panda"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:79
 #, kde-format
 msgid "Elephant"
-msgstr ""
+msgstr "Elephante"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:83
 #, kde-format
 msgid "Claus the cat"
-msgstr ""
+msgstr "Le Catto Claus"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:87
 #, kde-format
 msgid "Bird"
-msgstr ""
+msgstr "Ave"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:91
 #, kde-format
 msgid "Zebra"
-msgstr ""
+msgstr "Zebra"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:95
 #, kde-format
 msgid "Antique Phone"
-msgstr ""
+msgstr "Telephono Antique"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:99
 #, kde-format
 msgid "Treble Clef"
-msgstr ""
+msgstr "Clave de sol"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:103
 #, kde-format
 msgid "Halloween"
-msgstr ""
+msgstr "Halloween"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:107
 #, kde-format
 msgid "Hourglass"
-msgstr ""
+msgstr "Sabliero"
 
 #. i18n: tag board attribute name
 #. i18n: tag board attribute name
 #: levels/default.xml:111 levels/default.xml:551
 #, kde-format
 msgid "Robot"
-msgstr ""
+msgstr "Robot"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:115
@@ -221,13 +221,13 @@ msgstr "Bicycletta"
 #: levels/default.xml:119
 #, kde-format
 msgid "Penguin"
-msgstr ""
+msgstr "Pinguin"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:152
 #, kde-format
 msgid "Baby Panda"
-msgstr ""
+msgstr "Panda infante"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:156
@@ -239,13 +239,13 @@ msgstr "Domo"
 #: levels/default.xml:160
 #, kde-format
 msgid "Soccer"
-msgstr ""
+msgstr "Football"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:164
 #, kde-format
 msgid "Alarm Clock"
-msgstr ""
+msgstr "Eveliator"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:195
@@ -263,7 +263,7 @@ msgstr "Marcator"
 #: levels/default.xml:244
 #, kde-format
 msgid "Thumbs Up"
-msgstr ""
+msgstr "Ben Facite"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:262
@@ -275,43 +275,43 @@ msgstr "Cuppa"
 #: levels/default.xml:275
 #, kde-format
 msgid "Dinner Time"
-msgstr ""
+msgstr "Hora de cena"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:295
 #, kde-format
 msgid "Wine Glass"
-msgstr ""
+msgstr "vitro de vino"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:317
 #, kde-format
 msgid "Cocktail Glass"
-msgstr ""
+msgstr "Vitro de cocktail"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:334
 #, kde-format
 msgid "Escalator"
-msgstr ""
+msgstr "Scala Mobile"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:360
 #, kde-format
 msgid "Helicopter"
-msgstr ""
+msgstr "Helicoptero"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:383
 #, kde-format
 msgid "Letter A"
-msgstr ""
+msgstr "Littera A"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:396
 #, kde-format
 msgid "Screw"
-msgstr ""
+msgstr "Vite"
 
 #. i18n: tag board attribute author
 #. i18n: tag board attribute author
@@ -329,7 +329,7 @@ msgstr "Zack Rusin"
 #: levels/default.xml:414
 #, kde-format
 msgid "Cup of coffee"
-msgstr ""
+msgstr "Cuppa de caffe"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:432
@@ -341,7 +341,7 @@ msgstr "Leon"
 #: levels/default.xml:450
 #, kde-format
 msgid "Gas Lamp"
-msgstr ""
+msgstr "Lampada de gas"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:468
@@ -353,25 +353,25 @@ msgstr "Simia"
 #: levels/default.xml:486
 #, kde-format
 msgid "Teddy Bear"
-msgstr ""
+msgstr "Teddy Bear (ursetto)"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:504
 #, kde-format
 msgid "Policeman"
-msgstr ""
+msgstr "Policiero"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:508
 #, kde-format
 msgid "Santa Claus"
-msgstr ""
+msgstr "Santa Claus"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:512
 #, kde-format
 msgid "Bass Clef"
-msgstr ""
+msgstr "Clave de fa"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:516
@@ -383,7 +383,7 @@ msgstr "Telephono"
 #: levels/default.xml:520
 #, kde-format
 msgid "Shopping Cart"
-msgstr ""
+msgstr "Carretto de compras"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:524 src/main.cpp:44
@@ -482,12 +482,12 @@ msgstr "Tempore perimite: %1"
 #: src/gui/mainwindow.cpp:251
 #, kde-format
 msgid "Actions since last saved position: %1"
-msgstr ""
+msgstr "Actiones depost le ultime position salveguardate: %1"
 
 #: src/gui/mainwindow.cpp:280
 #, kde-format
 msgid "Congratulations, you have solved this board!"
-msgstr ""
+msgstr "Felicitationes, tu ha solvite iste tabuliero!"
 
 #: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
 #, kde-format
@@ -498,7 +498,7 @@ msgstr "Tabula solvite!"
 #: src/gui/mainwindow.cpp:286
 #, kde-format
 msgid "Congratulations, you have solved board '%1'!"
-msgstr ""
+msgstr "Felicitationes, tu ha solvite tabuliero '%1'!"
 
 #: src/gui/selectboardwindow.cpp:87
 #, kde-format
@@ -540,7 +540,7 @@ msgstr "Selection de nivello"
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Ridiculously Easy"
-msgstr ""
+msgstr "Ridiculosemente facile"
 
 #: src/gui/selectboardwindow.cpp:243
 #, kde-format
@@ -705,13 +705,13 @@ msgstr "Colores de font"
 #: src/gui/settingswindow.ui:94
 #, kde-format
 msgid "Solved streaks:"
-msgstr ""
+msgstr "Strias solvite:"
 
 #. i18n: ectx: property (text), widget (QLabel, fontColorUnsolvedLabel)
 #: src/gui/settingswindow.ui:110
 #, kde-format
 msgid "Unsolved streaks:"
-msgstr ""
+msgstr "Strias non solvite:"
 
 #. i18n: ectx: property (text), widget (QPushButton, fontColorSolvedPushButton)
 #. i18n: ectx: property (text), widget (QPushButton, fontColorUnsolvedPushButton)
@@ -748,12 +748,12 @@ msgstr "Densitate:"
 #: src/gui/settingswindow.ui:241
 #, kde-format
 msgid "Prevent mistakes:"
-msgstr ""
+msgstr "Preveni errores:"
 
 #: src/main.cpp:46
 #, kde-format
 msgid "Picmi - a nonogram puzzle game"
-msgstr ""
+msgstr "Picmi - un joco de puzzle nonogram"
 
 #: src/main.cpp:48
 #, kde-format
