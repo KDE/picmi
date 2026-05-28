@@ -127,15 +127,9 @@ void Picmi::solve() {
     Q_EMIT gameCompleted();
 }
 
-KGameHighScoreDialog::FieldInfo Picmi::endGame() {
+Picmi::Result Picmi::endGame() {
     m_timer.stop();
-
-    KGameHighScoreDialog::FieldInfo score;
-    score[KGameHighScoreDialog::Score].setNum(m_timer.elapsedSecs());
-    score[KGameHighScoreDialog::Time] = Time(m_timer.elapsedSecs()).toString();
-    score[KGameHighScoreDialog::Date] = m_timer.startDate().toString(QStringLiteral("dd MMM yyyy hh:mm"));
-
-    return score;
+    return Result{ m_timer.elapsedSecs(), m_timer.startDate() };
 }
 
 int Picmi::height() const {

@@ -262,7 +262,13 @@ QSharedPointer<KGameHighScoreDialog> MainWindow::createScoreDialog() {
 }
 
 void MainWindow::gameWon() {
-    KGameHighScoreDialog::FieldInfo score = m_game->endGame();
+    const Picmi::Result result = m_game->endGame();
+
+    KGameHighScoreDialog::FieldInfo score;
+    score[KGameHighScoreDialog::Score].setNum(result.elapsedSecs);
+    score[KGameHighScoreDialog::Time] = Time(result.elapsedSecs).toString();
+    score[KGameHighScoreDialog::Date] = result.startDate.toString(QStringLiteral("dd MMM yyyy hh:mm"));
+
     m_status_position->setVisible(false);
     if (m_mode == Random) {
         bool notified = false;

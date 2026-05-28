@@ -7,8 +7,6 @@
 #ifndef PICMI_H
 #define PICMI_H
 
-#include <KGameHighScoreDialog>
-
 #include "boardmap.h"
 #include "boardstate.h"
 #include "elapsedtime.h"
@@ -19,6 +17,11 @@ class Picmi : public QObject
 {
     Q_OBJECT
 public:
+
+    struct Result {
+        int elapsedSecs;
+        QDateTime startDate;
+    };
 
     Picmi();
     explicit Picmi(QSharedPointer<BoardMap> board);
@@ -36,8 +39,8 @@ public:
     void setPaused(bool paused);
     int elapsedSecs() const;
 
-    /* ends the current game and returns the current high score object */
-    KGameHighScoreDialog::FieldInfo endGame();
+    /* Stops the timer and returns the final time + start date. */
+    Result endGame();
 
     /* undo last action (if it exists) and return the changed coordinate. */
     QPoint undo();
