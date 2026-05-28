@@ -7,6 +7,7 @@
 #include <config.h>
 #include "renderer.h"
 
+#include <QApplication>
 #include <QDir>
 #include <QFile>
 #include <QPainter>
@@ -168,11 +169,17 @@ QPixmap Renderer::getCachedPixmap(Renderer::Resource resource, int h, int w) con
         }
     }
 
-    QString key = QStringLiteral("%1:%2x%3").arg(m_names[resource]).arg(w).arg(h);
+    /* Render at physical pixel density so high-DPR displays draw
+     * SVG content sharp instead of upscaling a logical-pixel raster.
+     * Cache key includes the DPR to keep mixed-monitor setups honest. */
+    const qreal dpr = qApp->devicePixelRatio();
+    const QString key = QStringLiteral("%1:%2x%3@%4")
+        .arg(m_names[resource]).arg(w).arg(h).arg(dpr);
 
     QPixmap pixmap;
     if (!QPixmapCache::find(key, &pixmap)) {
-        pixmap = QPixmap(w, h);
+        pixmap = QPixmap(qRound(w * dpr), qRound(h * dpr));
+        pixmap.setDevicePixelRatio(dpr);
         pixmap.fill(Qt::transparent);
         QPainter painter(&pixmap);
         m_renderer->render(&painter, m_names[resource], QRectF(0, 0, w, h));

@@ -118,6 +118,10 @@ CellItem::CellItem(int x, int y, QSharedPointer<Picmi> game, QGraphicsItem *pare
 {
     setZValue(ZVALUE_CELLITEM);
     setShapeMode(QGraphicsPixmapItem::BoundingRectShape);
+    /* Smooth interpolation during the press scale-up animation; the
+     * resting pixmap is already DPR-correct so this only affects the
+     * 150ms intermediate frames. */
+    setTransformationMode(Qt::SmoothTransformation);
 }
 
 void CellItem::refresh() {
