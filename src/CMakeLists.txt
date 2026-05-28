@@ -34,7 +34,7 @@ target_sources(picmi PRIVATE
     picmi.qrc
 )
 
-ecm_qt_declare_logging_category(picmi
+ecm_qt_declare_logging_category(picmi_logic
     HEADER picmi_debug.h
     IDENTIFIER PICMIC_LOG
     CATEGORY_NAME picmi
