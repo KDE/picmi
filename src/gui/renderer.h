@@ -32,11 +32,8 @@ public:
     };
 
     enum FontSize {
-        Tiny,
-        Small,
         Regular,
         Large,
-        Huge,
         FontSizeLength
     };
 
@@ -57,9 +54,6 @@ public:
     /* returns the width of streak areas in pixels */
     int getYOffset() const;
     int getXOffset() const;
-
-    /* returns the width of streak areas in tiles */
-    int getStreakGridCount() const;
 
     /* 0 < board_width, board_height */
     void setSize(const QSize &size, int board_width, int board_height,

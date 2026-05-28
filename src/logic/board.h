@@ -33,9 +33,10 @@ public:
     int width() const { return m_width; }
     int height() const { return m_height; }
 
-protected:
     /* convert between (x,y) coordinates and the flat list index */
     int xy_to_i(int x, int y) const;
+
+protected:
     int i_to_x(int i) const;
     int i_to_y(int i) const;
 

@@ -216,7 +216,7 @@ void Scene::move(int dx, int dy) {
 }
 
 int Scene::xy_to_i(int x, int y) const {
-    return y * m_game->width() + x;
+    return m_game->getBoardMap()->xy_to_i(x, y);
 }
 
 void Scene::setOverviewPos() {

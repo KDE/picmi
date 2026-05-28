@@ -226,6 +226,3 @@ int Renderer::getXOffset() const {
     return m_streak_grid_count * m_tilesize;
 }
 
-int Renderer::getStreakGridCount() const {
-    return m_streak_grid_count;
-}
