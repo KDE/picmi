@@ -23,12 +23,12 @@ private Q_SLOTS:
 
 void ElapsedTimeTest::timeToStringZero()
 {
-    QCOMPARE(Time(0).toString(), QStringLiteral("0:00:00"));
+    QCOMPARE(Time(0).toString(), QStringLiteral("00:00"));
 }
 
 void ElapsedTimeTest::timeToStringMinutesAndSeconds()
 {
-    QCOMPARE(Time(65).toString(), QStringLiteral("0:01:05"));
+    QCOMPARE(Time(65).toString(), QStringLiteral("01:05"));
 }
 
 void ElapsedTimeTest::timeToStringHoursMinutesSeconds()
@@ -39,9 +39,9 @@ void ElapsedTimeTest::timeToStringHoursMinutesSeconds()
 
 void ElapsedTimeTest::timeToStringPadsZeros()
 {
-    QCOMPARE(Time(60).toString(), QStringLiteral("0:01:00"));
+    QCOMPARE(Time(60).toString(), QStringLiteral("01:00"));
     QCOMPARE(Time(3600).toString(), QStringLiteral("1:00:00"));
-    QCOMPARE(Time(59).toString(), QStringLiteral("0:00:59"));
+    QCOMPARE(Time(59).toString(), QStringLiteral("00:59"));
 }
 
 void ElapsedTimeTest::penaltyEscalation()

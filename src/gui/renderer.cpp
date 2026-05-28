@@ -16,6 +16,8 @@
 #include <assert.h>
 #include <iostream>
 
+#include <algorithm>
+#include <cmath>
 #include <stdexcept>
 
 #include "src/constants.h"
@@ -168,7 +170,18 @@ QPixmap Renderer::getBackgroundPixmap(const QSize &size) const {
         QPixmap p(Settings::instance()->customBgPath());
         return p.scaled(size, Qt::KeepAspectRatioByExpanding, Qt::SmoothTransformation);
     }
-    return getCachedPixmap(Background, size.height(), size.width());
+    /* Render the SVG background at its native aspect ratio (1920x1200,
+     * matching the embedded image element's width/height), scaled so
+     * both axes meet or exceed the view. BackgroundItem centers the
+     * result so the overflow is balanced. */
+    constexpr int native_w = 1920;
+    constexpr int native_h = 1200;
+    const double sx = static_cast<double>(size.width())  / native_w;
+    const double sy = static_cast<double>(size.height()) / native_h;
+    const double s = std::max(sx, sy);
+    const int w = static_cast<int>(std::ceil(native_w * s));
+    const int h = static_cast<int>(std::ceil(native_h * s));
+    return getCachedPixmap(Background, h, w);
 }
 
 QPixmap Renderer::getCachedPixmap(Renderer::Resource resource, int h, int w) const

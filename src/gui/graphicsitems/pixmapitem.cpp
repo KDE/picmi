@@ -31,8 +31,14 @@ BackgroundItem::BackgroundItem(Renderer::Resource resource, int x, int y, QGraph
 
 void BackgroundItem::reload(const QSize &size) {
     m_last_size = size;
-    setPixmap(Renderer::instance()->getBackgroundPixmap(size));
-    setPos(0, 0);
+    const QPixmap p = Renderer::instance()->getBackgroundPixmap(size);
+    setPixmap(p);
+    /* Center the cover-scaled background so the overflow is balanced
+     * on both axes. p.width()/height() are in logical pixels via the
+     * pixmap's devicePixelRatio. */
+    const int dx = (size.width()  - p.width())  / 2;
+    const int dy = (size.height() - p.height()) / 2;
+    setPos(dx, dy);
 }
 
 void BackgroundItem::settingChanged(Settings::SettingsType type) {

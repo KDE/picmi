@@ -12,6 +12,14 @@ QString Time::toString(const QString &format) const {
     const int minutes = i / m_secs_per_minute;
     const int seconds = i % m_secs_per_minute;
 
+    /* Callers that pass an explicit format get the old hour-included
+     * behavior. The default format drops the hours segment when zero
+     * so sub-hour solves no longer print "0:" in front. */
+    if (format == QStringLiteral("%1:%2:%3") && hours == 0) {
+        return QStringLiteral("%1:%2").arg(QString::number(minutes), 2, QLatin1Char('0'))
+                                      .arg(QString::number(seconds), 2, QLatin1Char('0'));
+    }
+
     return format.arg(hours).arg(QString::number(minutes), 2, QLatin1Char('0'))
             .arg(QString::number(seconds), 2, QLatin1Char('0'));
 }

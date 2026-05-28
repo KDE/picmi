@@ -208,15 +208,11 @@ void Scene::hideHighlights() {
 }
 
 void Scene::move(int dx, int dy) {
-    int x = m_position.x() + dx;
-    int y = m_position.y() + dy;
-    while (x < 0) {
-        x += m_game->width();
-    }
-    while (y < 0) {
-        y += m_game->height();
-    }
-    hover(x % m_game->width(), y % m_game->height());
+    const int w = m_game->width();
+    const int h = m_game->height();
+    const int x = ((m_position.x() + dx) % w + w) % w;
+    const int y = ((m_position.y() + dy) % h + h) % h;
+    hover(x, y);
 }
 
 int Scene::xy_to_i(int x, int y) const {
