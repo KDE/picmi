@@ -6,9 +6,14 @@
 
 #include "selectboardwindow.h"
 
+#include <stdexcept>
+
 #include <KLocalizedString>
 #include <QAbstractTableModel>
 #include <QDialogButtonBox>
+#include <QImage>
+#include <QPainter>
+#include <QPixmap>
 #include <QPushButton>
 #include <QVBoxLayout>
 #include <QtAlgorithms>
@@ -18,6 +23,45 @@
 #include "src/logic/levelloader.h"
 
 static QString diffString(const int difficulty);
+
+/* Reads a 2-color (typically transparent + black) image file via QImage
+ * and translates it into a Board::State grid. Black pixels become
+ * Nothing; anything else becomes Box, matching the historical XPM
+ * convention used by the bundled level set. */
+static XpmGrid readXpmGrid(const QString &filepath) {
+    QImage img(filepath);
+    if (img.isNull()) {
+        throw std::runtime_error(
+            QStringLiteral("Could not load %1").arg(filepath).toStdString());
+    }
+
+    XpmGrid grid;
+    grid.width = img.width();
+    grid.height = img.height();
+    grid.map.reserve(grid.width * grid.height);
+    for (int y = 0; y < grid.height; y++) {
+        for (int x = 0; x < grid.width; x++) {
+            QRgb pix = img.pixel(x, y);
+            grid.map.append((pix == 0) ? Board::Nothing : Board::Box);
+        }
+    }
+    return grid;
+}
+
+static QPixmap buildLevelPreview(const Level &level) {
+    QImage preview(level.width(), level.height(), QImage::Format_Mono);
+    preview.fill(Qt::color1);
+
+    const QList<Board::State> map = level.map();
+    for (int y = 0; y < level.height(); y++) {
+        for (int x = 0; x < level.width(); x++) {
+            if (map[y * level.width() + x] == Board::Box) {
+                preview.setPixel(x, y, 0);
+            }
+        }
+    }
+    return QPixmap::fromImage(preview);
+}
 
 class LevelTableModel : public QAbstractTableModel
 {
@@ -168,7 +212,7 @@ SelectBoardWindow::SelectBoardWindow(QWidget *parent)
     mainLayout->addWidget(mainWidget);
     mainLayout->addWidget(buttonBox);
 
-    m_levels = LevelLoader::load();
+    m_levels = LevelLoader::load(&readXpmGrid);
     m_model = QSharedPointer<LevelTableModel>(new LevelTableModel(m_levels));
 
     ui->tableView->setUpdatesEnabled(false);
@@ -259,9 +303,9 @@ void SelectBoardWindow::updateDetails(QSharedPointer<Level> level) {
     if (level->solved()) {
         ui->labelSolved->setText(i18nc("board solve time", "Solved: %1",
                                        Time(level->solvedTime()).toString()));
-        QPixmap scaled = level->preview().scaled(ui->labelImage->size(),
-                                                 Qt::KeepAspectRatio,
-                                                 Qt::FastTransformation);
+        QPixmap scaled = buildLevelPreview(*level).scaled(ui->labelImage->size(),
+                                                          Qt::KeepAspectRatio,
+                                                          Qt::FastTransformation);
         ui->labelImage->setPixmap(scaled);
     } else {
         ui->labelSolved->setText(i18nc("board not solved yet", "Solved: -"));

@@ -13,7 +13,6 @@ target_sources(picmi_logic PRIVATE
 
 target_link_libraries(picmi_logic
     Qt6::Core
-    Qt6::Gui
     Qt6::Xml
 )
 

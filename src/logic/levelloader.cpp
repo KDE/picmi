@@ -12,6 +12,7 @@
 #include <QDir>
 #include <QDomDocument>
 #include <QFile>
+#include <QFileInfo>
 #include <QStandardPaths>
 
 #include <stdexcept>
@@ -67,7 +68,6 @@ void Level::writeSettings(int seconds) {
 }
 
 void Level::finalize() {
-    constructPreview();
     readSettings();
 }
 
@@ -79,21 +79,6 @@ void Level::readSettings() {
         m_solved = true;
         m_solved_time = settings->value(k).toInt();
     }
-}
-
-void Level::constructPreview() {
-    QImage preview(width(), height(), QImage::Format_Mono);
-    preview.fill(Qt::color1);
-
-    for (int y = 0; y < height(); y++) {
-        for (int x = 0; x < width(); x++) {
-            if (m_map[y * width() + x] == Board::Box) {
-                preview.setPixel(x, y, 0);
-            }
-        }
-    }
-
-    m_preview = QPixmap::fromImage(preview);
 }
 
 void Level::setSolved(int seconds) {
@@ -109,7 +94,7 @@ bool Level::operator==(const Level &that) const {
     return (that.m_name == m_name && that.m_author == m_author);
 }
 
-QList<QSharedPointer<Level> > LevelLoader::load() {
+QList<QSharedPointer<Level> > LevelLoader::load(XpmReader reader) {
     const QString prefix = QStringLiteral("levels/");
     QList<QString> paths;
     paths << QString(prefix)
@@ -129,7 +114,7 @@ QList<QSharedPointer<Level> > LevelLoader::load() {
         QStringList files = dir.entryList(QStringList(QStringLiteral("*.xml")));
 
         for (int j = 0; j < files.size(); j++) {
-            LevelLoader loader(dir.absoluteFilePath(files[j]));
+            LevelLoader loader(dir.absoluteFilePath(files[j]), reader);
             appendUniqueLevels(list, loader.loadLevels());
         }
     }
@@ -137,8 +122,8 @@ QList<QSharedPointer<Level> > LevelLoader::load() {
     return list;
 }
 
-LevelLoader::LevelLoader(const QString &filename) :
-    m_filename(filename), m_valid(true)
+LevelLoader::LevelLoader(const QString &filename, XpmReader reader) :
+    m_filename(filename), m_xpm_reader(std::move(reader)), m_valid(true)
 {
     setLevelset(filename);
 }
@@ -219,10 +204,10 @@ QSharedPointer<Level> LevelLoader::loadLevel(const QDomElement &node) const {
         p->m_width = l.size();
         p->m_height = i;
     } else if (tag_name == QLatin1String("xpm")) {
-        QImage xpm = openXPM(childNodes.at(0).toElement());
-        p->m_map = loadXPM(xpm);
-        p->m_width = xpm.width();
-        p->m_height = xpm.height();
+        XpmGrid grid = loadXpm(childNodes.at(0).toElement());
+        p->m_map = std::move(grid.map);
+        p->m_width = grid.width;
+        p->m_height = grid.height;
     }
 
     if (p->m_map.size() != p->height() * p->width()) {
@@ -242,33 +227,17 @@ static Board::State charToState(const QChar &c) {
     }
 }
 
-QImage LevelLoader::openXPM(const QDomElement &node) const {
+XpmGrid LevelLoader::loadXpm(const QDomElement &node) const {
     if (node.isNull() || node.tagName() != QLatin1String("xpm")) {
         throw std::runtime_error("Unexpected xpm node");
     }
+    if (!m_xpm_reader) {
+        throw std::runtime_error("Level references XPM but no reader was provided");
+    }
 
     QFileInfo file(m_filename);
-    QString filepath = file.absolutePath() + QLatin1Char('/') + node.text();
-
-    QImage xpm(filepath);
-
-    if (xpm.isNull()) {
-        throw std::runtime_error(QStringLiteral("Could not load %1").arg(filepath).toStdString());
-    }
-
-    return xpm;
-}
-
-QList<Board::State> LevelLoader::loadXPM(const QImage &xpm) const {
-    QList<Board::State> list;
-    for (int y = 0; y < xpm.height(); y++) {
-        for (int x = 0; x < xpm.width(); x++) {
-            QRgb pix = xpm.pixel(x, y);
-            list.append((pix == 0) ? Board::Nothing : Board::Box);
-        }
-    }
-
-    return list;
+    const QString filepath = file.absolutePath() + QLatin1Char('/') + node.text();
+    return m_xpm_reader(filepath);
 }
 
 QList<Board::State> LevelLoader::loadRow(const QDomElement &node) const {
