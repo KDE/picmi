@@ -33,11 +33,12 @@ void BackgroundItem::reload(const QSize &size) {
     m_last_size = size;
     const QPixmap p = Renderer::instance()->getBackgroundPixmap(size);
     setPixmap(p);
-    /* Center the cover-scaled background so the overflow is balanced
-     * on both axes. p.width()/height() are in logical pixels via the
-     * pixmap's devicePixelRatio. */
-    const int dx = (size.width()  - p.width())  / 2;
-    const int dy = (size.height() - p.height()) / 2;
+    /* Center the cover-scaled background. QPixmap::width()/height()
+     * return device-pixel dimensions; on hi-DPI displays the
+     * scene-coordinate size is deviceIndependentSize(). */
+    const QSizeF logical = p.deviceIndependentSize();
+    const qreal dx = (size.width()  - logical.width())  / 2.0;
+    const qreal dy = (size.height() - logical.height()) / 2.0;
     setPos(dx, dy);
 }
 
