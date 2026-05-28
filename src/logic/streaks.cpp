@@ -7,6 +7,7 @@
 #include "streaks.h"
 
 #include <algorithm>
+#include <optional>
 
 /** 0 <= x < m_width; 0 <= y < m_height; returns a row as a sequence of states */
 static QList<Board::State> colToLine(const QSharedPointer<Board> &board,
@@ -30,16 +31,14 @@ static QList<Board::State> rowToLine(const QSharedPointer<Board> &board,
     return line;
 }
 
-/**
- * Streaks are generated using a simple state machine. Either we're in a filler
- * section (Nothing for map streaks, Cross for state streaks), or we're in a Box
- * streak. A final possibility is that we're done processing.
- */
-
-enum {
-    S_FILLER,
-    S_STREAK,
-    S_END
+/* Streaks are generated using a small state machine: we are either
+ * traversing filler (Nothing for the map line, Cross for the state line)
+ * or inside a Box streak. Hitting a non-filler non-Box character ends
+ * the line. */
+enum class ScanState {
+    Filler,
+    Streak,
+    End,
 };
 
 QList<Streaks::StreakPrivate>
@@ -48,40 +47,35 @@ Streaks::lineToStreaks(const QList<Board::State> &line,
 {
     StreakPrivate s;
     QList<StreakPrivate> streaks;
-    int state = S_FILLER;
+    ScanState state = ScanState::Filler;
 
     for (int i = 0; i < line.size(); i++) {
         const Board::State t = line[i];
 
         switch (state) {
-        case S_FILLER:
+        case ScanState::Filler:
             if (t == Board::Box) {
                 s.begin = i;
                 s.value = 0;
-                state = S_STREAK;
-            } else if (t == filler) {
-                /* Nothing. */
-            } else {
-                state = S_END;
+                state = ScanState::Streak;
+            } else if (t != filler) {
+                state = ScanState::End;
             }
             break;
-        case S_STREAK:
-            if (t == Board::Box) {
-                /* Nothing. */
-            } else {
+        case ScanState::Streak:
+            if (t != Board::Box) {
                 s.end = i;
                 s.value = s.end - s.begin;
                 streaks.append(s);
-                state = (t == filler) ? S_FILLER : S_END;
+                state = (t == filler) ? ScanState::Filler : ScanState::End;
             }
             break;
-        case S_END:
-        default:
+        case ScanState::End:
             return streaks;
         }
     }
 
-    if (state == S_STREAK) {
+    if (state == ScanState::Streak) {
         s.end = line.size();
         s.value = s.end - s.begin;
         streaks.append(s);
@@ -93,17 +87,14 @@ Streaks::lineToStreaks(const QList<Board::State> &line,
 QList<Streaks::Streak>
 Streaks::processStreak(const QList<StreakPrivate> &map,
                        const QList<Board::State> &l)
-{        
+{
     QList<Streaks::Streak> streak;
-    QList<StreakPrivate *> assocs(map.size(), NULL);
+    QList<std::optional<StreakPrivate> > assocs(map.size());
 
     /* Initial values for returned streaks. */
-
     for (int i = 0; i < map.size(); i++) {
         streak.push_back(map[i]);
     }
-
-    /* Create the state streaks. */
 
     QList<StreakPrivate> streaks_regular = lineToStreaks(l, Board::Cross);
 
@@ -111,46 +102,38 @@ Streaks::processStreak(const QList<StreakPrivate> &map,
     std::reverse(line_reversed.begin(), line_reversed.end());
     QList<StreakPrivate> streaks_reversed = lineToStreaks(line_reversed, Board::Cross);
 
-    /* Fix begin and end indices of reversed streaks. */
-
+    /* Convert begin/end of reversed streaks back into forward coordinates. */
     for (int i = 0; i < streaks_reversed.size(); i++) {
         streaks_reversed[i].begin = l.size() - streaks_reversed[i].begin;
         streaks_reversed[i].end   = l.size() - streaks_reversed[i].end;
         std::swap(streaks_reversed[i].begin, streaks_reversed[i].end);
     }
 
-    /* Preliminary checks
-     * Do not match anything in any of these cases:
-     * 1. The number of streaks in any direction exceeds the solution.
-     * 2. A completely filled line does not match exactly the number of streaks.
-     * The second case fixes https://bugs.kde.org/435211
-     */
-
+    /* Bail out if the count of detected streaks is impossible for the
+     * solution:
+     *   1. More streaks than the map specifies in either direction.
+     *   2. Fully-determined line (no Nothing) whose streak count
+     *      differs from the map. Fixes https://bugs.kde.org/435211. */
     if (streaks_regular.size() > map.size() || streaks_reversed.size() > map.size()
             || (!l.contains(Board::Nothing) && (streaks_regular.size() != map.size()))) {
         return streak;
     }
 
-    /* The concept of this check is fairly simple, and consists of two passes:
-     * 1. Compare and match the regular state streaks to map streaks.
-     * 2. Compare and match the reverse state streaks to map streaks.
-     * A streak is solved, iff it is matched with exactly one streak (reverse
-     * or regular), or it is matched with two and their begin and end indices match.
-     */
-
+    /* A streak is solved iff it is matched by exactly one of the two
+     * directional scans, or matched by both with identical ranges. */
     for (int i = 0; i < streaks_regular.size(); i++) {
         streak[i].solved = (streak[i].value == streaks_regular[i].value);
-        assocs[i] = &streaks_regular[i];
+        assocs[i] = streaks_regular[i];
     }
 
     for (int i = 0; i < streaks_reversed.size(); i++) {
         const int ix = map.size() - i - 1;
-
         streak[ix].solved = (streak[ix].value == streaks_reversed[i].value);
 
-        if (assocs[ix] != NULL) {
-            const bool range_matches = (assocs[ix]->begin == streaks_reversed[i].begin &&
-                                        assocs[ix]->end   == streaks_reversed[i].end);
+        if (assocs[ix].has_value()) {
+            const bool range_matches =
+                (assocs[ix]->begin == streaks_reversed[i].begin &&
+                 assocs[ix]->end   == streaks_reversed[i].end);
             streak[ix].solved &= range_matches;
         }
     }
