@@ -29,7 +29,7 @@ Picmi::Picmi()
 
     m_map = QSharedPointer<BoardMap>(new BoardMap(width, height, density));
     m_state = QSharedPointer<BoardState>(new BoardState(width, height));
-    m_streaks = QSharedPointer<Streaks>(new Streaks(m_map, m_state));
+    m_streaks = std::make_unique<Streaks>(m_map, m_state);
 
     m_timer.start();
 
@@ -41,7 +41,7 @@ Picmi::Picmi(QSharedPointer<BoardMap> board)
 {
     m_map = board;
     m_state = QSharedPointer<BoardState>(new BoardState(board->width(), board->height()));
-    m_streaks = QSharedPointer<Streaks>(new Streaks(m_map, m_state));
+    m_streaks = std::make_unique<Streaks>(m_map, m_state);
     m_timer.start();
 
     setupSlots();

@@ -9,6 +9,8 @@
 
 #include <config.h>
 
+#include <memory>
+
 #include <QTimer>
 #include <QAction>
 
@@ -69,7 +71,7 @@ private:
     void restoreWindowState();
     void saveWindowState();
     void pauseGame();
-    QSharedPointer<KGameHighScoreDialog> createScoreDialog();
+    std::unique_ptr<KGameHighScoreDialog> createScoreDialog();
     void setupActions();
 
     QAction *m_action_undo,

@@ -61,7 +61,7 @@ void Renderer::loadResources() {
         if (!QFile::exists(filenameSvg)) {
             continue;
         }
-        m_renderer = QSharedPointer<QSvgRenderer>(new QSvgRenderer(filenameSvg));
+        m_renderer = std::make_unique<QSvgRenderer>(filenameSvg);
         return;
     }
 

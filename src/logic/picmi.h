@@ -7,6 +7,8 @@
 #ifndef PICMI_H
 #define PICMI_H
 
+#include <memory>
+
 #include "boardmap.h"
 #include "boardstate.h"
 #include "elapsedtime.h"
@@ -91,7 +93,7 @@ private:
 private:
     QSharedPointer<BoardMap> m_map;
     QSharedPointer<BoardState> m_state;
-    QSharedPointer<Streaks> m_streaks;
+    std::unique_ptr<Streaks> m_streaks;
     bool m_prevent_mistakes;
 
     ElapsedTime m_timer;

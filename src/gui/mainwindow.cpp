@@ -253,8 +253,9 @@ void MainWindow::updatePositions() {
                                     m_game->currentStateAge()));
 }
 
-QSharedPointer<KGameHighScoreDialog> MainWindow::createScoreDialog() {
-    QSharedPointer<KGameHighScoreDialog> p(new KGameHighScoreDialog(KGameHighScoreDialog::Name | KGameHighScoreDialog::Date | KGameHighScoreDialog::Time));
+std::unique_ptr<KGameHighScoreDialog> MainWindow::createScoreDialog() {
+    auto p = std::make_unique<KGameHighScoreDialog>(
+        KGameHighScoreDialog::Name | KGameHighScoreDialog::Date | KGameHighScoreDialog::Time);
 
     p->initFromDifficulty(KGameDifficulty::global());
     p->hideField(KGameHighScoreDialog::Score);
@@ -275,7 +276,7 @@ void MainWindow::gameWon() {
         bool notified = false;
         m_new_game->setVisible(true);
         if (KGameDifficulty::globalLevel() != KGameDifficultyLevel::Custom) {
-            QSharedPointer<KGameHighScoreDialog> scoreDialog = createScoreDialog();
+            std::unique_ptr<KGameHighScoreDialog> scoreDialog = createScoreDialog();
             if (scoreDialog->addScore(score, KGameHighScoreDialog::LessIsMore | KGameHighScoreDialog::AskName) != 0) {
                 scoreDialog->exec();
                 notified = true;
@@ -315,7 +316,7 @@ void MainWindow::gameCompleted() {
 void MainWindow::highscores() {
     pauseGame();
 
-    QSharedPointer<KGameHighScoreDialog> scoreDialog = createScoreDialog();
+    std::unique_ptr<KGameHighScoreDialog> scoreDialog = createScoreDialog();
     scoreDialog->exec();
 
     m_view.setFocus();

@@ -7,12 +7,13 @@
 #ifndef RENDERER_H
 #define RENDERER_H
 
+#include <memory>
+
 #include <QFont>
 #include <QList>
 #include <QPixmap>
 #include <QString>
 #include <QSvgRenderer>
-#include <QSharedPointer>
 
 class Renderer
 {
@@ -83,7 +84,7 @@ private:
 
     QFont m_fonts[FontSizeLength];
 
-    QSharedPointer<QSvgRenderer> m_renderer;
+    std::unique_ptr<QSvgRenderer> m_renderer;
 
     QList<QString> m_names;
 };
