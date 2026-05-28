@@ -51,8 +51,8 @@ void RowStreakItem::refresh() {
     QString text;
 
     for (int i = 0; i < (int)streak.size(); i++) {
-        QString color = (streak[i].solved ? m_color_solved : m_color_unsolved);
-        text.append(QStringLiteral("<font color=\"%1\">%2</font>").arg(color).arg(streak[i].value));
+        const QString &color = (streak[i].solved ? m_color_solved : m_color_unsolved);
+        text.append(QStringLiteral("<span style=\"color:%1;\">%2</span>").arg(color).arg(streak[i].value));
         if (i != (int)streak.size() - 1) {
             text.append(QStringLiteral(" "));
         }
@@ -90,8 +90,8 @@ void ColStreakItem::refresh() {
     QString text;
 
     for (int i = 0; i < (int)streak.size(); i++) {
-        QString color = (streak[i].solved ? m_color_solved : m_color_unsolved);
-        text.append(QStringLiteral("<font color=\"%1\">%2</font>").arg(color).arg(streak[i].value));
+        const QString &color = (streak[i].solved ? m_color_solved : m_color_unsolved);
+        text.append(QStringLiteral("<span style=\"color:%1;\">%2</span>").arg(color).arg(streak[i].value));
         if (i != (int)streak.size() - 1) {
             text.append(QStringLiteral("<br/>"));
         }
