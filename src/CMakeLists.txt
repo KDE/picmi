@@ -28,8 +28,6 @@ add_executable(picmi)
 
 target_sources(picmi PRIVATE
     main.cpp
-    outofboundsexception.cpp outofboundsexception.h
-    systemexception.cpp systemexception.h
 
     picmi.qrc
 )

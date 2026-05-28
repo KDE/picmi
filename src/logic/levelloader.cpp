@@ -14,8 +14,9 @@
 #include <QFile>
 #include <QStandardPaths>
 
+#include <stdexcept>
+
 #include "settings.h"
-#include "src/systemexception.h"
 
 static void appendUniqueLevels(QList<QSharedPointer<Level> > &dst,
                                const QList<QSharedPointer<Level> > &src)
@@ -148,7 +149,7 @@ void LevelLoader::setLevelset(const QString& filename)
 
     QFile file(filename);
     if (!file.open( QIODevice::ReadOnly)) {
-        throw SystemException(QStringLiteral("Can't open file %1").arg(filename));
+        throw std::runtime_error(QStringLiteral("Can't open file %1").arg(filename).toStdString());
     }
 
     const QDomDocument::ParseResult parseResult = m_levelset->setContent(&file);
@@ -178,7 +179,7 @@ QList<QSharedPointer<Level> > LevelLoader::loadLevels() {
     for (int i = 0; i < childNodes.size(); i++) {
         try {
             l.append(loadLevel(childNodes.at(i).toElement()));
-        } catch (const SystemException &e) {
+        } catch (const std::runtime_error &e) {
             qCDebug(PICMIC_LOG) << "Loading level failed: " << e.what();
         }
     }
@@ -187,12 +188,12 @@ QList<QSharedPointer<Level> > LevelLoader::loadLevels() {
 
 QSharedPointer<Level> LevelLoader::loadLevel(const QDomElement &node) const {
     if (node.isNull() || node.tagName() != QLatin1String("board")) {
-        throw SystemException(QStringLiteral("Unexpected level node"));
+        throw std::runtime_error("Unexpected level node");
     }
 
     if (!node.hasAttribute(QStringLiteral("name")) || !node.hasAttribute(QStringLiteral("author"))
             || !node.hasAttribute(QStringLiteral("difficulty"))) {
-        throw SystemException(QStringLiteral("Level node missing attribute."));
+        throw std::runtime_error("Level node missing attribute.");
     }
 
     QSharedPointer<Level> p(new Level);
@@ -204,7 +205,7 @@ QSharedPointer<Level> LevelLoader::loadLevel(const QDomElement &node) const {
     QDomNodeList childNodes = node.childNodes();
 
     if (childNodes.isEmpty()) {
-        throw SystemException(QStringLiteral("Empty level definition."));
+        throw std::runtime_error("Empty level definition.");
     }
 
     const QString tag_name = childNodes.at(0).toElement().tagName();
@@ -225,7 +226,7 @@ QSharedPointer<Level> LevelLoader::loadLevel(const QDomElement &node) const {
     }
 
     if (p->m_map.size() != p->height() * p->width()) {
-        throw SystemException(QStringLiteral("Invalid board size"));
+        throw std::runtime_error("Invalid board size");
     }
 
     p->finalize();
@@ -237,13 +238,13 @@ static Board::State charToState(const QChar &c) {
     switch (c.toLatin1()) {
     case '-': return Board::Nothing;
     case '1': return Board::Box;
-    default: throw SystemException(QStringLiteral("Invalid char in level definition"));
+    default: throw std::runtime_error("Invalid char in level definition");
     }
 }
 
 QImage LevelLoader::openXPM(const QDomElement &node) const {
     if (node.isNull() || node.tagName() != QLatin1String("xpm")) {
-        throw SystemException(QStringLiteral("Unexpected row node"));
+        throw std::runtime_error("Unexpected xpm node");
     }
 
     QFileInfo file(m_filename);
@@ -252,7 +253,7 @@ QImage LevelLoader::openXPM(const QDomElement &node) const {
     QImage xpm(filepath);
 
     if (xpm.isNull()) {
-        throw SystemException(QStringLiteral("Could not load %1").arg(filepath));
+        throw std::runtime_error(QStringLiteral("Could not load %1").arg(filepath).toStdString());
     }
 
     return xpm;
@@ -272,7 +273,7 @@ QList<Board::State> LevelLoader::loadXPM(const QImage &xpm) const {
 
 QList<Board::State> LevelLoader::loadRow(const QDomElement &node) const {
     if (node.isNull() || node.tagName() != QLatin1String("row")) {
-        throw SystemException(QStringLiteral("Unexpected row node"));
+        throw std::runtime_error("Unexpected row node");
     }
 
     const QString text = node.text();

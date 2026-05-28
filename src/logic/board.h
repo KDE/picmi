@@ -9,8 +9,6 @@
 
 #include <QList>
 
-#include "src/outofboundsexception.h"
-
 class Board
 {
 public:
@@ -36,9 +34,6 @@ public:
     int height() const { return m_height; }
 
 protected:
-    /* throws OutOfBoundsException if x,y are not located in bounds */
-    void assertInbounds(int x, int y) const;
-
     /* convert between (x,y) coordinates and the flat list index */
     int xy_to_i(int x, int y) const;
     int i_to_x(int i) const;

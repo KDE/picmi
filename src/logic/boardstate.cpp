@@ -14,7 +14,7 @@ BoardState::BoardState(int width, int height) : Board(width, height), m_box_coun
 }
 
 void BoardState::set(int x, int y, State state) {
-    assertInbounds(x, y);
+    Q_ASSERT(!outOfBounds(x, y));
 
     const int i = xy_to_i(x, y);
 

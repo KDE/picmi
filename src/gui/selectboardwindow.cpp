@@ -247,8 +247,8 @@ static QString diffString(const int difficulty) {
     case 5: return i18nc("@item difficulty", "Very Hard");
     case 6: return i18nc("@item difficulty", "Extremely Hard");
     case 7: return i18nc("@item difficulty", "Impossible");
-    default: throw OutOfBoundsException();
     }
+    Q_UNREACHABLE_RETURN(QString());
 }
 
 void SelectBoardWindow::updateDetails(QSharedPointer<Level> level) {

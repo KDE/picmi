@@ -6,6 +6,8 @@
 
 #include "board.h"
 
+#include <QtGlobal>
+
 Board::Board(int width, int height)
     : m_width(width), m_height(height), m_size(width * height),
       m_state(width * height, Nothing)
@@ -16,14 +18,8 @@ bool Board::outOfBounds(int x, int y) const {
     return (x < 0 || x >= m_width || y < 0 || y >= m_height);
 }
 
-void Board::assertInbounds(int x, int y) const {
-    if (outOfBounds(x, y)) {
-        throw OutOfBoundsException();
-    }
-}
-
 Board::State Board::get(int x, int y) const {
-    assertInbounds(x, y);
+    Q_ASSERT(!outOfBounds(x, y));
     return m_state[xy_to_i(x, y)];
 }
 

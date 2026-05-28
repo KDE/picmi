@@ -144,10 +144,8 @@ QPixmap OverviewCellItem::getPixmap() const {
     case Board::Nothing: return Renderer::instance()->getPixmap(Renderer::Transparent);
     case Board::Box: return Renderer::instance()->getPixmap(Renderer::OverviewBox);
     case Board::Cross: return Renderer::instance()->getPixmap(Renderer::OverviewCross);
-    default: assert(0);
     }
-
-    throw OutOfBoundsException();
+    Q_UNREACHABLE_RETURN(QPixmap());
 }
 
 int OverviewCellItem::getTilesize() const {
@@ -214,10 +212,8 @@ QPixmap GameCellItem::getPixmap() const {
     case Board::Nothing: return Renderer::instance()->getPixmap(Renderer::Transparent);
     case Board::Box: return Renderer::instance()->getPixmap(Renderer::Box);
     case Board::Cross: return Renderer::instance()->getPixmap(Renderer::Cross);
-    default: assert(0);
     }
-
-    throw OutOfBoundsException();
+    Q_UNREACHABLE_RETURN(QPixmap());
 }
 
 int GameCellItem::getTilesize() const {

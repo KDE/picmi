@@ -15,10 +15,10 @@
 #include <assert.h>
 #include <iostream>
 
+#include <stdexcept>
+
 #include "src/constants.h"
-#include "src/outofboundsexception.h"
 #include "src/logic/settings.h"
-#include "src/systemexception.h"
 
 #define MIN_STREAK_COUNT (4)
 
@@ -62,7 +62,7 @@ void Renderer::loadResources() {
         return;
     }
 
-    throw SystemException(QStringLiteral("Resources not found"));
+    throw std::runtime_error("Resources not found");
 }
 
 int Renderer::gridSize(const QSize &size, int board_width, int board_height) const {
@@ -97,9 +97,7 @@ bool Renderer::streaksFit(const QStringList &streaks) const {
 
 void Renderer::setSize(const QSize &size, int board_width, int board_height,
                        const QStringList &streaks) {
-    if (board_width < 0 || board_height < 0) {
-        throw OutOfBoundsException();
-    }
+    Q_ASSERT(board_width >= 0 && board_height >= 0);
 
     /* Calculate the tile size, given the window size, the board dimensions,
        and the list of streak strings. The tile size must be the largest value
