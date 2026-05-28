@@ -15,10 +15,10 @@ Picmi::Picmi()
     double density;
 
     switch (Settings::instance()->level()) {
-    case KGameDifficultyLevel::Easy: width = height = 10; density = 0.55; break;
-    case KGameDifficultyLevel::Medium: width = 15; height = 10; density = 0.55; break;
-    case KGameDifficultyLevel::Hard: width = height = 15; density = 0.55; break;
-    case KGameDifficultyLevel::Custom:
+    case Settings::Easy: width = height = 10; density = 0.55; break;
+    case Settings::Medium: width = 15; height = 10; density = 0.55; break;
+    case Settings::Hard: width = height = 15; density = 0.55; break;
+    case Settings::Custom:
     default:
         width = Settings::instance()->width();
         height = Settings::instance()->height();

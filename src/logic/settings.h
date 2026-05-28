@@ -10,7 +10,6 @@
 #include <QList>
 #include <QSettings>
 #include <QSharedPointer>
-#include <KGameDifficulty>
 
 class Settings : public QObject
 {
@@ -29,11 +28,20 @@ public:
         FontColorUnsolved
     };
 
+    /* Values mirror KGameDifficultyLevel::StandardLevel for backward
+     * compatibility with persisted settings. */
+    enum Difficulty {
+        Easy = 10,
+        Medium = 20,
+        Hard = 30,
+        Custom = 90
+    };
+
     int width() const;
     int height() const;
     double boxDensity() const;
     bool preventMistakes() const;
-    KGameDifficultyLevel::StandardLevel level() const;
+    Difficulty level() const;
     bool customBgEnabled() const;
     QString customBgPath() const;
     QString fontColorSolved() const;
@@ -43,7 +51,7 @@ public:
     void setHeight(int height);
     void setBoxDensity(double box_density);
     void setPreventMistakes(bool prevent_mistakes);
-    void setLevel(KGameDifficultyLevel::StandardLevel level);
+    void setLevel(Difficulty level);
     void setCustomBgEnabled(bool enabled);
     void setCustomBgPath(const QString &path);
     void setFontColorSolved(const QString &color);
@@ -72,7 +80,7 @@ private:
     int m_width, m_height;
     double m_box_density;
     bool m_prevent_mistakes;
-    KGameDifficultyLevel::StandardLevel m_level;
+    Difficulty m_level;
     bool m_custom_bg_enabled;
     QString m_custom_bg_path;
     QString m_font_color_unsolved, m_font_color_solved;

@@ -115,7 +115,8 @@ void MainWindow::loadBoard() {
 }
 
 void MainWindow::levelChanged(const KGameDifficultyLevel* level) {
-    Settings::instance()->setLevel(level->standardLevel());
+    Settings::instance()->setLevel(
+        static_cast<Settings::Difficulty>(level->standardLevel()));
     Settings::instance()->sync();
     startRandomGame();
 }

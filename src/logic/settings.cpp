@@ -44,7 +44,7 @@ bool Settings::preventMistakes() const {
     return m_prevent_mistakes;
 }
 
-KGameDifficultyLevel::StandardLevel Settings::level() const {
+Settings::Difficulty Settings::level() const {
     return m_level;
 }
 
@@ -88,7 +88,7 @@ void Settings::setPreventMistakes(bool prevent_mistakes) {
     setValue(PreventMistakes, prevent_mistakes);
 }
 
-void Settings::setLevel(KGameDifficultyLevel::StandardLevel level) {
+void Settings::setLevel(Difficulty level) {
     m_level = level;
     setValue(Level, level);
 }
@@ -122,8 +122,7 @@ void Settings::restore() {
     m_height = m_qsettings->value(m_keys[Height], 10).toInt();
     m_box_density = m_qsettings->value(m_keys[BoxDensity], 0.55).toDouble();
     m_prevent_mistakes = m_qsettings->value(m_keys[PreventMistakes], false).toBool();
-    m_level = (KGameDifficultyLevel::StandardLevel)m_qsettings->value(m_keys[Level],
-        KGameDifficultyLevel::Medium).toInt();
+    m_level = static_cast<Difficulty>(m_qsettings->value(m_keys[Level], Medium).toInt());
     m_custom_bg_enabled = m_qsettings->value(m_keys[CustomBgEnabled], false).toBool();
     m_custom_bg_path = m_qsettings->value(m_keys[CustomBgPath], QString()).toString();
     m_font_color_solved = m_qsettings->value(m_keys[FontColorSolved], QStringLiteral("#5500ff")).toString();

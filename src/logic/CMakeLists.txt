@@ -12,10 +12,8 @@ target_sources(picmi_logic PRIVATE
 )
 
 target_link_libraries(picmi_logic
-    KDEGames6
-    KF6::CoreAddons
-    KF6::I18n
     Qt6::Core
+    Qt6::Gui
     Qt6::Xml
 )
 
