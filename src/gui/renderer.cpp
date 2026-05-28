@@ -160,6 +160,17 @@ QPixmap Renderer::getPixmap(Renderer::Resource resource) const {
     }
 }
 
+QPixmap Renderer::getBackgroundPixmap(const QSize &size) const {
+    if (size.isEmpty()) {
+        return getPixmap(Background);
+    }
+    if (Settings::instance()->customBgEnabled()) {
+        QPixmap p(Settings::instance()->customBgPath());
+        return p.scaled(size, Qt::KeepAspectRatioByExpanding, Qt::SmoothTransformation);
+    }
+    return getCachedPixmap(Background, size.height(), size.width());
+}
+
 QPixmap Renderer::getCachedPixmap(Renderer::Resource resource, int h, int w) const
 {
     /* Special case for custom background. */

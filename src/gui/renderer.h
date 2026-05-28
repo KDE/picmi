@@ -46,6 +46,9 @@ public:
       current tilesize */
     QPixmap getPixmap(Renderer::Resource res) const;
 
+    /* returns the background pixmap rendered to fit the given size */
+    QPixmap getBackgroundPixmap(const QSize &size) const;
+
     int getTilesize() const;
     int getOverviewTilesize() const;
 

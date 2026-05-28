@@ -28,8 +28,13 @@ class BackgroundItem : public QObject, public PixmapItem
 public:
     BackgroundItem(Renderer::Resource resource, int x, int y, QGraphicsItem *parent = nullptr);
 
+    void reload(const QSize &size) override;
+
 private Q_SLOTS:
     void settingChanged(Settings::SettingsType type);
+
+private:
+    QSize m_last_size;
 };
 
 class StreakHBackgroundItem : public PixmapItem

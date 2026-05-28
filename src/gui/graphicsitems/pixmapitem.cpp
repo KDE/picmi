@@ -29,10 +29,16 @@ BackgroundItem::BackgroundItem(Renderer::Resource resource, int x, int y, QGraph
                      this, &BackgroundItem::settingChanged);
 }
 
+void BackgroundItem::reload(const QSize &size) {
+    m_last_size = size;
+    setPixmap(Renderer::instance()->getBackgroundPixmap(size));
+    setPos(0, 0);
+}
+
 void BackgroundItem::settingChanged(Settings::SettingsType type) {
     switch (type) {
     case Settings::CustomBgEnabled:
-    case Settings::CustomBgPath: reload(QSize()); break;
+    case Settings::CustomBgPath: reload(m_last_size); break;
     default: break;
     }
 }
