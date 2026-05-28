@@ -8,7 +8,6 @@
 #include <config.h>
 #include "levelloader.h"
 
-#include <KLocalizedString>
 #include "picmi_debug.h"
 #include <QDir>
 #include <QDomDocument>
@@ -18,31 +17,21 @@
 #include "settings.h"
 #include "src/systemexception.h"
 
-class LevelList : public QList<QSharedPointer<Level> >
+static void appendUniqueLevels(QList<QSharedPointer<Level> > &dst,
+                               const QList<QSharedPointer<Level> > &src)
 {
-public:
-    LevelList() : QList<QSharedPointer<Level> >() { }
-    void append(const QList<QSharedPointer<Level> > &t);
-private:
-    bool containsLevel(QSharedPointer<Level> level) const;
-};
-
-void LevelList::append(const QList<QSharedPointer<Level> > &t) {
-    for (int i = 0; i < t.size(); i++) {
-        QSharedPointer<Level> level = t[i];
-        if (!containsLevel(level)) {
-            QList<QSharedPointer<Level> >::append(level);
+    for (const QSharedPointer<Level> &level : src) {
+        bool seen = false;
+        for (const QSharedPointer<Level> &existing : dst) {
+            if (*existing == *level) {
+                seen = true;
+                break;
+            }
+        }
+        if (!seen) {
+            dst.append(level);
         }
     }
-}
-
-bool LevelList::containsLevel(QSharedPointer<Level> level) const {
-    for (int i = 0; i < size(); i++) {
-        if (*at(i) == *level) {
-            return true;
-        }
-    }
-    return false;
 }
 
 Level::Level() : m_solved(false), m_solved_time(0) { }
@@ -57,13 +46,11 @@ QString Level::visibleName() const
 }
 
 QString Level::name() const {
-    QByteArray bytes = m_name.toUtf8();
-    return i18n(bytes.constData());
+    return m_name;
 }
 
 QString Level::author() const {
-    QByteArray bytes = m_author.toUtf8();
-    return i18n(bytes.constData());
+    return m_author;
 }
 
 QString Level::key() const {
@@ -130,7 +117,7 @@ QList<QSharedPointer<Level> > LevelLoader::load() {
                                     prefix,
                                     QStandardPaths::LocateOption::LocateDirectory);
 
-    LevelList list;
+    QList<QSharedPointer<Level> > list;
 
     for (int i = 0; i < paths.size(); i++) {
         QDir dir(paths[i]);
@@ -142,7 +129,7 @@ QList<QSharedPointer<Level> > LevelLoader::load() {
 
         for (int j = 0; j < files.size(); j++) {
             LevelLoader loader(dir.absoluteFilePath(files[j]));
-            list.append(loader.loadLevels());
+            appendUniqueLevels(list, loader.loadLevels());
         }
     }
 
