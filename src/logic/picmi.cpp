@@ -8,86 +8,22 @@
 #include <config.h>
 #include "picmi.h"
 
-#include <assert.h>
-
-void IOHandler::set(int x, int y, Board::State state) {
-    switch (state) {
-    case Board::Cross: setCross(x, y); break;
-    case Board::Box: setBox(x, y); break;
-    default: assert(0);
-    }
-}
-
-void IOHandler::setCross(int x, int y) {
-    switch (m_state->get(x, y)) {
-    case Board::Cross: m_state->set(x, y, Board::Nothing); break;
-    case Board::Box: break;
-    case Board::Nothing: m_state->set(x, y, Board::Cross); break;
-    default: assert(0);
-    }
-}
-
-class IOHandlerNoHints : public IOHandler
-{
-public:
-    IOHandlerNoHints(BoardMap *map, BoardState *state, ElapsedTime *timer) : IOHandler(map, state, timer) { }
-
-protected:
-    void setBox(int x, int y) override;
-};
-
-
-void IOHandlerNoHints::setBox(int x, int y) {
-    switch (m_state->get(x, y)) {
-    case Board::Cross: break;
-    case Board::Box: m_state->set(x, y, Board::Nothing); break;
-    case Board::Nothing: m_state->set(x, y, Board::Box); break;
-    default: assert(0);
-    }
-}
-
-class IOHandlerHints : public IOHandler
-{
-public:
-    IOHandlerHints(BoardMap *map, BoardState *state, ElapsedTime *timer) : IOHandler(map, state, timer) { }
-
-protected:
-    void setBox(int x, int y) override;
-};
-
-
-void IOHandlerHints::setBox(int x, int y) {
-    switch (m_state->get(x, y)) {
-    case Board::Cross: break;
-    case Board::Box: m_state->set(x, y, Board::Nothing); break;
-    case Board::Nothing:
-        if (m_map->get(x, y) == Board::Box) {
-            m_state->set(x, y, Board::Box);
-        } else {
-            m_state->set(x, y, Board::Cross);
-            m_timer->addPenaltyTime();
-        }
-        break;
-    default: assert(0);
-    }
-}
-
 Picmi::Picmi()
+    : m_prevent_mistakes(false)
 {
     int width, height;
     double density;
-    bool prevent_mistakes;
 
     switch (Settings::instance()->level()) {
-    case KGameDifficultyLevel::Easy: width = height = 10; density = 0.55; prevent_mistakes = false; break;
-    case KGameDifficultyLevel::Medium: width = 15; height = 10; density = 0.55; prevent_mistakes = false; break;
-    case KGameDifficultyLevel::Hard: width = height = 15; density = 0.55; prevent_mistakes = false; break;
+    case KGameDifficultyLevel::Easy: width = height = 10; density = 0.55; break;
+    case KGameDifficultyLevel::Medium: width = 15; height = 10; density = 0.55; break;
+    case KGameDifficultyLevel::Hard: width = height = 15; density = 0.55; break;
     case KGameDifficultyLevel::Custom:
     default:
         width = Settings::instance()->width();
         height = Settings::instance()->height();
         density = Settings::instance()->boxDensity();
-        prevent_mistakes = Settings::instance()->preventMistakes();
+        m_prevent_mistakes = Settings::instance()->preventMistakes();
         break;
     }
 
@@ -95,22 +31,17 @@ Picmi::Picmi()
     m_state = QSharedPointer<BoardState>(new BoardState(width, height));
     m_streaks = QSharedPointer<Streaks>(new Streaks(m_map, m_state));
 
-    if (prevent_mistakes) {
-        m_io_handler = QSharedPointer<IOHandler>(new IOHandlerHints(m_map.data(), m_state.data(), &m_timer));
-    } else {
-        m_io_handler = QSharedPointer<IOHandler>(new IOHandlerNoHints(m_map.data(), m_state.data(), &m_timer));
-    }
-
     m_timer.start();
 
     setupSlots();
 }
 
-Picmi::Picmi(QSharedPointer<BoardMap> board) {
+Picmi::Picmi(QSharedPointer<BoardMap> board)
+    : m_prevent_mistakes(false)
+{
     m_map = board;
     m_state = QSharedPointer<BoardState>(new BoardState(board->width(), board->height()));
     m_streaks = QSharedPointer<Streaks>(new Streaks(m_map, m_state));
-    m_io_handler = QSharedPointer<IOHandler>(new IOHandlerNoHints(m_map.data(), m_state.data(), &m_timer));
     m_timer.start();
 
     setupSlots();
@@ -227,8 +158,46 @@ int Picmi::elapsedSecs() const {
     return m_timer.elapsedSecs();
 }
 
+void Picmi::applyRequest(int x, int y, Board::State request) {
+    const Board::State current = m_state->get(x, y);
+
+    if (request == Board::Cross) {
+        if (current == Board::Cross) {
+            m_state->set(x, y, Board::Nothing);
+        } else if (current == Board::Nothing) {
+            m_state->set(x, y, Board::Cross);
+        }
+        return;
+    }
+
+    Q_ASSERT(request == Board::Box);
+
+    if (current == Board::Box) {
+        m_state->set(x, y, Board::Nothing);
+        return;
+    }
+    if (current == Board::Cross) {
+        return;
+    }
+
+    Q_ASSERT(current == Board::Nothing);
+    if (!m_prevent_mistakes) {
+        m_state->set(x, y, Board::Box);
+        return;
+    }
+
+    /* Prevent-mistakes mode: only allow Box where the map has one;
+     * otherwise the cell becomes a cross and the player pays a penalty. */
+    if (m_map->get(x, y) == Board::Box) {
+        m_state->set(x, y, Board::Box);
+    } else {
+        m_state->set(x, y, Board::Cross);
+        m_timer.addPenaltyTime();
+    }
+}
+
 void Picmi::setState(int x, int y, Board::State state) {
-    m_io_handler->set(x, y, state);
+    applyRequest(x, y, state);
     m_streaks->update(x, y);
     Q_EMIT stateChanged();
     if (m_state->boxCount() == m_map->boxCount() && won()) {

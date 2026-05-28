@@ -15,25 +15,6 @@
 #include "settings.h"
 #include "streaks.h"
 
-/* Moved from picmi.cpp to work around QSharedPointer issues with forward declarations.
- * TODO: move this back once when Qt 5 is used. */
-class IOHandler
-{
-public:
-    IOHandler(BoardMap *map, BoardState *state, ElapsedTime *timer) : m_map(map), m_state(state), m_timer(timer) { }
-    virtual ~IOHandler() { }
-
-    void set(int x, int y, Board::State state);
-
-protected:
-    virtual void setCross(int x, int y);
-    virtual void setBox(int x, int y) = 0;
-
-    BoardMap *m_map;
-    BoardState *m_state;
-    ElapsedTime *m_timer;
-};
-
 class Picmi : public QObject
 {
     Q_OBJECT
@@ -99,13 +80,16 @@ private:
     /* returns true if the game has been won */
     bool won() const;
 
+    /* Applies a player Box/Cross request, honoring prevent-mistakes mode. */
+    void applyRequest(int x, int y, Board::State request);
+
     void setupSlots();
 
 private:
     QSharedPointer<BoardMap> m_map;
     QSharedPointer<BoardState> m_state;
-    QSharedPointer<IOHandler> m_io_handler;
     QSharedPointer<Streaks> m_streaks;
+    bool m_prevent_mistakes;
 
     ElapsedTime m_timer;
 };
