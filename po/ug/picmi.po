@@ -8,24 +8,25 @@ msgstr ""
 "Project-Id-Version: picmi\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:50+0000\n"
-"PO-Revision-Date: 2013-09-08 07:05+0900\n"
-"Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
+"PO-Revision-Date: 2026-06-01 17:38-0400\n"
+"Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
 "Language: ug\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.9\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "ئابدۇقادىر ئابلىز, غەيرەت كەنجى"
+msgstr "ئابدۇقادىر ئابلىز، غەيرەت كەنجى"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "sahran.ug@gmail.com,  gheyret@gmail.com"
+msgstr "sahranbay@gmail.com, gheyret@gmail.com"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:5
@@ -178,7 +179,7 @@ msgstr ""
 #: levels/default.xml:91
 #, kde-format
 msgid "Zebra"
-msgstr "Zebra"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:95
@@ -233,7 +234,7 @@ msgstr ""
 #: levels/default.xml:156
 #, kde-format
 msgid "House"
-msgstr ""
+msgstr "House مۇزىكىسى"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:160
@@ -293,7 +294,7 @@ msgstr ""
 #: levels/default.xml:334
 #, kde-format
 msgid "Escalator"
-msgstr "Escalator"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:360
@@ -323,7 +324,7 @@ msgstr ""
 #: levels/default.xml:450 levels/default.xml:468 levels/default.xml:486
 #, kde-format
 msgid "Zack Rusin"
-msgstr "Zack Rusin"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:414
@@ -389,7 +390,7 @@ msgstr ""
 #: levels/default.xml:524 src/main.cpp:44
 #, kde-format
 msgid "Picmi"
-msgstr ""
+msgstr "Picmi"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:528
@@ -431,7 +432,7 @@ msgstr "يۇمشاق دىسكا"
 #: levels/default.xml:590
 #, kde-format
 msgid "Printer"
-msgstr "پرىنتېر"
+msgstr "باسقۇ"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:603
@@ -460,7 +461,7 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button"
 msgid "New Game"
-msgstr ""
+msgstr "يېڭى ئويۇن"
 
 #: src/gui/mainwindow.cpp:84
 #, kde-format
@@ -469,9 +470,7 @@ msgid "Load New Game"
 msgstr ""
 
 #: src/gui/mainwindow.cpp:97
-#, fuzzy, kde-format
-#| msgctxt "custom difficulty"
-#| msgid "Custom"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Custom"
 msgstr "ئىختىيارى"
@@ -503,29 +502,25 @@ msgid "Congratulations, you have solved board '%1'!"
 msgstr ""
 
 #: src/gui/selectboardwindow.cpp:87
-#, fuzzy, kde-format
-#| msgid "Level"
+#, kde-format
 msgctxt "@title:column"
 msgid "Level"
 msgstr "دەرىجە"
 
 #: src/gui/selectboardwindow.cpp:88
-#, fuzzy, kde-format
-#| msgid "Level"
+#, kde-format
 msgctxt "@title:column"
 msgid "Level Set"
-msgstr "دەرىجە"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:89
-#, fuzzy, kde-format
-#| msgid "Difficulty"
+#, kde-format
 msgctxt "@title:column"
 msgid "Difficulty"
 msgstr "قىيىنلىقى"
 
 #: src/gui/selectboardwindow.cpp:90
-#, fuzzy, kde-format
-#| msgid "Size"
+#, kde-format
 msgctxt "@title:column"
 msgid "Size"
 msgstr "چوڭلۇقى"
@@ -549,46 +544,40 @@ msgid "Ridiculously Easy"
 msgstr ""
 
 #: src/gui/selectboardwindow.cpp:243
-#, fuzzy, kde-format
-#| msgid "Very Easy"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Very Easy"
 msgstr "بەك ئاددىي"
 
 #: src/gui/selectboardwindow.cpp:244
-#, fuzzy, kde-format
-#| msgid "Easy"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Easy"
-msgstr "دەسلەپكى"
+msgstr "ئاسان"
 
 #: src/gui/selectboardwindow.cpp:245
-#, fuzzy, kde-format
-#| msgid "Medium"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Medium"
 msgstr "ئوتتۇراھال"
 
 #: src/gui/selectboardwindow.cpp:246
-#, fuzzy, kde-format
-#| msgid "Hard"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Hard"
 msgstr "تەس"
 
 #: src/gui/selectboardwindow.cpp:247
-#, fuzzy, kde-format
-#| msgid "Very Hard"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Very Hard"
 msgstr "بەك تەس"
 
 #: src/gui/selectboardwindow.cpp:248
-#, fuzzy, kde-format
-#| msgid "Very Hard"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Extremely Hard"
-msgstr "بەك تەس"
+msgstr ""
 
 #: src/gui/selectboardwindow.cpp:249
 #, kde-format
@@ -671,11 +660,10 @@ msgid "Difficulty: -"
 msgstr ""
 
 #: src/gui/settingswindow.cpp:63
-#, fuzzy, kde-format
-#| msgid "Select Background"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Background"
-msgstr "تەگلىك تاللا"
+msgstr ""
 
 #: src/gui/settingswindow.cpp:64
 #, kde-format
@@ -686,7 +674,7 @@ msgstr ""
 #: src/gui/settingswindow.ui:20
 #, kde-format
 msgid "Settings"
-msgstr "تەڭشەكلەر"
+msgstr "تەڭشەك"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: src/gui/settingswindow.ui:28
@@ -731,7 +719,7 @@ msgstr ""
 #: src/gui/settingswindow.ui:120 src/gui/settingswindow.ui:127
 #, kde-format
 msgid "Edit…"
-msgstr ""
+msgstr "تەھرىر…"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: src/gui/settingswindow.ui:145
