@@ -51,6 +51,7 @@ SentUpstream: 2014-09-25
   <name xml:lang="sr-ijekavianlatin">Picmi</name>
   <name xml:lang="sv">Picmi</name>
   <name xml:lang="tr">Picmi</name>
+  <name xml:lang="ug">Picmi</name>
   <name xml:lang="uk">Picmi</name>
   <name xml:lang="zh-CN">Picmi</name>
   <name xml:lang="zh-TW">Picmi</name>
@@ -92,6 +93,7 @@ SentUpstream: 2014-09-25
   <summary xml:lang="sr-ijekavianlatin">Logička igra na osnovu brojevne logike</summary>
   <summary xml:lang="sv">Pusselspel baserat på sifferlogik</summary>
   <summary xml:lang="tr">Sayısal mantığa dayalı bir bulmaca oyunu</summary>
+  <summary xml:lang="ug">سان لوگىكىسى ئاساسىدا ياسالغان قۇراشتۇرۇش ئويۇنى</summary>
   <summary xml:lang="uk">Гра-головоломка, заснована на інтерпретації чисел</summary>
   <summary xml:lang="zh-CN">基于数字逻辑的益智游戏</summary>
   <summary xml:lang="zh-TW">數字邏輯的解謎遊戲</summary>
