@@ -159,6 +159,7 @@ SentUpstream: 2014-09-25
     </screenshot>
   </screenshots>
   <releases>
+    <release version="2.0.26043" date="2026-07-02"/>
     <release version="2.0.26042" date="2026-06-04"/>
     <release version="2.0.26041" date="2026-05-07"/>
     <release version="2.0.26040" date="2026-04-16"/>
