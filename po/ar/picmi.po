@@ -547,7 +547,7 @@ msgstr "سهل للغاية"
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Very Easy"
-msgstr "سهل جداً"
+msgstr "سهل جدًا"
 
 #: src/gui/selectboardwindow.cpp:244
 #, kde-format
@@ -571,7 +571,7 @@ msgstr "صعب"
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Very Hard"
-msgstr "صعب جداً"
+msgstr "صعب جدًا"
 
 #: src/gui/selectboardwindow.cpp:248
 #, kde-format
