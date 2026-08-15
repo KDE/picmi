@@ -28,6 +28,11 @@
 Renderer::Renderer() : m_tilesize(47), m_overview_tilesize(12),
     m_streak_grid_count(6)
 {
+    /* Cover-scaled backgrounds rendered at device pixel ratio exceed
+     * the default 10 MB cache; without a larger limit every resize
+     * re-renders the SVG. */
+    QPixmapCache::setCacheLimit(128 * 1024);
+
     loadResources();
 
     m_names << QStringLiteral("transparent") << QStringLiteral("background") << QStringLiteral("cellframe")

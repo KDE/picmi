@@ -25,6 +25,13 @@
 #include "settingswindow.h"
 #include "scene.h"
 
+/* Settings::Difficulty values must stay in sync with KGameDifficultyLevel::StandardLevel
+ * for persisted settings to remain readable across versions. */
+static_assert(static_cast<int>(Settings::Custom) == static_cast<int>(KGameDifficultyLevel::Custom));
+static_assert(static_cast<int>(Settings::Easy) == static_cast<int>(KGameDifficultyLevel::Easy));
+static_assert(static_cast<int>(Settings::Medium) == static_cast<int>(KGameDifficultyLevel::Medium));
+static_assert(static_cast<int>(Settings::Hard) == static_cast<int>(KGameDifficultyLevel::Hard));
+
 MainWindow::MainWindow(QWidget *parent) :
     KXmlGuiWindow(parent),
     m_key_pos(QStringLiteral("window/position")), m_in_progress(false), m_mode(Random)
@@ -115,8 +122,15 @@ void MainWindow::loadBoard() {
 }
 
 void MainWindow::levelChanged(const KGameDifficultyLevel* level) {
-    Settings::instance()->setLevel(
-        static_cast<Settings::Difficulty>(level->standardLevel()));
+    Settings::Difficulty difficulty;
+    switch (level->standardLevel()) {
+    case KGameDifficultyLevel::Easy: difficulty = Settings::Easy; break;
+    case KGameDifficultyLevel::Medium: difficulty = Settings::Medium; break;
+    case KGameDifficultyLevel::Hard: difficulty = Settings::Hard; break;
+    default: difficulty = Settings::Custom; break;
+    }
+
+    Settings::instance()->setLevel(difficulty);
     Settings::instance()->sync();
     startRandomGame();
 }

@@ -28,13 +28,14 @@ public:
         FontColorUnsolved
     };
 
-    /* Values mirror KGameDifficultyLevel::StandardLevel for backward
-     * compatibility with persisted settings. */
+    /* Values mirror KGameDifficultyLevel::StandardLevel so settings
+     * persisted by previous releases stay compatible. mainwindow.cpp
+     * static_asserts the sync. */
     enum Difficulty {
-        Easy = 10,
-        Medium = 20,
-        Hard = 30,
-        Custom = 90
+        Custom = -1,
+        Easy = 30,
+        Medium = 40,
+        Hard = 50
     };
 
     int width() const;

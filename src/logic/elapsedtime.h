@@ -13,7 +13,12 @@ class Time
 {
 public:
     Time(int seconds) : m_seconds(seconds) { }
-    QString toString(const QString &format = QStringLiteral("%1:%2:%3")) const;
+
+    /* "h:mm:ss", dropping the hours segment when zero */
+    QString toString() const;
+
+    /* custom format; %1 = hours, %2 = minutes, %3 = seconds */
+    QString toString(const QString &format) const;
 
 private:
     const int m_seconds;

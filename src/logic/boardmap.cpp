@@ -22,7 +22,8 @@ static int box_count(const QList<Board::State> &data) {
 }
 
 BoardMap::BoardMap(int width, int height, double box_ratio) :
-    Board(width, height), m_box_count(width * height * box_ratio)
+    Board(width, height),
+    m_box_count(qBound(0, static_cast<int>(width * height * box_ratio), m_size))
 {
     genRandom();
 }

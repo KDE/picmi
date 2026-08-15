@@ -16,6 +16,7 @@ private Q_SLOTS:
     void explicitMap();
     void emptyExplicitMap();
     void randomMapBoxCount();
+    void randomMapBoxCountClamped();
     void randomMapDistribution();
 };
 
@@ -53,6 +54,21 @@ void BoardMapTest::randomMapBoxCount()
     BoardMap m(w, h, ratio);
 
     QCOMPARE(m.boxCount(), int(w * h * ratio));
+}
+
+void BoardMapTest::randomMapBoxCountClamped()
+{
+    /* Ratios outside [0, 1] are clamped to the board size. */
+    BoardMap over(4, 4, 1.5);
+    QCOMPARE(over.boxCount(), 16);
+    for (int y = 0; y < 4; y++) {
+        for (int x = 0; x < 4; x++) {
+            QCOMPARE(over.get(x, y), Board::Box);
+        }
+    }
+
+    BoardMap under(4, 4, -0.5);
+    QCOMPARE(under.boxCount(), 0);
 }
 
 void BoardMapTest::randomMapDistribution()

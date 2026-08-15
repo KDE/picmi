@@ -120,7 +120,6 @@ void PicmiTest::hintReducesIncorrectCells()
 
     QPoint p = game.hint();
     /* Hint picks one of the incorrect cells and sets it correctly. */
-    QVERIFY(!p.isNull() || p == QPoint(0, 0));
     QCOMPARE(game.stateAt(p.x(), p.y()), game.getBoardMap()->get(p.x(), p.y()) == Board::Box
                                           ? Board::Box : Board::Cross);
 }

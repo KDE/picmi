@@ -153,6 +153,11 @@ int Picmi::elapsedSecs() const {
 }
 
 void Picmi::applyRequest(int x, int y, Board::State request) {
+    /* Only Box and Cross are valid player requests. */
+    if (request != Board::Box && request != Board::Cross) {
+        return;
+    }
+
     const Board::State current = m_state->get(x, y);
 
     if (request == Board::Cross) {

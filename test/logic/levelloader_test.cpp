@@ -6,6 +6,7 @@
 
 #include <QDir>
 #include <QFile>
+#include <QFileInfo>
 #include <QTemporaryDir>
 #include <QTest>
 #include <QTextStream>
@@ -19,6 +20,8 @@ class LevelLoaderTest : public QObject
 private Q_SLOTS:
     void loadInlineRows();
     void loadMultipleLevels();
+    void loadXpmLevel();
+    void xpmWithoutReaderFails();
     void invalidFileMissingAttributes();
     void invalidFileMalformed();
     void emptyLevelset();
@@ -104,6 +107,64 @@ void LevelLoaderTest::loadMultipleLevels()
     QCOMPARE(levels[1]->difficulty(), 3);
     QCOMPARE(levels[1]->width(), 2);
     QCOMPARE(levels[1]->height(), 2);
+}
+
+static const QString XPM_LEVEL_XML = QStringLiteral(R"(<?xml version="1.0"?>
+<picmi name="XPM Set">
+    <board name="X" author="y" difficulty="1">
+        <xpm>level.xpm</xpm>
+    </board>
+</picmi>)");
+
+void LevelLoaderTest::loadXpmLevel()
+{
+    QTemporaryDir dir;
+    QVERIFY(dir.isValid());
+
+    const QString path = writeFixture(dir, QStringLiteral("xpm.xml"), XPM_LEVEL_XML);
+
+    QString receivedPath;
+    XpmReader reader = [&receivedPath](const QString &filepath) {
+        receivedPath = filepath;
+        XpmGrid grid;
+        grid.width = 2;
+        grid.height = 2;
+        grid.map = QList<Board::State>{ Board::Box, Board::Nothing,
+                                        Board::Nothing, Board::Box };
+        return grid;
+    };
+
+    LevelLoader loader(path, reader);
+    QList<QSharedPointer<Level> > levels = loader.loadLevels();
+
+    QCOMPARE(levels.size(), 1);
+
+    /* The reader is called with the path relative to the levelset. */
+    QCOMPARE(receivedPath,
+             QFileInfo(path).absolutePath() + QLatin1Char('/') + QStringLiteral("level.xpm"));
+
+    QCOMPARE(levels[0]->width(), 2);
+    QCOMPARE(levels[0]->height(), 2);
+    QList<Board::State> m = levels[0]->map();
+    QCOMPARE(m.size(), 4);
+    QCOMPARE(m[0], Board::Box);
+    QCOMPARE(m[1], Board::Nothing);
+    QCOMPARE(m[2], Board::Nothing);
+    QCOMPARE(m[3], Board::Box);
+}
+
+void LevelLoaderTest::xpmWithoutReaderFails()
+{
+    QTemporaryDir dir;
+    QVERIFY(dir.isValid());
+
+    const QString path = writeFixture(dir, QStringLiteral("noxpm.xml"), XPM_LEVEL_XML);
+
+    LevelLoader loader(path); /* no XpmReader provided */
+    QList<QSharedPointer<Level> > levels = loader.loadLevels();
+
+    /* The failing board is skipped rather than aborting the levelset. */
+    QCOMPARE(levels.size(), 0);
 }
 
 void LevelLoaderTest::invalidFileMissingAttributes()

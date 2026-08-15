@@ -14,7 +14,7 @@
 class BoardMap : public Board
 {
 public:
-    /* 0 < width, height; 0.0 < box_ratio < 1.0 */
+    /* 0 < width, height; box_ratio is clamped to [0, 1] */
     BoardMap(int width, int height, double box_ratio);
 
     BoardMap(int width, int height, const QList<Board::State> &map);

@@ -65,23 +65,26 @@ void ElapsedTimeTest::penaltyCap()
 {
     ElapsedTime t;
     t.start();
+    t.pause(true); /* freeze the running timeslice so deltas are exact */
 
-    /* Penalty doubles until it hits the 3600s cap, then stays.
-     * Run enough iterations to cross the cap, then verify the
-     * marginal addition is bounded by 3600. */
+    /* Penalties double starting at 10. Doubling stops once a penalty
+     * reaches the 3600 cap, so the largest single penalty is the first
+     * doubled value past the cap: 5120. */
     int prev = t.elapsedSecs();
-    for (int i = 0; i < 20; i++) {
+    int expected = 10;
+    for (int i = 0; i < 10; i++) {
         t.addPenaltyTime();
+        QCOMPARE(t.elapsedSecs() - prev, expected);
+        prev = t.elapsedSecs();
+        if (expected < 3600) {
+            expected *= 2;
+        }
     }
-    int marginal_first = t.elapsedSecs() - prev;
+    QCOMPARE(expected, 5120);
 
-    prev = t.elapsedSecs();
+    /* Once capped, every further penalty stays at the maximum. */
     t.addPenaltyTime();
-    int marginal_capped = t.elapsedSecs() - prev;
-
-    QVERIFY(marginal_capped <= 3600 * 2);
-    QVERIFY(marginal_capped > 0);
-    Q_UNUSED(marginal_first);
+    QCOMPARE(t.elapsedSecs() - prev, 5120);
 }
 
 QTEST_GUILESS_MAIN(ElapsedTimeTest)
