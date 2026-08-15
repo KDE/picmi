@@ -49,7 +49,7 @@ private:
 
     QString m_name, m_author, m_levelset;
     int m_difficulty;
-    int m_width, m_height;
+    int m_width = 0, m_height = 0;
     QList<Board::State> m_map;
     bool m_solved;
     int m_solved_time;

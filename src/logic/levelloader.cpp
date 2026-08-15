@@ -208,6 +208,8 @@ QSharedPointer<Level> LevelLoader::loadLevel(const QDomElement &node) const {
         p->m_map = std::move(grid.map);
         p->m_width = grid.width;
         p->m_height = grid.height;
+    } else {
+        throw std::runtime_error("Unexpected level definition.");
     }
 
     if (p->m_map.size() != p->height() * p->width()) {

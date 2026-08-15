@@ -22,6 +22,7 @@ private Q_SLOTS:
     void loadMultipleLevels();
     void loadXpmLevel();
     void xpmWithoutReaderFails();
+    void unknownLevelElementRejected();
     void invalidFileMissingAttributes();
     void invalidFileMalformed();
     void emptyLevelset();
@@ -164,6 +165,27 @@ void LevelLoaderTest::xpmWithoutReaderFails()
     QList<QSharedPointer<Level> > levels = loader.loadLevels();
 
     /* The failing board is skipped rather than aborting the levelset. */
+    QCOMPARE(levels.size(), 0);
+}
+
+void LevelLoaderTest::unknownLevelElementRejected()
+{
+    QTemporaryDir dir;
+    QVERIFY(dir.isValid());
+
+    /* Boards whose first child is neither <row> nor <xpm> must be
+     * rejected instead of producing a level with bogus dimensions. */
+    const QString xml = QStringLiteral(R"(<?xml version="1.0"?>
+<picmi name="Bad">
+    <board name="A" author="x" difficulty="1">
+        <foo>1-1</foo>
+    </board>
+</picmi>)");
+
+    const QString path = writeFixture(dir, QStringLiteral("unknown.xml"), xml);
+    LevelLoader loader(path);
+    QList<QSharedPointer<Level> > levels = loader.loadLevels();
+
     QCOMPARE(levels.size(), 0);
 }
 
