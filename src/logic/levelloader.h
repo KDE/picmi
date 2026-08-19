@@ -26,15 +26,14 @@ class Level
 public:
     Level();
 
-    QString name() const;
-    QString author() const;
+    QString rawName() const { return m_name; }
+    QString rawAuthor() const { return m_author; }
     QString levelset() const { return m_levelset; }
     int difficulty() const { return m_difficulty; }
     int width() const { return m_width; }
     int height() const { return m_height; }
     QList<Board::State> map() const { return m_map; }
 
-    QString visibleName() const;
     bool solved() const { return m_solved; }
     int solvedTime() const { return m_solved_time; }
     void setSolved(int seconds);

@@ -64,8 +64,8 @@ void LevelLoaderTest::loadInlineRows()
     QCOMPARE(levels.size(), 1);
     QSharedPointer<Level> lvl = levels[0];
 
-    QCOMPARE(lvl->name(), QStringLiteral("Tiny"));
-    QCOMPARE(lvl->author(), QStringLiteral("Tester"));
+    QCOMPARE(lvl->rawName(), QStringLiteral("Tiny"));
+    QCOMPARE(lvl->rawAuthor(), QStringLiteral("Tester"));
     QCOMPARE(lvl->levelset(), QStringLiteral("Test Set"));
     QCOMPARE(lvl->difficulty(), 2);
     QCOMPARE(lvl->width(), 3);
@@ -102,8 +102,8 @@ void LevelLoaderTest::loadMultipleLevels()
     QList<QSharedPointer<Level> > levels = loader.loadLevels();
 
     QCOMPARE(levels.size(), 2);
-    QCOMPARE(levels[0]->name(), QStringLiteral("A"));
-    QCOMPARE(levels[1]->name(), QStringLiteral("B"));
+    QCOMPARE(levels[0]->rawName(), QStringLiteral("A"));
+    QCOMPARE(levels[1]->rawName(), QStringLiteral("B"));
     QCOMPARE(levels[0]->difficulty(), 1);
     QCOMPARE(levels[1]->difficulty(), 3);
     QCOMPARE(levels[1]->width(), 2);

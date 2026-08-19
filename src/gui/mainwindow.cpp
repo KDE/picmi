@@ -305,8 +305,9 @@ void MainWindow::gameWon() {
     } else if (m_mode == Preset) {
         m_load_game->setVisible(true);
         m_current_level->setSolved(m_game->elapsedSecs());
+        const QByteArray rawName = m_current_level->rawName().toUtf8();
         KMessageBox::information(this, i18n("Congratulations, you have solved board '%1'!",
-                                            m_current_level->name()),
+                                            i18n(rawName.constData())),
                                  i18nc("@title:window", "Board Solved!"));
     }
 

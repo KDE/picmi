@@ -38,23 +38,6 @@ static void appendUniqueLevels(QList<QSharedPointer<Level> > &dst,
 
 Level::Level() : m_solved(false), m_solved_time(0) { }
 
-QString Level::visibleName() const
-{
-    if (solved()) {
-        return name();
-    }
-    /* Mask the real name if unsolved. Unicode 0x26AB is the bullet point ('⚫') */
-    return QString(name().length(), QChar(0x26AB));
-}
-
-QString Level::name() const {
-    return m_name;
-}
-
-QString Level::author() const {
-    return m_author;
-}
-
 QString Level::key() const {
     return QStringLiteral("preset_scores/%1_%2").arg(m_levelset, m_name);
 }

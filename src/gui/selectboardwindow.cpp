@@ -24,6 +24,21 @@
 
 static QString diffString(const int difficulty);
 
+static QString translateLevelMetadata(const QString &text) {
+    const QByteArray utf8 = text.toUtf8();
+    return i18n(utf8.constData());
+}
+
+static QString visibleLevelName(const Level &level) {
+    const QString translated = translateLevelMetadata(level.rawName());
+    if (level.solved()) {
+        return translated;
+    }
+    /* Mask the translated name so revealing a level does not change the
+     * apparent width unexpectedly in languages where its length differs. */
+    return QString(translated.length(), QChar(0x26AB));
+}
+
 /* Reads a 2-color (typically transparent + black) image file via QImage
  * and translates it into a Board::State grid. Black pixels become
  * Nothing; anything else becomes Box, matching the historical XPM
@@ -114,7 +129,7 @@ QVariant LevelTableModel::data(const QModelIndex &index, int role) const {
 
     QSharedPointer<Level> level= m_levels[index.row()];
     switch (index.column()) {
-    case Name: return level->visibleName();
+    case Name: return visibleLevelName(*level);
     case LevelSet: return level->levelset();
     case Difficulty: return diffString(level->difficulty());
     case Size: return QStringLiteral("%1x%2").arg(level->width()).arg(level->height());
@@ -144,7 +159,8 @@ typedef bool (*LevelComparator)(const QSharedPointer<Level> &,
 
 static bool levelLessThan(const QSharedPointer<Level> &lhs,
                           const QSharedPointer<Level> &rhs) {
-    return lhs->name() < rhs->name();
+    return translateLevelMetadata(lhs->rawName()).localeAwareCompare(
+               translateLevelMetadata(rhs->rawName())) < 0;
 }
 
 static bool levelGreaterThan(const QSharedPointer<Level> &lhs,
@@ -296,8 +312,9 @@ static QString diffString(const int difficulty) {
 }
 
 void SelectBoardWindow::updateDetails(QSharedPointer<Level> level) {
-    ui->labelName->setText(i18n("Name: %1", level->visibleName()));
-    ui->labelAuthor->setText(i18n("Author: %1", level->author()));
+    ui->labelName->setText(i18n("Name: %1", visibleLevelName(*level)));
+    ui->labelAuthor->setText(i18n("Author: %1",
+                                  translateLevelMetadata(level->rawAuthor())));
     ui->labelSize->setText(i18n("Size: %1x%2", level->width(), level->height()));
     ui->labelDifficulty->setText(i18n("Difficulty: %1", diffString(level->difficulty())));
     if (level->solved()) {
