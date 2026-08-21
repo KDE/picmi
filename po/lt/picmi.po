@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:50+0000\n"
+"POT-Creation-Date: 2026-08-21 00:42+0000\n"
 "PO-Revision-Date: 2014-03-17 20:43+0200\n"
 "Last-Translator: Liudas Ališauskas <liudas@aksioma.lt>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
@@ -447,33 +447,33 @@ msgstr "Šypsenėlė"
 msgid "PAUSED"
 msgstr "PRISTABDYTA"
 
-#: src/gui/mainwindow.cpp:62
+#: src/gui/mainwindow.cpp:69
 #, fuzzy, kde-format
 #| msgid "Save Position"
 msgctxt "@action"
 msgid "Save Position"
 msgstr "Įsiminti vietą"
 
-#: src/gui/mainwindow.cpp:68
+#: src/gui/mainwindow.cpp:75
 #, fuzzy, kde-format
 #| msgid "Save Position"
 msgctxt "@action"
 msgid "Load Position"
 msgstr "Įsiminti vietą"
 
-#: src/gui/mainwindow.cpp:79
+#: src/gui/mainwindow.cpp:86
 #, kde-format
 msgctxt "@action:button"
 msgid "New Game"
 msgstr ""
 
-#: src/gui/mainwindow.cpp:84
+#: src/gui/mainwindow.cpp:91
 #, kde-format
 msgctxt "@action:button"
 msgid "Load New Game"
 msgstr ""
 
-#: src/gui/mainwindow.cpp:97
+#: src/gui/mainwindow.cpp:104
 #, fuzzy, kde-format
 #| msgctxt "custom difficulty"
 #| msgid "Custom"
@@ -481,155 +481,155 @@ msgctxt "@item difficulty"
 msgid "Custom"
 msgstr "Pasirinktas"
 
-#: src/gui/mainwindow.cpp:246
+#: src/gui/mainwindow.cpp:261
 #, kde-format
 msgid "Elapsed time: %1"
 msgstr "Praėjo laiko: %1"
 
-#: src/gui/mainwindow.cpp:251
+#: src/gui/mainwindow.cpp:266
 #, kde-format
 msgid "Actions since last saved position: %1"
 msgstr ""
 
-#: src/gui/mainwindow.cpp:280
+#: src/gui/mainwindow.cpp:302
 #, kde-format
 msgid "Congratulations, you have solved this board!"
 msgstr ""
 
-#: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
+#: src/gui/mainwindow.cpp:303 src/gui/mainwindow.cpp:311
 #, kde-format
 msgctxt "@title:window"
 msgid "Board Solved!"
 msgstr ""
 
-#: src/gui/mainwindow.cpp:286
+#: src/gui/mainwindow.cpp:309
 #, kde-format
 msgid "Congratulations, you have solved board '%1'!"
 msgstr ""
 
-#: src/gui/selectboardwindow.cpp:87
+#: src/gui/selectboardwindow.cpp:146
 #, fuzzy, kde-format
 #| msgid "Level"
 msgctxt "@title:column"
 msgid "Level"
 msgstr "Lygis"
 
-#: src/gui/selectboardwindow.cpp:88
+#: src/gui/selectboardwindow.cpp:147
 #, fuzzy, kde-format
 #| msgid "Level"
 msgctxt "@title:column"
 msgid "Level Set"
 msgstr "Lygis"
 
-#: src/gui/selectboardwindow.cpp:89
+#: src/gui/selectboardwindow.cpp:148
 #, fuzzy, kde-format
 #| msgid "Difficulty"
 msgctxt "@title:column"
 msgid "Difficulty"
 msgstr "Sudėtingumas"
 
-#: src/gui/selectboardwindow.cpp:90
+#: src/gui/selectboardwindow.cpp:149
 #, fuzzy, kde-format
 #| msgid "Size"
 msgctxt "@title:column"
 msgid "Size"
 msgstr "Dydis"
 
-#: src/gui/selectboardwindow.cpp:91
+#: src/gui/selectboardwindow.cpp:150
 #, kde-format
 msgctxt "@title:column board solved"
 msgid "Solved"
 msgstr ""
 
-#: src/gui/selectboardwindow.cpp:154
+#: src/gui/selectboardwindow.cpp:214
 #, kde-format
 msgctxt "@title:window"
 msgid "Level Selection"
 msgstr ""
 
-#: src/gui/selectboardwindow.cpp:242
+#: src/gui/selectboardwindow.cpp:302
 #, fuzzy, kde-format
 #| msgid "Ridiculously Easy"
 msgctxt "@item difficulty"
 msgid "Ridiculously Easy"
 msgstr "Juokingai lengva"
 
-#: src/gui/selectboardwindow.cpp:243
+#: src/gui/selectboardwindow.cpp:303
 #, fuzzy, kde-format
 #| msgid "Very Easy"
 msgctxt "@item difficulty"
 msgid "Very Easy"
 msgstr "Labai lengva"
 
-#: src/gui/selectboardwindow.cpp:244
+#: src/gui/selectboardwindow.cpp:304
 #, fuzzy, kde-format
 #| msgid "Easy"
 msgctxt "@item difficulty"
 msgid "Easy"
 msgstr "Lengvas"
 
-#: src/gui/selectboardwindow.cpp:245
+#: src/gui/selectboardwindow.cpp:305
 #, fuzzy, kde-format
 #| msgid "Medium"
 msgctxt "@item difficulty"
 msgid "Medium"
 msgstr "Vidutinis"
 
-#: src/gui/selectboardwindow.cpp:246
+#: src/gui/selectboardwindow.cpp:306
 #, fuzzy, kde-format
 #| msgid "Hard"
 msgctxt "@item difficulty"
 msgid "Hard"
 msgstr "Sunkus"
 
-#: src/gui/selectboardwindow.cpp:247
+#: src/gui/selectboardwindow.cpp:307
 #, fuzzy, kde-format
 #| msgid "Very Hard"
 msgctxt "@item difficulty"
 msgid "Very Hard"
 msgstr "Labai sunku"
 
-#: src/gui/selectboardwindow.cpp:248
+#: src/gui/selectboardwindow.cpp:308
 #, fuzzy, kde-format
 #| msgid "Extremely Hard"
 msgctxt "@item difficulty"
 msgid "Extremely Hard"
 msgstr "Ypač sunku"
 
-#: src/gui/selectboardwindow.cpp:249
+#: src/gui/selectboardwindow.cpp:309
 #, fuzzy, kde-format
 #| msgid "Impossible"
 msgctxt "@item difficulty"
 msgid "Impossible"
 msgstr "Neįmanoma"
 
-#: src/gui/selectboardwindow.cpp:255
+#: src/gui/selectboardwindow.cpp:315
 #, kde-format
 msgid "Name: %1"
 msgstr "Pavadinimas: %1"
 
-#: src/gui/selectboardwindow.cpp:256
+#: src/gui/selectboardwindow.cpp:316
 #, kde-format
 msgid "Author: %1"
 msgstr "Autorius: %1"
 
-#: src/gui/selectboardwindow.cpp:257
+#: src/gui/selectboardwindow.cpp:318
 #, kde-format
 msgid "Size: %1x%2"
 msgstr "Dydis: %1x%2"
 
-#: src/gui/selectboardwindow.cpp:258
+#: src/gui/selectboardwindow.cpp:319
 #, kde-format
 msgid "Difficulty: %1"
 msgstr "Sudėtingumas: %1"
 
-#: src/gui/selectboardwindow.cpp:260
+#: src/gui/selectboardwindow.cpp:321
 #, kde-format
 msgctxt "board solve time"
 msgid "Solved: %1"
 msgstr ""
 
-#: src/gui/selectboardwindow.cpp:267
+#: src/gui/selectboardwindow.cpp:328
 #, kde-format
 msgctxt "board not solved yet"
 msgid "Solved: -"

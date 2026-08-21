@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: picmi\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:50+0000\n"
+"POT-Creation-Date: 2026-08-21 00:42+0000\n"
 "PO-Revision-Date: 2014-06-11 00:45+0200\n"
 "Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -447,33 +447,33 @@ msgstr "Snut"
 msgid "PAUSED"
 msgstr "Anhollen"
 
-#: src/gui/mainwindow.cpp:62
+#: src/gui/mainwindow.cpp:69
 #, fuzzy, kde-format
 #| msgid "Save Position"
 msgctxt "@action"
 msgid "Save Position"
 msgstr "Steed sekern"
 
-#: src/gui/mainwindow.cpp:68
+#: src/gui/mainwindow.cpp:75
 #, fuzzy, kde-format
 #| msgid "Load Position"
 msgctxt "@action"
 msgid "Load Position"
 msgstr "Steed laden"
 
-#: src/gui/mainwindow.cpp:79
+#: src/gui/mainwindow.cpp:86
 #, kde-format
 msgctxt "@action:button"
 msgid "New Game"
 msgstr ""
 
-#: src/gui/mainwindow.cpp:84
+#: src/gui/mainwindow.cpp:91
 #, kde-format
 msgctxt "@action:button"
 msgid "Load New Game"
 msgstr ""
 
-#: src/gui/mainwindow.cpp:97
+#: src/gui/mainwindow.cpp:104
 #, fuzzy, kde-format
 #| msgctxt "custom difficulty"
 #| msgid "Custom"
@@ -481,64 +481,64 @@ msgctxt "@item difficulty"
 msgid "Custom"
 msgstr "Egen"
 
-#: src/gui/mainwindow.cpp:246
+#: src/gui/mainwindow.cpp:261
 #, kde-format
 msgid "Elapsed time: %1"
 msgstr "Aflopen Tiet: %1"
 
-#: src/gui/mainwindow.cpp:251
+#: src/gui/mainwindow.cpp:266
 #, kde-format
 msgid "Actions since last saved position: %1"
 msgstr "Akschonen siet verleden sekert Steed: %1"
 
-#: src/gui/mainwindow.cpp:280
+#: src/gui/mainwindow.cpp:302
 #, fuzzy, kde-format
 #| msgid "Congratulations, you've solved this board!"
 msgid "Congratulations, you have solved this board!"
 msgstr "Graleren, Du hest dat Bild oplööst!"
 
-#: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
+#: src/gui/mainwindow.cpp:303 src/gui/mainwindow.cpp:311
 #, fuzzy, kde-format
 #| msgid "Board Solved!"
 msgctxt "@title:window"
 msgid "Board Solved!"
 msgstr "Bild oplööst!"
 
-#: src/gui/mainwindow.cpp:286
+#: src/gui/mainwindow.cpp:309
 #, fuzzy, kde-format
 #| msgid "Congratulations, you've solved this board!"
 msgid "Congratulations, you have solved board '%1'!"
 msgstr "Graleren, Du hest dat Bild oplööst!"
 
-#: src/gui/selectboardwindow.cpp:87
+#: src/gui/selectboardwindow.cpp:146
 #, fuzzy, kde-format
 #| msgid "Level"
 msgctxt "@title:column"
 msgid "Level"
 msgstr "Stoop"
 
-#: src/gui/selectboardwindow.cpp:88
+#: src/gui/selectboardwindow.cpp:147
 #, fuzzy, kde-format
 #| msgid "Level Set"
 msgctxt "@title:column"
 msgid "Level Set"
 msgstr "Stopensett"
 
-#: src/gui/selectboardwindow.cpp:89
+#: src/gui/selectboardwindow.cpp:148
 #, fuzzy, kde-format
 #| msgid "Difficulty"
 msgctxt "@title:column"
 msgid "Difficulty"
 msgstr "Speelstoop"
 
-#: src/gui/selectboardwindow.cpp:90
+#: src/gui/selectboardwindow.cpp:149
 #, fuzzy, kde-format
 #| msgid "Size"
 msgctxt "@title:column"
 msgid "Size"
 msgstr "Grött"
 
-#: src/gui/selectboardwindow.cpp:91
+#: src/gui/selectboardwindow.cpp:150
 #, fuzzy, kde-format
 #| msgctxt "board solved"
 #| msgid "Solved"
@@ -546,96 +546,96 @@ msgctxt "@title:column board solved"
 msgid "Solved"
 msgstr "Oplööst"
 
-#: src/gui/selectboardwindow.cpp:154
+#: src/gui/selectboardwindow.cpp:214
 #, fuzzy, kde-format
 #| msgid "Level Selection"
 msgctxt "@title:window"
 msgid "Level Selection"
 msgstr "Stoopköör"
 
-#: src/gui/selectboardwindow.cpp:242
+#: src/gui/selectboardwindow.cpp:302
 #, fuzzy, kde-format
 #| msgid "Ridiculously Easy"
 msgctxt "@item difficulty"
 msgid "Ridiculously Easy"
 msgstr "Aapsch eenfach"
 
-#: src/gui/selectboardwindow.cpp:243
+#: src/gui/selectboardwindow.cpp:303
 #, fuzzy, kde-format
 #| msgid "Very Easy"
 msgctxt "@item difficulty"
 msgid "Very Easy"
 msgstr "Bannig eenfach"
 
-#: src/gui/selectboardwindow.cpp:244
+#: src/gui/selectboardwindow.cpp:304
 #, fuzzy, kde-format
 #| msgid "Easy"
 msgctxt "@item difficulty"
 msgid "Easy"
 msgstr "Eenfach"
 
-#: src/gui/selectboardwindow.cpp:245
+#: src/gui/selectboardwindow.cpp:305
 #, fuzzy, kde-format
 #| msgid "Medium"
 msgctxt "@item difficulty"
 msgid "Medium"
 msgstr "Middel"
 
-#: src/gui/selectboardwindow.cpp:246
+#: src/gui/selectboardwindow.cpp:306
 #, fuzzy, kde-format
 #| msgid "Hard"
 msgctxt "@item difficulty"
 msgid "Hard"
 msgstr "Swoor"
 
-#: src/gui/selectboardwindow.cpp:247
+#: src/gui/selectboardwindow.cpp:307
 #, fuzzy, kde-format
 #| msgid "Very Hard"
 msgctxt "@item difficulty"
 msgid "Very Hard"
 msgstr "Bannig swoor"
 
-#: src/gui/selectboardwindow.cpp:248
+#: src/gui/selectboardwindow.cpp:308
 #, fuzzy, kde-format
 #| msgid "Extremely Hard"
 msgctxt "@item difficulty"
 msgid "Extremely Hard"
 msgstr "Övermaten swoor"
 
-#: src/gui/selectboardwindow.cpp:249
+#: src/gui/selectboardwindow.cpp:309
 #, fuzzy, kde-format
 #| msgid "Impossible"
 msgctxt "@item difficulty"
 msgid "Impossible"
 msgstr "Nich mööglich"
 
-#: src/gui/selectboardwindow.cpp:255
+#: src/gui/selectboardwindow.cpp:315
 #, kde-format
 msgid "Name: %1"
 msgstr "Naam: %1"
 
-#: src/gui/selectboardwindow.cpp:256
+#: src/gui/selectboardwindow.cpp:316
 #, kde-format
 msgid "Author: %1"
 msgstr "Autor: %1"
 
-#: src/gui/selectboardwindow.cpp:257
+#: src/gui/selectboardwindow.cpp:318
 #, kde-format
 msgid "Size: %1x%2"
 msgstr "Grött: %1 x %2"
 
-#: src/gui/selectboardwindow.cpp:258
+#: src/gui/selectboardwindow.cpp:319
 #, kde-format
 msgid "Difficulty: %1"
 msgstr "Speelstoop: %1"
 
-#: src/gui/selectboardwindow.cpp:260
+#: src/gui/selectboardwindow.cpp:321
 #, kde-format
 msgctxt "board solve time"
 msgid "Solved: %1"
 msgstr "Oplööst: %1"
 
-#: src/gui/selectboardwindow.cpp:267
+#: src/gui/selectboardwindow.cpp:328
 #, kde-format
 msgctxt "board not solved yet"
 msgid "Solved: -"

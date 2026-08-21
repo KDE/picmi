@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: picmi\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:50+0000\n"
+"POT-Creation-Date: 2026-08-21 00:42+0000\n"
 "PO-Revision-Date: 2024-05-02 09:14+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian\n"
@@ -447,173 +447,173 @@ msgstr "Умішка"
 msgid "PAUSED"
 msgstr "ПРИЗУПИНЕНО"
 
-#: src/gui/mainwindow.cpp:62
+#: src/gui/mainwindow.cpp:69
 #, kde-format
 msgctxt "@action"
 msgid "Save Position"
 msgstr "Зберегти позицію"
 
-#: src/gui/mainwindow.cpp:68
+#: src/gui/mainwindow.cpp:75
 #, kde-format
 msgctxt "@action"
 msgid "Load Position"
 msgstr "Завантажити позицію"
 
-#: src/gui/mainwindow.cpp:79
+#: src/gui/mainwindow.cpp:86
 #, kde-format
 msgctxt "@action:button"
 msgid "New Game"
 msgstr "Нова гра"
 
-#: src/gui/mainwindow.cpp:84
+#: src/gui/mainwindow.cpp:91
 #, kde-format
 msgctxt "@action:button"
 msgid "Load New Game"
 msgstr "Завантажити нову гру"
 
-#: src/gui/mainwindow.cpp:97
+#: src/gui/mainwindow.cpp:104
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Custom"
 msgstr "Нетиповий"
 
-#: src/gui/mainwindow.cpp:246
+#: src/gui/mainwindow.cpp:261
 #, kde-format
 msgid "Elapsed time: %1"
 msgstr "Витрачений час: %1"
 
-#: src/gui/mainwindow.cpp:251
+#: src/gui/mainwindow.cpp:266
 #, kde-format
 msgid "Actions since last saved position: %1"
 msgstr "Дії з часу останнього збереження позиції: %1"
 
-#: src/gui/mainwindow.cpp:280
+#: src/gui/mainwindow.cpp:302
 #, kde-format
 msgid "Congratulations, you have solved this board!"
 msgstr "Вітаємо, ви розв’язали кросворд!"
 
-#: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
+#: src/gui/mainwindow.cpp:303 src/gui/mainwindow.cpp:311
 #, kde-format
 msgctxt "@title:window"
 msgid "Board Solved!"
 msgstr "Завдання розв’язано!"
 
-#: src/gui/mainwindow.cpp:286
+#: src/gui/mainwindow.cpp:309
 #, kde-format
 msgid "Congratulations, you have solved board '%1'!"
 msgstr "Вітаємо, ви розв’язали кросворд «%1»!"
 
-#: src/gui/selectboardwindow.cpp:87
+#: src/gui/selectboardwindow.cpp:146
 #, kde-format
 msgctxt "@title:column"
 msgid "Level"
 msgstr "Рівень"
 
-#: src/gui/selectboardwindow.cpp:88
+#: src/gui/selectboardwindow.cpp:147
 #, kde-format
 msgctxt "@title:column"
 msgid "Level Set"
 msgstr "Набір рівнів"
 
-#: src/gui/selectboardwindow.cpp:89
+#: src/gui/selectboardwindow.cpp:148
 #, kde-format
 msgctxt "@title:column"
 msgid "Difficulty"
 msgstr "Складність"
 
-#: src/gui/selectboardwindow.cpp:90
+#: src/gui/selectboardwindow.cpp:149
 #, kde-format
 msgctxt "@title:column"
 msgid "Size"
 msgstr "Розмір"
 
-#: src/gui/selectboardwindow.cpp:91
+#: src/gui/selectboardwindow.cpp:150
 #, kde-format
 msgctxt "@title:column board solved"
 msgid "Solved"
 msgstr "Розв’язано"
 
-#: src/gui/selectboardwindow.cpp:154
+#: src/gui/selectboardwindow.cpp:214
 #, kde-format
 msgctxt "@title:window"
 msgid "Level Selection"
 msgstr "Вибір рівня"
 
-#: src/gui/selectboardwindow.cpp:242
+#: src/gui/selectboardwindow.cpp:302
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Ridiculously Easy"
 msgstr "Фантастично проста"
 
-#: src/gui/selectboardwindow.cpp:243
+#: src/gui/selectboardwindow.cpp:303
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Very Easy"
 msgstr "Дуже проста"
 
-#: src/gui/selectboardwindow.cpp:244
+#: src/gui/selectboardwindow.cpp:304
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Easy"
 msgstr "Проста"
 
-#: src/gui/selectboardwindow.cpp:245
+#: src/gui/selectboardwindow.cpp:305
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Medium"
 msgstr "Середня"
 
-#: src/gui/selectboardwindow.cpp:246
+#: src/gui/selectboardwindow.cpp:306
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Hard"
 msgstr "Складна"
 
-#: src/gui/selectboardwindow.cpp:247
+#: src/gui/selectboardwindow.cpp:307
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Very Hard"
 msgstr "Дуже складна"
 
-#: src/gui/selectboardwindow.cpp:248
+#: src/gui/selectboardwindow.cpp:308
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Extremely Hard"
 msgstr "Гранично складна"
 
-#: src/gui/selectboardwindow.cpp:249
+#: src/gui/selectboardwindow.cpp:309
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Impossible"
 msgstr "Неможливо складна"
 
-#: src/gui/selectboardwindow.cpp:255
+#: src/gui/selectboardwindow.cpp:315
 #, kde-format
 msgid "Name: %1"
 msgstr "Назва: %1"
 
-#: src/gui/selectboardwindow.cpp:256
+#: src/gui/selectboardwindow.cpp:316
 #, kde-format
 msgid "Author: %1"
 msgstr "Автор: %1"
 
-#: src/gui/selectboardwindow.cpp:257
+#: src/gui/selectboardwindow.cpp:318
 #, kde-format
 msgid "Size: %1x%2"
 msgstr "Розмір: %1⨯%2"
 
-#: src/gui/selectboardwindow.cpp:258
+#: src/gui/selectboardwindow.cpp:319
 #, kde-format
 msgid "Difficulty: %1"
 msgstr "Складність: %1"
 
-#: src/gui/selectboardwindow.cpp:260
+#: src/gui/selectboardwindow.cpp:321
 #, kde-format
 msgctxt "board solve time"
 msgid "Solved: %1"
 msgstr "Розв’язано за %1"
 
-#: src/gui/selectboardwindow.cpp:267
+#: src/gui/selectboardwindow.cpp:328
 #, kde-format
 msgctxt "board not solved yet"
 msgid "Solved: -"

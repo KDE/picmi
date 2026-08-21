@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: picmi\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:50+0000\n"
+"POT-Creation-Date: 2026-08-21 00:42+0000\n"
 "PO-Revision-Date: 2021-10-10 08:01+0300\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -445,173 +445,173 @@ msgstr "Χαμογελαστό"
 msgid "PAUSED"
 msgstr "ΣΕ ΠΑΥΣΗ"
 
-#: src/gui/mainwindow.cpp:62
+#: src/gui/mainwindow.cpp:69
 #, kde-format
 msgctxt "@action"
 msgid "Save Position"
 msgstr "Αποθήκευση θέσης"
 
-#: src/gui/mainwindow.cpp:68
+#: src/gui/mainwindow.cpp:75
 #, kde-format
 msgctxt "@action"
 msgid "Load Position"
 msgstr "Φόρτωση θέσης"
 
-#: src/gui/mainwindow.cpp:79
+#: src/gui/mainwindow.cpp:86
 #, kde-format
 msgctxt "@action:button"
 msgid "New Game"
 msgstr "Νέο παιχνίδι"
 
-#: src/gui/mainwindow.cpp:84
+#: src/gui/mainwindow.cpp:91
 #, kde-format
 msgctxt "@action:button"
 msgid "Load New Game"
 msgstr "Φόρτωση νέου παιχνιδιού"
 
-#: src/gui/mainwindow.cpp:97
+#: src/gui/mainwindow.cpp:104
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Custom"
 msgstr "Προσαρμοσμένη"
 
-#: src/gui/mainwindow.cpp:246
+#: src/gui/mainwindow.cpp:261
 #, kde-format
 msgid "Elapsed time: %1"
 msgstr "Χρόνος που πέρασε: %1"
 
-#: src/gui/mainwindow.cpp:251
+#: src/gui/mainwindow.cpp:266
 #, kde-format
 msgid "Actions since last saved position: %1"
 msgstr "Ενέργειες από την τελευταία αποθηκευμένη θέση: %1"
 
-#: src/gui/mainwindow.cpp:280
+#: src/gui/mainwindow.cpp:302
 #, kde-format
 msgid "Congratulations, you have solved this board!"
 msgstr "Συγχαρητήρια, επιλύσατε αυτόν τον πίνακα!"
 
-#: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
+#: src/gui/mainwindow.cpp:303 src/gui/mainwindow.cpp:311
 #, kde-format
 msgctxt "@title:window"
 msgid "Board Solved!"
 msgstr "Ο πίνακας επιλύθηκε!"
 
-#: src/gui/mainwindow.cpp:286
+#: src/gui/mainwindow.cpp:309
 #, kde-format
 msgid "Congratulations, you have solved board '%1'!"
 msgstr "Συγχαρητήρια, επιλύσατε τον πίνακα '%1'!"
 
-#: src/gui/selectboardwindow.cpp:87
+#: src/gui/selectboardwindow.cpp:146
 #, kde-format
 msgctxt "@title:column"
 msgid "Level"
 msgstr "Επίπεδο"
 
-#: src/gui/selectboardwindow.cpp:88
+#: src/gui/selectboardwindow.cpp:147
 #, kde-format
 msgctxt "@title:column"
 msgid "Level Set"
 msgstr "Σύνολο επιπέδων"
 
-#: src/gui/selectboardwindow.cpp:89
+#: src/gui/selectboardwindow.cpp:148
 #, kde-format
 msgctxt "@title:column"
 msgid "Difficulty"
 msgstr "Δυσκολία"
 
-#: src/gui/selectboardwindow.cpp:90
+#: src/gui/selectboardwindow.cpp:149
 #, kde-format
 msgctxt "@title:column"
 msgid "Size"
 msgstr "Μέγεθος"
 
-#: src/gui/selectboardwindow.cpp:91
+#: src/gui/selectboardwindow.cpp:150
 #, kde-format
 msgctxt "@title:column board solved"
 msgid "Solved"
 msgstr "Επιλύθηκε"
 
-#: src/gui/selectboardwindow.cpp:154
+#: src/gui/selectboardwindow.cpp:214
 #, kde-format
 msgctxt "@title:window"
 msgid "Level Selection"
 msgstr "Επιλογή επιπέδου"
 
-#: src/gui/selectboardwindow.cpp:242
+#: src/gui/selectboardwindow.cpp:302
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Ridiculously Easy"
 msgstr "Γελοιωδώς εύκολο"
 
-#: src/gui/selectboardwindow.cpp:243
+#: src/gui/selectboardwindow.cpp:303
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Very Easy"
 msgstr "Πολύ εύκολο"
 
-#: src/gui/selectboardwindow.cpp:244
+#: src/gui/selectboardwindow.cpp:304
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Easy"
 msgstr "Εύκολο"
 
-#: src/gui/selectboardwindow.cpp:245
+#: src/gui/selectboardwindow.cpp:305
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Medium"
 msgstr "Μεσαίο"
 
-#: src/gui/selectboardwindow.cpp:246
+#: src/gui/selectboardwindow.cpp:306
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Hard"
 msgstr "Δύσκολο"
 
-#: src/gui/selectboardwindow.cpp:247
+#: src/gui/selectboardwindow.cpp:307
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Very Hard"
 msgstr "Πολύ δύσκολο"
 
-#: src/gui/selectboardwindow.cpp:248
+#: src/gui/selectboardwindow.cpp:308
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Extremely Hard"
 msgstr "Εξαιρετικά δύσκολο"
 
-#: src/gui/selectboardwindow.cpp:249
+#: src/gui/selectboardwindow.cpp:309
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Impossible"
 msgstr "Ανέφικτο"
 
-#: src/gui/selectboardwindow.cpp:255
+#: src/gui/selectboardwindow.cpp:315
 #, kde-format
 msgid "Name: %1"
 msgstr "Όνομα: %1"
 
-#: src/gui/selectboardwindow.cpp:256
+#: src/gui/selectboardwindow.cpp:316
 #, kde-format
 msgid "Author: %1"
 msgstr "Συγγραφέας: %1"
 
-#: src/gui/selectboardwindow.cpp:257
+#: src/gui/selectboardwindow.cpp:318
 #, kde-format
 msgid "Size: %1x%2"
 msgstr "Μέγεθος: %1x%2"
 
-#: src/gui/selectboardwindow.cpp:258
+#: src/gui/selectboardwindow.cpp:319
 #, kde-format
 msgid "Difficulty: %1"
 msgstr "Δυσκολία: %1"
 
-#: src/gui/selectboardwindow.cpp:260
+#: src/gui/selectboardwindow.cpp:321
 #, kde-format
 msgctxt "board solve time"
 msgid "Solved: %1"
 msgstr "Επιλύθηκε: %1"
 
-#: src/gui/selectboardwindow.cpp:267
+#: src/gui/selectboardwindow.cpp:328
 #, kde-format
 msgctxt "board not solved yet"
 msgid "Solved: -"

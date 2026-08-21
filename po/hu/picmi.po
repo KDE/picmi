@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:50+0000\n"
+"POT-Creation-Date: 2026-08-21 00:42+0000\n"
 "PO-Revision-Date: 2024-07-27 21:35+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -446,173 +446,173 @@ msgstr "Hangulatjel"
 msgid "PAUSED"
 msgstr "SZÜNET"
 
-#: src/gui/mainwindow.cpp:62
+#: src/gui/mainwindow.cpp:69
 #, kde-format
 msgctxt "@action"
 msgid "Save Position"
 msgstr "Pozíció mentése"
 
-#: src/gui/mainwindow.cpp:68
+#: src/gui/mainwindow.cpp:75
 #, kde-format
 msgctxt "@action"
 msgid "Load Position"
 msgstr "Pozíció betöltése"
 
-#: src/gui/mainwindow.cpp:79
+#: src/gui/mainwindow.cpp:86
 #, kde-format
 msgctxt "@action:button"
 msgid "New Game"
 msgstr "Új játék"
 
-#: src/gui/mainwindow.cpp:84
+#: src/gui/mainwindow.cpp:91
 #, kde-format
 msgctxt "@action:button"
 msgid "Load New Game"
 msgstr "Új játék betöltése"
 
-#: src/gui/mainwindow.cpp:97
+#: src/gui/mainwindow.cpp:104
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Custom"
 msgstr "Egyéni"
 
-#: src/gui/mainwindow.cpp:246
+#: src/gui/mainwindow.cpp:261
 #, kde-format
 msgid "Elapsed time: %1"
 msgstr "Eltelt idő: %1"
 
-#: src/gui/mainwindow.cpp:251
+#: src/gui/mainwindow.cpp:266
 #, kde-format
 msgid "Actions since last saved position: %1"
 msgstr "Műveletek az utolsó mentett pozíció óta: %1"
 
-#: src/gui/mainwindow.cpp:280
+#: src/gui/mainwindow.cpp:302
 #, kde-format
 msgid "Congratulations, you have solved this board!"
 msgstr "Gratulálunk, Ön megoldotta ezt a táblát!"
 
-#: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
+#: src/gui/mainwindow.cpp:303 src/gui/mainwindow.cpp:311
 #, kde-format
 msgctxt "@title:window"
 msgid "Board Solved!"
 msgstr "Tábla megoldva!"
 
-#: src/gui/mainwindow.cpp:286
+#: src/gui/mainwindow.cpp:309
 #, kde-format
 msgid "Congratulations, you have solved board '%1'!"
 msgstr "Gratulálunk, Ön megoldotta a(z) „%1” táblát!"
 
-#: src/gui/selectboardwindow.cpp:87
+#: src/gui/selectboardwindow.cpp:146
 #, kde-format
 msgctxt "@title:column"
 msgid "Level"
 msgstr "Szint"
 
-#: src/gui/selectboardwindow.cpp:88
+#: src/gui/selectboardwindow.cpp:147
 #, kde-format
 msgctxt "@title:column"
 msgid "Level Set"
 msgstr "Beállított szint"
 
-#: src/gui/selectboardwindow.cpp:89
+#: src/gui/selectboardwindow.cpp:148
 #, kde-format
 msgctxt "@title:column"
 msgid "Difficulty"
 msgstr "Nehézség"
 
-#: src/gui/selectboardwindow.cpp:90
+#: src/gui/selectboardwindow.cpp:149
 #, kde-format
 msgctxt "@title:column"
 msgid "Size"
 msgstr "Méret"
 
-#: src/gui/selectboardwindow.cpp:91
+#: src/gui/selectboardwindow.cpp:150
 #, kde-format
 msgctxt "@title:column board solved"
 msgid "Solved"
 msgstr "Megoldva"
 
-#: src/gui/selectboardwindow.cpp:154
+#: src/gui/selectboardwindow.cpp:214
 #, kde-format
 msgctxt "@title:window"
 msgid "Level Selection"
 msgstr "Szint kiválasztás"
 
-#: src/gui/selectboardwindow.cpp:242
+#: src/gui/selectboardwindow.cpp:302
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Ridiculously Easy"
 msgstr "Rendkívül könnyű"
 
-#: src/gui/selectboardwindow.cpp:243
+#: src/gui/selectboardwindow.cpp:303
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Very Easy"
 msgstr "Nagyon könnyű"
 
-#: src/gui/selectboardwindow.cpp:244
+#: src/gui/selectboardwindow.cpp:304
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Easy"
 msgstr "Könnyű"
 
-#: src/gui/selectboardwindow.cpp:245
+#: src/gui/selectboardwindow.cpp:305
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Medium"
 msgstr "Közepes"
 
-#: src/gui/selectboardwindow.cpp:246
+#: src/gui/selectboardwindow.cpp:306
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Hard"
 msgstr "Nehéz"
 
-#: src/gui/selectboardwindow.cpp:247
+#: src/gui/selectboardwindow.cpp:307
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Very Hard"
 msgstr "Nagyon nehéz"
 
-#: src/gui/selectboardwindow.cpp:248
+#: src/gui/selectboardwindow.cpp:308
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Extremely Hard"
 msgstr "Rendkívül nehéz"
 
-#: src/gui/selectboardwindow.cpp:249
+#: src/gui/selectboardwindow.cpp:309
 #, kde-format
 msgctxt "@item difficulty"
 msgid "Impossible"
 msgstr "Lehetetlen"
 
-#: src/gui/selectboardwindow.cpp:255
+#: src/gui/selectboardwindow.cpp:315
 #, kde-format
 msgid "Name: %1"
 msgstr "Név: %1"
 
-#: src/gui/selectboardwindow.cpp:256
+#: src/gui/selectboardwindow.cpp:316
 #, kde-format
 msgid "Author: %1"
 msgstr "Szerző: %1"
 
-#: src/gui/selectboardwindow.cpp:257
+#: src/gui/selectboardwindow.cpp:318
 #, kde-format
 msgid "Size: %1x%2"
 msgstr "Méret: %1x%2"
 
-#: src/gui/selectboardwindow.cpp:258
+#: src/gui/selectboardwindow.cpp:319
 #, kde-format
 msgid "Difficulty: %1"
 msgstr "Nehézség: %1"
 
-#: src/gui/selectboardwindow.cpp:260
+#: src/gui/selectboardwindow.cpp:321
 #, kde-format
 msgctxt "board solve time"
 msgid "Solved: %1"
 msgstr "Megoldva: %1"
 
-#: src/gui/selectboardwindow.cpp:267
+#: src/gui/selectboardwindow.cpp:328
 #, kde-format
 msgctxt "board not solved yet"
 msgid "Solved: -"
