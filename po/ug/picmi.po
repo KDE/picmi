@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: picmi\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-08-21 00:42+0000\n"
-"PO-Revision-Date: 2026-06-01 17:38-0400\n"
+"PO-Revision-Date: 2026-09-22 18:03+0900\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
 "Language: ug\n"
@@ -390,7 +390,7 @@ msgstr ""
 #: levels/default.xml:524 src/main.cpp:44
 #, kde-format
 msgid "Picmi"
-msgstr "Picmi"
+msgstr ""
 
 #. i18n: tag board attribute name
 #: levels/default.xml:528
