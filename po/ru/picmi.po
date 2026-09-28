@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:50+0000\n"
-"PO-Revision-Date: 2024-10-10 11:08+0300\n"
-"Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
+"PO-Revision-Date: 2026-09-26 10:25+0200\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -640,7 +640,7 @@ msgstr "Автор: -"
 #: src/gui/selectboardwindow.ui:86
 #, kde-format
 msgid "Name: -"
-msgstr "Имя: -"
+msgstr "Название: -"
 
 #. i18n: ectx: property (text), widget (QLabel, labelImage)
 #: src/gui/selectboardwindow.ui:110

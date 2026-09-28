@@ -1,0 +1,730 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Russian "INCLUDE">
+<!ENTITY % addindex "IGNORE">
+]>
+
+<book id="picmi" lang="&language;">
+<bookinfo>
+<title
+>Руководство пользователя &picmi;</title>
+
+<authorgroup>
+<author
+><firstname
+>Jakob</firstname
+> <surname
+>Gruber</surname
+> <affiliation
+><address
+><email
+>jakob.gruber@gmail.com</email
+></address
+></affiliation>
+</author>
+<othercredit role="translator"
+><firstname
+>Александр</firstname
+><surname
+>Яворский</surname
+><affiliation
+><address
+><email
+>kekcuha@gmail.com</email
+></address
+></affiliation
+><contrib
+>Перевод на русский</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2012</year>
+<holder
+>Jakob Gruber</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>8 октября 2021 г.</date>
+<releaseinfo
+>2.0.0 (KDE Gear 21.08)</releaseinfo>
+
+<abstract>
+<para
+>&picmi; — головоломка-нонограмма (японский кроссворд).</para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdegames</keyword>
+<keyword
+>игра</keyword>
+<keyword
+>игра-головоломка</keyword>
+<keyword
+>Picmi</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Введение</title>
+
+<para
+>&picmi; — игра-головоломка для одного игрока. </para>
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="gameboard.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Игровое поле &picmi;</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>Цель игры — закрасить клетки согласно числам по краям поля. </para>
+</chapter>
+
+<chapter id="how-to-play">
+<title
+>Как играть</title>
+
+<para
+>Перед игроком пустое поле, а у каждой строки и каждого столбца — ряд чисел. Эти числа показывают, из каких групп закрашенных клеток состоит строка или столбец. Например, числа <quote
+>4 8 3</quote
+> означают группы из четырёх, восьми и трёх закрашенных клеток именно в таком порядке, причём между соседними группами есть хотя бы одна пустая клетка. Цель игры — по этим подсказкам найти решение, и как можно быстрее. </para>
+
+<para
+>Щелчок левой кнопкой мыши отмечает клетку как закрашенную (или снимает отметку), щелчок правой — как пустую. Протягивая мышь, можно отметить сразу несколько клеток в строке или столбце. Прошедшее время показано в строке состояния, а миниатюра поля — в левом верхнем углу. Игра заканчивается, когда все закрашенные клетки отмечены правильно. </para>
+
+<para
+>Текущее расположение закрашенных клеток и крестиков (далее — «позицию») можно сохранить в любой момент. Новая позиция не затирает ранее сохранённые. При загрузке всегда восстанавливается последняя сохранённая позиция, и так можно повторять, пока сохранённые позиции не кончатся. Число действий после последнего сохранения показано в строке состояния. </para>
+
+<para
+>В &picmi; два режима игры. Случайные головоломки (пункт меню <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Игра</guimenu
+> <guimenuitem
+>Начать игру</guimenuitem
+></menuchoice
+>) создаются в соответствии с выбранным уровнем сложности. Кроме того, можно играть в готовые головоломки из комплекта — пункт меню <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+></shortcut
+> <guimenu
+>Игра</guimenu
+> <guimenuitem
+>Загрузить…</guimenuitem
+></menuchoice
+>. </para>
+
+</chapter>
+
+<chapter id="rules-strategies-tips">
+<title
+>Правила игры, стратегия и советы</title>
+
+<sect1 id="rules">
+<title
+>Правила</title>
+<para
+>Ряд чисел у строки или столбца говорит, сколько в них закрашенных клеток и как они расположены.</para>
+<itemizedlist>
+  <listitem
+><para
+>Каждое число — это длина непрерывной группы закрашенных клеток. С каждой стороны группы либо есть хотя бы одна пустая клетка, либо край поля.</para
+></listitem>
+  <listitem
+><para
+>Кроме того, порядок чисел совпадает с порядком групп в строке или столбце.</para
+></listitem>
+  <listitem
+><para
+>Параметр <guilabel
+>Не допускать ошибки:</guilabel
+> действует только в играх с уровнем сложности <guimenu
+>Настраиваемый</guimenu
+>.</para
+></listitem>
+  <listitem
+><para
+>Если параметр <guilabel
+>Не допускать ошибки:</guilabel
+> включён, ошибочно отметить клетку как закрашенную нельзя — вместо этого к времени добавляется штраф, и с каждой ошибкой он растёт.</para
+></listitem>
+  <listitem
+><para
+>Если параметр <guilabel
+>Не допускать ошибки:</guilabel
+> выключен, игра не сообщает, правильно ли отмечена клетка, и за ошибки штрафа нет.</para
+></listitem>
+  <listitem
+><para
+>Игра заканчивается, когда все закрашенные клетки отмечены правильно.</para
+></listitem>
+</itemizedlist>
+</sect1>
+
+</chapter>
+
+<chapter id="interface-overview">
+<title
+>Обзор интерфейса</title>
+
+<sect1 id="menu-items">
+<title
+>Пункты меню</title>
+
+<variablelist>
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Игра</guimenu
+> <guimenuitem
+>Начать игру</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Начать новую игру.</action
+> Создаётся случайное поле с текущим уровнем сложности.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Игра</guimenu
+> <guimenuitem
+>Загрузить…</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Загрузить готовую головоломку.</action
+> Названия головоломок скрыты, пока они не решены. Таблицы лучших результатов и выбор сложности при этом недоступны.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycap
+>F5</keycap
+></shortcut
+> <guimenu
+>Игра</guimenu
+> <guimenuitem
+>Начать заново</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Начать текущую игру заново.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycap
+>P</keycap
+></shortcut
+> <guimenu
+>Игра</guimenu
+> <guimenuitem
+>Пауза</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Приостановить отсчёт времени.</action
+> Чтобы продолжить игру, выберите этот пункт ещё раз. Во время паузы поле скрывается: было бы нечестно спокойно искать хорошие ходы, пока время стоит.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Игра</guimenu
+> <guimenuitem
+>Показать лучшие результаты…</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Показать таблицы лучших результатов для разных уровней сложности.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Игра</guimenu
+> <guimenuitem
+>Выход</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Выйти</action
+> из &picmi;.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Z</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Ход</guimenu
+> <guimenuitem
+>Отменить</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Отменить предыдущий ход</action
+>, если он есть.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>I</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Ход</guimenu
+> <guimenuitem
+>Подсказка</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Отметить одну клетку как закрашенную или пустую.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Ход</guimenu
+> <guimenuitem
+>Решение</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Сыграть демонстрационную игру.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>L</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Ход</guimenu
+> <guimenuitem
+>Загрузить позицию</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Загрузить последнюю сохранённую позицию.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Ход</guimenu
+> <guimenuitem
+>Сохранить позицию</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Сохранить текущую позицию на поле.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>F</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Вид</guimenu
+> <guimenuitem
+>Полноэкранный режим</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Переключить окно в полноэкранный режим и обратно.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Настройка</guimenu
+> <guisubmenu
+>Уровень сложности</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Выбрать уровень сложности во вложенном меню.</action
+></para>
+    <para
+>Уровней сложности четыре: <itemizedlist>
+        <listitem
+><para
+><guimenuitem
+>Лёгкий</guimenuitem
+>: 10 строк, 10 столбцов, закрашено 55% клеток, параметр <guilabel
+>Не допускать ошибки:</guilabel
+> выключен.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>Средний</guimenuitem
+>: 10 строк, 15 столбцов, закрашено 55% клеток, параметр <guilabel
+>Не допускать ошибки:</guilabel
+> выключен.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>Сложный</guimenuitem
+>: 15 строк, 15 столбцов, закрашено 55% клеток, параметр <guilabel
+>Не допускать ошибки:</guilabel
+> выключен.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>Настраиваемый</guimenuitem
+>: свои размеры поля и параметры.</para
+></listitem>
+      </itemizedlist>
+    </para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>Настройка</guimenu
+> <guimenuitem
+>Настроить &picmi;…</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>Выбрать фоновое изображение, размеры поля и параметры настраиваемого уровня сложности.</action
+></para
+></listitem>
+  </varlistentry>
+</variablelist>
+
+<para
+>Кроме того, в &picmi; есть стандартные для &kde; меню <guimenu
+>Настройка</guimenu
+> и <guimenu
+>Справка</guimenu
+>, описанные в разделах <ulink url="help:/fundamentals/menus.html#menus-settings"
+>Меню «Настройка»</ulink
+> и <ulink url="help:/fundamentals/menus.html#menus-help"
+>Меню «Справка»</ulink
+> руководства «Основы &kde;». </para>
+</sect1>
+
+<sect1 id="keybindings">
+<title id="keybindings-title"
+>Комбинации клавиш</title>
+
+<para
+>Комбинации клавиш по умолчанию:</para>
+
+<table>
+  <title
+>Комбинации клавиш</title>
+  <tgroup cols="2">
+    <tbody>
+      <row>
+        <entry
+>Начать новую игру</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Загрузить готовую головоломку</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Пауза</entry>
+        <entry
+><keycap
+>P</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Показать лучшие результаты</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Полноэкранный режим</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>F</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Выход</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>Справка</entry>
+        <entry
+><keycap
+>F1</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Справка «Что это?»</entry>
+        <entry
+><keycombo action="simul"
+>&Shift;<keycap
+>F1</keycap
+></keycombo
+></entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+
+<table>
+  <title
+>Управление с клавиатуры</title>
+  <tgroup cols="2">
+    <tbody>
+      <row>
+        <entry
+>Влево</entry>
+        <entry
+>&Left; или <keycap
+>H</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Вправо</entry>
+        <entry
+>&Right; или <keycap
+>L</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Вверх</entry>
+        <entry
+>&Up; или <keycap
+>K</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Вниз</entry>
+        <entry
+>&Down; или <keycap
+>J</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Отметить клетку как закрашенную (или снять отметку)</entry>
+        <entry
+><keycap
+>X</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>Отметить клетку как пустую (или снять отметку)</entry>
+        <entry
+>&Space;</entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+
+</sect1>
+</chapter>
+
+
+<chapter id="credits">
+<title
+>Авторские права и лицензия</title>
+
+<para
+>&picmi; </para>
+<para
+>© Jakob Gruber <email
+>jakob.gruber@gmail.com</email
+>, 2012 (программа) </para>
+<para
+>© Jakob Gruber <email
+>jakob.gruber@gmail.com</email
+>, 2012 (документация) </para>
+
+<para
+>Перевод на русский — Александр Яворский<email
+>kekcuha@gmail.com</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+
+&documentation.index;
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-always-quote-attributes:t
+sgml-indent-step:0
+sgml-indent-data:t
+End:
+-->
