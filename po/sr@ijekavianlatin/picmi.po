@@ -1,12 +1,13 @@
 # Translation of picmi.po into Serbian.
 # Chusslove Illich <caslav.ilic@gmx.net>, 2012, 2013, 2015, 2016.
+# Nemanja Hiršl <nemhirsl@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: picmi\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:50+0000\n"
-"PO-Revision-Date: 2016-02-14 17:49+0100\n"
-"Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
+"PO-Revision-Date: 2026-10-09 22:30+0200\n"
+"Last-Translator: Nemanja Hiršl <nemhirsl@gmail.com>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
 "Language: sr@ijekavianlatin\n"
 "MIME-Version: 1.0\n"
@@ -21,12 +22,12 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Časlav Ilić"
+msgstr "Časlav Ilić,Nemanja Hiršl"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "caslav.ilic@gmx.net"
+msgstr "caslav.ilic@gmx.net,nemhirsl@gmail.com"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:5
@@ -136,10 +137,9 @@ msgstr "Klovn"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:71
-#, fuzzy, kde-format
-#| msgid "Pirate Dog"
+#, kde-format
 msgid "Pirate Ship"
-msgstr "Gusarski pas"
+msgstr "Gusarski brod"
 
 #. i18n: tag board attribute author
 #. i18n: tag board attribute author
@@ -198,13 +198,13 @@ msgstr "Violinski ključ"
 #: levels/default.xml:103
 #, kde-format
 msgid "Halloween"
-msgstr "Noć veštica"
+msgstr "Noć vještica"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:107
 #, kde-format
 msgid "Hourglass"
-msgstr "Peščanik"
+msgstr "Pješčanik"
 
 #. i18n: tag board attribute name
 #. i18n: tag board attribute name
@@ -235,7 +235,7 @@ msgstr "Mala panda"
 #: levels/default.xml:156
 #, kde-format
 msgid "House"
-msgstr ""
+msgstr "Kuća"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:160
@@ -369,7 +369,7 @@ msgstr "Policajac"
 #: levels/default.xml:508
 #, kde-format
 msgid "Santa Claus"
-msgstr "Deda Mraz"
+msgstr "Djeda Mraz"
 
 #. i18n: tag board attribute name
 #: levels/default.xml:512
@@ -441,7 +441,7 @@ msgstr "Štampač"
 #: levels/default.xml:603
 #, kde-format
 msgid "Smiley"
-msgstr "Smeško"
+msgstr "Smješko"
 
 #: src/gui/graphicsitems/textbanneritem.cpp:28
 #, kde-format
@@ -449,177 +449,155 @@ msgid "PAUSED"
 msgstr "PAUZA"
 
 #: src/gui/mainwindow.cpp:62
-#, fuzzy, kde-format
-#| msgid "Save Position"
+#, kde-format
 msgctxt "@action"
 msgid "Save Position"
 msgstr "Sačuvaj poziciju"
 
 #: src/gui/mainwindow.cpp:68
-#, fuzzy, kde-format
-#| msgid "Load Position"
+#, kde-format
 msgctxt "@action"
 msgid "Load Position"
 msgstr "Učitaj poziciju"
 
 #: src/gui/mainwindow.cpp:79
-#, fuzzy, kde-format
-#| msgid "New Game"
+#, kde-format
 msgctxt "@action:button"
 msgid "New Game"
 msgstr "Nova partija"
 
 #: src/gui/mainwindow.cpp:84
-#, fuzzy, kde-format
-#| msgid "Load New Game"
+#, kde-format
 msgctxt "@action:button"
 msgid "Load New Game"
 msgstr "Učitaj novu partiju"
 
 # >> @item difficulty
 #: src/gui/mainwindow.cpp:97
-#, fuzzy, kde-format
-#| msgctxt "custom difficulty"
-#| msgid "Custom"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Custom"
-msgstr "posebna"
+msgstr "posebno"
 
 #: src/gui/mainwindow.cpp:246
 #, kde-format
 msgid "Elapsed time: %1"
-msgstr "Proteklo vreme: %1"
+msgstr "Proteklo vrijeme: %1"
 
 #: src/gui/mainwindow.cpp:251
 #, kde-format
 msgid "Actions since last saved position: %1"
-msgstr "Radnji od poslednjeg upisivanja pozicije: %1"
+msgstr "Radnji od posljednjeg upisivanja pozicije: %1"
 
 #: src/gui/mainwindow.cpp:280
 #, kde-format
 msgid "Congratulations, you have solved this board!"
-msgstr "Čestitamo, rešili ste ovu tablu!"
+msgstr "Čestitamo, riješili ste ovu tablu!"
 
 #: src/gui/mainwindow.cpp:281 src/gui/mainwindow.cpp:288
-#, fuzzy, kde-format
-#| msgid "Board Solved!"
+#, kde-format
 msgctxt "@title:window"
 msgid "Board Solved!"
-msgstr "Tabla rešena!"
+msgstr "Tabla riješena!"
 
 #: src/gui/mainwindow.cpp:286
 #, kde-format
 msgid "Congratulations, you have solved board '%1'!"
-msgstr "Čestitamo, rešili ste tablu „%1“!"
+msgstr "Čestitamo, riješili ste tablu „%1“!"
 
 # >> @title:column
 #: src/gui/selectboardwindow.cpp:87
-#, fuzzy, kde-format
-#| msgid "Level"
+#, kde-format
 msgctxt "@title:column"
 msgid "Level"
 msgstr "nivo"
 
 # >> @title:column
 #: src/gui/selectboardwindow.cpp:88
-#, fuzzy, kde-format
-#| msgid "Level Set"
+#, kde-format
 msgctxt "@title:column"
 msgid "Level Set"
 msgstr "skup nivoa"
 
 # >> @title:column
 #: src/gui/selectboardwindow.cpp:89
-#, fuzzy, kde-format
-#| msgid "Difficulty"
+#, kde-format
 msgctxt "@title:column"
 msgid "Difficulty"
 msgstr "težina"
 
 # >> @title:column
 #: src/gui/selectboardwindow.cpp:90
-#, fuzzy, kde-format
-#| msgid "Size"
+#, kde-format
 msgctxt "@title:column"
 msgid "Size"
 msgstr "veličina"
 
 # >> @title:column
 #: src/gui/selectboardwindow.cpp:91
-#, fuzzy, kde-format
-#| msgctxt "board solved"
-#| msgid "Solved"
+#, kde-format
 msgctxt "@title:column board solved"
 msgid "Solved"
-msgstr "rešena"
+msgstr "riješena"
 
 #: src/gui/selectboardwindow.cpp:154
-#, fuzzy, kde-format
-#| msgid "Level Selection"
+#, kde-format
 msgctxt "@title:window"
 msgid "Level Selection"
 msgstr "Izbor nivoa"
 
 # >> @item difficulty
 #: src/gui/selectboardwindow.cpp:242
-#, fuzzy, kde-format
-#| msgid "Ridiculously Easy"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Ridiculously Easy"
-msgstr "smešno lako"
+msgstr "smiješno lako"
 
 # >> @item difficulty
 #: src/gui/selectboardwindow.cpp:243
-#, fuzzy, kde-format
-#| msgid "Very Easy"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Very Easy"
 msgstr "vrlo lako"
 
 # >> @item difficulty
 #: src/gui/selectboardwindow.cpp:244
-#, fuzzy, kde-format
-#| msgid "Easy"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Easy"
 msgstr "lako"
 
 # >> @item difficulty
 #: src/gui/selectboardwindow.cpp:245
-#, fuzzy, kde-format
-#| msgid "Medium"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Medium"
 msgstr "srednje"
 
 # >> @item difficulty
 #: src/gui/selectboardwindow.cpp:246
-#, fuzzy, kde-format
-#| msgid "Hard"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Hard"
 msgstr "teško"
 
 # >> @item difficulty
 #: src/gui/selectboardwindow.cpp:247
-#, fuzzy, kde-format
-#| msgid "Very Hard"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Very Hard"
 msgstr "vrlo teško"
 
 # >> @item difficulty
 #: src/gui/selectboardwindow.cpp:248
-#, fuzzy, kde-format
-#| msgid "Extremely Hard"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Extremely Hard"
 msgstr "izuzetno teško"
 
 # >> @item difficulty
 #: src/gui/selectboardwindow.cpp:249
-#, fuzzy, kde-format
-#| msgid "Impossible"
+#, kde-format
 msgctxt "@item difficulty"
 msgid "Impossible"
 msgstr "nemoguće"
@@ -648,13 +626,13 @@ msgstr "Težina: %1"
 #, kde-format
 msgctxt "board solve time"
 msgid "Solved: %1"
-msgstr "Rešena: %1"
+msgstr "Riješena: %1"
 
 #: src/gui/selectboardwindow.cpp:267
 #, kde-format
 msgctxt "board not solved yet"
 msgid "Solved: -"
-msgstr "Rešena: —"
+msgstr "Riješena: —"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, LevelSelectUi)
 #: src/gui/selectboardwindow.ui:23
@@ -684,7 +662,7 @@ msgstr "?"
 #: src/gui/selectboardwindow.ui:120
 #, kde-format
 msgid "Solved: -"
-msgstr "Rešena: —"
+msgstr "Riješena: —"
 
 #. i18n: ectx: property (text), widget (QLabel, labelSize)
 #: src/gui/selectboardwindow.ui:127
@@ -700,8 +678,7 @@ msgstr "Težina: —"
 
 # >> @title:window
 #: src/gui/settingswindow.cpp:63
-#, fuzzy, kde-format
-#| msgid "Select Background"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select Background"
 msgstr "Izbor pozadine"
@@ -729,7 +706,7 @@ msgstr "Pozadinska slika"
 #, kde-format
 msgctxt "default background image"
 msgid "Default"
-msgstr "Podrazumevana"
+msgstr "Podrazumijevana"
 
 # >> @option:radio Background Image
 #. i18n: ectx: property (text), widget (QRadioButton, bgCustomRadioButton)
@@ -747,24 +724,22 @@ msgstr "Boje fonta"
 
 #. i18n: ectx: property (text), widget (QLabel, fontColorSolvedLabel)
 #: src/gui/settingswindow.ui:94
-#, fuzzy, kde-format
-#| msgid "Solved Streaks"
+#, kde-format
 msgid "Solved streaks:"
-msgstr "Rešenih nizova"
+msgstr "Riješenih nizova:"
 
 #. i18n: ectx: property (text), widget (QLabel, fontColorUnsolvedLabel)
 #: src/gui/settingswindow.ui:110
-#, fuzzy, kde-format
-#| msgid "Unsolved Streaks"
+#, kde-format
 msgid "Unsolved streaks:"
-msgstr "Nerešenih nizova"
+msgstr "Neriješenih nizova:"
 
 #. i18n: ectx: property (text), widget (QPushButton, fontColorSolvedPushButton)
 #. i18n: ectx: property (text), widget (QPushButton, fontColorUnsolvedPushButton)
 #: src/gui/settingswindow.ui:120 src/gui/settingswindow.ui:127
 #, kde-format
 msgid "Edit…"
-msgstr ""
+msgstr "Uredi…"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: src/gui/settingswindow.ui:145
@@ -792,10 +767,9 @@ msgstr "Gustina:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: src/gui/settingswindow.ui:241
-#, fuzzy, kde-format
-#| msgid "Prevent Mistakes:"
+#, kde-format
 msgid "Prevent mistakes:"
-msgstr "Sprečavanje grešaka:"
+msgstr "Sprječavanje grešaka:"
 
 #: src/main.cpp:46
 #, kde-format
@@ -811,9 +785,3 @@ msgstr "© 2012–2015, autori Picmija"
 #, kde-format
 msgid "Picmi Author"
 msgstr "Autor Picmija"
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "Edit..."
-#~ msgstr "Uredi..."
