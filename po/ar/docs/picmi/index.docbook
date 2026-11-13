@@ -1,0 +1,730 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Arabic "INCLUDE">
+<!ENTITY % addindex "IGNORE">
+]>
+
+<book id="picmi" lang="&language;">
+<bookinfo>
+<title
+>دليل لعبة بيكمي</title>
+
+<authorgroup>
+<author
+><firstname
+>Jakob</firstname
+> <surname
+>Gruber</surname
+> <affiliation
+><address
+><email
+>jakob.gruber@gmail.com</email
+></address
+></affiliation>
+</author>
+<othercredit role="translator"
+><firstname
+>زايد</firstname
+><surname
+>السعيدي</surname
+><affiliation
+><address
+><email
+>zayed.alsaidi@gmail.com</email
+></address
+></affiliation
+><contrib
+>التّرجمة العربيّة</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2012</year>
+<holder
+>Jakob Gruber</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2021-10-08</date>
+<releaseinfo
+>2.0.0 (ترس كيدي 21.08)</releaseinfo>
+
+<abstract>
+<para
+>بيكمي - لعبة أحاجي النونوغرام.</para>
+</abstract>
+
+<keywordset>
+<keyword
+>كيدي</keyword>
+<keyword
+>ألعاب كيدي</keyword>
+<keyword
+>لعبة</keyword>
+<keyword
+>لعبة ألغاز</keyword>
+<keyword
+>بيكمي</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>مقدمة</title>
+
+<para
+>بيكمي هي لعبة ألغاز للاعب واحد. </para>
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="gameboard.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>لوحة لعبة بيكمي</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>هدف اللعبة هو تلوين الخلايا وفقًا للأرقام الموضحة على جانب اللوحة. </para>
+</chapter>
+
+<chapter id="how-to-play">
+<title
+>كيف تلعب</title>
+
+<para
+>تظهر للاعب لوحة فارغة، وقائمة من الأرقام لكل صف وعمود. تمثل هذه الأرقام كيفية تنظيم المجموعات داخل أي صف أو عمود معين. على سبيل المثال، تسلسل الأرقام <quote
+>4 8 3</quote
+> يعني وجود مجموعات من أربع، ثمانٍ، وثلاث خلايا مملوءة، بهذا الترتيب، مع وجود خلية فارغة واحدة على الأقل بين المجموعات المتتالية. الهدف من اللعبة هو استخدام هذه التلميحات لكشف الحل الفعلي، والقيام بذلك بأسرع ما يمكن. </para>
+
+<para
+>نقرة يسار (تزيل) علامة على الخلية بأنها مشغولة، بينما نقرة يمين (تزيل) علامة على الخلية بأنها فارغة. يمكن استخدام السحب لوضع علامة على عدة خلايا في صف أو عمود دفعة واحدة. يُعرض الوقت المنقضي في شريط الحالة، ويقع نظرة عامة على لوحة اللعبة في الزاوية العلوية اليسرى. تكتمل اللعبة بمجرد أن يتم وضع علامة على جميع الخلايا المشغولة بشكل صحيح. </para>
+
+<para
+>يمكن حفظ الوضع الحالي للمربعات والصلبان (يُشار إليها بـ 'الحالات' من الآن فصاعدًا) في أي وقت. حفظ حالة جديدة لا يحل محل الحالات المحفوظة السابقة. استعادة الحالة تعود دائمًا إلى أحدث حالة محفوظة. يمكن تكرار هذا حتى لا يتبقى أي حالات محفوظة. يُعرض عدد الإجراءات منذ آخر حالة محفوظة في شريط الحالة. </para>
+
+<para
+>تتضمن بيكمي نمطين للعب. تُولّد الأحاجي العشوائية (عبر اختيار عنصر القائمة <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></shortcut
+> <guimenu
+>لعبة</guimenu
+> <guimenuitem
+>جديد</guimenuitem
+></menuchoice
+>) وفقًا لإعدادات الصعوبة المختارة. بدلًا من ذلك، يمكن لعب الأحاجي المسبقة المضمنة عبر اختيار عنصر القائمة <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+></shortcut
+> <guimenu
+>لعبة</guimenu
+> <guimenuitem
+>حمّل…</guimenuitem
+></menuchoice
+>. </para>
+
+</chapter>
+
+<chapter id="rules-strategies-tips">
+<title
+>قواعد اللعبة واستراتيجياتها وتلميحاتها</title>
+
+<sect1 id="rules">
+<title
+>القواعد</title>
+<para
+>يوفر تسلسل الأرقام في صف أو عمود معلومات معينة حول عدد الخلايا المشغولة وترتيبها داخل الصف أو العمود.</para>
+<itemizedlist>
+  <listitem
+><para
+>يمثل الرقم طول مجموعة متصلة من الخلايا المشغولة على اللوحة. تمتلك هذه المجموعة إما خلية فارغة واحدة على الأقل على كل جانب أو تقع مباشرة على حافة اللوحة.</para
+></listitem>
+  <listitem
+><para
+>بالإضافة إلى ذلك، يظهر تسلسل الأرقام ترتيب هذه المجموعات داخل الصف أو العمود.</para
+></listitem>
+  <listitem
+><para
+>ينطبق خيار <guilabel
+>امنع الأخطاء:</guilabel
+> فقط على الألعاب ذات الصعوبة <guimenu
+>مخصصة</guimenu
+>.</para
+></listitem>
+  <listitem
+><para
+>عند تفعيل خيار <guilabel
+>امنع الأخطاء:</guilabel
+>، لا يمكن تعليم خلية كمشغولة بشكل خاطئ - بدلًا من ذلك، يُضاف وقت عقوبة إلى المؤقت. تُزاد العقوبة مع كل خطأ مرتكب.</para
+></listitem>
+  <listitem
+><para
+>إذا عُطّل خيار <guilabel
+>امنع الأخطاء:</guilabel
+>، فلن تتوفر أي تغذية راجعة حول ما إذا عُلّمت الخلية بشكل صحيح، ولا توجد عقوبة لارتكاب الأخطاء.</para
+></listitem>
+  <listitem
+><para
+>تتوقف اللعبة بمجرد تعليم جميع الخلايا المشغولة بشكل صحيح.</para
+></listitem>
+</itemizedlist>
+</sect1>
+
+</chapter>
+
+<chapter id="interface-overview">
+<title
+>نظرة عامة على الواجهة</title>
+
+<sect1 id="menu-items">
+<title
+>عناصر القائمة</title>
+
+<variablelist>
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>لعبة</guimenu
+> <guimenuitem
+>جديد</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>يبدأ لعبة جديدة.</action
+> يُنشئ لوحة عشوائية باستخدام مستوى الصعوبة الحالي.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>لعبة</guimenu
+> <guimenuitem
+>حمّل…</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>يُحمّل أحجية مسبقة.</action
+> تُخفى أسماء الأحاجي حتى تُحل. تُعطل قوائم أعلى النتائج وإعدادات الصعوبة.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycap
+>F5</keycap
+></shortcut
+> <guimenu
+>لعبة</guimenu
+> <guimenuitem
+>أعد بدء اللعبة</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>سيعيد هذا بدء اللعبة الحالية.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycap
+>P</keycap
+></shortcut
+> <guimenu
+>لعبة</guimenu
+> <guimenuitem
+>ألبث</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>يُلبث وقت اللعبة.</action
+> انقر فوق عنصر القائمة مرة أخرى لاستئناف اللعبة. لاحظ أن اللوحة تختفي عند إلباث اللعبة لأنه لن يكون من العدل البحث عن نقلات جيدة بدون ضغط الوقت.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>لعبة</guimenu
+> <guimenuitem
+>أظهر أعلى النتائج</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>يعرض مربع حوار يحتوي على أعلى النتائج لمختلف مستويات الصعوبة.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>لعبة</guimenu
+> <guimenuitem
+>أنهِ</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>ينهي</action
+> بيكمي.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>Z</keycap
+> </keycombo
+> </shortcut
+> <guimenu
+>نقلة</guimenu
+> <guimenuitem
+>تراجع</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>يتراجع عن النقلة السابقة</action
+> إن وجدت.</para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>I</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>نقلة</guimenu
+> <guimenuitem
+>تلميح</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>يعلّم خلية كمشغولة أو فارغة.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>حركة</guimenu
+> <guimenuitem
+>حل</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>يشغل لعبة تجريبية.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>L</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>نقلة</guimenu
+> <guimenuitem
+>حمّل الموضع</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>يُحمّل أحدث موضع محفوظ.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>S</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>نقلة</guimenu
+> <guimenuitem
+>احفظ الموضع</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>يحفظ موضع اللوحة الحالي.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>F</keycap
+></keycombo
+></shortcut
+> <guimenu
+>عرض</guimenu
+> <guimenuitem
+>وضع ملء الشاشة</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>يبدل الواجهة الرسومية إلى وضع ملء الشاشة.</action
+></para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>الإعدادات</guimenu
+><guisubmenu
+>الصعوبة</guisubmenu
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>يتيح لك ضبط مستوى الصعوبة من قائمة فرعية.</action
+></para>
+    <para
+>هناك أربعة مستويات للصعوبة: <itemizedlist>
+        <listitem
+><para
+><guimenuitem
+>سهل</guimenuitem
+>: 10 صفوف، 10 أعمدة، 55% من جميع الخلايا مشغولة، خيار <guilabel
+>امنع الأخطاء:</guilabel
+> معطّل.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>متوسط</guimenuitem
+>: 10 صفوف، 15 عمودًا، 55% من جميع الخلايا مشغولة، خيار <guilabel
+>امنع الأخطاء:</guilabel
+> معطّل.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>صعب</guimenuitem
+>: 15 صفًا، 15 عمودًا، 55% من جميع الخلايا مشغولة، خيار <guilabel
+>امنع الأخطاء:</guilabel
+> معطّل.</para
+></listitem>
+        <listitem
+><para
+><guimenuitem
+>مخصص</guimenuitem
+>: أبعاد وإعدادات لوحة مخصصة.</para
+></listitem>
+      </itemizedlist>
+    </para
+></listitem>
+  </varlistentry>
+
+  <varlistentry>
+    <term
+><menuchoice
+><guimenu
+>الإعدادات</guimenu
+> <guimenuitem
+>اضبط بيكمي…</guimenuitem
+></menuchoice
+></term>
+    <listitem
+><para
+><action
+>اختر صورة خلفية اللعبة، وأبعاد اللوحة، وإعدادات الصعوبة المخصصة.</action
+></para
+></listitem>
+  </varlistentry>
+</variablelist>
+
+<para
+>بالإضافة إلى ذلك، تمتلك بيكمي عناصر قائمة كيدي الشائعة <guimenu
+>الإعدادات</guimenu
+> و<guimenu
+>مساعدة</guimenu
+>، لمزيد من المعلومات اقرأ الأقسام حول <ulink url="help:/fundamentals/menus.html#menus-settings"
+>قائمة الإعدادات</ulink
+> و<ulink url="help:/fundamentals/menus.html#menus-help"
+>قائمة المساعدة</ulink
+> في أساسيات كيدي. </para>
+</sect1>
+
+<sect1 id="keybindings">
+<title id="keybindings-title"
+>الاختصارات</title>
+
+<para
+>الاختصارات المبدئية هي:</para>
+
+<table>
+  <title
+>الاختصارات</title>
+  <tgroup cols="2">
+    <tbody>
+      <row>
+        <entry
+>ابدأ لعبة جديدة</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>N</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>حمّل لعبة مسبقة</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>ألبث</entry>
+        <entry
+><keycap
+>P</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>أظهر أعلى النتائج</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>H</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>وضع ملء الشاشة</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>F</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>أنهِ</entry>
+        <entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></entry>
+      </row>
+      <row>
+        <entry
+>مساعدة</entry>
+        <entry
+><keycap
+>F1</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>مساعدة "ما هذا؟"</entry>
+        <entry
+><keycombo action="simul"
+>&Shift;<keycap
+>F1</keycap
+></keycombo
+></entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+
+<table>
+  <title
+>متحكمات لوحة المفاتيح</title>
+  <tgroup cols="2">
+    <tbody>
+      <row>
+        <entry
+>حرك لليسار</entry>
+        <entry
+>&Left; أو <keycap
+>H</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>حرك لليمين</entry>
+        <entry
+>&Right; أو <keycap
+>L</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>حرك لأعلى</entry>
+        <entry
+>&Up; أو <keycap
+>K</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>حرك لأسفل</entry>
+        <entry
+>&Down; أو <keycap
+>J</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>علّم الخلية كمشغولة (أو أزل العلامة)</entry>
+        <entry
+><keycap
+>X</keycap
+></entry>
+      </row>
+      <row>
+        <entry
+>علّم الخلية كفارغة (أو أزل العلامة)</entry>
+        <entry
+>&Space;</entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+
+</sect1>
+</chapter>
+
+
+<chapter id="credits">
+<title
+>الحقوق والترخيص</title>
+
+<para
+>بيكمي </para>
+<para
+>حقوق نشر البرنامج 2012 محفوظة لـ Jakob Gruber <email
+>jakob.gruber@gmail.com</email
+> </para>
+<para
+>حقوق نشر التوثيق 2012 محفوظة لـ Jakob Gruber <email
+>jakob.gruber@gmail.com</email
+> </para>
+
+<para
+>الترجمة: زايد السعيدي <email
+>zayed.alsaidi@gmail.com</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+
+&documentation.index;
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-always-quote-attributes:t
+sgml-indent-step:0
+sgml-indent-data:t
+End:
+-->
